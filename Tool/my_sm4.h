@@ -2,6 +2,7 @@
 #define __MY_SM4_H__
 
 #include "gmssl/sm4.h"
+#include "gmssl/hex.h"
 class __DEBUG_SM4_T {
 public:
     __DEBUG_SM4_T(const std::string& key_str, const std::string& iv_str) {

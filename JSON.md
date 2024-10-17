@@ -10,7 +10,8 @@
         "date": "xxx"
     },
     "check":{
-        "len": "xxx"
+        "len": "xxx",
+        "other": "xxx"//为了组成16的倍数的长度
     }
 }
 /* Add/Delete/Accept/Reject/Find */
