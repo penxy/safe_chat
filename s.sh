@@ -6,8 +6,8 @@ function func_check(){
 }
 OS=$(uname)
 
-cd build;
-rm -rf *
+[ ! -e "build" ] && mkdir build
+cd build && rm -rf *
 cmake ..
 make -j8
 func_check
