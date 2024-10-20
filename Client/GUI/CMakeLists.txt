@@ -21,10 +21,13 @@ message("now system is ${CURRENT_SYSTEM}")
 set(EXECUTABLE_OUTPUT_PATH "${CMAKE_SOURCE_DIR}/release/${CURRENT_SYSTEM}/bin")
   
 # 查找 Qt 组件  
+
+set(Qt5_DIR "${CMAKE_SOURCE_DIR}/release/${CURRENT_SYSTEM}/thirdparty/Qt5")
 find_package(Qt5Core REQUIRED)
 find_package(Qt5Widgets REQUIRED)
 set(INCLUDE_Qt5 ${Qt5Core_INCLUDE_DIRS} ${Qt5Widgets_INCLUDE_DIRS})
 set(LIBS_Qt5 ${Qt5Core_LIBRARIESY} ${Qt5Widgets_LIBRARIES})
+
 message(STATUS "LIBS_Qt5 : ${LIBS_Qt5}")
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
