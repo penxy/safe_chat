@@ -9,13 +9,13 @@
 static constexpr const QSize const_size_edit_login      = QSize(150, 30);
 static constexpr const QSize const_size_btn_login       = QSize(60, 30);
 static constexpr const QSize const_size_lab_login       = QSize(60, 30);
-static constexpr const QSize const_size_widget_login    = QSize(300, 200);
+static constexpr const QSize const_size_widget_login    = QSize(400, 250);
 /* size-header */
 static constexpr const QSize const_size_btn_header       = QSize(60, 30);
 
 
 /* path */
-static const QString const_path_icon = QString(":/res/icon/login.png");
+static const QString const_path_icon = QString("./resource");
 
 
 

@@ -3,5 +3,5 @@ project(main)
 
 include(${CMAKE_SOURCE_DIR}/cmake/GlobalConfig.cmake)
 
-add_subdirectory(./Client)
-# add_subdirectory(./Client/GUI)
+# add_subdirectory(./Client)
+add_subdirectory(./Client/GUI)

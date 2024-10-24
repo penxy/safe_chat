@@ -9,11 +9,13 @@ function func_check(){
 OS=$(uname)
 
 [ ! -e "build" ] && mkdir build
-cd build && rm -rf *
+cd build
+# rm -rf *
 $cmake ..
 func_check "cmake"
 make -j8
 func_check "make"
 
 cd ..
-./release/$OS/bin/Client --base $PWD --path $PWD/release/$OS/bin --confile $PWD/release/$OS/etc/client.conf
+# ./release/$OS/bin/Client --base $PWD --path $PWD/release/$OS/bin --confile $PWD/release/$OS/etc/client.conf
+./release/$OS/bin/GUI

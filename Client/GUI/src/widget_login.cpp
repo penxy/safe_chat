@@ -29,6 +29,7 @@ void WidgetLogin::init_ui(){
         edit_password->setFixedSize(const_size_edit_login);
         this->setFixedSize(const_size_widget_login);
     }
+    
     {
         QWidget* w_account = new QWidget(this);
         QWidget* w_password = new QWidget(this);
@@ -62,7 +63,7 @@ void WidgetLogin::init_ui(){
 }
 
 
-WidgetLogin::WidgetLogin(WidgetBase *parent) : WidgetBase(parent){
+WidgetLogin::WidgetLogin(QWidget *parent) : QWidget(parent){
     init_ui();
 
 

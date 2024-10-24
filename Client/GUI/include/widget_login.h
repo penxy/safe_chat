@@ -5,14 +5,13 @@
 #include <QPushButton>
 #include <QLineEdit>
 #include <QLabel>
-#include "widget_base.h"
 #include "widget_const.h"
 
-class WidgetLogin : public WidgetBase
+class WidgetLogin : public QWidget
 {
     Q_OBJECT
 public:
-    explicit WidgetLogin(WidgetBase *parent = nullptr);
+    explicit WidgetLogin(QWidget *parent = nullptr);
     void init_ui();
 
 private:
