@@ -22,6 +22,8 @@ private:
     QLineEdit* edit_password;
     QLabel* lab_account;
     QLabel* lab_password;
+
+    QWidget* widget_head;
 };
 
 #endif // WIDGETLOGIN_H

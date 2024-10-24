@@ -2,12 +2,7 @@
 #define __C_CONF_H__
 
 #include "Tool/single_model.h"
-#include "hv/hmain.h"
-#include "hv/iniparser.h"
-
-typedef struct{
-    IniParser* parser;
-} conf_ctx_t;
+#include <string>
 
 class C_Conf : public Singleton<C_Conf> {
     friend class Singleton<C_Conf>;
