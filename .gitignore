@@ -1,0 +1,6 @@
+build/*
+/demo/build/*
+/demo/bin/*
+.vscode
+/release
+/Client/GUI/resource/mp3
