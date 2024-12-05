@@ -7,3 +7,6 @@ Client/html
 /demo
 # 忽略release，因为release过于庞大
 /release
+
+# 调试时的日志
+debug.log
