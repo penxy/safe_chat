@@ -9,6 +9,7 @@ class TitleBar;
 class ListPage;
 class ChatPage;
 class AddFdPage;
+class FtpPage;
 
 /**
  * @class Widget
@@ -27,7 +28,8 @@ public:
     enum class TypeWid : uint8_t{
         Default,
         Chat,
-        AddFd
+        AddFd,
+        Ftp
     };
 private:
     TitleBar *m_title_bar;
@@ -36,10 +38,14 @@ private:
     QStackedWidget m_stack_widget;
 
     //stack widget items
+    //chat
     ListPage *m_list_page;
     ChatPage *m_chat_page;
     //add fd
     AddFdPage *m_add_fd_page;
+    //ftp
+    FtpPage *m_ftp_page;
+    
 
 
     std::shared_ptr<Core> m_core;

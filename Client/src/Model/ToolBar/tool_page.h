@@ -16,7 +16,8 @@ public:
         Add,
         ChatPerson,
         ChatGroup,
-        Setting
+        Setting,
+        Ftp
     };
 signals:
     void SigTool(TypeBtn type);
@@ -28,4 +29,5 @@ private:
     ToolBtn *btn_chat_person;
     ToolBtn *btn_chat_group;
     ToolBtn *btn_setting;
+    ToolBtn *btn_ftp;
 };

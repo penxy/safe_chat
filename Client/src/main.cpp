@@ -16,10 +16,12 @@ int main(int argc, char *argv[])
     return app.exec();
 }
 #else
-#include "Service/Net/test.h"
+#include "Model/Ftp/ftp_page.h"
 int main(int argc, char *argv[]) {
-    QCoreApplication a(argc, argv);
-    HttpClient client;
+    google::ParseCommandLineFlags(&argc, &argv, true);
+    QApplication a(argc, argv);
+    FtpPage wMain;
+    wMain.show();
     return a.exec();
 }
 #endif

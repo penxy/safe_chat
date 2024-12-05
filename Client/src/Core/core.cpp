@@ -1,6 +1,9 @@
 #include "core.h"
 #include <qmetatype.h>//qRegisterMetaType
 #include "config.h"
+#include <unistd.h>
+
+#include "curl/curl.h"
 /**
  * @def Core
  * @todo 随机生成公钥和id, 以及注册各种信号传递的类型[such as qRegisterMetaType<Type::Json>("Type::Json");]
@@ -45,3 +48,45 @@ void Core::saveGroupRecore(int idx){}
 void Core::loadFriendRecore(int idx){}
 void Core::saveFriendRecore(int idx){}
 
+//Ftp
+void Core::upLoadFile(const QString& file_name){
+    CURL *curl = curl_easy_init();
+    FILE *file = fopen(file_name.toStdString().c_str(), "r");
+    // FILE* curl_log = fopen("debug.log", "wb");
+    curl_easy_setopt(curl, CURLOPT_USERPWD, "pxy:16759");
+
+    curl_easy_setopt(curl, CURLOPT_VERBOSE, 1L);//设置显示信息
+    // curl_easy_setopt(curl, CURLOPT_STDERR, (void*)curl_log);
+    curl_easy_setopt(curl, CURLOPT_URL, "ftp://192.168.64.132/temp");//暂时固定
+    curl_easy_setopt(curl, CURLOPT_UPLOAD, 1L);
+    curl_easy_setopt(curl, CURLOPT_READDATA, (void*)file);
+    CURLcode ret = curl_easy_perform(curl);
+    // if (ret == CURLE_OK) {
+    //     std::cout << "OK\n";
+    // }
+    // else {
+    //     std::cout << "error\n";
+    // }
+    //C:\Users\srcty\Desktop\music.txt
+    curl_easy_cleanup(curl);
+    fclose(file);
+    // fclose(curl_log);
+}
+static size_t write_data(void *ptr, size_t size, size_t nmemb, FILE *stream){
+    size_t written = fwrite(ptr, size, nmemb, stream);
+    return written;
+}
+void Core::downLoadFile(const QString& file_name){
+    CURL *curl = curl_easy_init();
+    curl_easy_setopt(curl, CURLOPT_USERPWD, "pxy:16759");
+    curl_easy_setopt(curl, CURLOPT_VERBOSE, 1L);//设置显示信息
+    FILE *file = fopen(file_name.toStdString().c_str(), "wb");
+    
+    curl_easy_setopt(curl, CURLOPT_URL, "ftp://192.168.64.132/temp");
+    curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
+    curl_easy_setopt(curl, CURLOPT_WRITEDATA, file);
+
+    CURLcode ret = curl_easy_perform(curl);
+    curl_easy_cleanup(curl);
+    fclose(file);
+}

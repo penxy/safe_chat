@@ -5,6 +5,7 @@
 #include "Model/TitleBar/title_bar.h"
 #include "Model/ChatBar/chat_page.h"
 #include "Model/Add/add_fd_page.h"
+#include "Model/Ftp/ftp_page.h"
 
 #include "Core/core.h"
 #include "Base/widget_blank.h"
@@ -30,6 +31,10 @@ Widget::Widget(QWidget *parent) : QWidget(parent){
         m_add_fd_page = new AddFdPage(this);
         m_stack_widget.addWidget(m_add_fd_page);
         //Setting...
+
+        //FTP
+        m_ftp_page = new FtpPage(m_core->shared_from_this(), this);
+        m_stack_widget.addWidget(m_ftp_page);
 
         m_stack_widget.setCurrentIndex((int)TypeWid::Default);
     }
@@ -72,6 +77,10 @@ void Widget::SlotTool(ToolPage::TypeBtn type){
         }
         case ToolPage::TypeBtn::Setting:{
             m_stack_widget.setCurrentIndex(static_cast<uint8_t>(TypeWid::Default));
+            break;
+        }
+        case ToolPage::TypeBtn::Ftp:{
+            m_stack_widget.setCurrentIndex(static_cast<uint8_t>(TypeWid::Ftp));
             break;
         }
         default:

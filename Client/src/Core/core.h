@@ -4,6 +4,7 @@
 #include "core_gp.h"
 #include "core_self.h"
 #include "core_recore.h"
+#include "core_ftp.h"
 #include "Service/protocol.h"
 #include "utils/interface.h"
 
@@ -27,6 +28,7 @@ class Core final : public QObject,
                    public CoreGp,
                    public CoreSelf,
                    public CoreRecore,
+                   public CoreFtp,
                    public std::enable_shared_from_this<Core> {
     Q_OBJECT
 public:
@@ -65,11 +67,16 @@ public:
     Type::Status& getStatus() override;
     QString& getPublicKey() override;
 
-    //core
+    //recore
     void loadGroupRecore(int idx) override;
     void saveGroupRecore(int idx) override;
     void loadFriendRecore(int idx) override;
     void saveFriendRecore(int idx) override;
+    
+    //Ftp
+    void upLoadFile(const QString& file_name) override;
+    void downLoadFile(const QString& file_name) override;
+
 
     SIGNAL_IMPL(Core, SigUpdateListFd);//调用sendFriend后，看情况决定是否发送该信号[比如，好友申请被同意]
     SIGNAL_IMPL(Core, SigUpdateListGp);//调用sendGroup后，看情况决定是否发送该信号

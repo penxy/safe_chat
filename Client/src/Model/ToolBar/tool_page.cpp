@@ -20,11 +20,15 @@ ToolPage::ToolPage(QWidget *parent) : QWidget(parent){
     QStringList btn_chat_setting_path_list;
     btn_chat_setting_path_list << ":/Icons/MainWindow/settings.png" << ":/Icons/MainWindow/settings2.png" << ":/Icons/MainWindow/settings3.png";
     btn_setting = new ToolBtn(std::move(btn_chat_setting_path_list), this);
+    QStringList btn_ftp_path_list;
+    btn_ftp_path_list << ":/Icons/MainWindow/file.png" << ":/Icons/MainWindow/file.png" << ":/Icons/MainWindow/file.png";
+    btn_ftp = new ToolBtn(std::move(btn_ftp_path_list), this);
     
     btn_head->setFixedSize(sz::tool_btn);
     btn_add->setFixedSize(sz::tool_btn);
     btn_chat_person->setFixedSize(sz::tool_btn);
     btn_chat_group->setFixedSize(sz::tool_btn);
+    btn_ftp->setFixedSize(sz::tool_btn);
     this->setFixedWidth(sz::tool_wid);
 
     QBoxLayout *layout_main = new QBoxLayout(QBoxLayout::TopToBottom, this);
@@ -35,12 +39,14 @@ ToolPage::ToolPage(QWidget *parent) : QWidget(parent){
     layout_main->addWidget(btn_chat_person);
     layout_main->addWidget(btn_chat_group);
     layout_main->addWidget(btn_setting);
+    layout_main->addWidget(btn_ftp);
     
     connect(btn_head, &ToolBtn::clicked, this, &ToolPage::onClicked);
     connect(btn_add, &ToolBtn::clicked, this, &ToolPage::onClicked);
     connect(btn_chat_person, &ToolBtn::clicked, this, &ToolPage::onClicked);
     connect(btn_chat_group, &ToolBtn::clicked, this, &ToolPage::onClicked);
     connect(btn_setting, &ToolBtn::clicked, this, &ToolPage::onClicked);
+    connect(btn_ftp, &ToolBtn::clicked, this, &ToolPage::onClicked);
       
     this->setStyleSheet("background-color: rgb(168, 173, 168);");
 }
@@ -58,7 +64,9 @@ void ToolPage::onClicked(){
         emit SigTool(TypeBtn::ChatGroup);
     } else if(pButton == btn_setting){
         emit SigTool(TypeBtn::Setting);
-    } else{
+    } else if(pButton == btn_ftp){
+        emit SigTool(TypeBtn::Ftp);
+    }else{
         qDebug() << "clicked btn_other";
     }
 }

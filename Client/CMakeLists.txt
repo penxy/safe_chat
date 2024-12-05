@@ -63,6 +63,7 @@ FILE(GLOB SOURCE
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Model/Card/*.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Model/test/*.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Model/Add/*.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Model/Ftp/*.cpp
     
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Main/*.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Service/*.cpp
@@ -80,6 +81,7 @@ FILE(GLOB SOURCE
 )
 FILE(GLOB LIBS
     ${LIB_PATH}/libgflags${CMAKE_STATIC_LIBRARY_SUFFIX}
+    ${LIB_PATH}/libcurl${CMAKE_SHARED_LIBRARY_SUFFIX}
 )
 
 add_executable(
