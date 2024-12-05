@@ -1,6 +1,11 @@
-build/*
-/demo/build/*
-/demo/bin/*
 .vscode
-/release
-/Client/GUI/resource/mp3
+build/*
+# 文档
+Client/latex
+Client/html
+# 个人的调试文件
+/demo
+# 可执行文件
+release/Linux/bin/*
+release/Windows/bin/*
+
