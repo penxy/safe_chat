@@ -5,7 +5,5 @@ Client/latex
 Client/html
 # 个人的调试文件
 /demo
-# 可执行文件
-release/Linux/bin/*
-release/Windows/bin/*
-
+# 忽略release，因为release过于庞大
+/release
