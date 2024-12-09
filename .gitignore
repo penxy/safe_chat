@@ -5,6 +5,7 @@ Client/latex
 Client/html
 # 个人的调试文件
 /demo
+
 # 忽略release，因为release过于庞大
 /release
 
