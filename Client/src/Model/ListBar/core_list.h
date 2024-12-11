@@ -17,6 +17,9 @@ class CoreList : public QWidget{
 public:
     explicit CoreList(Type::Identity identity, std::shared_ptr<Core> core, QWidget *parent = nullptr);
     ~CoreList() = default;
+
+    //对外接口
+    virtual void UpdateList() = 0;
 signals:
     void SigListChangeIdx(Type::Identity identity, int idx);//这个信号会经过ListPage中转，最终到达ChatMid
 protected:

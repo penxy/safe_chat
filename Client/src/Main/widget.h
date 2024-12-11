@@ -45,8 +45,6 @@ private:
     AddFdPage *m_add_fd_page;
     //ftp
     FtpPage *m_ftp_page;
-    
-
 
     std::shared_ptr<Core> m_core;
 };

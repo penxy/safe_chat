@@ -29,6 +29,9 @@ public:
     //void delList(Type::Identity, int);
 signals:
     void SigListChangeIdx(Type::Identity identity, int idx);
+public slots:
+    void SlotUpdateListFd();
+    void SlotUpdateListGp();
 private:
     QStackedWidget m_stack_wid;
     FdList *m_fd_list;

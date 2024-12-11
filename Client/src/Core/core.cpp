@@ -4,20 +4,43 @@
 #include <unistd.h>
 
 #include "curl/curl.h"
+
+
 /**
  * @def Core
  * @todo 随机生成公钥和id, 以及注册各种信号传递的类型[such as qRegisterMetaType<Type::Json>("Type::Json");]
  */
 Core::Core(std::shared_ptr<Protocol>protocol) : QObject(), CoreFd(), CoreGp(), CoreSelf(), CoreRecore(), m_protocol(protocol){
-    qRegisterMetaType<Type::Identity>("Type::Identity");  
 }
 
 //fd
-bool Core::sendFriend(TypeJson::Send type_send, std::array<QVariant, 4>args){return true;}
+/**
+ * @def Core::sendFriend
+ * @note 所有的Friend, Group都是在这里构建的, args要么第一个参数是下标，要么前几个参数都是构建它们的参数
+ */
+bool Core::sendFriend(TypeJson::Send type_send, std::array<QVariant, 4>args){
+    switch(type_send){
+        case TypeJson::Send::FdAccept: {//std::shared_ptr<Friend>
+            ChatId id = args.at(0).value<ChatId>();
+            QString pix_base64 = args.at(1).value<QString>();
+            QString name = args.at(2).value<QString>();
+            auto f = std::make_shared<Friend>(id, pix_base64, name);
+            m_fd_list.push_back(f->shared_from_this());
+            emit SigUpdateListFd(); //update.
+            break;
+        }   
+        default:{
+            break;
+        }
+    }
+    return true;
+}
 void Core::recvFriend(TypeJson::Recv type_recv, std::array<QVariant, 4>args){}
 
 std::shared_ptr<Friend>& Core::getFriend(int idx){auto _f = std::make_shared<Friend>(); return _f;}
-QList<std::shared_ptr<Friend>>& Core::getFriendList(){QList<std::shared_ptr<Friend>> _f;return _f;}
+QList<std::shared_ptr<Friend>>& Core::getFriendList(){
+    return m_fd_list;
+}
 
 ChatId& Core::getFriendId(int idx){ChatId id = ChatId();return id;}
 std::string& Core::getFriendName(int idx){std::string s;return s;}

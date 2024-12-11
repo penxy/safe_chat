@@ -9,6 +9,7 @@
 
 #include "Core/core.h"
 #include "Base/widget_blank.h"
+#include "utils/tool.h"
 
 Widget::Widget(QWidget *parent) : QWidget(parent){
     m_core = std::make_shared<Core>(nullptr);
@@ -57,6 +58,24 @@ Widget::Widget(QWidget *parent) : QWidget(parent){
     //所有对外信号所在
     // connect(m_list_page, &ListPage::SigListChangeIdx, m_chat_page, &ChatPage::SlotListChangeIdx);
     connect(m_tool_page, &ToolPage::SigTool, this, &Widget::SlotTool);
+    //列表变动，进行更新
+    connect(m_core.get(), &Core::SigUpdateListFd, m_list_page, &ListPage::SlotUpdateListFd);
+    connect(m_core.get(), &Core::SigUpdateListGp, m_list_page, &ListPage::SlotUpdateListGp);
+//测试
+#if 1
+    for(int i=0;i<2;i++){
+        QByteArray b = QByteArray::fromStdString(std::to_string(i));
+        ChatId id = ChatId(b);
+        QPixmap pix(":/Icons/image.png");
+        QString pix_base64 = TOOL.pix2Base64(pix);
+        QString name = "name";
+        std::array<QVariant, 4>args;
+        args[0].setValue(id);
+        args[1].setValue(pix_base64);
+        args[2].setValue(name);
+        m_core->sendFriend(TypeJson::Send::FdAccept, args);
+    }
+#endif
 }
 
 void Widget::SlotTool(ToolPage::TypeBtn type){

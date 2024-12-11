@@ -9,18 +9,7 @@
 ListPage::ListPage(std::shared_ptr<Core> core, QWidget *parent) : QWidget(parent){
     m_fd_list = new FdList(core, this);
     m_gp_list = new GpList(core, this);
-#if 1 
-    //test
-    for(int i=0;i<2;i++){
-        QByteArray b = QByteArray::fromStdString(std::to_string(i));
-        ChatId id = ChatId(b);
-        QPixmap pix(":/Icons/image.png");
-        QString pix_base64 = TOOL.pix2Base64(pix);
-        QString name = "name";
-        auto f = std::make_shared<Friend>(Friend(id, pix_base64, name));
-        f->shared_from_this();
-    }
-#endif
+
     m_stack_wid.addWidget(new QWidget(this));
     m_stack_wid.addWidget(m_fd_list);
     m_stack_wid.addWidget(m_gp_list);
@@ -58,3 +47,12 @@ void ListPage::setPage(TypePage type_page){
 //     else
 //         static_cast<GpList*>(m_stack_wid.widget((int)TypePage::Group))->DelItem(id);
 // }
+
+void ListPage::SlotUpdateListFd(){
+    qDebug() << "update list Fd";
+    m_fd_list->UpdateList();
+}
+void ListPage::SlotUpdateListGp(){
+    qDebug() << "update list Gp";
+    m_gp_list->UpdateList();
+}

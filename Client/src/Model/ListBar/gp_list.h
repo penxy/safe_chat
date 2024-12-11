@@ -13,6 +13,6 @@ class GpList : public CoreList{
 public:
     explicit GpList(std::shared_ptr<Core> core, QWidget *parent = nullptr);
     ~GpList() = default;
-public slots:
-    void SlotUpdateListGp();
+
+    void UpdateList() override;
 };

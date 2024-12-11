@@ -6,10 +6,10 @@ GpList::GpList(std::shared_ptr<Core> core, QWidget *parent) : CoreList(Type::Ide
 }
 
 /**
- * @def SlotUpdateListGp
+ * @def UpdateList
  * @brief 更新列表 
  */
-void GpList::SlotUpdateListGp(){
+void GpList::UpdateList(){
     //delete all items
     int number = m_wid_list.count();
     for (int i = 0; i < number; i++){

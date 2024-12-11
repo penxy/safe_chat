@@ -31,7 +31,7 @@ ToolPage::ToolPage(QWidget *parent) : QWidget(parent){
     btn_ftp->setFixedSize(sz::tool_btn);
     this->setFixedWidth(sz::tool_wid);
 
-    WidgetBlank *widget_btn = new WidgetBlank(this);
+    WidgetBlank *widget_btn = new WidgetBlank;
     QVBoxLayout *layout_btn = new QVBoxLayout(widget_btn);
     layout_btn->setSpacing(2);
     layout_btn->setAlignment(Qt::AlignTop);
@@ -44,6 +44,7 @@ ToolPage::ToolPage(QWidget *parent) : QWidget(parent){
 
     QBoxLayout *layout_main = new QBoxLayout(QBoxLayout::TopToBottom, this);
     layout_main->setContentsMargins(0, 0, 0, 0);
+    layout_main->setAlignment(Qt::AlignTop);
     layout_main->addWidget(widget_btn);
 
     // QBoxLayout *layout_main = new QBoxLayout(QBoxLayout::TopToBottom, this);
@@ -63,7 +64,7 @@ ToolPage::ToolPage(QWidget *parent) : QWidget(parent){
     connect(btn_setting, &ToolBtn::clicked, this, &ToolPage::onClicked);
     connect(btn_ftp, &ToolBtn::clicked, this, &ToolPage::onClicked);
       
-    this->setStyleSheet("QWidget{background-color: black;}");
+    this->setStyleSheet("background-color: black;");
 }
 
 void ToolPage::onClicked(){

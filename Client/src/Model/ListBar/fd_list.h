@@ -13,6 +13,6 @@ class FdList : public CoreList{
 public:
     explicit FdList(std::shared_ptr<Core> core, QWidget *parent = 0);
     ~FdList() = default;
-public slots:
-    void SlotUpdateListFd();
+
+    void UpdateList() override;
 };

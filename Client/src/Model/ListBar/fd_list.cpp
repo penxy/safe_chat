@@ -6,10 +6,10 @@ FdList::FdList(std::shared_ptr<Core> core, QWidget *parent) : CoreList(Type::Ide
 }
 
 /**
- * @def SlotUpdateListFd
+ * @def UpdateList
  * @brief 更新列表 
  */
-void FdList::SlotUpdateListFd(){
+void FdList::UpdateList(){
     //delete all items
     int number = m_wid_list.count();
     for (int i = 0; i < number; i++){

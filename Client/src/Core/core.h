@@ -77,9 +77,12 @@ public:
     void upLoadFile(const QString& file_name) override;
     void downLoadFile(const QString& file_name) override;
 
-
     SIGNAL_IMPL(Core, SigUpdateListFd);//调用sendFriend后，看情况决定是否发送该信号[比如，好友申请被同意]
     SIGNAL_IMPL(Core, SigUpdateListGp);//调用sendGroup后，看情况决定是否发送该信号
 private:
     std::shared_ptr<Protocol> m_protocol;
 };
+
+
+//QVariant define
+Q_DECLARE_METATYPE(ChatId);
