@@ -4,6 +4,8 @@
 
 class QNetworkReply;
 class QNetworkAccessManager;
+class QTimer;
+class QEventLoop;
 
 class HTTPManager : public QObject
 {
@@ -12,10 +14,11 @@ public:
     HTTPManager(QObject *parent = nullptr);
     ~HTTPManager();
     void postData(QString str);
-    void getData();
 private Q_SLOTS:
     void replyFinished(QNetworkReply *rep);
 private:
-    QNetworkAccessManager *manager;
-    QNetworkReply *reply;
+    QNetworkAccessManager *m_manager;
+    QNetworkReply *m_reply;
+    QTimer *m_timer;
+    QEventLoop *m_loop;
 };
