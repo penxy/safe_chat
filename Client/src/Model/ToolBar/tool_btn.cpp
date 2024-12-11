@@ -10,6 +10,9 @@ ToolBtn::ToolBtn(QStringList&& path_list, QWidget *parent) : BtnBase(std::move(p
     setFixedSize(sz::tool_btn);
     setIconSize(sz::tool_btn);
     setStyleSheet("border:none;");
+
+    QString qss = "background-color: rgb(168, 173, 168);";
+    setStyleSheet(qss);
 }
 
 void ToolBtn::mousePressEvent(QMouseEvent *event) {

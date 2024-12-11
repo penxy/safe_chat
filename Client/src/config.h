@@ -64,7 +64,7 @@ namespace sz{
     sc QSize main_window_wid                                             = QSize(1200, 800);
     /* size-widget-tool */
     sc QSize tool_btn                                                    = QSize(50, 50);
-    sc int tool_wid                                                      = 55;
+    sc int tool_wid                                                      = 60;
 
     /* size-friend-list */
     sc QSize fd_list_name                                                = QSize(120, 30);

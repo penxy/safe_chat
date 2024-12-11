@@ -31,15 +31,30 @@ ToolPage::ToolPage(QWidget *parent) : QWidget(parent){
     btn_ftp->setFixedSize(sz::tool_btn);
     this->setFixedWidth(sz::tool_wid);
 
+    WidgetBlank *widget_btn = new WidgetBlank(this);
+    QVBoxLayout *layout_btn = new QVBoxLayout(widget_btn);
+    layout_btn->setSpacing(2);
+    layout_btn->setAlignment(Qt::AlignTop);
+    layout_btn->addWidget(btn_head);
+    layout_btn->addWidget(btn_add);
+    layout_btn->addWidget(btn_chat_person);
+    layout_btn->addWidget(btn_chat_group);
+    layout_btn->addWidget(btn_ftp);
+    layout_btn->addWidget(btn_setting);
+
     QBoxLayout *layout_main = new QBoxLayout(QBoxLayout::TopToBottom, this);
-    layout_main->setSpacing(5);
-    layout_main->setAlignment(Qt::AlignTop);
-    layout_main->addWidget(btn_head);
-    layout_main->addWidget(btn_add);
-    layout_main->addWidget(btn_chat_person);
-    layout_main->addWidget(btn_chat_group);
-    layout_main->addWidget(btn_setting);
-    layout_main->addWidget(btn_ftp);
+    layout_main->setContentsMargins(0, 0, 0, 0);
+    layout_main->addWidget(widget_btn);
+
+    // QBoxLayout *layout_main = new QBoxLayout(QBoxLayout::TopToBottom, this);
+    // layout_main->setSpacing(5);
+    // layout_main->setAlignment(Qt::AlignTop);
+    // layout_main->addWidget(btn_head);
+    // layout_main->addWidget(btn_add);
+    // layout_main->addWidget(btn_chat_person);
+    // layout_main->addWidget(btn_chat_group);
+    // layout_main->addWidget(btn_setting);
+    // layout_main->addWidget(btn_ftp);
     
     connect(btn_head, &ToolBtn::clicked, this, &ToolPage::onClicked);
     connect(btn_add, &ToolBtn::clicked, this, &ToolPage::onClicked);
@@ -48,7 +63,7 @@ ToolPage::ToolPage(QWidget *parent) : QWidget(parent){
     connect(btn_setting, &ToolBtn::clicked, this, &ToolPage::onClicked);
     connect(btn_ftp, &ToolBtn::clicked, this, &ToolPage::onClicked);
       
-    this->setStyleSheet("background-color: rgb(168, 173, 168);");
+    this->setStyleSheet("QWidget{background-color: black;}");
 }
 
 void ToolPage::onClicked(){
