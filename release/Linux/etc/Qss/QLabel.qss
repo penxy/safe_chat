@@ -1,0 +1,8 @@
+QLabel {
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(66, 245, 120);
+    font: bold italic 18px "Microsoft YaHei";
+}

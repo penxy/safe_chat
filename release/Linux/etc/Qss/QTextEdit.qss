@@ -1,0 +1,28 @@
+QTextEdit {
+    border: 0px solid white;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+    color: #dddddd;
+}
+QTextEdit:focus{
+    border: 0px solid white;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #00695c;
+    border-top: 1px solid #dddddd;
+    color: #111111;
+}
+QTextEdit:selected {
+    border: 0px solid white;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #00695c;
+    border-top: 1px solid #dddddd;
+    color: #111111;
+}
+QPushButton{
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 0 10px;
+    margin: 0 10px;
+    background-color: rgb(108, 245, 66);
+}

@@ -5,9 +5,12 @@ Client/latex
 Client/html
 # 个人的调试文件
 /demo
-
-# 忽略release，因为release过于庞大
-/release
+/Client/test.cpp
 
 # 调试时的日志
 debug.log
+
+# 可执行文件
+release/Linux/bin/*
+release/Windows/bin/*
+
