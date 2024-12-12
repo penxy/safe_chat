@@ -1,8 +1,9 @@
 #include "core_sql.h"
 #include <QDebug>
+#include "Setting/setting.h"
 #include "args.h"
 
-CoreSql::CoreSql(){
+CoreSql::CoreSql(std::shared_ptr<Setting> setting) : m_setting(setting){
     if (QSqlDatabase::contains("qt_sql_default_connection"))
     {
         m_database = QSqlDatabase::database("qt_sql_default_connection");
@@ -12,7 +13,7 @@ CoreSql::CoreSql(){
         // 建立和SQlite数据库的连接
         m_database = QSqlDatabase::addDatabase("QSQLITE");
         // 设置数据库文件的名字
-        QString dbPath = QString::fromStdString(FLAGS_base + std::string("/release/main.db"));
+        QString dbPath = QString::fromStdString(FLAGS_base + m_setting->getDb().toStdString());
         m_database.setDatabaseName(dbPath);
     }
 
@@ -40,3 +41,24 @@ CoreSql::~CoreSql(){
     m_database.close();
 }
 
+const std::vector<QVariant>& CoreSql::query(TypeSql type){
+    QSqlQuery query;
+    switch(type){
+        case TypeSql::LoadFd:{
+            QString sql = "xxx";
+            query.exec(sql);
+            db::InfoFd info;
+            while(query.next()){
+                info.idx = query.value(0).toInt();
+                info.name = query.value(1).toString();
+                info.id = ChatId(query.value(2).toString());
+                info.pix64 = query.value(3).toString();
+            }
+            QString sql_msg = "xxx";
+            query.exec(sql_msg);
+            while(query.next()){
+                //...
+            }
+        }   
+    }
+}

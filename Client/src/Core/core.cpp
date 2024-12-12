@@ -4,13 +4,15 @@
 #include <unistd.h>
 
 #include "curl/curl.h"
-
+#include "Data/core_sql.h"
+#include "Setting/setting.h"
+#include "Chat/friend.h"
 
 /**
  * @def Core
  * @todo 随机生成公钥和id, 以及注册各种信号传递的类型[such as qRegisterMetaType<Type::Json>("Type::Json");]
  */
-Core::Core(std::shared_ptr<Protocol>protocol) : QObject(), CoreFd(), CoreGp(), CoreSelf(), CoreRecore(), m_protocol(protocol){
+Core::Core(std::shared_ptr<Protocol>protocol) : QObject(), CoreFd(), CoreGp(), CoreSelf(), CoreHistory(), m_protocol(protocol){
 }
 
 //fd
@@ -37,24 +39,39 @@ bool Core::sendFriend(TypeJson::Send type_send, std::array<QVariant, 4>args){
 }
 void Core::recvFriend(TypeJson::Recv type_recv, std::array<QVariant, 4>args){}
 
-std::shared_ptr<Friend>& Core::getFriend(int idx){auto _f = std::make_shared<Friend>(); return _f;}
+std::shared_ptr<Friend> Core::getFriend(int idx){
+    return m_fd_list.at(idx);
+}
 QList<std::shared_ptr<Friend>>& Core::getFriendList(){
     return m_fd_list;
 }
-
-ChatId& Core::getFriendId(int idx){ChatId id = ChatId();return id;}
-std::string& Core::getFriendName(int idx){std::string s;return s;}
-QPixmap& Core::getFriendPhoto(int idx){QPixmap p;return p;}
+ChatId& Core::getFriendId(int idx){
+    return m_fd_list.at(idx)->getId();
+}
+QString& Core::getFriendName(int idx){
+    return m_fd_list.at(idx)->getName();
+}
+QPixmap& Core::getFriendPhoto(int idx){
+    return m_fd_list.at(idx)->getPix();
+}
 //gp
 bool Core::sendGroup(TypeJson::Send type_send, std::array<QVariant, 4>args){return true;}
 void Core::recvGroup(TypeJson::Recv type_recv, std::array<QVariant, 4>args){}
 
-std::shared_ptr<Group>& Core::getGroup(int idx){auto _f = std::make_shared<Group>(); return _f;}
+std::shared_ptr<Group> Core::getGroup(int idx){
+    return m_gp_list.at(idx);
+}
 QList<std::shared_ptr<Group>>& Core::getGroupList(){QList<std::shared_ptr<Group>> _f;return _f;}
 
-ChatId& Core::getGroupId(int idx){ChatId id = ChatId();return id;}
-std::string& Core::getGroupName(int idx){std::string s;return s;}
-QPixmap& Core::getGroupPhoto(int idx){QPixmap p;return p;}
+ChatId& Core::getGroupId(int idx){
+    return m_gp_list.at(idx)->getId();
+}
+QString& Core::getGroupName(int idx){
+    return m_gp_list.at(idx)->getName();
+}
+QPixmap& Core::getGroupPhoto(int idx){
+    return m_gp_list.at(idx)->getPix();
+}
 //self
 bool Core::setPass(const QString& pass){return true;}
 bool Core::setName(const QString& name){return true;}
@@ -66,10 +83,32 @@ Type::Status& Core::getStatus(){return m_status;}
 QString& Core::getPublicKey() {return m_publicKey;}
 
 //Recore
-void Core::loadGroupRecore(int idx){}
-void Core::saveGroupRecore(int idx){}
-void Core::loadFriendRecore(int idx){}
-void Core::saveFriendRecore(int idx){}
+void Core::initTimeout(){
+    QTimer::connect(&m_timer_save_history, &QTimer::timeout, [this](){
+        QMetaObject::invokeMethod(this, "saveFriendHistory", Qt::QueuedConnection);
+        QMetaObject::invokeMethod(this, "saveGroupHistory", Qt::QueuedConnection);
+    });
+    QTimer::connect(&m_timer_clear_history, &QTimer::timeout, [this](){
+        QMetaObject::invokeMethod(this, "autoClearHistory", Qt::QueuedConnection);
+    });
+    m_timer_save_history.start(TIMEOUT_SAVE_HISTORY);
+    m_timer_clear_history.start(TIMEOUT_CLEAR_HISTORY);
+}
+void Core::loadGroupHistory(int idx){
+
+}
+void Core::saveGroupHistory(int idx){
+
+}
+void Core::loadFriendHistory(int idx){
+
+}
+void Core::saveFriendHistory(int idx){
+
+}
+void Core::autoClearHistory(){
+
+}
 
 //Ftp
 void Core::upLoadFile(const QString& file_name){

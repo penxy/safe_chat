@@ -29,7 +29,7 @@ ChatTop::ChatTop(QWidget *parent) : WidgetBlank(parent){
  * @param name 聊天对象名称
  * @param photo 聊天对象头像
  */
-void ChatTop::SetInfo(const std::string& name, const QPixmap& photo){
-    m_lab_name.setText(QString::fromStdString(name));
+void ChatTop::SetInfo(const QString& name, const QPixmap& photo){
+    m_lab_name.setText(name);
     m_lab_photo.SetPhoto(photo);
 }

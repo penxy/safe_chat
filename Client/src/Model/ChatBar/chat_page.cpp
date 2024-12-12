@@ -43,7 +43,7 @@ ChatPage::ChatPage(std::shared_ptr<Core> core, QWidget *parent) : QWidget(parent
 
 /**
  * @brief ListPage改变，修正ChatPage
- * @attention 还需要聊天记录之类的
+ * @todo 还需要聊天记录之类的
  */
 void ChatPage::SlotListChangeIdx(Type::Identity identity, int idx){
     if(m_type == Type::Identity::Friend){

@@ -7,6 +7,7 @@
 /**
  * @class ChatMid
  * @brief 对话框
+ * @todo 需要定义一个槽，让listpage变动时，它的内容也需要改动
  */
 class ChatMid : public QWidget{
     Q_OBJECT

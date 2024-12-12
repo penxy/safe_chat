@@ -3,7 +3,7 @@
 #include "core_fd.h"
 #include "core_gp.h"
 #include "core_self.h"
-#include "core_recore.h"
+#include "core_history.h"
 #include "core_ftp.h"
 #include "Service/protocol.h"
 #include "utils/interface.h"
@@ -15,6 +15,8 @@
 class Protocol;
 class GpList;
 class FdList;
+class CoreSql;
+class Setting;
 
 /**
  * @class Core
@@ -22,12 +24,13 @@ class FdList;
  * @note 所有的改变操作都不会有多个线程同时操作，因此不需要加锁
  * @todo 完善并实现接口
  * @details 凡是涉及要发送的消息，都需要调用Protocol的enqueueSend()接口;存在信号，当信息改变后，会发送信号改变相应的 ui 类
+ * @attention 根据TypeJson::Send/Recv的枚举值，决定是否操作数据库
  */
 class Core final : public QObject,
                    public CoreFd,
                    public CoreGp,
                    public CoreSelf,
-                   public CoreRecore,
+                   public CoreHistory,
                    public CoreFtp,
                    public std::enable_shared_from_this<Core> {
     Q_OBJECT
@@ -39,22 +42,22 @@ public:
     bool sendFriend(TypeJson::Send type_send, std::array<QVariant, 4>args) override;
     void recvFriend(TypeJson::Recv type_recv, std::array<QVariant, 4>args) override;
     
-    std::shared_ptr<Friend>& getFriend(int idx) override;
+    std::shared_ptr<Friend> getFriend(int idx) override;
     QList<std::shared_ptr<Friend>> &getFriendList() override;
 
     ChatId& getFriendId(int idx) override;
-    std::string& getFriendName(int idx) override;
+    QString& getFriendName(int idx) override;
     QPixmap& getFriendPhoto(int idx) override; 
     
     //gp
     bool sendGroup(TypeJson::Send type_send, std::array<QVariant, 4>args) override;
     void recvGroup(TypeJson::Recv type_recv, std::array<QVariant, 4>args) override;
 
-    std::shared_ptr<Group>& getGroup(int idx) override;
+    std::shared_ptr<Group> getGroup(int idx) override;
     QList<std::shared_ptr<Group>> &getGroupList() override;
 
     ChatId& getGroupId(int idx) override;
-    std::string& getGroupName(int idx) override;
+    QString& getGroupName(int idx) override;
     QPixmap& getGroupPhoto(int idx) override;
 
     //self
@@ -67,11 +70,13 @@ public:
     Type::Status& getStatus() override;
     QString& getPublicKey() override;
 
-    //recore
-    void loadGroupRecore(int idx) override;
-    void saveGroupRecore(int idx) override;
-    void loadFriendRecore(int idx) override;
-    void saveFriendRecore(int idx) override;
+    //History
+    void initTimeout() override;
+    void loadGroupHistory(int idx) override;
+    void saveGroupHistory(int idx) override;
+    void loadFriendHistory(int idx) override;
+    void saveFriendHistory(int idx) override;
+    void autoClearHistory() override;
     
     //Ftp
     void upLoadFile(const QString& file_name) override;
@@ -81,6 +86,8 @@ public:
     SIGNAL_IMPL(Core, SigUpdateListGp);//调用sendGroup后，看情况决定是否发送该信号
 private:
     std::shared_ptr<Protocol> m_protocol;
+    std::shared_ptr<CoreSql> m_sql;
+    std::shared_ptr<Setting> m_setting;
 };
 
 

@@ -1,7 +1,7 @@
 #include <QBuffer>
 #include <QPixmap>
 #include <QFile>
-
+#include <QDebug>
 #include "tool.h"
 #include "args.h"
 
@@ -22,15 +22,15 @@ QString Tool::getQss(TypeQss type){
     std::string file;
     switch (type) {
         case ComBox:{
-            file = FLAGS_qss + "/ComBox.qss";
+            file = FLAGS_base + "/etc/Qss/ComBox.qss";
             break;
         }
         case Label:{
-            file = FLAGS_qss + "/QLabel.qss";
+            file = FLAGS_base + "/etc/Qss/QLabel.qss";
             break;
         }
         case TextEdit:{
-            file = FLAGS_qss + "/QTextEdit.qss";
+            file = FLAGS_base + "/etc/Qss/QTextEdit.qss";
             break;
         }
         default:
@@ -39,6 +39,8 @@ QString Tool::getQss(TypeQss type){
     QFile fileQss(file.c_str());
     if(fileQss.open(QIODevice::ReadOnly)){
         return QString::fromStdString(fileQss.readAll().toStdString());
+    }else{
+        qDebug() << QString("file %1 open fail").arg(file.c_str());
     }
     return QString();
 }

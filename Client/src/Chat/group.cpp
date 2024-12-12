@@ -28,14 +28,21 @@ void Group::setName(const QString& name){
         emit SigNameChanged(m_name);
     }
 }
-ChatId Group::getId() const{
+void Group::setHistory(const QList<ns::History>& history){
+    m_history = history;
+}
+
+ChatId& Group::getId(){
     return m_chat_id;
 }
-QPixmap Group::getPix() const{
+QPixmap& Group::getPix(){
     return m_pix;
 }
-QString Group::getName() const{
+QString& Group::getName(){
     return m_name;
+}
+QList<ns::History>& Group::getHistory(){
+    return m_history;
 }
 
 template <typename T> bool Group::setVal(T& savedVal, T newVal){

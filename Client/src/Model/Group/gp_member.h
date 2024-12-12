@@ -9,10 +9,10 @@ class Friend;
  * @class Member
  * @brief 群成员列表项
  */
-class Member : public QWidget{
+class GpMember : public QWidget{
     Q_OBJECT
 public:
-    explicit Member(std::pair<Friend, Type::Role>& info, QWidget *parent = nullptr);
+    explicit GpMember(ns::Member& info, QWidget *parent = nullptr);
 private:
     QLabel m_lab_photo;
     QLabel m_lab_name;

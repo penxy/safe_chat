@@ -1,13 +1,18 @@
 #include <QApplication>
 #include "Main/main_wid.h"
+#include <assert.h>
+#include <QCommandLineParser>
+#include <QCommandLineOption>
 #include "args.h"
 
 #if 1
 int main(int argc, char *argv[])  
-{  
+{
     google::ParseCommandLineFlags(&argc, &argv, true);
-    // alarm(2);
     QApplication app(argc, argv);
+    QCoreApplication::setApplicationVersion("0.1");
+    QCoreApplication::setApplicationName("safe_chat");
+
     auto time_start = std::chrono::system_clock::now();
     //Card wMain(Type::Info::Identity::Friend, std::static_pointer_cast<void>(std::make_shared<ns::FriendInfo>(ns::FriendInfo(1, "22", QPixmap(":/Icons/image.png")))));
     MainWid wMain;

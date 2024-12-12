@@ -1,7 +1,12 @@
 #include "friend.h"
 #include "utils/tool.h"
-Friend::Friend(){}
 
+/*
+void setHistory(const QList<ns::History>& history) override;
+    QList<ns::History>& getHistory() override;
+
+*/
+Friend::Friend(){}
 Friend::Friend(const ChatId& id, const QString& pix_base64, const QString& name) : m_chat_id(id), m_name(name){
     m_pix.loadFromData(QByteArray::fromBase64(pix_base64.toUtf8()));
     
@@ -30,14 +35,20 @@ void Friend::setName(const QString& name){
         emit SigNameChanged(m_name);
     }
 }
-ChatId Friend::getId() const{
+void Friend::setHistory(const QList<ns::History>& history){
+    m_history = history;
+}
+ChatId& Friend::getId(){
     return m_chat_id;
 }
-QPixmap Friend::getPix() const{
+QPixmap& Friend::getPix(){
     return m_pix;
 }
-QString Friend::getName() const{
+QString& Friend::getName(){
     return m_name;
+}
+QList<ns::History>& Friend::getHistory(){
+    return m_history;
 }
 
 template <typename T> bool Friend::setVal(T& savedVal, T newVal){

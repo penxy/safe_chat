@@ -124,4 +124,39 @@ namespace sz{
 #endif // sc
 }
 
+
+#include <QDateTime>
+#include <memory>
+#include "Chat/chatid.h"
+/**
+ * @namespace ns
+ * @brief the set of struct
+ */
+namespace ns{
+    /**
+     * @struct InfoHistory
+     * @brief 历史消息的记录
+     */
+    struct History{
+        QDateTime date;
+        QString content;
+        ChatId id;//对方的id
+        bool isSelf;//是否是自己发送的
+        History(){}
+        History(QDateTime& t, QString& c, ChatId& id, bool isSelf) : date(t), content(c), id(id), isSelf(isSelf) {}
+    };
+    /**
+     * @struct Member
+     * @brief 群成员
+     */
+    struct Member{
+        ChatId id;
+        QString name;
+        QPixmap pix;
+        Type::Role role;
+        Member(){}
+        Member(ChatId& id, QString& name, QPixmap& pix, Type::Role role) : id(id), name(name), pix(pix), role(role) {}
+    };
+}
+
 #endif // __CONFIG_H__

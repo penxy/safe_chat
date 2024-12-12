@@ -1,8 +1,8 @@
-#include "member.h"
+#include "gp_member.h"
 #include <QHBoxLayout>
 #include "Chat/friend.h"
 
-Member::Member(std::pair<Friend, Type::Role>& info, QWidget *parent) : QWidget(parent) {
+GpMember::GpMember(ns::Member& info, QWidget *parent) : QWidget(parent) {
     {
         m_lab_id.setToolTip("id");
         m_lab_name.setToolTip("name");
@@ -15,10 +15,10 @@ Member::Member(std::pair<Friend, Type::Role>& info, QWidget *parent) : QWidget(p
         m_lab_role.setFixedSize(sz::member_lab);
     }
     {
-        m_lab_id.setText(info.first.getId().toString());
-        m_lab_name.setText(info.first.getName());
-        (info.second == Type::Role::Owner) ? m_lab_role.setText("群主") : ((info.second == Type::Role::Admin ? m_lab_role.setText("管理员") : m_lab_role.setText("成员")));
-        m_lab_photo.setPixmap(info.first.getPix());
+        m_lab_id.setText(info.id.toString());
+        m_lab_name.setText(info.name);
+        (info.role == Type::Role::Owner) ? m_lab_role.setText("群主") : ((info.role == Type::Role::Admin ? m_lab_role.setText("管理员") : m_lab_role.setText("成员")));
+        m_lab_photo.setPixmap(info.pix);
         m_lab_photo.setScaledContents(true);
         m_lab_photo.setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Ignored);
     }
