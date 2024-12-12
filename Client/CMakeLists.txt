@@ -34,12 +34,13 @@ find_package(Qt5Widgets REQUIRED)
 find_package(Qt5 COMPONENTS Svg REQUIRED)
 find_package(Qt5 COMPONENTS Sql REQUIRED)
 find_package(Qt5 COMPONENTS Network REQUIRED)
+find_package(Qt5 COMPONENTS Xml REQUIRED)
 
 list(APPEND CMAKE_AUTOMOC_SEARCH_PATHS "./src/widget/form/rmchatdialog.ui")
 list(APPEND CMAKE_AUTOMOC_SEARCH_PATHS "./src/widget/form/addfrienddialog.ui")
 
-set(INCLUDE_Qt5 ${Qt5Core_INCLUDE_DIRS} ${Qt5Widgets_INCLUDE_DIRS} ${Qt5Svg_INCLUDE_DIRS} ${Qt5Sql_INCLUDE_DIRS} ${Qt5Network_INCLUDE_DIRS})
-set(LIBS_Qt5 ${Qt5Core_LIBRARIESY} ${Qt5Widgets_LIBRARIES} ${Qt5Svg_LIBRARIES} ${Qt5Sql_LIBRARIES} ${Qt5Network_LIBRARIES})
+set(INCLUDE_Qt5 ${Qt5Core_INCLUDE_DIRS} ${Qt5Widgets_INCLUDE_DIRS} ${Qt5Svg_INCLUDE_DIRS} ${Qt5Sql_INCLUDE_DIRS} ${Qt5Network_INCLUDE_DIRS} ${Qt5Xml_INCLUDE_DIRS})
+set(LIBS_Qt5 ${Qt5Core_LIBRARIESY} ${Qt5Widgets_LIBRARIES} ${Qt5Svg_LIBRARIES} ${Qt5Sql_LIBRARIES} ${Qt5Network_LIBRARIES} ${Qt5Xml_LIBRARIES})
 message(STATUS "INCLUDE_Qt5: ${INCLUDE_Qt5}")
 message(STATUS "LIBS_Qt5 : ${LIBS_Qt5}")
 
@@ -71,6 +72,8 @@ FILE(GLOB SOURCE
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Core/*.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Chat/*.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Data/*.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Setting/*.cpp
+    
 
     ${CMAKE_CURRENT_SOURCE_DIR}/src/widget/form/*.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/utils/*.cpp
@@ -80,8 +83,8 @@ FILE(GLOB SOURCE
     ${CMAKE_CURRENT_SOURCE_DIR}/icons.qrc
 )
 FILE(GLOB LIBS
-    ${LIB_PATH}/libgflags${CMAKE_STATIC_LIBRARY_SUFFIX}
     ${LIB_PATH}/libcurl${CMAKE_SHARED_LIBRARY_SUFFIX}
+    ${LIB_PATH}/libgflags${CMAKE_STATIC_LIBRARY_SUFFIX}
 )
 
 add_executable(
