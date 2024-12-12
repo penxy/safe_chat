@@ -39,4 +39,4 @@ if __name__ == "__main__":
     F = Main()
     F.set_cmake(my_cmake_path)
     F.Compile()
-    F.Run("Client", f"--base {os.getcwd()}/release/{__OS__}/ --qss={os.getcwd()}/release/{__OS__}/etc/Qss")
+    F.Run("Client", f"--base {os.getcwd()}/release/{__OS__}")

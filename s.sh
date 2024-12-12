@@ -14,5 +14,5 @@ $cmake -S . -B ./build
 func_check "cmake"
 make -C ./build -j6
 func_check "make"
-
-./release/$__OS__/bin/Client --base $PWD/release/$__OS__/ --qss=$PWD/release/$__OS__/etc/Qss
+# ./release/$__OS__/bin/test
+./release/$__OS__/bin/Client --base $PWD/release/$__OS__
