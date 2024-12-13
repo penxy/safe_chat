@@ -1,0 +1,5 @@
+<map id="FdList" name="FdList">
+<area shape="rect" id="node1" title="好友列表" alt="" coords="14,155,75,181"/>
+<area shape="rect" id="node2" href="$classCoreList.html" title="base class for FdList and GpList" alt="" coords="7,80,82,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,84,32"/>
+</map>

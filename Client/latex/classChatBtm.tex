@@ -1,0 +1,81 @@
+\hypertarget{classChatBtm}{}\doxysection{Chat\+Btm类 参考}
+\label{classChatBtm}\index{ChatBtm@{ChatBtm}}
+
+
+聊天窗口底部, 包括文本框和发送按钮  
+
+
+
+
+{\ttfamily \#include $<$chat\+\_\+btm.\+h$>$}
+
+
+
+类 Chat\+Btm 继承关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{classChatBtm__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Chat\+Btm 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{classChatBtm__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{信号}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classChatBtm_a3d5c8307f5d7b5d2f98a6f05d5f24512}{Sig\+Send\+Msg}} (const Q\+String \&msg)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classChatBtm_a73788d80f2c87c68caceb8ff077bfb13}{Chat\+Btm}} (Q\+Widget $\ast$parent=nullptr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classChatBtm_a43640d10aacec58e2020bcc7d9df442f}{event\+Filter}} (Q\+Object $\ast$obj, Q\+Event $\ast$event) override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+聊天窗口底部, 包括文本框和发送按钮 
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\mbox{\hyperlink{todo__todo000005}{待办事项}}]后续添加其它按钮，如表情包，文件传输等 \end{DoxyRefDesc}
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classChatBtm_a73788d80f2c87c68caceb8ff077bfb13}\label{classChatBtm_a73788d80f2c87c68caceb8ff077bfb13}} 
+\index{ChatBtm@{ChatBtm}!ChatBtm@{ChatBtm}}
+\index{ChatBtm@{ChatBtm}!ChatBtm@{ChatBtm}}
+\doxysubsubsection{\texorpdfstring{ChatBtm()}{ChatBtm()}}
+{\footnotesize\ttfamily Chat\+Btm\+::\+Chat\+Btm (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classChatBtm_a43640d10aacec58e2020bcc7d9df442f}\label{classChatBtm_a43640d10aacec58e2020bcc7d9df442f}} 
+\index{ChatBtm@{ChatBtm}!eventFilter@{eventFilter}}
+\index{eventFilter@{eventFilter}!ChatBtm@{ChatBtm}}
+\doxysubsubsection{\texorpdfstring{eventFilter()}{eventFilter()}}
+{\footnotesize\ttfamily bool Chat\+Btm\+::event\+Filter (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{obj,  }\item[{Q\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classChatBtm_a3d5c8307f5d7b5d2f98a6f05d5f24512}\label{classChatBtm_a3d5c8307f5d7b5d2f98a6f05d5f24512}} 
+\index{ChatBtm@{ChatBtm}!SigSendMsg@{SigSendMsg}}
+\index{SigSendMsg@{SigSendMsg}!ChatBtm@{ChatBtm}}
+\doxysubsubsection{\texorpdfstring{SigSendMsg}{SigSendMsg}}
+{\footnotesize\ttfamily void Chat\+Btm\+::\+Sig\+Send\+Msg (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Model/\+Chat\+Bar/\mbox{\hyperlink{chat__btm_8h}{chat\+\_\+btm.\+h}}\item 
+src/\+Model/\+Chat\+Bar/\mbox{\hyperlink{chat__btm_8cpp}{chat\+\_\+btm.\+cpp}}\end{DoxyCompactItemize}

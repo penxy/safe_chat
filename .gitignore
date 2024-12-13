@@ -1,8 +1,6 @@
 .vscode
 build/*
-# 文档
-Client/latex
-Client/html
+
 # 个人的调试文件
 /demo
 /Client/test.cpp

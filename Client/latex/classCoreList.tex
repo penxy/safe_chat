@@ -1,0 +1,108 @@
+\hypertarget{classCoreList}{}\doxysection{Core\+List类 参考}
+\label{classCoreList}\index{CoreList@{CoreList}}
+
+
+base class for \mbox{\hyperlink{classFdList}{Fd\+List}} and \mbox{\hyperlink{classGpList}{Gp\+List}}  
+
+
+
+
+{\ttfamily \#include $<$core\+\_\+list.\+h$>$}
+
+
+
+类 Core\+List 继承关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classCoreList__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Core\+List 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{classCoreList__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{信号}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classCoreList_acbc71a5668aba7162963bbf5e1fd0ffe}{Sig\+List\+Change\+Idx}} (\mbox{\hyperlink{namespaceType_a9faf80af89bbcb86b6838c2be790d760}{Type\+::\+Identity}} identity, int idx)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCoreList_a350426fee28bfd3534fb61fd5262f978}{Core\+List}} (\mbox{\hyperlink{namespaceType_a9faf80af89bbcb86b6838c2be790d760}{Type\+::\+Identity}} identity, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCore}{Core}} $>$ core, Q\+Widget $\ast$parent=nullptr)
+\item 
+\mbox{\hyperlink{classCoreList_aac579c3bf5f4f5ce572bf1dc913b9b81}{$\sim$\+Core\+List}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classCoreList_a882a8489c66b577437b975375c59a5f7}{Update\+List}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+Q\+List\+Widget \mbox{\hyperlink{classCoreList_a9aa321c8afd5ee5ed08bd0d26e96cd0d}{m\+\_\+wid\+\_\+list}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCore}{Core}} $>$ \mbox{\hyperlink{classCoreList_aee0eda1d7a7d071d5417f7e210791a68}{m\+\_\+core}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+base class for \mbox{\hyperlink{classFdList}{Fd\+List}} and \mbox{\hyperlink{classGpList}{Gp\+List}} 
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classCoreList_a350426fee28bfd3534fb61fd5262f978}\label{classCoreList_a350426fee28bfd3534fb61fd5262f978}} 
+\index{CoreList@{CoreList}!CoreList@{CoreList}}
+\index{CoreList@{CoreList}!CoreList@{CoreList}}
+\doxysubsubsection{\texorpdfstring{CoreList()}{CoreList()}}
+{\footnotesize\ttfamily Core\+List\+::\+Core\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceType_a9faf80af89bbcb86b6838c2be790d760}{Type\+::\+Identity}}}]{identity,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCore}{Core}} $>$}]{core,  }\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classCoreList_aac579c3bf5f4f5ce572bf1dc913b9b81}\label{classCoreList_aac579c3bf5f4f5ce572bf1dc913b9b81}} 
+\index{CoreList@{CoreList}!````~CoreList@{$\sim$CoreList}}
+\index{````~CoreList@{$\sim$CoreList}!CoreList@{CoreList}}
+\doxysubsubsection{\texorpdfstring{$\sim$CoreList()}{~CoreList()}}
+{\footnotesize\ttfamily Core\+List\+::$\sim$\+Core\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classCoreList_acbc71a5668aba7162963bbf5e1fd0ffe}\label{classCoreList_acbc71a5668aba7162963bbf5e1fd0ffe}} 
+\index{CoreList@{CoreList}!SigListChangeIdx@{SigListChangeIdx}}
+\index{SigListChangeIdx@{SigListChangeIdx}!CoreList@{CoreList}}
+\doxysubsubsection{\texorpdfstring{SigListChangeIdx}{SigListChangeIdx}}
+{\footnotesize\ttfamily void Core\+List\+::\+Sig\+List\+Change\+Idx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceType_a9faf80af89bbcb86b6838c2be790d760}{Type\+::\+Identity}}}]{identity,  }\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{classCoreList_a882a8489c66b577437b975375c59a5f7}\label{classCoreList_a882a8489c66b577437b975375c59a5f7}} 
+\index{CoreList@{CoreList}!UpdateList@{UpdateList}}
+\index{UpdateList@{UpdateList}!CoreList@{CoreList}}
+\doxysubsubsection{\texorpdfstring{UpdateList()}{UpdateList()}}
+{\footnotesize\ttfamily virtual void Core\+List\+::\+Update\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classFdList_ae715b06174cb5afb55bcc9dacff7e689}{Fd\+List}} , 以及 \mbox{\hyperlink{classGpList_a5664cdea24a0682111b6788aa0e7b512}{Gp\+List}} 内被实现.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{classCoreList_aee0eda1d7a7d071d5417f7e210791a68}\label{classCoreList_aee0eda1d7a7d071d5417f7e210791a68}} 
+\index{CoreList@{CoreList}!m\_core@{m\_core}}
+\index{m\_core@{m\_core}!CoreList@{CoreList}}
+\doxysubsubsection{\texorpdfstring{m\_core}{m\_core}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classCore}{Core}}$>$ Core\+List\+::m\+\_\+core\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCoreList_a9aa321c8afd5ee5ed08bd0d26e96cd0d}\label{classCoreList_a9aa321c8afd5ee5ed08bd0d26e96cd0d}} 
+\index{CoreList@{CoreList}!m\_wid\_list@{m\_wid\_list}}
+\index{m\_wid\_list@{m\_wid\_list}!CoreList@{CoreList}}
+\doxysubsubsection{\texorpdfstring{m\_wid\_list}{m\_wid\_list}}
+{\footnotesize\ttfamily Q\+List\+Widget Core\+List\+::m\+\_\+wid\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Model/\+List\+Bar/\mbox{\hyperlink{core__list_8h}{core\+\_\+list.\+h}}\item 
+src/\+Model/\+List\+Bar/\mbox{\hyperlink{core__list_8cpp}{core\+\_\+list.\+cpp}}\end{DoxyCompactItemize}

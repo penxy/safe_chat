@@ -1,0 +1,158 @@
+\hypertarget{classBubbleMsg}{}\doxysection{Bubble\+Msg类 参考}
+\label{classBubbleMsg}\index{BubbleMsg@{BubbleMsg}}
+
+
+气泡消息类  
+
+
+
+
+{\ttfamily \#include $<$bubble\+\_\+msg.\+h$>$}
+
+
+
+类 Bubble\+Msg 继承关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classBubbleMsg__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Bubble\+Msg 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classBubbleMsg__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classBubbleMsg_a8f07a33cdd977463093ef6fdfede3988}{User\+\_\+\+Type}} \{ \mbox{\hyperlink{classBubbleMsg_a8f07a33cdd977463093ef6fdfede3988afb20e91821deacf4ddcd0f81478e280a}{User\+\_\+\+System}}, 
+\mbox{\hyperlink{classBubbleMsg_a8f07a33cdd977463093ef6fdfede3988af54155c05d1645483357c3f6eb2794ce}{User\+\_\+\+Me}}, 
+\mbox{\hyperlink{classBubbleMsg_a8f07a33cdd977463093ef6fdfede3988aa8c307ba4e07c3a0b22eb459996e2be5}{User\+\_\+\+She}}, 
+\mbox{\hyperlink{classBubbleMsg_a8f07a33cdd977463093ef6fdfede3988ad907395ff55ce3e15423c723891589bf}{User\+\_\+\+Time}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBubbleMsg_aabec5535657c9830f40b8a1b05da1710}{Bubble\+Msg}} (Q\+Widget $\ast$parent=nullptr)
+\item 
+void \mbox{\hyperlink{classBubbleMsg_ab292346553ed19a5dc76b7b91f200379}{set\+Text\+Success}} ()
+\item 
+void \mbox{\hyperlink{classBubbleMsg_a19bbbcccf0554e44a4bb1e5c9c732e9b}{set\+Text}} (Q\+String \mbox{\hyperlink{classBubbleMsg_ae841dda44c73b044ca5028bbaaa0ddfa}{text}}, Q\+String \mbox{\hyperlink{classBubbleMsg_a16e7e703d79b0ae361a0a31cfddd7dbd}{time}}, \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} all\+Size, \mbox{\hyperlink{classBubbleMsg_a8f07a33cdd977463093ef6fdfede3988}{User\+\_\+\+Type}} \mbox{\hyperlink{classBubbleMsg_a58c3645c88102a75e100371d7341815f}{user\+Type}})
+\item 
+\mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{classBubbleMsg_a97c72f6e5999359bcd0a4d065c9931fb}{get\+Real\+String}} (Q\+String src)
+\item 
+\mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{classBubbleMsg_a65de1eb82ccc91897233e42e52c59c2c}{font\+Rect}} (Q\+String str)
+\item 
+Q\+String \mbox{\hyperlink{classBubbleMsg_ae841dda44c73b044ca5028bbaaa0ddfa}{text}} ()
+\item 
+Q\+String \mbox{\hyperlink{classBubbleMsg_a16e7e703d79b0ae361a0a31cfddd7dbd}{time}} ()
+\item 
+\mbox{\hyperlink{classBubbleMsg_a8f07a33cdd977463093ef6fdfede3988}{User\+\_\+\+Type}} \mbox{\hyperlink{classBubbleMsg_a58c3645c88102a75e100371d7341815f}{user\+Type}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classBubbleMsg_aadd80fc544fe47381b26f6a886cd1a1e}{paint\+Event}} (Q\+Paint\+Event $\ast$event)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+气泡消息类 
+
+\doxysubsection{成员枚举类型说明}
+\mbox{\Hypertarget{classBubbleMsg_a8f07a33cdd977463093ef6fdfede3988}\label{classBubbleMsg_a8f07a33cdd977463093ef6fdfede3988}} 
+\index{BubbleMsg@{BubbleMsg}!User\_Type@{User\_Type}}
+\index{User\_Type@{User\_Type}!BubbleMsg@{BubbleMsg}}
+\doxysubsubsection{\texorpdfstring{User\_Type}{User\_Type}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classBubbleMsg_a8f07a33cdd977463093ef6fdfede3988}{Bubble\+Msg\+::\+User\+\_\+\+Type}}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{User\_System@{User\_System}!BubbleMsg@{BubbleMsg}}\index{BubbleMsg@{BubbleMsg}!User\_System@{User\_System}}}\mbox{\Hypertarget{classBubbleMsg_a8f07a33cdd977463093ef6fdfede3988afb20e91821deacf4ddcd0f81478e280a}\label{classBubbleMsg_a8f07a33cdd977463093ef6fdfede3988afb20e91821deacf4ddcd0f81478e280a}} 
+User\+\_\+\+System&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{User\_Me@{User\_Me}!BubbleMsg@{BubbleMsg}}\index{BubbleMsg@{BubbleMsg}!User\_Me@{User\_Me}}}\mbox{\Hypertarget{classBubbleMsg_a8f07a33cdd977463093ef6fdfede3988af54155c05d1645483357c3f6eb2794ce}\label{classBubbleMsg_a8f07a33cdd977463093ef6fdfede3988af54155c05d1645483357c3f6eb2794ce}} 
+User\+\_\+\+Me&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{User\_She@{User\_She}!BubbleMsg@{BubbleMsg}}\index{BubbleMsg@{BubbleMsg}!User\_She@{User\_She}}}\mbox{\Hypertarget{classBubbleMsg_a8f07a33cdd977463093ef6fdfede3988aa8c307ba4e07c3a0b22eb459996e2be5}\label{classBubbleMsg_a8f07a33cdd977463093ef6fdfede3988aa8c307ba4e07c3a0b22eb459996e2be5}} 
+User\+\_\+\+She&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{User\_Time@{User\_Time}!BubbleMsg@{BubbleMsg}}\index{BubbleMsg@{BubbleMsg}!User\_Time@{User\_Time}}}\mbox{\Hypertarget{classBubbleMsg_a8f07a33cdd977463093ef6fdfede3988ad907395ff55ce3e15423c723891589bf}\label{classBubbleMsg_a8f07a33cdd977463093ef6fdfede3988ad907395ff55ce3e15423c723891589bf}} 
+User\+\_\+\+Time&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classBubbleMsg_aabec5535657c9830f40b8a1b05da1710}\label{classBubbleMsg_aabec5535657c9830f40b8a1b05da1710}} 
+\index{BubbleMsg@{BubbleMsg}!BubbleMsg@{BubbleMsg}}
+\index{BubbleMsg@{BubbleMsg}!BubbleMsg@{BubbleMsg}}
+\doxysubsubsection{\texorpdfstring{BubbleMsg()}{BubbleMsg()}}
+{\footnotesize\ttfamily Bubble\+Msg\+::\+Bubble\+Msg (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classBubbleMsg_a65de1eb82ccc91897233e42e52c59c2c}\label{classBubbleMsg_a65de1eb82ccc91897233e42e52c59c2c}} 
+\index{BubbleMsg@{BubbleMsg}!fontRect@{fontRect}}
+\index{fontRect@{fontRect}!BubbleMsg@{BubbleMsg}}
+\doxysubsubsection{\texorpdfstring{fontRect()}{fontRect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} Bubble\+Msg\+::font\+Rect (\begin{DoxyParamCaption}\item[{Q\+String}]{str }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classBubbleMsg_a97c72f6e5999359bcd0a4d065c9931fb}\label{classBubbleMsg_a97c72f6e5999359bcd0a4d065c9931fb}} 
+\index{BubbleMsg@{BubbleMsg}!getRealString@{getRealString}}
+\index{getRealString@{getRealString}!BubbleMsg@{BubbleMsg}}
+\doxysubsubsection{\texorpdfstring{getRealString()}{getRealString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} Bubble\+Msg\+::get\+Real\+String (\begin{DoxyParamCaption}\item[{Q\+String}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classBubbleMsg_aadd80fc544fe47381b26f6a886cd1a1e}\label{classBubbleMsg_aadd80fc544fe47381b26f6a886cd1a1e}} 
+\index{BubbleMsg@{BubbleMsg}!paintEvent@{paintEvent}}
+\index{paintEvent@{paintEvent}!BubbleMsg@{BubbleMsg}}
+\doxysubsubsection{\texorpdfstring{paintEvent()}{paintEvent()}}
+{\footnotesize\ttfamily void Bubble\+Msg\+::paint\+Event (\begin{DoxyParamCaption}\item[{Q\+Paint\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classBubbleMsg_a19bbbcccf0554e44a4bb1e5c9c732e9b}\label{classBubbleMsg_a19bbbcccf0554e44a4bb1e5c9c732e9b}} 
+\index{BubbleMsg@{BubbleMsg}!setText@{setText}}
+\index{setText@{setText}!BubbleMsg@{BubbleMsg}}
+\doxysubsubsection{\texorpdfstring{setText()}{setText()}}
+{\footnotesize\ttfamily void Bubble\+Msg\+::set\+Text (\begin{DoxyParamCaption}\item[{Q\+String}]{text,  }\item[{Q\+String}]{time,  }\item[{\mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}}}]{all\+Size,  }\item[{\mbox{\hyperlink{classBubbleMsg_a8f07a33cdd977463093ef6fdfede3988}{Bubble\+Msg\+::\+User\+\_\+\+Type}}}]{user\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classBubbleMsg_ab292346553ed19a5dc76b7b91f200379}\label{classBubbleMsg_ab292346553ed19a5dc76b7b91f200379}} 
+\index{BubbleMsg@{BubbleMsg}!setTextSuccess@{setTextSuccess}}
+\index{setTextSuccess@{setTextSuccess}!BubbleMsg@{BubbleMsg}}
+\doxysubsubsection{\texorpdfstring{setTextSuccess()}{setTextSuccess()}}
+{\footnotesize\ttfamily void Bubble\+Msg\+::set\+Text\+Success (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classBubbleMsg_ae841dda44c73b044ca5028bbaaa0ddfa}\label{classBubbleMsg_ae841dda44c73b044ca5028bbaaa0ddfa}} 
+\index{BubbleMsg@{BubbleMsg}!text@{text}}
+\index{text@{text}!BubbleMsg@{BubbleMsg}}
+\doxysubsubsection{\texorpdfstring{text()}{text()}}
+{\footnotesize\ttfamily Q\+String Bubble\+Msg\+::text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBubbleMsg_a16e7e703d79b0ae361a0a31cfddd7dbd}\label{classBubbleMsg_a16e7e703d79b0ae361a0a31cfddd7dbd}} 
+\index{BubbleMsg@{BubbleMsg}!time@{time}}
+\index{time@{time}!BubbleMsg@{BubbleMsg}}
+\doxysubsubsection{\texorpdfstring{time()}{time()}}
+{\footnotesize\ttfamily Q\+String Bubble\+Msg\+::time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBubbleMsg_a58c3645c88102a75e100371d7341815f}\label{classBubbleMsg_a58c3645c88102a75e100371d7341815f}} 
+\index{BubbleMsg@{BubbleMsg}!userType@{userType}}
+\index{userType@{userType}!BubbleMsg@{BubbleMsg}}
+\doxysubsubsection{\texorpdfstring{userType()}{userType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBubbleMsg_a8f07a33cdd977463093ef6fdfede3988}{User\+\_\+\+Type}} Bubble\+Msg\+::user\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Model/\+Chat\+Bar/bubble/\mbox{\hyperlink{bubble__msg_8h}{bubble\+\_\+msg.\+h}}\item 
+src/\+Model/\+Chat\+Bar/bubble/\mbox{\hyperlink{bubble__msg_8cpp}{bubble\+\_\+msg.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>qt_test: src/Model/ListBar/fd_list.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">qt_test
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_32e188284d239da8bb14ec1dabb0c35f.html">Model</a></li><li class="navelem"><a class="el" href="dir_de61c8a591248a737c6ec518ce74ea93.html">ListBar</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">fd_list.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="fd__list_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="core__list_8h.html">core_list.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">class </span><a class="code" href="classCore.html">Core</a>;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classFdList.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classFdList.html">FdList</a> : <span class="keyword">public</span> <a class="code" href="classCoreList.html">CoreList</a>{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classFdList.html#a183533afb3c3036d8d319441bfbcdd02">FdList</a>(std::shared_ptr&lt;Core&gt; core, QWidget *parent = 0);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classFdList.html#a5fac8c743c0795cd5eadcf4b6f55f242">~FdList</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFdList.html#ae715b06174cb5afb55bcc9dacff7e689">UpdateList</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassCoreList_html"><div class="ttname"><a href="classCoreList.html">CoreList</a></div><div class="ttdoc">base class for FdList and GpList</div><div class="ttdef"><b>Definition:</b> core_list.h:15</div></div>
+<div class="ttc" id="acore__list_8h_html"><div class="ttname"><a href="core__list_8h.html">core_list.h</a></div></div>
+<div class="ttc" id="aclassFdList_html_ae715b06174cb5afb55bcc9dacff7e689"><div class="ttname"><a href="classFdList.html#ae715b06174cb5afb55bcc9dacff7e689">FdList::UpdateList</a></div><div class="ttdeci">void UpdateList() override</div><div class="ttdef"><b>Definition:</b> fd_list.cpp:12</div></div>
+<div class="ttc" id="aclassFdList_html_a183533afb3c3036d8d319441bfbcdd02"><div class="ttname"><a href="classFdList.html#a183533afb3c3036d8d319441bfbcdd02">FdList::FdList</a></div><div class="ttdeci">FdList(std::shared_ptr&lt; Core &gt; core, QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> fd_list.cpp:5</div></div>
+<div class="ttc" id="aclassFdList_html_a5fac8c743c0795cd5eadcf4b6f55f242"><div class="ttname"><a href="classFdList.html#a5fac8c743c0795cd5eadcf4b6f55f242">FdList::~FdList</a></div><div class="ttdeci">~FdList()=default</div></div>
+<div class="ttc" id="aclassCore_html"><div class="ttname"><a href="classCore.html">Core</a></div><div class="ttdoc">界面要操作数据的所有接口所在</div><div class="ttdef"><b>Definition:</b> core.h:29</div></div>
+<div class="ttc" id="aclassFdList_html"><div class="ttname"><a href="classFdList.html">FdList</a></div><div class="ttdoc">好友列表</div><div class="ttdef"><b>Definition:</b> fd_list.h:11</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

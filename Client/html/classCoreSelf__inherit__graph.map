@@ -1,0 +1,4 @@
+<map id="CoreSelf" name="CoreSelf">
+<area shape="rect" id="node1" title="个人信息保存与修改" alt="" coords="5,5,83,32"/>
+<area shape="rect" id="node2" href="$classCore.html" title="界面要操作数据的所有接口所在" alt="" coords="18,80,70,107"/>
+</map>

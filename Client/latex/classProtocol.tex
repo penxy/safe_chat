@@ -1,0 +1,81 @@
+\hypertarget{classProtocol}{}\doxysection{Protocol类 参考}
+\label{classProtocol}\index{Protocol@{Protocol}}
+
+
+生成json并发送，接收json并解析  
+
+
+
+
+{\ttfamily \#include $<$protocol.\+h$>$}
+
+
+
+类 Protocol 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{classProtocol__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Protocol 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{classProtocol__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classProtocol_a30ac6771054b527f22f060de47347080}{Protocol}} (Q\+Object $\ast$parent)
+\item 
+\mbox{\hyperlink{classProtocol_ae78a2bc284f521aa47f3fd7718e23ead}{$\sim$\+Protocol}} ()
+\item 
+void \mbox{\hyperlink{classProtocol_a9a9f0eb4a5dc4a57d3222cd6a6512364}{init}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCore}{Core}} $>$core, const char $\ast$host, int port)
+\item 
+void \mbox{\hyperlink{classProtocol_a3a26dfce0b31f4044e372df746199349}{create\+\_\+and\+\_\+send}} (\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ff}{Type\+Json\+::\+Send}} type, void $\ast$data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+生成json并发送，接收json并解析 
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classProtocol_a30ac6771054b527f22f060de47347080}\label{classProtocol_a30ac6771054b527f22f060de47347080}} 
+\index{Protocol@{Protocol}!Protocol@{Protocol}}
+\index{Protocol@{Protocol}!Protocol@{Protocol}}
+\doxysubsubsection{\texorpdfstring{Protocol()}{Protocol()}}
+{\footnotesize\ttfamily Protocol\+::\+Protocol (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProtocol_ae78a2bc284f521aa47f3fd7718e23ead}\label{classProtocol_ae78a2bc284f521aa47f3fd7718e23ead}} 
+\index{Protocol@{Protocol}!````~Protocol@{$\sim$Protocol}}
+\index{````~Protocol@{$\sim$Protocol}!Protocol@{Protocol}}
+\doxysubsubsection{\texorpdfstring{$\sim$Protocol()}{~Protocol()}}
+{\footnotesize\ttfamily Protocol\+::$\sim$\+Protocol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classProtocol_a3a26dfce0b31f4044e372df746199349}\label{classProtocol_a3a26dfce0b31f4044e372df746199349}} 
+\index{Protocol@{Protocol}!create\_and\_send@{create\_and\_send}}
+\index{create\_and\_send@{create\_and\_send}!Protocol@{Protocol}}
+\doxysubsubsection{\texorpdfstring{create\_and\_send()}{create\_and\_send()}}
+{\footnotesize\ttfamily void Protocol\+::create\+\_\+and\+\_\+send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ff}{Type\+Json\+::\+Send}}}]{type,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProtocol_a9a9f0eb4a5dc4a57d3222cd6a6512364}\label{classProtocol_a9a9f0eb4a5dc4a57d3222cd6a6512364}} 
+\index{Protocol@{Protocol}!init@{init}}
+\index{init@{init}!Protocol@{Protocol}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Protocol\+::init (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCore}{Core}} $>$}]{core,  }\item[{const char $\ast$}]{host,  }\item[{int}]{port }\end{DoxyParamCaption})}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Service/\mbox{\hyperlink{protocol_8h}{protocol.\+h}}\item 
+src/\+Service/\mbox{\hyperlink{protocol_8cpp}{protocol.\+cpp}}\end{DoxyCompactItemize}

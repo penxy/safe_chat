@@ -1,0 +1,87 @@
+\hypertarget{interface_8h}{}\doxysection{src/utils/interface.h 文件参考}
+\label{interface_8h}\index{src/utils/interface.h@{src/utils/interface.h}}
+{\ttfamily \#include $<$Q\+Meta\+Object$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+interface.\+h 的引用(Include)关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{interface_8h__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{interface_8h_a4e6b4d425d74bdf54f5fb4bc595e88a6}{D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+I\+G\+N\+AL}}(name, ...)
+\begin{DoxyCompactList}\small\item\em Decalre signal-\/like method. Should be used in interface \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{interface_8h_a4e6b4d425d74bdf54f5fb4bc595e88a6}{D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+I\+G\+N\+AL}}(name, ...)
+\begin{DoxyCompactList}\small\item\em Decalre signal-\/like method. Should be used in interface \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{interface_8h_aeb885ebbef446844faa408ce5ed67ca1}{S\+I\+G\+N\+A\+L\+\_\+\+I\+M\+PL}}(classname,  name, ...)
+\begin{DoxyCompactList}\small\item\em Declare signal and implement signal-\/like method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Qt doesn\textquotesingle{}t support Q\+Object multiple inheritance. But for declaring signals in class, it should be inherit Q\+Object. To avoid this issue, interface can provide some pure virtual methods, which allow to connect to some signal.
+
+This file provides macros to make signals declaring easly. With this macros signal-\/like method will be declared and implemented in one line each. 
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{interface_8h_a4e6b4d425d74bdf54f5fb4bc595e88a6}\label{interface_8h_a4e6b4d425d74bdf54f5fb4bc595e88a6}} 
+\index{interface.h@{interface.h}!DECLARE\_SIGNAL@{DECLARE\_SIGNAL}}
+\index{DECLARE\_SIGNAL@{DECLARE\_SIGNAL}!interface.h@{interface.h}}
+\doxysubsubsection{\texorpdfstring{DECLARE\_SIGNAL}{DECLARE\_SIGNAL}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+I\+G\+N\+AL(\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keyword}{using} Slot\_\#\#name = std::function<void (\_\_VA\_ARGS\_\_)>; \(\backslash\)}
+\DoxyCodeLine{    virtual QMetaObject::Connection connectTo\_\#\#name(QObject *receiver, Slot\_\#\#name slot) \textcolor{keyword}{const} = 0}
+
+\end{DoxyCode}
+
+
+Decalre signal-\/like method. Should be used in interface 
+
+\mbox{\Hypertarget{interface_8h_a4e6b4d425d74bdf54f5fb4bc595e88a6}\label{interface_8h_a4e6b4d425d74bdf54f5fb4bc595e88a6}} 
+\index{interface.h@{interface.h}!DECLARE\_SIGNAL@{DECLARE\_SIGNAL}}
+\index{DECLARE\_SIGNAL@{DECLARE\_SIGNAL}!interface.h@{interface.h}}
+\doxysubsubsection{\texorpdfstring{DECLARE\_SIGNAL}{DECLARE\_SIGNAL}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+I\+G\+N\+AL(\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keyword}{using} Slot\_\#\#name = std::function<void (\_\_VA\_ARGS\_\_)>; \(\backslash\)}
+\DoxyCodeLine{    virtual QMetaObject::Connection connectTo\_\#\#name(QObject *receiver, Slot\_\#\#name slot) \textcolor{keyword}{const} = 0}
+
+\end{DoxyCode}
+
+
+Decalre signal-\/like method. Should be used in interface 
+
+\mbox{\Hypertarget{interface_8h_aeb885ebbef446844faa408ce5ed67ca1}\label{interface_8h_aeb885ebbef446844faa408ce5ed67ca1}} 
+\index{interface.h@{interface.h}!SIGNAL\_IMPL@{SIGNAL\_IMPL}}
+\index{SIGNAL\_IMPL@{SIGNAL\_IMPL}!interface.h@{interface.h}}
+\doxysubsubsection{\texorpdfstring{SIGNAL\_IMPL}{SIGNAL\_IMPL}}
+{\footnotesize\ttfamily \#define S\+I\+G\+N\+A\+L\+\_\+\+I\+M\+PL(\begin{DoxyParamCaption}\item[{}]{classname,  }\item[{}]{name,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keyword}{using} Slot\_\#\#name = std::function<void (\_\_VA\_ARGS\_\_)>; \(\backslash\)}
+\DoxyCodeLine{    Q\_SIGNAL \textcolor{keywordtype}{void} name(\_\_VA\_ARGS\_\_); \(\backslash\)}
+\DoxyCodeLine{    QMetaObject::Connection connectTo\_\#\#name(QObject *receiver, Slot\_\#\#name slot)\textcolor{keyword}{ const override }\{ \(\backslash\)}
+\DoxyCodeLine{        return connect(\textcolor{keyword}{this}, \&classname::name, receiver, slot); \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Declare signal and implement signal-\/like method. 
+

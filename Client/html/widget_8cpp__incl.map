@@ -1,0 +1,52 @@
+<map id="src/Main/widget.cpp" name="src/Main/widget.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="610,5,762,32"/>
+<area shape="rect" id="node2" href="$widget_8h.html" title=" " alt="" coords="388,80,467,107"/>
+<area shape="rect" id="node15" title=" " alt="" coords="153,80,264,107"/>
+<area shape="rect" id="node16" title=" " alt="" coords="289,80,363,107"/>
+<area shape="rect" id="node17" href="$list__page_8h.html" title=" " alt="" coords="5,244,140,285"/>
+<area shape="rect" id="node18" href="$title__bar_8h.html" title=" " alt="" coords="883,155,1030,196"/>
+<area shape="rect" id="node19" href="$chat__page_8h.html" title=" " alt="" coords="993,244,1144,285"/>
+<area shape="rect" id="node20" href="$add__fd__page_8h.html" title=" " alt="" coords="485,162,676,189"/>
+<area shape="rect" id="node25" href="$ftp__page_8h.html" title=" " alt="" coords="700,162,859,189"/>
+<area shape="rect" id="node27" href="$core_8h.html" title=" " alt="" coords="2247,80,2343,107"/>
+<area shape="rect" id="node47" href="$widget__blank_8h.html" title=" " alt="" coords="491,80,649,107"/>
+<area shape="rect" id="node48" href="$tool_8h.html" title=" " alt="" coords="2622,80,2713,107"/>
+<area shape="rect" id="node3" href="$config_8h.html" title=" " alt="" coords="1531,333,1604,360"/>
+<area shape="rect" id="node9" title=" " alt="" coords="1697,483,1774,509"/>
+<area shape="rect" id="node12" href="$tool__page_8h.html" title="最左侧的工具栏页面" alt="" coords="267,155,409,196"/>
+<area shape="rect" id="node14" title=" " alt="" coords="87,333,216,360"/>
+<area shape="rect" id="node4" title=" " alt="" coords="1639,408,1698,435"/>
+<area shape="rect" id="node5" title=" " alt="" coords="1325,408,1399,435"/>
+<area shape="rect" id="node6" title=" " alt="" coords="1953,408,2035,435"/>
+<area shape="rect" id="node7" title=" " alt="" coords="1424,408,1495,435"/>
+<area shape="rect" id="node8" title=" " alt="" coords="1519,408,1615,435"/>
+<area shape="rect" id="node10" href="$chatid_8h.html" title=" " alt="" coords="2241,408,2349,435"/>
+<area shape="rect" id="node11" title=" " alt="" coords="2399,483,2469,509"/>
+<area shape="rect" id="node13" title=" " alt="" coords="375,251,453,278"/>
+<area shape="rect" id="node21" title=" " alt="" coords="717,251,783,278"/>
+<area shape="rect" id="node22" title=" " alt="" coords="477,251,561,278"/>
+<area shape="rect" id="node23" title=" " alt="" coords="267,251,351,278"/>
+<area shape="rect" id="node24" title=" " alt="" coords="586,251,693,278"/>
+<area shape="rect" id="node26" title=" " alt="" coords="859,251,969,278"/>
+<area shape="rect" id="node28" href="$core__fd_8h.html" title=" " alt="" coords="1706,162,1789,189"/>
+<area shape="rect" id="node33" href="$interface_8h.html" title=" " alt="" coords="1168,251,1292,278"/>
+<area shape="rect" id="node36" href="$core__gp_8h.html" title=" " alt="" coords="1975,162,2061,189"/>
+<area shape="rect" id="node38" href="$core__self_8h.html" title=" " alt="" coords="2249,251,2341,278"/>
+<area shape="rect" id="node39" href="$core__history_8h.html" title=" " alt="" coords="1317,251,1429,278"/>
+<area shape="rect" id="node41" href="$core__ftp_8h.html" title=" " alt="" coords="2624,333,2711,360"/>
+<area shape="rect" id="node42" href="$protocol_8h.html" title=" " alt="" coords="2530,162,2669,189"/>
+<area shape="rect" id="node43" title=" " alt="" coords="2713,251,2787,278"/>
+<area shape="rect" id="node46" title=" " alt="" coords="2399,162,2506,189"/>
+<area shape="rect" id="node29" title=" " alt="" coords="1811,251,1865,278"/>
+<area shape="rect" id="node30" title=" " alt="" coords="1605,251,1684,278"/>
+<area shape="rect" id="node31" href="$const__json_8h.html" title=" " alt="" coords="1941,251,2095,278"/>
+<area shape="rect" id="node32" href="$friend_8h.html" title=" " alt="" coords="1858,333,1965,360"/>
+<area shape="rect" id="node34" title=" " alt="" coords="1169,333,1275,360"/>
+<area shape="rect" id="node35" title=" " alt="" coords="1057,333,1144,360"/>
+<area shape="rect" id="node37" href="$group_8h.html" title=" " alt="" coords="2120,251,2225,278"/>
+<area shape="rect" id="node40" title=" " alt="" coords="1351,333,1413,360"/>
+<area shape="rect" id="node44" title=" " alt="" coords="2467,251,2569,278"/>
+<area shape="rect" id="node45" title=" " alt="" coords="2593,251,2689,278"/>
+<area shape="rect" id="node49" href="$single__model_8h.html" title=" " alt="" coords="2863,162,2984,189"/>
+<area shape="rect" id="node50" title=" " alt="" coords="2877,251,2969,278"/>
+</map>

@@ -1,0 +1,183 @@
+\hypertarget{classCoreGp}{}\doxysection{Core\+Gp类 参考}
+\label{classCoreGp}\index{CoreGp@{CoreGp}}
+
+
+{\ttfamily \#include $<$core\+\_\+gp.\+h$>$}
+
+
+
+类 Core\+Gp 继承关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=133pt]{classCoreGp__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCoreGp_a736fbde0ada17576eff39442a6f3bdad}{Core\+Gp}} ()=default
+\item 
+\mbox{\hyperlink{classCoreGp_a79b09c7c4f5653cbb4de2f2c44434aea}{$\sim$\+Core\+Gp}} ()=default
+\item 
+\mbox{\hyperlink{classCoreGp_a44e51bf67d694e155e6344ae81a3a50a}{Core\+Gp}} (const \mbox{\hyperlink{classCoreGp}{Core\+Gp}} \&)=default
+\item 
+\mbox{\hyperlink{classCoreGp}{Core\+Gp}} \& \mbox{\hyperlink{classCoreGp_a1ba9fdec279a05b58845f303e4430f9b}{operator=}} (const \mbox{\hyperlink{classCoreGp}{Core\+Gp}} \&)=default
+\item 
+\mbox{\hyperlink{classCoreGp_af099534f01e2b9efa1ebf2a3d13410d2}{Core\+Gp}} (\mbox{\hyperlink{classCoreGp}{Core\+Gp}} \&\&)=default
+\item 
+\mbox{\hyperlink{classCoreGp}{Core\+Gp}} \& \mbox{\hyperlink{classCoreGp_a4f934be39e4ce8cc89c40d7a2127a1df}{operator=}} (\mbox{\hyperlink{classCoreGp}{Core\+Gp}} \&\&)=default
+\item 
+virtual bool \mbox{\hyperlink{classCoreGp_a34d2329ce3313b5361cd7b4bc79dafde}{send\+Group}} (\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ff}{Type\+Json\+::\+Send}} type\+\_\+send, std\+::array$<$ Q\+Variant, 4 $>$args)=0
+\item 
+virtual void \mbox{\hyperlink{classCoreGp_a742d4edca3b68439ab1c7c0ee0302095}{recv\+Group}} (\mbox{\hyperlink{namespaceTypeJson_a20e89671a216d5c8cc31a485634ea4c0}{Type\+Json\+::\+Recv}} type\+\_\+recv, std\+::array$<$ Q\+Variant, 4 $>$args)=0
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGroup}{Group}} $>$ \mbox{\hyperlink{classCoreGp_afa813997da4da0a77cd9bc65c6866290}{get\+Group}} (int idx)=0
+\item 
+virtual Q\+List$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGroup}{Group}} $>$ $>$ \& \mbox{\hyperlink{classCoreGp_abd31a60c997025f906329d2f58e74dce}{get\+Group\+List}} ()=0
+\item 
+virtual \mbox{\hyperlink{classChatId}{Chat\+Id}} \& \mbox{\hyperlink{classCoreGp_aa239ec427795d2bfb33e10c74adc99f7}{get\+Group\+Id}} (int idx)=0
+\item 
+virtual Q\+String \& \mbox{\hyperlink{classCoreGp_af01e6bb36b65088fb84d36a4f2831a25}{get\+Group\+Name}} (int idx)=0
+\item 
+virtual Q\+Pixmap \& \mbox{\hyperlink{classCoreGp_a08358d930ec7758f98bb2ad9ee4a5a1f}{get\+Group\+Photo}} (int idx)=0
+\item 
+\mbox{\hyperlink{classCoreGp_aa8e40303a03e9cecb650c51210085bc0}{D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+I\+G\+N\+AL}} (Sig\+Update\+List\+Gp)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+Q\+List$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGroup}{Group}} $>$ $>$ \mbox{\hyperlink{classCoreGp_a498c0df541e5e11ac1e579ed963973e1}{m\+\_\+gp\+\_\+list}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classCoreGp_a736fbde0ada17576eff39442a6f3bdad}\label{classCoreGp_a736fbde0ada17576eff39442a6f3bdad}} 
+\index{CoreGp@{CoreGp}!CoreGp@{CoreGp}}
+\index{CoreGp@{CoreGp}!CoreGp@{CoreGp}}
+\doxysubsubsection{\texorpdfstring{CoreGp()}{CoreGp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Core\+Gp\+::\+Core\+Gp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classCoreGp_a79b09c7c4f5653cbb4de2f2c44434aea}\label{classCoreGp_a79b09c7c4f5653cbb4de2f2c44434aea}} 
+\index{CoreGp@{CoreGp}!````~CoreGp@{$\sim$CoreGp}}
+\index{````~CoreGp@{$\sim$CoreGp}!CoreGp@{CoreGp}}
+\doxysubsubsection{\texorpdfstring{$\sim$CoreGp()}{~CoreGp()}}
+{\footnotesize\ttfamily Core\+Gp\+::$\sim$\+Core\+Gp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classCoreGp_a44e51bf67d694e155e6344ae81a3a50a}\label{classCoreGp_a44e51bf67d694e155e6344ae81a3a50a}} 
+\index{CoreGp@{CoreGp}!CoreGp@{CoreGp}}
+\index{CoreGp@{CoreGp}!CoreGp@{CoreGp}}
+\doxysubsubsection{\texorpdfstring{CoreGp()}{CoreGp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Core\+Gp\+::\+Core\+Gp (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCoreGp}{Core\+Gp}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classCoreGp_af099534f01e2b9efa1ebf2a3d13410d2}\label{classCoreGp_af099534f01e2b9efa1ebf2a3d13410d2}} 
+\index{CoreGp@{CoreGp}!CoreGp@{CoreGp}}
+\index{CoreGp@{CoreGp}!CoreGp@{CoreGp}}
+\doxysubsubsection{\texorpdfstring{CoreGp()}{CoreGp()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Core\+Gp\+::\+Core\+Gp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCoreGp}{Core\+Gp}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classCoreGp_aa8e40303a03e9cecb650c51210085bc0}\label{classCoreGp_aa8e40303a03e9cecb650c51210085bc0}} 
+\index{CoreGp@{CoreGp}!DECLARE\_SIGNAL@{DECLARE\_SIGNAL}}
+\index{DECLARE\_SIGNAL@{DECLARE\_SIGNAL}!CoreGp@{CoreGp}}
+\doxysubsubsection{\texorpdfstring{DECLARE\_SIGNAL()}{DECLARE\_SIGNAL()}}
+{\footnotesize\ttfamily Core\+Gp\+::\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+I\+G\+N\+AL (\begin{DoxyParamCaption}\item[{Sig\+Update\+List\+Gp}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCoreGp_afa813997da4da0a77cd9bc65c6866290}\label{classCoreGp_afa813997da4da0a77cd9bc65c6866290}} 
+\index{CoreGp@{CoreGp}!getGroup@{getGroup}}
+\index{getGroup@{getGroup}!CoreGp@{CoreGp}}
+\doxysubsubsection{\texorpdfstring{getGroup()}{getGroup()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classGroup}{Group}}$>$ Core\+Gp\+::get\+Group (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classCore_a0a65dcaa97e4de69cfc9d14310dec2b5}{Core}} 内被实现.
+
+\mbox{\Hypertarget{classCoreGp_aa239ec427795d2bfb33e10c74adc99f7}\label{classCoreGp_aa239ec427795d2bfb33e10c74adc99f7}} 
+\index{CoreGp@{CoreGp}!getGroupId@{getGroupId}}
+\index{getGroupId@{getGroupId}!CoreGp@{CoreGp}}
+\doxysubsubsection{\texorpdfstring{getGroupId()}{getGroupId()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classChatId}{Chat\+Id}}\& Core\+Gp\+::get\+Group\+Id (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classCore_a405a53a985899f998aee38802ccc3d6f}{Core}} 内被实现.
+
+\mbox{\Hypertarget{classCoreGp_abd31a60c997025f906329d2f58e74dce}\label{classCoreGp_abd31a60c997025f906329d2f58e74dce}} 
+\index{CoreGp@{CoreGp}!getGroupList@{getGroupList}}
+\index{getGroupList@{getGroupList}!CoreGp@{CoreGp}}
+\doxysubsubsection{\texorpdfstring{getGroupList()}{getGroupList()}}
+{\footnotesize\ttfamily virtual Q\+List$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classGroup}{Group}}$>$ $>$\& Core\+Gp\+::get\+Group\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classCore_a656ab42a0803ca139fec073ab2455d2e}{Core}} 内被实现.
+
+\mbox{\Hypertarget{classCoreGp_af01e6bb36b65088fb84d36a4f2831a25}\label{classCoreGp_af01e6bb36b65088fb84d36a4f2831a25}} 
+\index{CoreGp@{CoreGp}!getGroupName@{getGroupName}}
+\index{getGroupName@{getGroupName}!CoreGp@{CoreGp}}
+\doxysubsubsection{\texorpdfstring{getGroupName()}{getGroupName()}}
+{\footnotesize\ttfamily virtual Q\+String\& Core\+Gp\+::get\+Group\+Name (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classCore_ae8f1e7117b02fff594ce8b7a8ee72e60}{Core}} 内被实现.
+
+\mbox{\Hypertarget{classCoreGp_a08358d930ec7758f98bb2ad9ee4a5a1f}\label{classCoreGp_a08358d930ec7758f98bb2ad9ee4a5a1f}} 
+\index{CoreGp@{CoreGp}!getGroupPhoto@{getGroupPhoto}}
+\index{getGroupPhoto@{getGroupPhoto}!CoreGp@{CoreGp}}
+\doxysubsubsection{\texorpdfstring{getGroupPhoto()}{getGroupPhoto()}}
+{\footnotesize\ttfamily virtual Q\+Pixmap\& Core\+Gp\+::get\+Group\+Photo (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classCore_adb4dd8f32a42474825a6420b4c708157}{Core}} 内被实现.
+
+\mbox{\Hypertarget{classCoreGp_a1ba9fdec279a05b58845f303e4430f9b}\label{classCoreGp_a1ba9fdec279a05b58845f303e4430f9b}} 
+\index{CoreGp@{CoreGp}!operator=@{operator=}}
+\index{operator=@{operator=}!CoreGp@{CoreGp}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCoreGp}{Core\+Gp}}\& Core\+Gp\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCoreGp}{Core\+Gp}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classCoreGp_a4f934be39e4ce8cc89c40d7a2127a1df}\label{classCoreGp_a4f934be39e4ce8cc89c40d7a2127a1df}} 
+\index{CoreGp@{CoreGp}!operator=@{operator=}}
+\index{operator=@{operator=}!CoreGp@{CoreGp}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCoreGp}{Core\+Gp}}\& Core\+Gp\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCoreGp}{Core\+Gp}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classCoreGp_a742d4edca3b68439ab1c7c0ee0302095}\label{classCoreGp_a742d4edca3b68439ab1c7c0ee0302095}} 
+\index{CoreGp@{CoreGp}!recvGroup@{recvGroup}}
+\index{recvGroup@{recvGroup}!CoreGp@{CoreGp}}
+\doxysubsubsection{\texorpdfstring{recvGroup()}{recvGroup()}}
+{\footnotesize\ttfamily virtual void Core\+Gp\+::recv\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceTypeJson_a20e89671a216d5c8cc31a485634ea4c0}{Type\+Json\+::\+Recv}}}]{type\+\_\+recv,  }\item[{std\+::array$<$ Q\+Variant, 4 $>$}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classCore_a165ee288ac97fe153c5f56c6bf9440a8}{Core}} 内被实现.
+
+\mbox{\Hypertarget{classCoreGp_a34d2329ce3313b5361cd7b4bc79dafde}\label{classCoreGp_a34d2329ce3313b5361cd7b4bc79dafde}} 
+\index{CoreGp@{CoreGp}!sendGroup@{sendGroup}}
+\index{sendGroup@{sendGroup}!CoreGp@{CoreGp}}
+\doxysubsubsection{\texorpdfstring{sendGroup()}{sendGroup()}}
+{\footnotesize\ttfamily virtual bool Core\+Gp\+::send\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ff}{Type\+Json\+::\+Send}}}]{type\+\_\+send,  }\item[{std\+::array$<$ Q\+Variant, 4 $>$}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classCore_a9fc1f51bdd8533a047fbd93e90a94fcd}{Core}} 内被实现.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{classCoreGp_a498c0df541e5e11ac1e579ed963973e1}\label{classCoreGp_a498c0df541e5e11ac1e579ed963973e1}} 
+\index{CoreGp@{CoreGp}!m\_gp\_list@{m\_gp\_list}}
+\index{m\_gp\_list@{m\_gp\_list}!CoreGp@{CoreGp}}
+\doxysubsubsection{\texorpdfstring{m\_gp\_list}{m\_gp\_list}}
+{\footnotesize\ttfamily Q\+List$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classGroup}{Group}}$>$ $>$ Core\+Gp\+::m\+\_\+gp\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Core/\mbox{\hyperlink{core__gp_8h}{core\+\_\+gp.\+h}}\end{DoxyCompactItemize}

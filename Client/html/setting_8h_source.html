@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>qt_test: src/Setting/setting.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">qt_test
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_4bcbc5b0ef3e6869dc7b3fb5bea47909.html">Setting</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">setting.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="setting_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="isystem__setting_8h.html">Setting/isystem_setting.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QVariant&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classSetting.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSetting.html">Setting</a> : <span class="keyword">public</span> QObject,</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                <span class="keyword">public</span> <a class="code" href="classISystemSetting.html">ISystemSetting</a>,</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                <span class="keyword">public</span> std::enable_shared_from_this&lt;Setting&gt; {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classSetting.html#aaba50d0cf1ccb3297726dcd7745c0ecd">Setting</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classSetting.html#a328f6cad583dff1270fa5424dff8fee6">~Setting</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">//ISystemSetting interface</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    QString&amp; <a class="code" href="classSetting.html#a07cac4318b46f76671c8969c925f6a27">getUser</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    QString&amp; <a class="code" href="classSetting.html#a4079c7baf066dd58740dc253601acca9">getPassword</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    QString&amp; <a class="code" href="classSetting.html#a855bacc5624a82a23f0a8ae36e85f14f">getIpFtp</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    QString&amp; <a class="code" href="classSetting.html#abdf93cfef1cc8e5d9ab804e8167205ce">getKey</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    QString&amp; <a class="code" href="classSetting.html#a730a7fdf3fd848a189a2be8d9546ac9f">getIv</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    QString&amp; <a class="code" href="classSetting.html#aad5a21c06526b5ba62568db7286e0fe3">getDb</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassSetting_html"><div class="ttname"><a href="classSetting.html">Setting</a></div><div class="ttdoc">parse json setting file and have time out to save setting file</div><div class="ttdef"><b>Definition:</b> setting.h:13</div></div>
+<div class="ttc" id="aclassSetting_html_a4079c7baf066dd58740dc253601acca9"><div class="ttname"><a href="classSetting.html#a4079c7baf066dd58740dc253601acca9">Setting::getPassword</a></div><div class="ttdeci">QString &amp; getPassword() override</div><div class="ttdef"><b>Definition:</b> setting.cpp:13</div></div>
+<div class="ttc" id="aclassSetting_html_a730a7fdf3fd848a189a2be8d9546ac9f"><div class="ttname"><a href="classSetting.html#a730a7fdf3fd848a189a2be8d9546ac9f">Setting::getIv</a></div><div class="ttdeci">QString &amp; getIv() override</div><div class="ttdef"><b>Definition:</b> setting.cpp:22</div></div>
+<div class="ttc" id="aclassSetting_html_aaba50d0cf1ccb3297726dcd7745c0ecd"><div class="ttname"><a href="classSetting.html#aaba50d0cf1ccb3297726dcd7745c0ecd">Setting::Setting</a></div><div class="ttdeci">Setting()</div><div class="ttdef"><b>Definition:</b> setting.cpp:3</div></div>
+<div class="ttc" id="aclassSetting_html_a328f6cad583dff1270fa5424dff8fee6"><div class="ttname"><a href="classSetting.html#a328f6cad583dff1270fa5424dff8fee6">Setting::~Setting</a></div><div class="ttdeci">~Setting()</div><div class="ttdef"><b>Definition:</b> setting.cpp:6</div></div>
+<div class="ttc" id="aclassSetting_html_abdf93cfef1cc8e5d9ab804e8167205ce"><div class="ttname"><a href="classSetting.html#abdf93cfef1cc8e5d9ab804e8167205ce">Setting::getKey</a></div><div class="ttdeci">QString &amp; getKey() override</div><div class="ttdef"><b>Definition:</b> setting.cpp:19</div></div>
+<div class="ttc" id="aclassISystemSetting_html"><div class="ttname"><a href="classISystemSetting.html">ISystemSetting</a></div><div class="ttdoc">系统设置</div><div class="ttdef"><b>Definition:</b> isystem_setting.h:17</div></div>
+<div class="ttc" id="aclassSetting_html_a855bacc5624a82a23f0a8ae36e85f14f"><div class="ttname"><a href="classSetting.html#a855bacc5624a82a23f0a8ae36e85f14f">Setting::getIpFtp</a></div><div class="ttdeci">QString &amp; getIpFtp() override</div><div class="ttdef"><b>Definition:</b> setting.cpp:16</div></div>
+<div class="ttc" id="aclassSetting_html_aad5a21c06526b5ba62568db7286e0fe3"><div class="ttname"><a href="classSetting.html#aad5a21c06526b5ba62568db7286e0fe3">Setting::getDb</a></div><div class="ttdeci">QString &amp; getDb() override</div><div class="ttdef"><b>Definition:</b> setting.cpp:25</div></div>
+<div class="ttc" id="aclassSetting_html_a07cac4318b46f76671c8969c925f6a27"><div class="ttname"><a href="classSetting.html#a07cac4318b46f76671c8969c925f6a27">Setting::getUser</a></div><div class="ttdeci">QString &amp; getUser() override</div><div class="ttdef"><b>Definition:</b> setting.cpp:10</div></div>
+<div class="ttc" id="aisystem__setting_8h_html"><div class="ttname"><a href="isystem__setting_8h.html">isystem_setting.h</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

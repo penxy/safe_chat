@@ -1,0 +1,6 @@
+<map id="CoreListItem" name="CoreListItem">
+<area shape="rect" id="node1" title="item of friend list or group list" alt="" coords="55,80,161,107"/>
+<area shape="rect" id="node3" href="$classFdListItem.html" title="好友列表中的一项" alt="" coords="5,155,96,181"/>
+<area shape="rect" id="node4" href="$classGpListItem.html" title="好友列表中的一项" alt="" coords="120,155,213,181"/>
+<area shape="rect" id="node2" title=" " alt="" coords="69,5,147,32"/>
+</map>

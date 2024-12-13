@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>qt_test: src/Chat/chatid.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">qt_test
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_71725ba4beea8b96fe280195d45ef0e9.html">Chat</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">chatid.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="chatid_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QByteArray&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classChatId.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classChatId.html">ChatId</a>{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classChatId.html#a194906c99a886c3832894fe7d84514b6">ChatId</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classChatId.html#a194906c99a886c3832894fe7d84514b6">ChatId</a>(<span class="keyword">const</span> QByteArray &amp;<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classChatId.html#a194906c99a886c3832894fe7d84514b6">ChatId</a>(<span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classChatId.html">ChatId</a>&amp; <a class="code" href="classChatId.html#a87eb7a91a8d3e94794e87b069eba5edd">operator = </a>(<span class="keyword">const</span> <a class="code" href="classChatId.html">ChatId</a> &amp;other);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classChatId.html#a82cedeb0c59cb8306715538d1a6e8739">operator == </a>(<span class="keyword">const</span> <a class="code" href="classChatId.html">ChatId</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classChatId.html#ad37d8201f9cbbe6f96bbab1a161e181c">operator != </a>(<span class="keyword">const</span> <a class="code" href="classChatId.html">ChatId</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classChatId.html#ad436a46de48845e2c9f13adfb2c6b422">operator &lt; </a>(<span class="keyword">const</span> <a class="code" href="classChatId.html">ChatId</a>&amp; other) <span class="keyword">const</span>;    </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    QString <a class="code" href="classChatId.html#a8a764c165e3c69dd738508312944fb41">toString</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    QByteArray <a class="code" href="classChatId.html#a170d4212c371158918d89622a9f4fe38">getByteArray</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    std::unique_ptr&lt;ChatId&gt; <a class="code" href="classChatId.html#ada28ca9add43ec0c749b0b0ec996a640">clone</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    QByteArray m_id;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassChatId_html_a170d4212c371158918d89622a9f4fe38"><div class="ttname"><a href="classChatId.html#a170d4212c371158918d89622a9f4fe38">ChatId::getByteArray</a></div><div class="ttdeci">QByteArray getByteArray() const</div><div class="ttdef"><b>Definition:</b> chatid.cpp:30</div></div>
+<div class="ttc" id="aclassChatId_html"><div class="ttname"><a href="classChatId.html">ChatId</a></div><div class="ttdoc">id of Friend and Group</div><div class="ttdef"><b>Definition:</b> chatid.h:13</div></div>
+<div class="ttc" id="aclassChatId_html_ada28ca9add43ec0c749b0b0ec996a640"><div class="ttname"><a href="classChatId.html#ada28ca9add43ec0c749b0b0ec996a640">ChatId::clone</a></div><div class="ttdeci">std::unique_ptr&lt; ChatId &gt; clone()</div><div class="ttdef"><b>Definition:</b> chatid.cpp:33</div></div>
+<div class="ttc" id="aclassChatId_html_ad436a46de48845e2c9f13adfb2c6b422"><div class="ttname"><a href="classChatId.html#ad436a46de48845e2c9f13adfb2c6b422">ChatId::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const ChatId &amp;other) const</div><div class="ttdef"><b>Definition:</b> chatid.cpp:22</div></div>
+<div class="ttc" id="aclassChatId_html_a194906c99a886c3832894fe7d84514b6"><div class="ttname"><a href="classChatId.html#a194906c99a886c3832894fe7d84514b6">ChatId::ChatId</a></div><div class="ttdeci">ChatId()=default</div></div>
+<div class="ttc" id="aclassChatId_html_a87eb7a91a8d3e94794e87b069eba5edd"><div class="ttname"><a href="classChatId.html#a87eb7a91a8d3e94794e87b069eba5edd">ChatId::operator=</a></div><div class="ttdeci">ChatId &amp; operator=(const ChatId &amp;other)</div><div class="ttdef"><b>Definition:</b> chatid.cpp:12</div></div>
+<div class="ttc" id="aclassChatId_html_ad37d8201f9cbbe6f96bbab1a161e181c"><div class="ttname"><a href="classChatId.html#ad37d8201f9cbbe6f96bbab1a161e181c">ChatId::operator!=</a></div><div class="ttdeci">bool operator!=(const ChatId &amp;other) const</div><div class="ttdef"><b>Definition:</b> chatid.cpp:19</div></div>
+<div class="ttc" id="aclassChatId_html_a82cedeb0c59cb8306715538d1a6e8739"><div class="ttname"><a href="classChatId.html#a82cedeb0c59cb8306715538d1a6e8739">ChatId::operator==</a></div><div class="ttdeci">bool operator==(const ChatId &amp;other) const</div><div class="ttdef"><b>Definition:</b> chatid.cpp:16</div></div>
+<div class="ttc" id="aclassChatId_html_a8a764c165e3c69dd738508312944fb41"><div class="ttname"><a href="classChatId.html#a8a764c165e3c69dd738508312944fb41">ChatId::toString</a></div><div class="ttdeci">QString toString() const</div><div class="ttdef"><b>Definition:</b> chatid.cpp:26</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

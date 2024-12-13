@@ -1,0 +1,45 @@
+\hypertarget{classThreadPool}{}\doxysection{Thread\+Pool类 参考}
+\label{classThreadPool}\index{ThreadPool@{ThreadPool}}
+
+
+{\ttfamily \#include $<$thread\+\_\+pool.\+h$>$}
+
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classThreadPool_ac291710e33dbbed96ee20711080d506d}{Thread\+Pool}} (size\+\_\+t)
+\item 
+{\footnotesize template$<$class F , class... Args$>$ }\\auto \mbox{\hyperlink{classThreadPool_a8f628893c030552d9714c25f68656adc}{enqueue}} (F \&\&f, Args \&\&... args) -\/$>$ std\+::future$<$ typename std\+::result\+\_\+of$<$ F(Args...)$>$\+::type $>$
+\item 
+\mbox{\hyperlink{classThreadPool_a44d3d2ab618970605e684efc216655eb}{$\sim$\+Thread\+Pool}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classThreadPool_ac291710e33dbbed96ee20711080d506d}\label{classThreadPool_ac291710e33dbbed96ee20711080d506d}} 
+\index{ThreadPool@{ThreadPool}!ThreadPool@{ThreadPool}}
+\index{ThreadPool@{ThreadPool}!ThreadPool@{ThreadPool}}
+\doxysubsubsection{\texorpdfstring{ThreadPool()}{ThreadPool()}}
+{\footnotesize\ttfamily Thread\+Pool\+::\+Thread\+Pool (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{threads }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classThreadPool_a44d3d2ab618970605e684efc216655eb}\label{classThreadPool_a44d3d2ab618970605e684efc216655eb}} 
+\index{ThreadPool@{ThreadPool}!````~ThreadPool@{$\sim$ThreadPool}}
+\index{````~ThreadPool@{$\sim$ThreadPool}!ThreadPool@{ThreadPool}}
+\doxysubsubsection{\texorpdfstring{$\sim$ThreadPool()}{~ThreadPool()}}
+{\footnotesize\ttfamily Thread\+Pool\+::$\sim$\+Thread\+Pool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classThreadPool_a8f628893c030552d9714c25f68656adc}\label{classThreadPool_a8f628893c030552d9714c25f68656adc}} 
+\index{ThreadPool@{ThreadPool}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!ThreadPool@{ThreadPool}}
+\doxysubsubsection{\texorpdfstring{enqueue()}{enqueue()}}
+{\footnotesize\ttfamily template$<$class F , class... Args$>$ \\
+auto Thread\+Pool\+::enqueue (\begin{DoxyParamCaption}\item[{F \&\&}]{f,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption}) -\/$>$ std\+::future$<$typename std\+::result\+\_\+of$<$F(Args...)$>$\+::type$>$}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\mbox{\hyperlink{thread__pool_8h}{thread\+\_\+pool.\+h}}\end{DoxyCompactItemize}

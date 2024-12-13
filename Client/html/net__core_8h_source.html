@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>qt_test: src/Service/Net/net_core.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">qt_test
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_6ffc343ef0b33b8e0e31ec7afba90a0a.html">Service</a></li><li class="navelem"><a class="el" href="dir_b745a4716bd430022f90e610ebc5675b.html">Net</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">net_core.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="net__core_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;hv/TcpClient.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="protocol_8h.html">Service/protocol.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classNetCore.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classNetCore.html">NetCore</a> : <span class="keyword">public</span> std::enable_shared_from_this&lt;NetCore&gt;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classNetCore.html#acf44648202200e16640aaa642cc11b02">NetCore</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classNetCore.html#a6b048736a30b217d0c018a2cd90a0b60">~NetCore</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classNetCore.html#a6b96dfe6af468bd5335b0e472dcf9743">init</a>(std::string&amp; host, <span class="keywordtype">int</span> port);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classNetCore.html#aced23b61486772e6f0b1d36ad13bf642">Send</a>(std::string&amp; msg);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span>             m_sock_client;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    hv::TcpClient   m_tcp;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    std::string     m_host;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">int</span>             m_port;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassNetCore_html"><div class="ttname"><a href="classNetCore.html">NetCore</a></div><div class="ttdoc">收发消息，格式为json</div><div class="ttdef"><b>Definition:</b> net_core.h:13</div></div>
+<div class="ttc" id="aprotocol_8h_html"><div class="ttname"><a href="protocol_8h.html">protocol.h</a></div></div>
+<div class="ttc" id="aclassNetCore_html_acf44648202200e16640aaa642cc11b02"><div class="ttname"><a href="classNetCore.html#acf44648202200e16640aaa642cc11b02">NetCore::NetCore</a></div><div class="ttdeci">NetCore()=default</div></div>
+<div class="ttc" id="aclassNetCore_html_a6b048736a30b217d0c018a2cd90a0b60"><div class="ttname"><a href="classNetCore.html#a6b048736a30b217d0c018a2cd90a0b60">NetCore::~NetCore</a></div><div class="ttdeci">~NetCore()=default</div></div>
+<div class="ttc" id="aclassNetCore_html_aced23b61486772e6f0b1d36ad13bf642"><div class="ttname"><a href="classNetCore.html#aced23b61486772e6f0b1d36ad13bf642">NetCore::Send</a></div><div class="ttdeci">void Send(std::string &amp;msg)</div><div class="ttdef"><b>Definition:</b> net_core.cpp:43</div></div>
+<div class="ttc" id="aclassNetCore_html_a6b96dfe6af468bd5335b0e472dcf9743"><div class="ttname"><a href="classNetCore.html#a6b96dfe6af468bd5335b0e472dcf9743">NetCore::init</a></div><div class="ttdeci">void init(std::string &amp;host, int port)</div><div class="ttdef"><b>Definition:</b> net_core.cpp:13</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

@@ -1,0 +1,155 @@
+\hypertarget{classChat}{}\doxysection{Chat类 参考}
+\label{classChat}\index{Chat@{Chat}}
+
+
+Friend和\+Group的基类, 定义了一些基本的接口和信号  
+
+
+
+
+{\ttfamily \#include $<$chat.\+h$>$}
+
+
+
+类 Chat 继承关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classChat__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Chat 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{classChat__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classChat_acede5d5f66c19cd89c42394800d2e315}{$\sim$\+Chat}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classChat_a415aba96dc6d2065114ee528ca0e5bf8}{set\+Name}} (const Q\+String \&name)=0
+\item 
+virtual Q\+String \& \mbox{\hyperlink{classChat_ae1a835bb81e14154ad3921f5e0e355ec}{get\+Name}} ()=0
+\item 
+virtual \mbox{\hyperlink{classChatId}{Chat\+Id}} \& \mbox{\hyperlink{classChat_a8d043c974ed242dc05e48e0348515c2d}{get\+Id}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classChat_abf74cf6e81791310b9fd42aa8bb9e8ff}{set\+Pix}} (const Q\+Pixmap \&pix)=0
+\item 
+virtual Q\+Pixmap \& \mbox{\hyperlink{classChat_a6009f6e1d07375de587373a9f43a104d}{get\+Pix}} ()=0
+\item 
+virtual Q\+List$<$ \mbox{\hyperlink{structns_1_1History}{ns\+::\+History}} $>$ \& \mbox{\hyperlink{classChat_aa6b1ed514fc3f928f13062508ef63a0b}{get\+History}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classChat_a5c6603df219260bd251328cd1bd7fccb}{set\+History}} (const Q\+List$<$ \mbox{\hyperlink{structns_1_1History}{ns\+::\+History}} $>$ \&history)=0
+\item 
+\mbox{\hyperlink{classChat_ae9ead38e14a74c21719a463bb33d4233}{D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+I\+G\+N\+AL}} (Sig\+Name\+Changed, const Q\+String \&)
+\item 
+\mbox{\hyperlink{classChat_aec1a9862d5f23218d145fc2fc6fe6f15}{D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+I\+G\+N\+AL}} (Sig\+Pix\+Changed, const Q\+Pixmap \&)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Friend和\+Group的基类, 定义了一些基本的接口和信号 
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classChat_acede5d5f66c19cd89c42394800d2e315}\label{classChat_acede5d5f66c19cd89c42394800d2e315}} 
+\index{Chat@{Chat}!````~Chat@{$\sim$Chat}}
+\index{````~Chat@{$\sim$Chat}!Chat@{Chat}}
+\doxysubsubsection{\texorpdfstring{$\sim$Chat()}{~Chat()}}
+{\footnotesize\ttfamily Chat\+::$\sim$\+Chat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classChat_ae9ead38e14a74c21719a463bb33d4233}\label{classChat_ae9ead38e14a74c21719a463bb33d4233}} 
+\index{Chat@{Chat}!DECLARE\_SIGNAL@{DECLARE\_SIGNAL}}
+\index{DECLARE\_SIGNAL@{DECLARE\_SIGNAL}!Chat@{Chat}}
+\doxysubsubsection{\texorpdfstring{DECLARE\_SIGNAL()}{DECLARE\_SIGNAL()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Chat\+::\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+I\+G\+N\+AL (\begin{DoxyParamCaption}\item[{Sig\+Name\+Changed}]{,  }\item[{const Q\+String \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classChat_aec1a9862d5f23218d145fc2fc6fe6f15}\label{classChat_aec1a9862d5f23218d145fc2fc6fe6f15}} 
+\index{Chat@{Chat}!DECLARE\_SIGNAL@{DECLARE\_SIGNAL}}
+\index{DECLARE\_SIGNAL@{DECLARE\_SIGNAL}!Chat@{Chat}}
+\doxysubsubsection{\texorpdfstring{DECLARE\_SIGNAL()}{DECLARE\_SIGNAL()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Chat\+::\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+I\+G\+N\+AL (\begin{DoxyParamCaption}\item[{Sig\+Pix\+Changed}]{,  }\item[{const Q\+Pixmap \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classChat_aa6b1ed514fc3f928f13062508ef63a0b}\label{classChat_aa6b1ed514fc3f928f13062508ef63a0b}} 
+\index{Chat@{Chat}!getHistory@{getHistory}}
+\index{getHistory@{getHistory}!Chat@{Chat}}
+\doxysubsubsection{\texorpdfstring{getHistory()}{getHistory()}}
+{\footnotesize\ttfamily virtual Q\+List$<$\mbox{\hyperlink{structns_1_1History}{ns\+::\+History}}$>$\& Chat\+::get\+History (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classGroup_aa3f3b51ce2bea23070d47e2aa7c1f719}{Group}} , 以及 \mbox{\hyperlink{classFriend_ae410d0608e0b7909a9231335b356a392}{Friend}} 内被实现.
+
+\mbox{\Hypertarget{classChat_a8d043c974ed242dc05e48e0348515c2d}\label{classChat_a8d043c974ed242dc05e48e0348515c2d}} 
+\index{Chat@{Chat}!getId@{getId}}
+\index{getId@{getId}!Chat@{Chat}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classChatId}{Chat\+Id}}\& Chat\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classGroup_aab97741d852dbf5750c88a8c782865bd}{Group}} , 以及 \mbox{\hyperlink{classFriend_a7ac54e043a73a221d7db88ba4afdbbd2}{Friend}} 内被实现.
+
+\mbox{\Hypertarget{classChat_ae1a835bb81e14154ad3921f5e0e355ec}\label{classChat_ae1a835bb81e14154ad3921f5e0e355ec}} 
+\index{Chat@{Chat}!getName@{getName}}
+\index{getName@{getName}!Chat@{Chat}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily virtual Q\+String\& Chat\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classGroup_a4034a8d5f490e9782d9107a9847e4cda}{Group}} , 以及 \mbox{\hyperlink{classFriend_a81b5dd2a8f50c385bac1a03d35f4976d}{Friend}} 内被实现.
+
+\mbox{\Hypertarget{classChat_a6009f6e1d07375de587373a9f43a104d}\label{classChat_a6009f6e1d07375de587373a9f43a104d}} 
+\index{Chat@{Chat}!getPix@{getPix}}
+\index{getPix@{getPix}!Chat@{Chat}}
+\doxysubsubsection{\texorpdfstring{getPix()}{getPix()}}
+{\footnotesize\ttfamily virtual Q\+Pixmap\& Chat\+::get\+Pix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classGroup_a3513b250c8bb2fb4c240c204eb4cde86}{Group}} , 以及 \mbox{\hyperlink{classFriend_a4cae7ed98215fee6fd72c337c835cb37}{Friend}} 内被实现.
+
+\mbox{\Hypertarget{classChat_a5c6603df219260bd251328cd1bd7fccb}\label{classChat_a5c6603df219260bd251328cd1bd7fccb}} 
+\index{Chat@{Chat}!setHistory@{setHistory}}
+\index{setHistory@{setHistory}!Chat@{Chat}}
+\doxysubsubsection{\texorpdfstring{setHistory()}{setHistory()}}
+{\footnotesize\ttfamily virtual void Chat\+::set\+History (\begin{DoxyParamCaption}\item[{const Q\+List$<$ \mbox{\hyperlink{structns_1_1History}{ns\+::\+History}} $>$ \&}]{history }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classGroup_ac0f84c832fe094edd3d9e5c2e5993f0a}{Group}} , 以及 \mbox{\hyperlink{classFriend_a0fd5043eee9458c38cb7b6b49c4897d2}{Friend}} 内被实现.
+
+\mbox{\Hypertarget{classChat_a415aba96dc6d2065114ee528ca0e5bf8}\label{classChat_a415aba96dc6d2065114ee528ca0e5bf8}} 
+\index{Chat@{Chat}!setName@{setName}}
+\index{setName@{setName}!Chat@{Chat}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily virtual void Chat\+::set\+Name (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classGroup_aba5d3f4b59bd91edc417b64275805077}{Group}} , 以及 \mbox{\hyperlink{classFriend_a84973b6ace9c1da66d0b45acce843daa}{Friend}} 内被实现.
+
+\mbox{\Hypertarget{classChat_abf74cf6e81791310b9fd42aa8bb9e8ff}\label{classChat_abf74cf6e81791310b9fd42aa8bb9e8ff}} 
+\index{Chat@{Chat}!setPix@{setPix}}
+\index{setPix@{setPix}!Chat@{Chat}}
+\doxysubsubsection{\texorpdfstring{setPix()}{setPix()}}
+{\footnotesize\ttfamily virtual void Chat\+::set\+Pix (\begin{DoxyParamCaption}\item[{const Q\+Pixmap \&}]{pix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classGroup_a9433fe0bc43e31e8d3c5536cdfa21ee0}{Group}} , 以及 \mbox{\hyperlink{classFriend_a1473b777cd1ff1c4d83e5450b2f78cbe}{Friend}} 内被实现.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Chat/\mbox{\hyperlink{chat_8h}{chat.\+h}}\item 
+src/\+Chat/\mbox{\hyperlink{chat_8cpp}{chat.\+cpp}}\end{DoxyCompactItemize}

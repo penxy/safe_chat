@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>qt_test: src/Service/const_json.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">qt_test
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_6ffc343ef0b33b8e0e31ec7afba90a0a.html">Service</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">const_json.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="const__json_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceTypeJson.html">TypeJson</a>{</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespaceTypeJson.html#aea866b90cb88c13503e5ea931f8300c7">   14</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="namespaceTypeJson.html#aea866b90cb88c13503e5ea931f8300c7">Leval</a> : uint8_t{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="namespaceTypeJson.html#aea866b90cb88c13503e5ea931f8300c7a28d0edd045e05cf5af64e35ae0c4c6ef">Low</a> = 0,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="namespaceTypeJson.html#aea866b90cb88c13503e5ea931f8300c7a960b44c579bc2f6818d2daaf9e4c16f0">Normal</a>,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="namespaceTypeJson.html#aea866b90cb88c13503e5ea931f8300c7a655d20c1ca69519ca647684edbb2db35">High</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    };</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ff">   23</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ff">Send</a> : uint8_t{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffaa6c746e7099f033e90910abea735d3a7">Regiest</a>,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffadb27061d418632341d465f9dcb240a2b">CreateGroup</a>,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffac1baeb9281c49f8d72bf5ccd25f19ca3">FdAdd</a>,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffabc5dbc57acdf0924eda35d2be7d7735b">FdDel</a>,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffad7abf2a5551a5bad5e384167fb10466f">FdAccept</a>,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffa7a1900483d62cbded0b26e10ce290a00">FdReject</a>,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffa2ea924962a0e5084c149ab6c5c22ab07">FdText</a>,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffa31fda220c6113cf9a62daa33a1377104">GpCreate</a>,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffae3afef96a122e2f07f681a9f165c61fd">GpInvite</a>,<span class="comment">//invite not need response</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffa78091218b72ff217115494cad4e8efce">GpQuit</a>,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffa239c4b55eb082c462b37ed6ca2389b9d">GpText</a>,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffaa67d57318aec541c0b63f129d1e2db13">GpName</a>,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffaeef46fef98381f59945a0972cc5601c8">GpPix</a>,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffa20240056fe9b49e39114341ba853fcd4">ChangeName</a>,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffa75d81a571983b38334291d21d92f7924">ChangePix</a>,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffad002fe1b3da657db7bd0b050cf0f128a">ChangeStatus</a>,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffa60649892fd750d03cde0444e477479aa">ChangePass</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    };</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0">   49</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0">Recv</a> : uint8_t{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0ae278ef309c7b9a98e764fbed3cb8fabb">FdFind</a>,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0ac1baeb9281c49f8d72bf5ccd25f19ca3">FdAdd</a>,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0abc5dbc57acdf0924eda35d2be7d7735b">FdDel</a>,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0ad7abf2a5551a5bad5e384167fb10466f">FdAccept</a>,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0a7a1900483d62cbded0b26e10ce290a00">FdReject</a>,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0a3967c125ad1c07240b135130a2c3c640">FdStatus</a>,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0ac15eb0bf020c6a18b368200c63bc7f98">FdName</a>,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0a3468612281c8ba745d4f32eab6175a4d">FdPix</a>,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0a01285d02c8def09a796494b8b0dd2627">GpFind</a>,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0ae22a7f70cad743a6f56b492114d499cc">GpAdd</a>,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0a0716ec9531ea5f284d653255d702b66d">GpDel</a>,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0a55d2166f9b88988e406d0e9857a71a40">GpAccept</a>,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0a3f4007bb0ad8b9f0de8996877a6d39bf">GpReject</a>,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0aa67d57318aec541c0b63f129d1e2db13">GpName</a>,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0aeef46fef98381f59945a0972cc5601c8">GpPix</a>,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    };</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="anamespaceTypeJson_html_a95fffe9c64e44de38c79f880c408f4ffabc5dbc57acdf0924eda35d2be7d7735b"><div class="ttname"><a href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffabc5dbc57acdf0924eda35d2be7d7735b">TypeJson::Send::FdDel</a></div><div class="ttdeci">@ FdDel</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a20e89671a216d5c8cc31a485634ea4c0a3967c125ad1c07240b135130a2c3c640"><div class="ttname"><a href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0a3967c125ad1c07240b135130a2c3c640">TypeJson::Recv::FdStatus</a></div><div class="ttdeci">@ FdStatus</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_aea866b90cb88c13503e5ea931f8300c7a28d0edd045e05cf5af64e35ae0c4c6ef"><div class="ttname"><a href="namespaceTypeJson.html#aea866b90cb88c13503e5ea931f8300c7a28d0edd045e05cf5af64e35ae0c4c6ef">TypeJson::Leval::Low</a></div><div class="ttdeci">@ Low</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_aea866b90cb88c13503e5ea931f8300c7a655d20c1ca69519ca647684edbb2db35"><div class="ttname"><a href="namespaceTypeJson.html#aea866b90cb88c13503e5ea931f8300c7a655d20c1ca69519ca647684edbb2db35">TypeJson::Leval::High</a></div><div class="ttdeci">@ High</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a20e89671a216d5c8cc31a485634ea4c0aeef46fef98381f59945a0972cc5601c8"><div class="ttname"><a href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0aeef46fef98381f59945a0972cc5601c8">TypeJson::Recv::GpPix</a></div><div class="ttdeci">@ GpPix</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a20e89671a216d5c8cc31a485634ea4c0abc5dbc57acdf0924eda35d2be7d7735b"><div class="ttname"><a href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0abc5dbc57acdf0924eda35d2be7d7735b">TypeJson::Recv::FdDel</a></div><div class="ttdeci">@ FdDel</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a95fffe9c64e44de38c79f880c408f4ffac1baeb9281c49f8d72bf5ccd25f19ca3"><div class="ttname"><a href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffac1baeb9281c49f8d72bf5ccd25f19ca3">TypeJson::Send::FdAdd</a></div><div class="ttdeci">@ FdAdd</div></div>
+<div class="ttc" id="anamespaceTypeJson_html"><div class="ttname"><a href="namespaceTypeJson.html">TypeJson</a></div><div class="ttdoc">包含json的一切属性</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_aea866b90cb88c13503e5ea931f8300c7a960b44c579bc2f6818d2daaf9e4c16f0"><div class="ttname"><a href="namespaceTypeJson.html#aea866b90cb88c13503e5ea931f8300c7a960b44c579bc2f6818d2daaf9e4c16f0">TypeJson::Leval::Normal</a></div><div class="ttdeci">@ Normal</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a95fffe9c64e44de38c79f880c408f4ffa60649892fd750d03cde0444e477479aa"><div class="ttname"><a href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffa60649892fd750d03cde0444e477479aa">TypeJson::Send::ChangePass</a></div><div class="ttdeci">@ ChangePass</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a95fffe9c64e44de38c79f880c408f4ffaa6c746e7099f033e90910abea735d3a7"><div class="ttname"><a href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffaa6c746e7099f033e90910abea735d3a7">TypeJson::Send::Regiest</a></div><div class="ttdeci">@ Regiest</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a20e89671a216d5c8cc31a485634ea4c0a3f4007bb0ad8b9f0de8996877a6d39bf"><div class="ttname"><a href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0a3f4007bb0ad8b9f0de8996877a6d39bf">TypeJson::Recv::GpReject</a></div><div class="ttdeci">@ GpReject</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a95fffe9c64e44de38c79f880c408f4ffad002fe1b3da657db7bd0b050cf0f128a"><div class="ttname"><a href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffad002fe1b3da657db7bd0b050cf0f128a">TypeJson::Send::ChangeStatus</a></div><div class="ttdeci">@ ChangeStatus</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a20e89671a216d5c8cc31a485634ea4c0ae22a7f70cad743a6f56b492114d499cc"><div class="ttname"><a href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0ae22a7f70cad743a6f56b492114d499cc">TypeJson::Recv::GpAdd</a></div><div class="ttdeci">@ GpAdd</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a95fffe9c64e44de38c79f880c408f4ffa31fda220c6113cf9a62daa33a1377104"><div class="ttname"><a href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffa31fda220c6113cf9a62daa33a1377104">TypeJson::Send::GpCreate</a></div><div class="ttdeci">@ GpCreate</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a20e89671a216d5c8cc31a485634ea4c0a55d2166f9b88988e406d0e9857a71a40"><div class="ttname"><a href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0a55d2166f9b88988e406d0e9857a71a40">TypeJson::Recv::GpAccept</a></div><div class="ttdeci">@ GpAccept</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a20e89671a216d5c8cc31a485634ea4c0a3468612281c8ba745d4f32eab6175a4d"><div class="ttname"><a href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0a3468612281c8ba745d4f32eab6175a4d">TypeJson::Recv::FdPix</a></div><div class="ttdeci">@ FdPix</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a95fffe9c64e44de38c79f880c408f4ff"><div class="ttname"><a href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ff">TypeJson::Send</a></div><div class="ttdeci">Send</div><div class="ttdoc">发送的类型</div><div class="ttdef"><b>Definition:</b> const_json.h:23</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a95fffe9c64e44de38c79f880c408f4ffadb27061d418632341d465f9dcb240a2b"><div class="ttname"><a href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffadb27061d418632341d465f9dcb240a2b">TypeJson::Send::CreateGroup</a></div><div class="ttdeci">@ CreateGroup</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a95fffe9c64e44de38c79f880c408f4ffa239c4b55eb082c462b37ed6ca2389b9d"><div class="ttname"><a href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffa239c4b55eb082c462b37ed6ca2389b9d">TypeJson::Send::GpText</a></div><div class="ttdeci">@ GpText</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a95fffe9c64e44de38c79f880c408f4ffa75d81a571983b38334291d21d92f7924"><div class="ttname"><a href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffa75d81a571983b38334291d21d92f7924">TypeJson::Send::ChangePix</a></div><div class="ttdeci">@ ChangePix</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a95fffe9c64e44de38c79f880c408f4ffa2ea924962a0e5084c149ab6c5c22ab07"><div class="ttname"><a href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffa2ea924962a0e5084c149ab6c5c22ab07">TypeJson::Send::FdText</a></div><div class="ttdeci">@ FdText</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a95fffe9c64e44de38c79f880c408f4ffa78091218b72ff217115494cad4e8efce"><div class="ttname"><a href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffa78091218b72ff217115494cad4e8efce">TypeJson::Send::GpQuit</a></div><div class="ttdeci">@ GpQuit</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a95fffe9c64e44de38c79f880c408f4ffae3afef96a122e2f07f681a9f165c61fd"><div class="ttname"><a href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffae3afef96a122e2f07f681a9f165c61fd">TypeJson::Send::GpInvite</a></div><div class="ttdeci">@ GpInvite</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a95fffe9c64e44de38c79f880c408f4ffa7a1900483d62cbded0b26e10ce290a00"><div class="ttname"><a href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffa7a1900483d62cbded0b26e10ce290a00">TypeJson::Send::FdReject</a></div><div class="ttdeci">@ FdReject</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_aea866b90cb88c13503e5ea931f8300c7"><div class="ttname"><a href="namespaceTypeJson.html#aea866b90cb88c13503e5ea931f8300c7">TypeJson::Leval</a></div><div class="ttdeci">Leval</div><div class="ttdoc">优先级</div><div class="ttdef"><b>Definition:</b> const_json.h:14</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a95fffe9c64e44de38c79f880c408f4ffad7abf2a5551a5bad5e384167fb10466f"><div class="ttname"><a href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffad7abf2a5551a5bad5e384167fb10466f">TypeJson::Send::FdAccept</a></div><div class="ttdeci">@ FdAccept</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a95fffe9c64e44de38c79f880c408f4ffaeef46fef98381f59945a0972cc5601c8"><div class="ttname"><a href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffaeef46fef98381f59945a0972cc5601c8">TypeJson::Send::GpPix</a></div><div class="ttdeci">@ GpPix</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a20e89671a216d5c8cc31a485634ea4c0aa67d57318aec541c0b63f129d1e2db13"><div class="ttname"><a href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0aa67d57318aec541c0b63f129d1e2db13">TypeJson::Recv::GpName</a></div><div class="ttdeci">@ GpName</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a95fffe9c64e44de38c79f880c408f4ffaa67d57318aec541c0b63f129d1e2db13"><div class="ttname"><a href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffaa67d57318aec541c0b63f129d1e2db13">TypeJson::Send::GpName</a></div><div class="ttdeci">@ GpName</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a20e89671a216d5c8cc31a485634ea4c0a01285d02c8def09a796494b8b0dd2627"><div class="ttname"><a href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0a01285d02c8def09a796494b8b0dd2627">TypeJson::Recv::GpFind</a></div><div class="ttdeci">@ GpFind</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a95fffe9c64e44de38c79f880c408f4ffa20240056fe9b49e39114341ba853fcd4"><div class="ttname"><a href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ffa20240056fe9b49e39114341ba853fcd4">TypeJson::Send::ChangeName</a></div><div class="ttdeci">@ ChangeName</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a20e89671a216d5c8cc31a485634ea4c0ae278ef309c7b9a98e764fbed3cb8fabb"><div class="ttname"><a href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0ae278ef309c7b9a98e764fbed3cb8fabb">TypeJson::Recv::FdFind</a></div><div class="ttdeci">@ FdFind</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a20e89671a216d5c8cc31a485634ea4c0ac15eb0bf020c6a18b368200c63bc7f98"><div class="ttname"><a href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0ac15eb0bf020c6a18b368200c63bc7f98">TypeJson::Recv::FdName</a></div><div class="ttdeci">@ FdName</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a20e89671a216d5c8cc31a485634ea4c0ac1baeb9281c49f8d72bf5ccd25f19ca3"><div class="ttname"><a href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0ac1baeb9281c49f8d72bf5ccd25f19ca3">TypeJson::Recv::FdAdd</a></div><div class="ttdeci">@ FdAdd</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a20e89671a216d5c8cc31a485634ea4c0a7a1900483d62cbded0b26e10ce290a00"><div class="ttname"><a href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0a7a1900483d62cbded0b26e10ce290a00">TypeJson::Recv::FdReject</a></div><div class="ttdeci">@ FdReject</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a20e89671a216d5c8cc31a485634ea4c0ad7abf2a5551a5bad5e384167fb10466f"><div class="ttname"><a href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0ad7abf2a5551a5bad5e384167fb10466f">TypeJson::Recv::FdAccept</a></div><div class="ttdeci">@ FdAccept</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a20e89671a216d5c8cc31a485634ea4c0a0716ec9531ea5f284d653255d702b66d"><div class="ttname"><a href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0a0716ec9531ea5f284d653255d702b66d">TypeJson::Recv::GpDel</a></div><div class="ttdeci">@ GpDel</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a20e89671a216d5c8cc31a485634ea4c0"><div class="ttname"><a href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0">TypeJson::Recv</a></div><div class="ttdeci">Recv</div><div class="ttdoc">接收的类型</div><div class="ttdef"><b>Definition:</b> const_json.h:49</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>qt_test: src/Core/core.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">qt_test
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a2f0e5642e47e7ed59fe0f0829eafb5f.html">Core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">core.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="core_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="core__fd_8h.html">core_fd.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="core__gp_8h.html">core_gp.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="core__self_8h.html">core_self.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="core__history_8h.html">core_history.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="core__ftp_8h.html">core_ftp.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="protocol_8h.html">Service/protocol.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="interface_8h.html">utils/interface.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;semaphore.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QPixmap&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="classProtocol.html">Protocol</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="classGpList.html">GpList</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="classFdList.html">FdList</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span><a class="code" href="classCoreSql.html">CoreSql</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span><a class="code" href="classSetting.html">Setting</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classCore.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCore.html">Core</a> final : <span class="keyword">public</span> QObject,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                   <span class="keyword">public</span> <a class="code" href="classCoreFd.html">CoreFd</a>,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                   <span class="keyword">public</span> <a class="code" href="classCoreGp.html">CoreGp</a>,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                   <span class="keyword">public</span> <a class="code" href="classCoreSelf.html">CoreSelf</a>,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                   <span class="keyword">public</span> <a class="code" href="classCoreHistory.html">CoreHistory</a>,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                   <span class="keyword">public</span> <a class="code" href="classCoreFtp.html">CoreFtp</a>,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                   <span class="keyword">public</span> std::enable_shared_from_this&lt;Core&gt; {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classCore.html#a117db2359c8c10fe0978c8cbd5aa4444">Core</a>(std::shared_ptr&lt;Protocol&gt;protocol);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classCore.html#a5057b209797afa0e0df08fd2be864164">~Core</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">//fd</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classCore.html#a97fa91ff715532135ae5f1c2c711c9ae">sendFriend</a>(<a class="code" href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ff">TypeJson::Send</a> type_send, std::array&lt;QVariant, 4&gt;args) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCore.html#a3e4aefb9208c85f52595a9ccca5741a7">recvFriend</a>(<a class="code" href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0">TypeJson::Recv</a> type_recv, std::array&lt;QVariant, 4&gt;args) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    std::shared_ptr&lt;Friend&gt; <a class="code" href="classCore.html#a80525bc06bd19211b63c91a7fe1542dd">getFriend</a>(<span class="keywordtype">int</span> idx) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    QList&lt;std::shared_ptr&lt;Friend&gt;&gt; &amp;<a class="code" href="classCore.html#a79c39ebfbafd12d8b056453cc4110db2">getFriendList</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classChatId.html">ChatId</a>&amp; <a class="code" href="classCore.html#a74bae1565ba9957dd62dfaadbbfe2727">getFriendId</a>(<span class="keywordtype">int</span> idx) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    QString&amp; <a class="code" href="classCore.html#a891598c7403d70ef44d9e45602624c55">getFriendName</a>(<span class="keywordtype">int</span> idx) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    QPixmap&amp; <a class="code" href="classCore.html#a2514109739580cfbe294a5a9aecdea78">getFriendPhoto</a>(<span class="keywordtype">int</span> idx) <span class="keyword">override</span>; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//gp</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classCore.html#a9fc1f51bdd8533a047fbd93e90a94fcd">sendGroup</a>(<a class="code" href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ff">TypeJson::Send</a> type_send, std::array&lt;QVariant, 4&gt;args) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCore.html#a165ee288ac97fe153c5f56c6bf9440a8">recvGroup</a>(<a class="code" href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0">TypeJson::Recv</a> type_recv, std::array&lt;QVariant, 4&gt;args) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    std::shared_ptr&lt;Group&gt; <a class="code" href="classCore.html#a0a65dcaa97e4de69cfc9d14310dec2b5">getGroup</a>(<span class="keywordtype">int</span> idx) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    QList&lt;std::shared_ptr&lt;Group&gt;&gt; &amp;<a class="code" href="classCore.html#a656ab42a0803ca139fec073ab2455d2e">getGroupList</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="classChatId.html">ChatId</a>&amp; <a class="code" href="classCore.html#a405a53a985899f998aee38802ccc3d6f">getGroupId</a>(<span class="keywordtype">int</span> idx) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    QString&amp; <a class="code" href="classCore.html#ae8f1e7117b02fff594ce8b7a8ee72e60">getGroupName</a>(<span class="keywordtype">int</span> idx) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    QPixmap&amp; <a class="code" href="classCore.html#adb4dd8f32a42474825a6420b4c708157">getGroupPhoto</a>(<span class="keywordtype">int</span> idx) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//self</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classCore.html#adf1e6d00a6fc36606d5708d1cf9c14b0">setPass</a>(<span class="keyword">const</span> QString&amp; pass) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classCore.html#ac4f1b228d8710e3e562136d8ab763a2d">setName</a>(<span class="keyword">const</span> QString&amp; name) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classCore.html#ab6da5bdd564d3b37252a60ada9e50504">setStatus</a>(<span class="keyword">const</span> <a class="code" href="namespaceType.html#ae5b697cde223ac242545732b7e308243">Type::Status</a>&amp; status) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="classChatId.html">ChatId</a>&amp; <a class="code" href="classCore.html#a027328895cfa18523959d3e7ceac750d">getId</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    QString&amp; <a class="code" href="classCore.html#ab98a23b0bff0a4f1fd35d24a1f1722b1">getName</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="namespaceType.html#ae5b697cde223ac242545732b7e308243">Type::Status</a>&amp; <a class="code" href="classCore.html#ae78a092fd0a1b11365449f1279c3e664">getStatus</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    QString&amp; <a class="code" href="classCore.html#af3698a332eef038016e25000ec8aff43">getPublicKey</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//History</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCore.html#a41afc7802e48c636c0b6852c7582c6ca">initTimeout</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCore.html#a32bebbc2af715edb99ba4b006302d72a">loadGroupHistory</a>(<span class="keywordtype">int</span> idx) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCore.html#a737bd02c6bfef562da1256deab1f2a0d">saveGroupHistory</a>(<span class="keywordtype">int</span> idx) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCore.html#aa0467ff10a220e976a9619e007c08d45">loadFriendHistory</a>(<span class="keywordtype">int</span> idx) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCore.html#a628b3ba27f9ce4d561932b0392ed5f24">saveFriendHistory</a>(<span class="keywordtype">int</span> idx) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCore.html#a79fd696b501656502b2f5767725cc0e9">autoClearHistory</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">//Ftp</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCore.html#af0db7e1831444080961c02b855392fb5">upLoadFile</a>(<span class="keyword">const</span> QString&amp; file_name) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCore.html#ad881b52dab095531d66bfbee3b73c9f9">downLoadFile</a>(<span class="keyword">const</span> QString&amp; file_name) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="classCore.html#a1582fa3a690240d7352f193e00d20a1c">SIGNAL_IMPL</a>(<a class="code" href="classCore.html">Core</a>, SigUpdateListFd);<span class="comment">//调用sendFriend后，看情况决定是否发送该信号[比如，好友申请被同意]</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="classCore.html#a1582fa3a690240d7352f193e00d20a1c">SIGNAL_IMPL</a>(<a class="code" href="classCore.html">Core</a>, SigUpdateListGp);<span class="comment">//调用sendGroup后，看情况决定是否发送该信号</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    std::shared_ptr&lt;Protocol&gt; m_protocol;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::shared_ptr&lt;CoreSql&gt; m_sql;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    std::shared_ptr&lt;Setting&gt; m_setting;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">//QVariant define</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<a class="code" href="core_8h.html#aa1c1c32be5c8c7d7fbff5081d4681884">Q_DECLARE_METATYPE</a>(<a class="code" href="classChatId.html">ChatId</a>);</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassCore_html_adb4dd8f32a42474825a6420b4c708157"><div class="ttname"><a href="classCore.html#adb4dd8f32a42474825a6420b4c708157">Core::getGroupPhoto</a></div><div class="ttdeci">QPixmap &amp; getGroupPhoto(int idx) override</div><div class="ttdef"><b>Definition:</b> core.cpp:72</div></div>
+<div class="ttc" id="aclassCore_html_a628b3ba27f9ce4d561932b0392ed5f24"><div class="ttname"><a href="classCore.html#a628b3ba27f9ce4d561932b0392ed5f24">Core::saveFriendHistory</a></div><div class="ttdeci">void saveFriendHistory(int idx) override</div><div class="ttdef"><b>Definition:</b> core.cpp:106</div></div>
+<div class="ttc" id="aclassCore_html_a656ab42a0803ca139fec073ab2455d2e"><div class="ttname"><a href="classCore.html#a656ab42a0803ca139fec073ab2455d2e">Core::getGroupList</a></div><div class="ttdeci">QList&lt; std::shared_ptr&lt; Group &gt; &gt; &amp; getGroupList() override</div><div class="ttdef"><b>Definition:</b> core.cpp:64</div></div>
+<div class="ttc" id="aclassCoreFd_html"><div class="ttname"><a href="classCoreFd.html">CoreFd</a></div><div class="ttdef"><b>Definition:</b> core_fd.h:12</div></div>
+<div class="ttc" id="aclassCore_html_a9fc1f51bdd8533a047fbd93e90a94fcd"><div class="ttname"><a href="classCore.html#a9fc1f51bdd8533a047fbd93e90a94fcd">Core::sendGroup</a></div><div class="ttdeci">bool sendGroup(TypeJson::Send type_send, std::array&lt; QVariant, 4 &gt;args) override</div><div class="ttdef"><b>Definition:</b> core.cpp:58</div></div>
+<div class="ttc" id="aclassSetting_html"><div class="ttname"><a href="classSetting.html">Setting</a></div><div class="ttdoc">parse json setting file and have time out to save setting file</div><div class="ttdef"><b>Definition:</b> setting.h:13</div></div>
+<div class="ttc" id="aclassCore_html_a1582fa3a690240d7352f193e00d20a1c"><div class="ttname"><a href="classCore.html#a1582fa3a690240d7352f193e00d20a1c">Core::SIGNAL_IMPL</a></div><div class="ttdeci">SIGNAL_IMPL(Core, SigUpdateListFd)</div></div>
+<div class="ttc" id="aclassCore_html_adf1e6d00a6fc36606d5708d1cf9c14b0"><div class="ttname"><a href="classCore.html#adf1e6d00a6fc36606d5708d1cf9c14b0">Core::setPass</a></div><div class="ttdeci">bool setPass(const QString &amp;pass) override</div><div class="ttdef"><b>Definition:</b> core.cpp:76</div></div>
+<div class="ttc" id="aclassCoreSelf_html"><div class="ttname"><a href="classCoreSelf.html">CoreSelf</a></div><div class="ttdoc">个人信息保存与修改</div><div class="ttdef"><b>Definition:</b> core_self.h:10</div></div>
+<div class="ttc" id="acore__gp_8h_html"><div class="ttname"><a href="core__gp_8h.html">core_gp.h</a></div></div>
+<div class="ttc" id="aclassProtocol_html"><div class="ttname"><a href="classProtocol.html">Protocol</a></div><div class="ttdoc">生成json并发送，接收json并解析</div><div class="ttdef"><b>Definition:</b> protocol.h:16</div></div>
+<div class="ttc" id="aclassCore_html_a5057b209797afa0e0df08fd2be864164"><div class="ttname"><a href="classCore.html#a5057b209797afa0e0df08fd2be864164">Core::~Core</a></div><div class="ttdeci">~Core()=default</div></div>
+<div class="ttc" id="aclassCore_html_a32bebbc2af715edb99ba4b006302d72a"><div class="ttname"><a href="classCore.html#a32bebbc2af715edb99ba4b006302d72a">Core::loadGroupHistory</a></div><div class="ttdeci">void loadGroupHistory(int idx) override</div><div class="ttdef"><b>Definition:</b> core.cpp:97</div></div>
+<div class="ttc" id="aclassCore_html_a74bae1565ba9957dd62dfaadbbfe2727"><div class="ttname"><a href="classCore.html#a74bae1565ba9957dd62dfaadbbfe2727">Core::getFriendId</a></div><div class="ttdeci">ChatId &amp; getFriendId(int idx) override</div><div class="ttdef"><b>Definition:</b> core.cpp:48</div></div>
+<div class="ttc" id="aclassChatId_html"><div class="ttname"><a href="classChatId.html">ChatId</a></div><div class="ttdoc">id of Friend and Group</div><div class="ttdef"><b>Definition:</b> chatid.h:13</div></div>
+<div class="ttc" id="aprotocol_8h_html"><div class="ttname"><a href="protocol_8h.html">protocol.h</a></div></div>
+<div class="ttc" id="acore__self_8h_html"><div class="ttname"><a href="core__self_8h.html">core_self.h</a></div></div>
+<div class="ttc" id="anamespaceType_html_ae5b697cde223ac242545732b7e308243"><div class="ttname"><a href="namespaceType.html#ae5b697cde223ac242545732b7e308243">Type::Status</a></div><div class="ttdeci">Status</div><div class="ttdef"><b>Definition:</b> config.h:29</div></div>
+<div class="ttc" id="aclassCore_html_a165ee288ac97fe153c5f56c6bf9440a8"><div class="ttname"><a href="classCore.html#a165ee288ac97fe153c5f56c6bf9440a8">Core::recvGroup</a></div><div class="ttdeci">void recvGroup(TypeJson::Recv type_recv, std::array&lt; QVariant, 4 &gt;args) override</div><div class="ttdef"><b>Definition:</b> core.cpp:59</div></div>
+<div class="ttc" id="aclassCore_html_a027328895cfa18523959d3e7ceac750d"><div class="ttname"><a href="classCore.html#a027328895cfa18523959d3e7ceac750d">Core::getId</a></div><div class="ttdeci">ChatId &amp; getId() override</div><div class="ttdef"><b>Definition:</b> core.cpp:80</div></div>
+<div class="ttc" id="aclassCoreFtp_html"><div class="ttname"><a href="classCoreFtp.html">CoreFtp</a></div><div class="ttdef"><b>Definition:</b> core_ftp.h:4</div></div>
+<div class="ttc" id="aclassCore_html_a891598c7403d70ef44d9e45602624c55"><div class="ttname"><a href="classCore.html#a891598c7403d70ef44d9e45602624c55">Core::getFriendName</a></div><div class="ttdeci">QString &amp; getFriendName(int idx) override</div><div class="ttdef"><b>Definition:</b> core.cpp:51</div></div>
+<div class="ttc" id="aclassCoreHistory_html"><div class="ttname"><a href="classCoreHistory.html">CoreHistory</a></div><div class="ttdoc">加载和保存数据</div><div class="ttdef"><b>Definition:</b> core_history.h:14</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a95fffe9c64e44de38c79f880c408f4ff"><div class="ttname"><a href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ff">TypeJson::Send</a></div><div class="ttdeci">Send</div><div class="ttdoc">发送的类型</div><div class="ttdef"><b>Definition:</b> const_json.h:23</div></div>
+<div class="ttc" id="aclassCore_html_af0db7e1831444080961c02b855392fb5"><div class="ttname"><a href="classCore.html#af0db7e1831444080961c02b855392fb5">Core::upLoadFile</a></div><div class="ttdeci">void upLoadFile(const QString &amp;file_name) override</div><div class="ttdef"><b>Definition:</b> core.cpp:114</div></div>
+<div class="ttc" id="aclassCore_html_ae78a092fd0a1b11365449f1279c3e664"><div class="ttname"><a href="classCore.html#ae78a092fd0a1b11365449f1279c3e664">Core::getStatus</a></div><div class="ttdeci">Type::Status &amp; getStatus() override</div><div class="ttdef"><b>Definition:</b> core.cpp:82</div></div>
+<div class="ttc" id="ainterface_8h_html"><div class="ttname"><a href="interface_8h.html">interface.h</a></div></div>
+<div class="ttc" id="aclassCore_html_a79c39ebfbafd12d8b056453cc4110db2"><div class="ttname"><a href="classCore.html#a79c39ebfbafd12d8b056453cc4110db2">Core::getFriendList</a></div><div class="ttdeci">QList&lt; std::shared_ptr&lt; Friend &gt; &gt; &amp; getFriendList() override</div><div class="ttdef"><b>Definition:</b> core.cpp:45</div></div>
+<div class="ttc" id="aclassCore_html_a41afc7802e48c636c0b6852c7582c6ca"><div class="ttname"><a href="classCore.html#a41afc7802e48c636c0b6852c7582c6ca">Core::initTimeout</a></div><div class="ttdeci">void initTimeout() override</div><div class="ttdef"><b>Definition:</b> core.cpp:86</div></div>
+<div class="ttc" id="aclassCore_html_a737bd02c6bfef562da1256deab1f2a0d"><div class="ttname"><a href="classCore.html#a737bd02c6bfef562da1256deab1f2a0d">Core::saveGroupHistory</a></div><div class="ttdeci">void saveGroupHistory(int idx) override</div><div class="ttdef"><b>Definition:</b> core.cpp:100</div></div>
+<div class="ttc" id="aclassCore_html_a117db2359c8c10fe0978c8cbd5aa4444"><div class="ttname"><a href="classCore.html#a117db2359c8c10fe0978c8cbd5aa4444">Core::Core</a></div><div class="ttdeci">Core(std::shared_ptr&lt; Protocol &gt;protocol)</div><div class="ttdef"><b>Definition:</b> core.cpp:15</div></div>
+<div class="ttc" id="aclassCore_html_af3698a332eef038016e25000ec8aff43"><div class="ttname"><a href="classCore.html#af3698a332eef038016e25000ec8aff43">Core::getPublicKey</a></div><div class="ttdeci">QString &amp; getPublicKey() override</div><div class="ttdef"><b>Definition:</b> core.cpp:83</div></div>
+<div class="ttc" id="aclassCore_html_ab6da5bdd564d3b37252a60ada9e50504"><div class="ttname"><a href="classCore.html#ab6da5bdd564d3b37252a60ada9e50504">Core::setStatus</a></div><div class="ttdeci">bool setStatus(const Type::Status &amp;status) override</div><div class="ttdef"><b>Definition:</b> core.cpp:78</div></div>
+<div class="ttc" id="aclassCore_html_ad881b52dab095531d66bfbee3b73c9f9"><div class="ttname"><a href="classCore.html#ad881b52dab095531d66bfbee3b73c9f9">Core::downLoadFile</a></div><div class="ttdeci">void downLoadFile(const QString &amp;file_name) override</div><div class="ttdef"><b>Definition:</b> core.cpp:141</div></div>
+<div class="ttc" id="aclassCore_html_ae8f1e7117b02fff594ce8b7a8ee72e60"><div class="ttname"><a href="classCore.html#ae8f1e7117b02fff594ce8b7a8ee72e60">Core::getGroupName</a></div><div class="ttdeci">QString &amp; getGroupName(int idx) override</div><div class="ttdef"><b>Definition:</b> core.cpp:69</div></div>
+<div class="ttc" id="acore_8h_html_aa1c1c32be5c8c7d7fbff5081d4681884"><div class="ttname"><a href="core_8h.html#aa1c1c32be5c8c7d7fbff5081d4681884">Q_DECLARE_METATYPE</a></div><div class="ttdeci">Q_DECLARE_METATYPE(ChatId)</div></div>
+<div class="ttc" id="aclassCore_html_ac4f1b228d8710e3e562136d8ab763a2d"><div class="ttname"><a href="classCore.html#ac4f1b228d8710e3e562136d8ab763a2d">Core::setName</a></div><div class="ttdeci">bool setName(const QString &amp;name) override</div><div class="ttdef"><b>Definition:</b> core.cpp:77</div></div>
+<div class="ttc" id="aclassCore_html_a79fd696b501656502b2f5767725cc0e9"><div class="ttname"><a href="classCore.html#a79fd696b501656502b2f5767725cc0e9">Core::autoClearHistory</a></div><div class="ttdeci">void autoClearHistory() override</div><div class="ttdef"><b>Definition:</b> core.cpp:109</div></div>
+<div class="ttc" id="aclassCore_html_a0a65dcaa97e4de69cfc9d14310dec2b5"><div class="ttname"><a href="classCore.html#a0a65dcaa97e4de69cfc9d14310dec2b5">Core::getGroup</a></div><div class="ttdeci">std::shared_ptr&lt; Group &gt; getGroup(int idx) override</div><div class="ttdef"><b>Definition:</b> core.cpp:61</div></div>
+<div class="ttc" id="acore__ftp_8h_html"><div class="ttname"><a href="core__ftp_8h.html">core_ftp.h</a></div></div>
+<div class="ttc" id="aclassCore_html_ab98a23b0bff0a4f1fd35d24a1f1722b1"><div class="ttname"><a href="classCore.html#ab98a23b0bff0a4f1fd35d24a1f1722b1">Core::getName</a></div><div class="ttdeci">QString &amp; getName() override</div><div class="ttdef"><b>Definition:</b> core.cpp:81</div></div>
+<div class="ttc" id="aclassCore_html_a2514109739580cfbe294a5a9aecdea78"><div class="ttname"><a href="classCore.html#a2514109739580cfbe294a5a9aecdea78">Core::getFriendPhoto</a></div><div class="ttdeci">QPixmap &amp; getFriendPhoto(int idx) override</div><div class="ttdef"><b>Definition:</b> core.cpp:54</div></div>
+<div class="ttc" id="aclassCoreSql_html"><div class="ttname"><a href="classCoreSql.html">CoreSql</a></div><div class="ttdoc">数据库操作类</div><div class="ttdef"><b>Definition:</b> core_sql.h:38</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a20e89671a216d5c8cc31a485634ea4c0"><div class="ttname"><a href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0">TypeJson::Recv</a></div><div class="ttdeci">Recv</div><div class="ttdoc">接收的类型</div><div class="ttdef"><b>Definition:</b> const_json.h:49</div></div>
+<div class="ttc" id="aclassCoreGp_html"><div class="ttname"><a href="classCoreGp.html">CoreGp</a></div><div class="ttdef"><b>Definition:</b> core_gp.h:8</div></div>
+<div class="ttc" id="aclassCore_html_aa0467ff10a220e976a9619e007c08d45"><div class="ttname"><a href="classCore.html#aa0467ff10a220e976a9619e007c08d45">Core::loadFriendHistory</a></div><div class="ttdeci">void loadFriendHistory(int idx) override</div><div class="ttdef"><b>Definition:</b> core.cpp:103</div></div>
+<div class="ttc" id="aclassCore_html_a97fa91ff715532135ae5f1c2c711c9ae"><div class="ttname"><a href="classCore.html#a97fa91ff715532135ae5f1c2c711c9ae">Core::sendFriend</a></div><div class="ttdeci">bool sendFriend(TypeJson::Send type_send, std::array&lt; QVariant, 4 &gt;args) override</div><div class="ttdef"><b>Definition:</b> core.cpp:23</div></div>
+<div class="ttc" id="aclassCore_html_a3e4aefb9208c85f52595a9ccca5741a7"><div class="ttname"><a href="classCore.html#a3e4aefb9208c85f52595a9ccca5741a7">Core::recvFriend</a></div><div class="ttdeci">void recvFriend(TypeJson::Recv type_recv, std::array&lt; QVariant, 4 &gt;args) override</div><div class="ttdef"><b>Definition:</b> core.cpp:40</div></div>
+<div class="ttc" id="acore__fd_8h_html"><div class="ttname"><a href="core__fd_8h.html">core_fd.h</a></div></div>
+<div class="ttc" id="aclassCore_html_a405a53a985899f998aee38802ccc3d6f"><div class="ttname"><a href="classCore.html#a405a53a985899f998aee38802ccc3d6f">Core::getGroupId</a></div><div class="ttdeci">ChatId &amp; getGroupId(int idx) override</div><div class="ttdef"><b>Definition:</b> core.cpp:66</div></div>
+<div class="ttc" id="acore__history_8h_html"><div class="ttname"><a href="core__history_8h.html">core_history.h</a></div></div>
+<div class="ttc" id="aclassGpList_html"><div class="ttname"><a href="classGpList.html">GpList</a></div><div class="ttdoc">群组列表</div><div class="ttdef"><b>Definition:</b> gp_list.h:11</div></div>
+<div class="ttc" id="aclassCore_html"><div class="ttname"><a href="classCore.html">Core</a></div><div class="ttdoc">界面要操作数据的所有接口所在</div><div class="ttdef"><b>Definition:</b> core.h:29</div></div>
+<div class="ttc" id="aclassFdList_html"><div class="ttname"><a href="classFdList.html">FdList</a></div><div class="ttdoc">好友列表</div><div class="ttdef"><b>Definition:</b> fd_list.h:11</div></div>
+<div class="ttc" id="aclassCore_html_a80525bc06bd19211b63c91a7fe1542dd"><div class="ttname"><a href="classCore.html#a80525bc06bd19211b63c91a7fe1542dd">Core::getFriend</a></div><div class="ttdeci">std::shared_ptr&lt; Friend &gt; getFriend(int idx) override</div><div class="ttdef"><b>Definition:</b> core.cpp:42</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

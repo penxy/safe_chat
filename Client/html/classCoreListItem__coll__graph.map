@@ -1,0 +1,6 @@
+<map id="CoreListItem" name="CoreListItem">
+<area shape="rect" id="node1" title="item of friend list or group list" alt="" coords="31,171,136,197"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,81,84,108"/>
+<area shape="rect" id="node3" href="$classLabelPhoto.html" title="用于显示图片的标签类" alt="" coords="108,81,203,108"/>
+<area shape="rect" id="node4" title=" " alt="" coords="122,5,189,32"/>
+</map>

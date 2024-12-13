@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>qt_test: src/Chat/group.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">qt_test
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_71725ba4beea8b96fe280195d45ef0e9.html">Chat</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">group.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="group_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="chat_8h.html">chat.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="friend_8h.html">friend.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="config_8h.html">config.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QPixmap&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span><a class="code" href="classGpList.html">GpList</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classGroup.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGroup.html">Group</a> final : <span class="keyword">public</span> <a class="code" href="classChat.html">Chat</a>, <span class="keyword">public</span> std::enable_shared_from_this&lt;Group&gt;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    Q_OBJECT </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classGroup.html#ab25c739dd2db90d35b1b77f78a069364">Group</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classGroup.html#ab25c739dd2db90d35b1b77f78a069364">Group</a>(<span class="keyword">const</span> <a class="code" href="classChatId.html">ChatId</a>&amp; <span class="keywordtype">id</span>, <span class="keyword">const</span> QString&amp; pix_base64, <span class="keyword">const</span> QString&amp; <a class="code" href="classGroup.html#a0a08f8ecd967cb66b780f3a801370be9">name</a>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classGroup.html#ab25c739dd2db90d35b1b77f78a069364">Group</a>(<span class="keyword">const</span> <a class="code" href="classGroup.html">Group</a>&amp; other);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classGroup.html">Group</a>&amp; <a class="code" href="classGroup.html#a58010b8686ec510c2dc75c0ef39d0416">operator=</a>(<span class="keyword">const</span> <a class="code" href="classGroup.html">Group</a>&amp; other);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classGroup.html#a104b2ba317d02cef0a99fae1c4e6726f">   23</a></span>&#160;    Q_PROPERTY(QString <a class="code" href="classGroup.html#a0a08f8ecd967cb66b780f3a801370be9">name</a> READ <a class="code" href="classGroup.html#a4034a8d5f490e9782d9107a9847e4cda">getName</a> WRITE <a class="code" href="classGroup.html#aba5d3f4b59bd91edc417b64275805077">setName</a> NOTIFY SigNameChanged FINAL);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    Q_PROPERTY(QPixmap <a class="code" href="classGroup.html#a104b2ba317d02cef0a99fae1c4e6726f">pix</a> READ <a class="code" href="classGroup.html#a3513b250c8bb2fb4c240c204eb4cde86">getPix</a> WRITE <a class="code" href="classGroup.html#a9433fe0bc43e31e8d3c5536cdfa21ee0">setPix</a> NOTIFY SigPixChanged FINAL);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classGroup.html#a81d8fed7c0da45f6c943138149e495df">SIGNAL_IMPL</a>(<a class="code" href="classGroup.html">Group</a>, SigNameChanged, <span class="keyword">const</span> QString&amp;);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classGroup.html#a81d8fed7c0da45f6c943138149e495df">SIGNAL_IMPL</a>(<a class="code" href="classGroup.html">Group</a>, SigPixChanged, <span class="keyword">const</span> QPixmap&amp;);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classChatId.html">ChatId</a>&amp; <a class="code" href="classGroup.html#aab97741d852dbf5750c88a8c782865bd">getId</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGroup.html#aba5d3f4b59bd91edc417b64275805077">setName</a>(<span class="keyword">const</span> QString&amp; <a class="code" href="classGroup.html#a0a08f8ecd967cb66b780f3a801370be9">name</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    QString&amp; <a class="code" href="classGroup.html#a4034a8d5f490e9782d9107a9847e4cda">getName</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGroup.html#a9433fe0bc43e31e8d3c5536cdfa21ee0">setPix</a>(<span class="keyword">const</span> QPixmap&amp; <a class="code" href="classGroup.html#a104b2ba317d02cef0a99fae1c4e6726f">pix</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    QPixmap&amp; <a class="code" href="classGroup.html#a3513b250c8bb2fb4c240c204eb4cde86">getPix</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGroup.html#ac0f84c832fe094edd3d9e5c2e5993f0a">setHistory</a>(<span class="keyword">const</span> QList&lt;ns::History&gt;&amp; history) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    QList&lt;ns::History&gt;&amp; <a class="code" href="classGroup.html#aa3f3b51ce2bea23070d47e2aa7c1f719">getHistory</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">bool</span> setVal(T&amp; savedVal, T newVal);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classChatId.html">ChatId</a>                                          m_chat_id;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    QString                                         m_name;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    QPixmap                                         m_pix;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    QList&lt;ns::Member&gt;                               m_members;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    QList&lt;ns::History&gt;                              m_history;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="afriend_8h_html"><div class="ttname"><a href="friend_8h.html">friend.h</a></div></div>
+<div class="ttc" id="aclassChat_html"><div class="ttname"><a href="classChat.html">Chat</a></div><div class="ttdoc">Friend和Group的基类, 定义了一些基本的接口和信号</div><div class="ttdef"><b>Definition:</b> chat.h:14</div></div>
+<div class="ttc" id="aclassGroup_html_a9433fe0bc43e31e8d3c5536cdfa21ee0"><div class="ttname"><a href="classGroup.html#a9433fe0bc43e31e8d3c5536cdfa21ee0">Group::setPix</a></div><div class="ttdeci">void setPix(const QPixmap &amp;pix) override</div><div class="ttdef"><b>Definition:</b> group.cpp:20</div></div>
+<div class="ttc" id="aclassGroup_html_a58010b8686ec510c2dc75c0ef39d0416"><div class="ttname"><a href="classGroup.html#a58010b8686ec510c2dc75c0ef39d0416">Group::operator=</a></div><div class="ttdeci">Group &amp; operator=(const Group &amp;other)</div><div class="ttdef"><b>Definition:</b> group.cpp:10</div></div>
+<div class="ttc" id="aclassGroup_html_a104b2ba317d02cef0a99fae1c4e6726f"><div class="ttname"><a href="classGroup.html#a104b2ba317d02cef0a99fae1c4e6726f">Group::pix</a></div><div class="ttdeci">QPixmap pix</div><div class="ttdef"><b>Definition:</b> group.h:23</div></div>
+<div class="ttc" id="aclassGroup_html_ac0f84c832fe094edd3d9e5c2e5993f0a"><div class="ttname"><a href="classGroup.html#ac0f84c832fe094edd3d9e5c2e5993f0a">Group::setHistory</a></div><div class="ttdeci">void setHistory(const QList&lt; ns::History &gt; &amp;history) override</div><div class="ttdef"><b>Definition:</b> group.cpp:31</div></div>
+<div class="ttc" id="aclassGroup_html_a0a08f8ecd967cb66b780f3a801370be9"><div class="ttname"><a href="classGroup.html#a0a08f8ecd967cb66b780f3a801370be9">Group::name</a></div><div class="ttdeci">QString name</div><div class="ttdef"><b>Definition:</b> group.h:23</div></div>
+<div class="ttc" id="aclassChatId_html"><div class="ttname"><a href="classChatId.html">ChatId</a></div><div class="ttdoc">id of Friend and Group</div><div class="ttdef"><b>Definition:</b> chatid.h:13</div></div>
+<div class="ttc" id="aclassGroup_html_aab97741d852dbf5750c88a8c782865bd"><div class="ttname"><a href="classGroup.html#aab97741d852dbf5750c88a8c782865bd">Group::getId</a></div><div class="ttdeci">ChatId &amp; getId() override</div><div class="ttdef"><b>Definition:</b> group.cpp:35</div></div>
+<div class="ttc" id="aclassGroup_html_a4034a8d5f490e9782d9107a9847e4cda"><div class="ttname"><a href="classGroup.html#a4034a8d5f490e9782d9107a9847e4cda">Group::getName</a></div><div class="ttdeci">QString &amp; getName() override</div><div class="ttdef"><b>Definition:</b> group.cpp:41</div></div>
+<div class="ttc" id="aclassGroup_html_ab25c739dd2db90d35b1b77f78a069364"><div class="ttname"><a href="classGroup.html#ab25c739dd2db90d35b1b77f78a069364">Group::Group</a></div><div class="ttdeci">Group()=default</div></div>
+<div class="ttc" id="aclassGroup_html_a3513b250c8bb2fb4c240c204eb4cde86"><div class="ttname"><a href="classGroup.html#a3513b250c8bb2fb4c240c204eb4cde86">Group::getPix</a></div><div class="ttdeci">QPixmap &amp; getPix() override</div><div class="ttdef"><b>Definition:</b> group.cpp:38</div></div>
+<div class="ttc" id="aclassGroup_html_a81d8fed7c0da45f6c943138149e495df"><div class="ttname"><a href="classGroup.html#a81d8fed7c0da45f6c943138149e495df">Group::SIGNAL_IMPL</a></div><div class="ttdeci">SIGNAL_IMPL(Group, SigNameChanged, const QString &amp;)</div></div>
+<div class="ttc" id="aclassGroup_html"><div class="ttname"><a href="classGroup.html">Group</a></div><div class="ttdef"><b>Definition:</b> group.h:15</div></div>
+<div class="ttc" id="aclassGroup_html_aba5d3f4b59bd91edc417b64275805077"><div class="ttname"><a href="classGroup.html#aba5d3f4b59bd91edc417b64275805077">Group::setName</a></div><div class="ttdeci">void setName(const QString &amp;name) override</div><div class="ttdef"><b>Definition:</b> group.cpp:26</div></div>
+<div class="ttc" id="aclassGroup_html_aa3f3b51ce2bea23070d47e2aa7c1f719"><div class="ttname"><a href="classGroup.html#aa3f3b51ce2bea23070d47e2aa7c1f719">Group::getHistory</a></div><div class="ttdeci">QList&lt; ns::History &gt; &amp; getHistory() override</div><div class="ttdef"><b>Definition:</b> group.cpp:44</div></div>
+<div class="ttc" id="achat_8h_html"><div class="ttname"><a href="chat_8h.html">chat.h</a></div></div>
+<div class="ttc" id="aconfig_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div></div>
+<div class="ttc" id="aclassGpList_html"><div class="ttname"><a href="classGpList.html">GpList</a></div><div class="ttdoc">群组列表</div><div class="ttdef"><b>Definition:</b> gp_list.h:11</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>qt_test: src/Service/protocol.cpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">qt_test
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_6ffc343ef0b33b8e0e31ec7afba90a0a.html">Service</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">命名空间</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">protocol.cpp 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="protocol_8h_source.html">protocol.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="core_8h_source.html">Core/core.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="const__json_8h_source.html">const_json.h</a>&quot;</code><br />
+<code>#include &lt;QTcpSocket&gt;</code><br />
+<code>#include &lt;QJsonArray&gt;</code><br />
+<code>#include &lt;QDateTime&gt;</code><br />
+<code>#include &lt;QJsonDocument&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+protocol.cpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="protocol_8cpp__incl.png" border="0" usemap="#src_2Service_2protocol_8cpp" alt=""/></div>
+<map name="src_2Service_2protocol_8cpp" id="src_2Service_2protocol_8cpp">
+<area shape="rect" title=" " alt="" coords="737,5,914,32"/>
+<area shape="rect" href="protocol_8h.html" title=" " alt="" coords="161,155,247,181"/>
+<area shape="rect" title=" " alt="" coords="5,229,101,256"/>
+<area shape="rect" href="const__json_8h.html" title=" " alt="" coords="555,229,658,256"/>
+<area shape="rect" href="core_8h.html" title=" " alt="" coords="777,80,873,107"/>
+<area shape="rect" title=" " alt="" coords="1289,528,1385,555"/>
+<area shape="rect" title=" " alt="" coords="1514,80,1609,107"/>
+<area shape="rect" title=" " alt="" coords="1633,80,1759,107"/>
+<area shape="rect" title=" " alt="" coords="655,453,729,480"/>
+<area shape="rect" title=" " alt="" coords="779,603,856,629"/>
+<area shape="rect" title=" " alt="" coords="176,229,277,256"/>
+<area shape="rect" title=" " alt="" coords="641,304,700,331"/>
+<area shape="rect" title=" " alt="" coords="553,304,617,331"/>
+<area shape="rect" href="core__fd_8h.html" title=" " alt="" coords="719,155,801,181"/>
+<area shape="rect" title=" " alt="" coords="855,528,937,555"/>
+<area shape="rect" href="interface_8h.html" title=" " alt="" coords="290,453,414,480"/>
+<area shape="rect" href="core__gp_8h.html" title=" " alt="" coords="967,155,1052,181"/>
+<area shape="rect" href="core__self_8h.html" title=" " alt="" coords="1346,379,1438,405"/>
+<area shape="rect" href="core__history_8h.html" title=" " alt="" coords="1209,379,1321,405"/>
+<area shape="rect" href="core__ftp_8h.html" title=" " alt="" coords="1346,304,1433,331"/>
+<area shape="rect" title=" " alt="" coords="323,155,429,181"/>
+<area shape="rect" href="config_8h.html" title=" " alt="" coords="1110,453,1183,480"/>
+<area shape="rect" title=" " alt="" coords="837,229,891,256"/>
+<area shape="rect" title=" " alt="" coords="682,229,761,256"/>
+<area shape="rect" href="friend_8h.html" title=" " alt="" coords="775,304,881,331"/>
+<area shape="rect" title=" " alt="" coords="1207,528,1265,555"/>
+<area shape="rect" title=" " alt="" coords="1012,528,1087,555"/>
+<area shape="rect" title=" " alt="" coords="1111,528,1182,555"/>
+<area shape="rect" href="chatid_8h.html" title=" " alt="" coords="1461,528,1569,555"/>
+<area shape="rect" title=" " alt="" coords="1571,603,1642,629"/>
+<area shape="rect" title=" " alt="" coords="1450,603,1547,629"/>
+<area shape="rect" href="chat_8h.html" title=" " alt="" coords="913,379,975,405"/>
+<area shape="rect" title=" " alt="" coords="304,528,411,555"/>
+<area shape="rect" title=" " alt="" coords="193,528,279,555"/>
+<area shape="rect" href="group_8h.html" title=" " alt="" coords="967,229,1073,256"/>
+<area shape="rect" title=" " alt="" coords="1375,453,1438,480"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:namespaceJsonHand"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJsonHand.html">JsonHand</a></td></tr>
+<tr class="memdesc:namespaceJsonHand"><td class="mdescLeft">&#160;</td><td class="mdescRight">包含json头部的属性 <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a1cdee257b67905cf26ff7d05ba8a8b79"><td class="memItemLeft" align="right" valign="top">const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJsonHand.html#a1cdee257b67905cf26ff7d05ba8a8b79">JsonHand::index</a> {&quot;index&quot;}</td></tr>
+<tr class="separator:a1cdee257b67905cf26ff7d05ba8a8b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe5cb3c1f2c22beeb1b650cadd31426d"><td class="memItemLeft" align="right" valign="top">const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJsonHand.html#afe5cb3c1f2c22beeb1b650cadd31426d">JsonHand::account_id</a> {&quot;account_id&quot;}</td></tr>
+<tr class="separator:afe5cb3c1f2c22beeb1b650cadd31426d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af776adb8dd7985596930735181a434f8"><td class="memItemLeft" align="right" valign="top">const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJsonHand.html#af776adb8dd7985596930735181a434f8">JsonHand::time</a> {&quot;time&quot;}</td></tr>
+<tr class="separator:af776adb8dd7985596930735181a434f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a0ea3b51169594c6ddbe2cdab361e65"><td class="memItemLeft" align="right" valign="top">const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJsonHand.html#a8a0ea3b51169594c6ddbe2cdab361e65">JsonHand::type</a> {&quot;type&quot;}</td></tr>
+<tr class="separator:a8a0ea3b51169594c6ddbe2cdab361e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9a9055632b3ba405d5683ad49c71e2e"><td class="memItemLeft" align="right" valign="top">const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJsonHand.html#ae9a9055632b3ba405d5683ad49c71e2e">JsonHand::recv_id</a> {&quot;recv_id&quot;}</td></tr>
+<tr class="separator:ae9a9055632b3ba405d5683ad49c71e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9751f7550c97a43e2f3e88d34ed7cf78"><td class="memItemLeft" align="right" valign="top">const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJsonHand.html#a9751f7550c97a43e2f3e88d34ed7cf78">JsonHand::content</a> {&quot;content&quot;}</td></tr>
+<tr class="separator:a9751f7550c97a43e2f3e88d34ed7cf78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a5d55a6d14deb3e8b16aecd6ba168f4"><td class="memItemLeft" align="right" valign="top">const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJsonHand.html#a0a5d55a6d14deb3e8b16aecd6ba168f4">JsonHand::public_key</a> {&quot;public_key&quot;}</td></tr>
+<tr class="separator:a0a5d55a6d14deb3e8b16aecd6ba168f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

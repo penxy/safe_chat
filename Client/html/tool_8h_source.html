@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>qt_test: src/utils/tool.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">qt_test
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_313caf1132e152dd9b58bea13a4052ca.html">utils</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">tool.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="tool_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="single__model_8h.html">single_model.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="classTool.html">    5</a></span>&#160;<span class="keyword">class </span><a class="code" href="classTool.html">Tool</a> : <span class="keyword">public</span> <a class="code" href="classSingleton.html">Singleton</a>&lt;Tool&gt; {</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classTool.html#a64e7d0c4e32ba4559089ee4f538eb64f">    6</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classSingleton.html">Singleton</a>&lt;<a class="code" href="classTool.html">Tool</a>&gt;;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="classTool.html#a8baf6126c87dda88049a97312881ff94">Tool</a> (<span class="keyword">const</span> <a class="code" href="classTool.html">Tool</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="classTool.html">Tool</a>&amp; <a class="code" href="classTool.html#a75cdebbefd9ae7415364fe0acb2d018a">operator = </a>(<span class="keyword">const</span> <a class="code" href="classTool.html">Tool</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="classTool.html#a8baf6126c87dda88049a97312881ff94">Tool</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>: </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classTool.html#ade51f1337bfd0c9e83bfb9af4a812935">   13</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="classTool.html#ade51f1337bfd0c9e83bfb9af4a812935">TypeQss</a>{</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classTool.html#ade51f1337bfd0c9e83bfb9af4a812935a5d261e00f7f23c46c5760ceae575b785">   14</a></span>&#160;        <a class="code" href="classTool.html#ade51f1337bfd0c9e83bfb9af4a812935a5d261e00f7f23c46c5760ceae575b785">ComBox</a>,</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classTool.html#ade51f1337bfd0c9e83bfb9af4a812935ad34b78c083043d9f6b7735d4d85352be">   15</a></span>&#160;        <a class="code" href="classTool.html#ade51f1337bfd0c9e83bfb9af4a812935ad34b78c083043d9f6b7735d4d85352be">Label</a>,</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classTool.html#ade51f1337bfd0c9e83bfb9af4a812935a32a760d80a7ecfeffc0c81ebfba0c425">   16</a></span>&#160;        <a class="code" href="classTool.html#ade51f1337bfd0c9e83bfb9af4a812935a32a760d80a7ecfeffc0c81ebfba0c425">TextEdit</a>,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    };</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    QString <a class="code" href="classTool.html#a77606898fb48c456d61d5fe1958cdb33">pix2Base64</a>(<span class="keyword">const</span> QPixmap &amp;pixmap);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    QPixmap <a class="code" href="classTool.html#ae19f5d770547683316e6399d174af3cc">base642Pix</a>(<span class="keyword">const</span> QString &amp;base64);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    QString <a class="code" href="classTool.html#a3fa896955dbeb60fccd27f5c29fab86e">getQss</a>(<a class="code" href="classTool.html#ade51f1337bfd0c9e83bfb9af4a812935">TypeQss</a> <a class="code" href="namespaceJsonHand.html#a8a0ea3b51169594c6ddbe2cdab361e65">type</a>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="tool_8cpp.html#a7bfdda8c48cc6d37b234b189daf5104c">   23</a></span>&#160;<span class="preprocessor">#define TOOL Tool::get_inst()</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassTool_html_ade51f1337bfd0c9e83bfb9af4a812935"><div class="ttname"><a href="classTool.html#ade51f1337bfd0c9e83bfb9af4a812935">Tool::TypeQss</a></div><div class="ttdeci">TypeQss</div><div class="ttdef"><b>Definition:</b> tool.h:13</div></div>
+<div class="ttc" id="aclassTool_html"><div class="ttname"><a href="classTool.html">Tool</a></div><div class="ttdef"><b>Definition:</b> tool.h:5</div></div>
+<div class="ttc" id="aclassTool_html_a3fa896955dbeb60fccd27f5c29fab86e"><div class="ttname"><a href="classTool.html#a3fa896955dbeb60fccd27f5c29fab86e">Tool::getQss</a></div><div class="ttdeci">QString getQss(TypeQss type)</div><div class="ttdef"><b>Definition:</b> tool.cpp:21</div></div>
+<div class="ttc" id="aclassTool_html_a75cdebbefd9ae7415364fe0acb2d018a"><div class="ttname"><a href="classTool.html#a75cdebbefd9ae7415364fe0acb2d018a">Tool::operator=</a></div><div class="ttdeci">Tool &amp; operator=(const Tool &amp;)=delete</div></div>
+<div class="ttc" id="aclassTool_html_ade51f1337bfd0c9e83bfb9af4a812935a5d261e00f7f23c46c5760ceae575b785"><div class="ttname"><a href="classTool.html#ade51f1337bfd0c9e83bfb9af4a812935a5d261e00f7f23c46c5760ceae575b785">Tool::ComBox</a></div><div class="ttdeci">@ ComBox</div><div class="ttdef"><b>Definition:</b> tool.h:14</div></div>
+<div class="ttc" id="anamespaceJsonHand_html_a8a0ea3b51169594c6ddbe2cdab361e65"><div class="ttname"><a href="namespaceJsonHand.html#a8a0ea3b51169594c6ddbe2cdab361e65">JsonHand::type</a></div><div class="ttdeci">const QString type</div><div class="ttdef"><b>Definition:</b> protocol.cpp:18</div></div>
+<div class="ttc" id="asingle__model_8h_html"><div class="ttname"><a href="single__model_8h.html">single_model.h</a></div></div>
+<div class="ttc" id="aclassTool_html_a77606898fb48c456d61d5fe1958cdb33"><div class="ttname"><a href="classTool.html#a77606898fb48c456d61d5fe1958cdb33">Tool::pix2Base64</a></div><div class="ttdeci">QString pix2Base64(const QPixmap &amp;pixmap)</div><div class="ttdef"><b>Definition:</b> tool.cpp:8</div></div>
+<div class="ttc" id="aclassTool_html_ae19f5d770547683316e6399d174af3cc"><div class="ttname"><a href="classTool.html#ae19f5d770547683316e6399d174af3cc">Tool::base642Pix</a></div><div class="ttdeci">QPixmap base642Pix(const QString &amp;base64)</div><div class="ttdef"><b>Definition:</b> tool.cpp:15</div></div>
+<div class="ttc" id="aclassSingleton_html"><div class="ttname"><a href="classSingleton.html">Singleton</a></div><div class="ttdoc">single model</div><div class="ttdef"><b>Definition:</b> single_model.h:9</div></div>
+<div class="ttc" id="aclassTool_html_ade51f1337bfd0c9e83bfb9af4a812935a32a760d80a7ecfeffc0c81ebfba0c425"><div class="ttname"><a href="classTool.html#ade51f1337bfd0c9e83bfb9af4a812935a32a760d80a7ecfeffc0c81ebfba0c425">Tool::TextEdit</a></div><div class="ttdeci">@ TextEdit</div><div class="ttdef"><b>Definition:</b> tool.h:16</div></div>
+<div class="ttc" id="aclassTool_html_a8baf6126c87dda88049a97312881ff94"><div class="ttname"><a href="classTool.html#a8baf6126c87dda88049a97312881ff94">Tool::Tool</a></div><div class="ttdeci">Tool()=default</div></div>
+<div class="ttc" id="aclassTool_html_ade51f1337bfd0c9e83bfb9af4a812935ad34b78c083043d9f6b7735d4d85352be"><div class="ttname"><a href="classTool.html#ade51f1337bfd0c9e83bfb9af4a812935ad34b78c083043d9f6b7735d4d85352be">Tool::Label</a></div><div class="ttdeci">@ Label</div><div class="ttdef"><b>Definition:</b> tool.h:15</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

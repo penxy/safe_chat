@@ -1,0 +1,228 @@
+\hypertarget{classCoreHistory}{}\doxysection{Core\+History类 参考}
+\label{classCoreHistory}\index{CoreHistory@{CoreHistory}}
+
+
+加载和保存数据  
+
+
+
+
+{\ttfamily \#include $<$core\+\_\+history.\+h$>$}
+
+
+
+类 Core\+History 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classCoreHistory__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCoreHistory_a8826303b58602d0d3ea38ce9afa2ddf0}{Core\+History}} ()=default
+\item 
+virtual \mbox{\hyperlink{classCoreHistory_a419c8563ad8f1f4a65cde9670bfa1deb}{$\sim$\+Core\+History}} ()=default
+\item 
+\mbox{\hyperlink{classCoreHistory_a9a80244fb024795e333ec95257d17591}{Core\+History}} (const \mbox{\hyperlink{classCoreHistory}{Core\+History}} \&)=default
+\item 
+\mbox{\hyperlink{classCoreHistory}{Core\+History}} \& \mbox{\hyperlink{classCoreHistory_ac2bcee7700025554b912fd190a965f0e}{operator=}} (const \mbox{\hyperlink{classCoreHistory}{Core\+History}} \&)=default
+\item 
+\mbox{\hyperlink{classCoreHistory_a10e7d7337b99474ac2bc76fc3998a173}{Core\+History}} (\mbox{\hyperlink{classCoreHistory}{Core\+History}} \&\&)=default
+\item 
+\mbox{\hyperlink{classCoreHistory}{Core\+History}} \& \mbox{\hyperlink{classCoreHistory_a3388554c64e7c49a3b435042d3c315d5}{operator=}} (\mbox{\hyperlink{classCoreHistory}{Core\+History}} \&\&)=default
+\item 
+virtual void \mbox{\hyperlink{classCoreHistory_adf07095f287fc1eebdd37e632469a5da}{init\+Timeout}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classCoreHistory_aab4ecb043cdce26e6a67613cd6f007df}{load\+Group\+History}} (int idx)=0
+\item 
+virtual void \mbox{\hyperlink{classCoreHistory_a647603ed3fe8d17e355d9006dedaf86e}{save\+Group\+History}} (int idx)=0
+\item 
+virtual void \mbox{\hyperlink{classCoreHistory_ab245d99a6dc9b8cca50a83183097818d}{load\+Friend\+History}} (int idx)=0
+\item 
+virtual void \mbox{\hyperlink{classCoreHistory_abc8cc49b6e073572849b88d67f418650}{save\+Friend\+History}} (int idx)=0
+\item 
+virtual void \mbox{\hyperlink{classCoreHistory_a4da5dbb868080b17fb6128048087a0d8}{auto\+Clear\+History}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Timer \mbox{\hyperlink{classCoreHistory_aec06db9cbe854328820f0fbd1cbc90f8}{m\+\_\+timer\+\_\+save\+\_\+history}}
+\item 
+Q\+Timer \mbox{\hyperlink{classCoreHistory_abf177c8957a0319afe4d6113581e79d3}{m\+\_\+timer\+\_\+clear\+\_\+history}}
+\item 
+std\+::queue$<$ std\+::pair$<$ std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classFriend}{Friend}} $>$, \mbox{\hyperlink{structns_1_1History}{ns\+::\+History}} $>$ $>$ \mbox{\hyperlink{classCoreHistory_a8f55126fe7e61e03958ed657e619fc98}{m\+\_\+fd\+\_\+msg\+\_\+queue}}
+\item 
+std\+::queue$<$ std\+::pair$<$ std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classGroup}{Group}} $>$, \mbox{\hyperlink{structns_1_1History}{ns\+::\+History}} $>$ $>$ \mbox{\hyperlink{classCoreHistory_a4064ab596b3d93c3a9cfa885bef75fb5}{m\+\_\+gp\+\_\+msg\+\_\+queue}}
+\end{DoxyCompactItemize}
+\doxysubsection*{静态 Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{classCoreHistory_ad37861f5176b6bc4858446eabc06cf10}{T\+I\+M\+E\+O\+U\+T\+\_\+\+S\+A\+V\+E\+\_\+\+H\+I\+S\+T\+O\+RY}} = 10000
+\item 
+static const int \mbox{\hyperlink{classCoreHistory_a52f20d0a4b859c45c3ff3cf4e87fb4ea}{T\+I\+M\+E\+O\+U\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+H\+I\+S\+T\+O\+RY}} = 1000 $\ast$ 60 $\ast$ 60 $\ast$ 24
+\item 
+static const int \mbox{\hyperlink{classCoreHistory_a240a51622f5b8f4fe4b00b27b68d012a}{L\+O\+N\+G\+E\+S\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+H\+I\+S\+T\+O\+RY}} = 30
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+加载和保存数据 
+
+\begin{DoxyNote}{注解}
+暂不实现 
+\end{DoxyNote}
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classCoreHistory_a8826303b58602d0d3ea38ce9afa2ddf0}\label{classCoreHistory_a8826303b58602d0d3ea38ce9afa2ddf0}} 
+\index{CoreHistory@{CoreHistory}!CoreHistory@{CoreHistory}}
+\index{CoreHistory@{CoreHistory}!CoreHistory@{CoreHistory}}
+\doxysubsubsection{\texorpdfstring{CoreHistory()}{CoreHistory()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Core\+History\+::\+Core\+History (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classCoreHistory_a419c8563ad8f1f4a65cde9670bfa1deb}\label{classCoreHistory_a419c8563ad8f1f4a65cde9670bfa1deb}} 
+\index{CoreHistory@{CoreHistory}!````~CoreHistory@{$\sim$CoreHistory}}
+\index{````~CoreHistory@{$\sim$CoreHistory}!CoreHistory@{CoreHistory}}
+\doxysubsubsection{\texorpdfstring{$\sim$CoreHistory()}{~CoreHistory()}}
+{\footnotesize\ttfamily virtual Core\+History\+::$\sim$\+Core\+History (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{classCoreHistory_a9a80244fb024795e333ec95257d17591}\label{classCoreHistory_a9a80244fb024795e333ec95257d17591}} 
+\index{CoreHistory@{CoreHistory}!CoreHistory@{CoreHistory}}
+\index{CoreHistory@{CoreHistory}!CoreHistory@{CoreHistory}}
+\doxysubsubsection{\texorpdfstring{CoreHistory()}{CoreHistory()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Core\+History\+::\+Core\+History (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCoreHistory}{Core\+History}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classCoreHistory_a10e7d7337b99474ac2bc76fc3998a173}\label{classCoreHistory_a10e7d7337b99474ac2bc76fc3998a173}} 
+\index{CoreHistory@{CoreHistory}!CoreHistory@{CoreHistory}}
+\index{CoreHistory@{CoreHistory}!CoreHistory@{CoreHistory}}
+\doxysubsubsection{\texorpdfstring{CoreHistory()}{CoreHistory()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Core\+History\+::\+Core\+History (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCoreHistory}{Core\+History}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classCoreHistory_a4da5dbb868080b17fb6128048087a0d8}\label{classCoreHistory_a4da5dbb868080b17fb6128048087a0d8}} 
+\index{CoreHistory@{CoreHistory}!autoClearHistory@{autoClearHistory}}
+\index{autoClearHistory@{autoClearHistory}!CoreHistory@{CoreHistory}}
+\doxysubsubsection{\texorpdfstring{autoClearHistory()}{autoClearHistory()}}
+{\footnotesize\ttfamily virtual void Core\+History\+::auto\+Clear\+History (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classCore_a79fd696b501656502b2f5767725cc0e9}{Core}} 内被实现.
+
+\mbox{\Hypertarget{classCoreHistory_adf07095f287fc1eebdd37e632469a5da}\label{classCoreHistory_adf07095f287fc1eebdd37e632469a5da}} 
+\index{CoreHistory@{CoreHistory}!initTimeout@{initTimeout}}
+\index{initTimeout@{initTimeout}!CoreHistory@{CoreHistory}}
+\doxysubsubsection{\texorpdfstring{initTimeout()}{initTimeout()}}
+{\footnotesize\ttfamily virtual void Core\+History\+::init\+Timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classCore_a41afc7802e48c636c0b6852c7582c6ca}{Core}} 内被实现.
+
+\mbox{\Hypertarget{classCoreHistory_ab245d99a6dc9b8cca50a83183097818d}\label{classCoreHistory_ab245d99a6dc9b8cca50a83183097818d}} 
+\index{CoreHistory@{CoreHistory}!loadFriendHistory@{loadFriendHistory}}
+\index{loadFriendHistory@{loadFriendHistory}!CoreHistory@{CoreHistory}}
+\doxysubsubsection{\texorpdfstring{loadFriendHistory()}{loadFriendHistory()}}
+{\footnotesize\ttfamily virtual void Core\+History\+::load\+Friend\+History (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classCore_aa0467ff10a220e976a9619e007c08d45}{Core}} 内被实现.
+
+\mbox{\Hypertarget{classCoreHistory_aab4ecb043cdce26e6a67613cd6f007df}\label{classCoreHistory_aab4ecb043cdce26e6a67613cd6f007df}} 
+\index{CoreHistory@{CoreHistory}!loadGroupHistory@{loadGroupHistory}}
+\index{loadGroupHistory@{loadGroupHistory}!CoreHistory@{CoreHistory}}
+\doxysubsubsection{\texorpdfstring{loadGroupHistory()}{loadGroupHistory()}}
+{\footnotesize\ttfamily virtual void Core\+History\+::load\+Group\+History (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classCore_a32bebbc2af715edb99ba4b006302d72a}{Core}} 内被实现.
+
+\mbox{\Hypertarget{classCoreHistory_ac2bcee7700025554b912fd190a965f0e}\label{classCoreHistory_ac2bcee7700025554b912fd190a965f0e}} 
+\index{CoreHistory@{CoreHistory}!operator=@{operator=}}
+\index{operator=@{operator=}!CoreHistory@{CoreHistory}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCoreHistory}{Core\+History}}\& Core\+History\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCoreHistory}{Core\+History}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classCoreHistory_a3388554c64e7c49a3b435042d3c315d5}\label{classCoreHistory_a3388554c64e7c49a3b435042d3c315d5}} 
+\index{CoreHistory@{CoreHistory}!operator=@{operator=}}
+\index{operator=@{operator=}!CoreHistory@{CoreHistory}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCoreHistory}{Core\+History}}\& Core\+History\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCoreHistory}{Core\+History}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classCoreHistory_abc8cc49b6e073572849b88d67f418650}\label{classCoreHistory_abc8cc49b6e073572849b88d67f418650}} 
+\index{CoreHistory@{CoreHistory}!saveFriendHistory@{saveFriendHistory}}
+\index{saveFriendHistory@{saveFriendHistory}!CoreHistory@{CoreHistory}}
+\doxysubsubsection{\texorpdfstring{saveFriendHistory()}{saveFriendHistory()}}
+{\footnotesize\ttfamily virtual void Core\+History\+::save\+Friend\+History (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classCore_a628b3ba27f9ce4d561932b0392ed5f24}{Core}} 内被实现.
+
+\mbox{\Hypertarget{classCoreHistory_a647603ed3fe8d17e355d9006dedaf86e}\label{classCoreHistory_a647603ed3fe8d17e355d9006dedaf86e}} 
+\index{CoreHistory@{CoreHistory}!saveGroupHistory@{saveGroupHistory}}
+\index{saveGroupHistory@{saveGroupHistory}!CoreHistory@{CoreHistory}}
+\doxysubsubsection{\texorpdfstring{saveGroupHistory()}{saveGroupHistory()}}
+{\footnotesize\ttfamily virtual void Core\+History\+::save\+Group\+History (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classCore_a737bd02c6bfef562da1256deab1f2a0d}{Core}} 内被实现.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{classCoreHistory_a240a51622f5b8f4fe4b00b27b68d012a}\label{classCoreHistory_a240a51622f5b8f4fe4b00b27b68d012a}} 
+\index{CoreHistory@{CoreHistory}!LONGEST\_CLEAR\_HISTORY@{LONGEST\_CLEAR\_HISTORY}}
+\index{LONGEST\_CLEAR\_HISTORY@{LONGEST\_CLEAR\_HISTORY}!CoreHistory@{CoreHistory}}
+\doxysubsubsection{\texorpdfstring{LONGEST\_CLEAR\_HISTORY}{LONGEST\_CLEAR\_HISTORY}}
+{\footnotesize\ttfamily const int Core\+History\+::\+L\+O\+N\+G\+E\+S\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+H\+I\+S\+T\+O\+RY = 30\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCoreHistory_a8f55126fe7e61e03958ed657e619fc98}\label{classCoreHistory_a8f55126fe7e61e03958ed657e619fc98}} 
+\index{CoreHistory@{CoreHistory}!m\_fd\_msg\_queue@{m\_fd\_msg\_queue}}
+\index{m\_fd\_msg\_queue@{m\_fd\_msg\_queue}!CoreHistory@{CoreHistory}}
+\doxysubsubsection{\texorpdfstring{m\_fd\_msg\_queue}{m\_fd\_msg\_queue}}
+{\footnotesize\ttfamily std\+::queue$<$std\+::pair$<$std\+::weak\+\_\+ptr$<$\mbox{\hyperlink{classFriend}{Friend}}$>$, \mbox{\hyperlink{structns_1_1History}{ns\+::\+History}}$>$ $>$ Core\+History\+::m\+\_\+fd\+\_\+msg\+\_\+queue\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCoreHistory_a4064ab596b3d93c3a9cfa885bef75fb5}\label{classCoreHistory_a4064ab596b3d93c3a9cfa885bef75fb5}} 
+\index{CoreHistory@{CoreHistory}!m\_gp\_msg\_queue@{m\_gp\_msg\_queue}}
+\index{m\_gp\_msg\_queue@{m\_gp\_msg\_queue}!CoreHistory@{CoreHistory}}
+\doxysubsubsection{\texorpdfstring{m\_gp\_msg\_queue}{m\_gp\_msg\_queue}}
+{\footnotesize\ttfamily std\+::queue$<$std\+::pair$<$std\+::weak\+\_\+ptr$<$\mbox{\hyperlink{classGroup}{Group}}$>$, \mbox{\hyperlink{structns_1_1History}{ns\+::\+History}}$>$ $>$ Core\+History\+::m\+\_\+gp\+\_\+msg\+\_\+queue\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCoreHistory_abf177c8957a0319afe4d6113581e79d3}\label{classCoreHistory_abf177c8957a0319afe4d6113581e79d3}} 
+\index{CoreHistory@{CoreHistory}!m\_timer\_clear\_history@{m\_timer\_clear\_history}}
+\index{m\_timer\_clear\_history@{m\_timer\_clear\_history}!CoreHistory@{CoreHistory}}
+\doxysubsubsection{\texorpdfstring{m\_timer\_clear\_history}{m\_timer\_clear\_history}}
+{\footnotesize\ttfamily Q\+Timer Core\+History\+::m\+\_\+timer\+\_\+clear\+\_\+history\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCoreHistory_aec06db9cbe854328820f0fbd1cbc90f8}\label{classCoreHistory_aec06db9cbe854328820f0fbd1cbc90f8}} 
+\index{CoreHistory@{CoreHistory}!m\_timer\_save\_history@{m\_timer\_save\_history}}
+\index{m\_timer\_save\_history@{m\_timer\_save\_history}!CoreHistory@{CoreHistory}}
+\doxysubsubsection{\texorpdfstring{m\_timer\_save\_history}{m\_timer\_save\_history}}
+{\footnotesize\ttfamily Q\+Timer Core\+History\+::m\+\_\+timer\+\_\+save\+\_\+history\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCoreHistory_a52f20d0a4b859c45c3ff3cf4e87fb4ea}\label{classCoreHistory_a52f20d0a4b859c45c3ff3cf4e87fb4ea}} 
+\index{CoreHistory@{CoreHistory}!TIMEOUT\_CLEAR\_HISTORY@{TIMEOUT\_CLEAR\_HISTORY}}
+\index{TIMEOUT\_CLEAR\_HISTORY@{TIMEOUT\_CLEAR\_HISTORY}!CoreHistory@{CoreHistory}}
+\doxysubsubsection{\texorpdfstring{TIMEOUT\_CLEAR\_HISTORY}{TIMEOUT\_CLEAR\_HISTORY}}
+{\footnotesize\ttfamily const int Core\+History\+::\+T\+I\+M\+E\+O\+U\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+H\+I\+S\+T\+O\+RY = 1000 $\ast$ 60 $\ast$ 60 $\ast$ 24\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCoreHistory_ad37861f5176b6bc4858446eabc06cf10}\label{classCoreHistory_ad37861f5176b6bc4858446eabc06cf10}} 
+\index{CoreHistory@{CoreHistory}!TIMEOUT\_SAVE\_HISTORY@{TIMEOUT\_SAVE\_HISTORY}}
+\index{TIMEOUT\_SAVE\_HISTORY@{TIMEOUT\_SAVE\_HISTORY}!CoreHistory@{CoreHistory}}
+\doxysubsubsection{\texorpdfstring{TIMEOUT\_SAVE\_HISTORY}{TIMEOUT\_SAVE\_HISTORY}}
+{\footnotesize\ttfamily const int Core\+History\+::\+T\+I\+M\+E\+O\+U\+T\+\_\+\+S\+A\+V\+E\+\_\+\+H\+I\+S\+T\+O\+RY = 10000\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Core/\mbox{\hyperlink{core__history_8h}{core\+\_\+history.\+h}}\end{DoxyCompactItemize}

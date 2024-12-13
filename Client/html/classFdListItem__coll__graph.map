@@ -1,0 +1,7 @@
+<map id="FdListItem" name="FdListItem">
+<area shape="rect" id="node1" title="好友列表中的一项" alt="" coords="38,247,129,273"/>
+<area shape="rect" id="node2" href="$classCoreListItem.html" title="item of friend list or group list" alt="" coords="31,171,136,197"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,81,84,108"/>
+<area shape="rect" id="node4" href="$classLabelPhoto.html" title="用于显示图片的标签类" alt="" coords="108,81,203,108"/>
+<area shape="rect" id="node5" title=" " alt="" coords="122,5,189,32"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="Core" name="Core">
+<area shape="rect" id="node1" title="界面要操作数据的所有接口所在" alt="" coords="204,157,256,184"/>
+<area shape="rect" id="node2" title=" " alt="" coords="43,5,118,32"/>
+<area shape="rect" id="node3" href="$classCoreFd.html" title=" " alt="" coords="47,56,115,83"/>
+<area shape="rect" id="node4" href="$classCoreGp.html" title=" " alt="" coords="45,107,116,133"/>
+<area shape="rect" id="node5" href="$classCoreSelf.html" title="个人信息保存与修改" alt="" coords="42,157,119,184"/>
+<area shape="rect" id="node6" href="$classCoreHistory.html" title="加载和保存数据" alt="" coords="31,208,130,235"/>
+<area shape="rect" id="node7" href="$classCoreFtp.html" title=" " alt="" coords="44,259,117,285"/>
+<area shape="rect" id="node8" title=" " alt="" coords="5,310,156,351"/>
+</map>

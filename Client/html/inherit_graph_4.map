@@ -1,0 +1,6 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,112,57"/>
+<area shape="rect" id="node2" href="$classBtnBase.html" title=" " alt="" coords="160,31,236,57"/>
+<area shape="rect" id="node3" href="$classTitleBtn.html" title=" " alt="" coords="284,5,357,32"/>
+<area shape="rect" id="node4" href="$classToolBtn.html" title="工具栏页面的按钮" alt="" coords="285,56,356,83"/>
+</map>

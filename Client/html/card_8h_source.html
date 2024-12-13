@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>qt_test: src/Model/Card/card.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">qt_test
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_32e188284d239da8bb14ec1dabb0c35f.html">Model</a></li><li class="navelem"><a class="el" href="dir_f704f18d6355a17b788292c111afda30.html">Card</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">card.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="card_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;QDialog&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="config_8h.html">config.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classCard.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCard.html">Card</a> : <span class="keyword">public</span> QDialog {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classCard.html#aee0f54d01664a476295746e3fbee6f53">Card</a>(<a class="code" href="classType_1_1Info.html#aa45c9063c8ef8da6d9e83daa871b4a00">Type::Info::Identity</a> identity, std::shared_ptr&lt;void&gt;info, QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="comment">// virtual void SetInfo(std::shared_ptr&lt;void&gt; info) = 0;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;signals:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCard.html#a519193485115af3e9866dcf91d56d019">SigAdd</a>(<a class="code" href="classType_1_1Info.html#aa45c9063c8ef8da6d9e83daa871b4a00">Type::Info::Identity</a> identity, <span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classCard.html#af1f82743568d27b60e2409c332105667">   14</a></span>&#160;    QLabel <a class="code" href="classCard.html#af1f82743568d27b60e2409c332105667">m_lab_id</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classCard.html#afd30be82ffa8cce30be9fe839030a097">   15</a></span>&#160;    QLabel <a class="code" href="classCard.html#afd30be82ffa8cce30be9fe839030a097">m_lab_name</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classCard.html#a3866f2f6ac86ee81766b303d58937c34">   16</a></span>&#160;    QPixmap <a class="code" href="classCard.html#a3866f2f6ac86ee81766b303d58937c34">m_photo</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classCard.html#a945591a85ff2127dfa3178217a8d1981">   17</a></span>&#160;    <a class="code" href="classLabelPhoto.html">LabelPhoto</a> <a class="code" href="classCard.html#a945591a85ff2127dfa3178217a8d1981">m_lab_photo</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classType_1_1Info.html#aa45c9063c8ef8da6d9e83daa871b4a00">Type::Info::Identity</a> m_identity;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    QPushButton m_btn_add;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassType_1_1Info_html_aa45c9063c8ef8da6d9e83daa871b4a00"><div class="ttname"><a href="classType_1_1Info.html#aa45c9063c8ef8da6d9e83daa871b4a00">Type::Info::Identity</a></div><div class="ttdeci">Identity</div><div class="ttdef"><b>Definition:</b> config.h:50</div></div>
+<div class="ttc" id="aclassCard_html"><div class="ttname"><a href="classCard.html">Card</a></div><div class="ttdef"><b>Definition:</b> card.h:6</div></div>
+<div class="ttc" id="aclassCard_html_aee0f54d01664a476295746e3fbee6f53"><div class="ttname"><a href="classCard.html#aee0f54d01664a476295746e3fbee6f53">Card::Card</a></div><div class="ttdeci">Card(Type::Info::Identity identity, std::shared_ptr&lt; void &gt;info, QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> card.cpp:3</div></div>
+<div class="ttc" id="aclassCard_html_a519193485115af3e9866dcf91d56d019"><div class="ttname"><a href="classCard.html#a519193485115af3e9866dcf91d56d019">Card::SigAdd</a></div><div class="ttdeci">void SigAdd(Type::Info::Identity identity, int id)</div></div>
+<div class="ttc" id="aclassCard_html_af1f82743568d27b60e2409c332105667"><div class="ttname"><a href="classCard.html#af1f82743568d27b60e2409c332105667">Card::m_lab_id</a></div><div class="ttdeci">QLabel m_lab_id</div><div class="ttdef"><b>Definition:</b> card.h:14</div></div>
+<div class="ttc" id="aclassCard_html_afd30be82ffa8cce30be9fe839030a097"><div class="ttname"><a href="classCard.html#afd30be82ffa8cce30be9fe839030a097">Card::m_lab_name</a></div><div class="ttdeci">QLabel m_lab_name</div><div class="ttdef"><b>Definition:</b> card.h:15</div></div>
+<div class="ttc" id="aclassLabelPhoto_html"><div class="ttname"><a href="classLabelPhoto.html">LabelPhoto</a></div><div class="ttdef"><b>Definition:</b> label_photo.h:5</div></div>
+<div class="ttc" id="aclassCard_html_a945591a85ff2127dfa3178217a8d1981"><div class="ttname"><a href="classCard.html#a945591a85ff2127dfa3178217a8d1981">Card::m_lab_photo</a></div><div class="ttdeci">LabelPhoto m_lab_photo</div><div class="ttdef"><b>Definition:</b> card.h:17</div></div>
+<div class="ttc" id="aconfig_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div></div>
+<div class="ttc" id="aclassCard_html_a3866f2f6ac86ee81766b303d58937c34"><div class="ttname"><a href="classCard.html#a3866f2f6ac86ee81766b303d58937c34">Card::m_photo</a></div><div class="ttdeci">QPixmap m_photo</div><div class="ttdef"><b>Definition:</b> card.h:16</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

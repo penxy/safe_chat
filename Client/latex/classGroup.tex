@@ -1,0 +1,193 @@
+\hypertarget{classGroup}{}\doxysection{Group类 参考}
+\label{classGroup}\index{Group@{Group}}
+
+
+{\ttfamily \#include $<$group.\+h$>$}
+
+
+
+类 Group 继承关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{classGroup__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Group 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{classGroup__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGroup_ab25c739dd2db90d35b1b77f78a069364}{Group}} ()=default
+\item 
+\mbox{\hyperlink{classGroup_adf1c5ee18dbfc490374497fccbcc14e2}{Group}} (const \mbox{\hyperlink{classChatId}{Chat\+Id}} \&id, const Q\+String \&pix\+\_\+base64, const Q\+String \&\mbox{\hyperlink{classGroup_a0a08f8ecd967cb66b780f3a801370be9}{name}})
+\item 
+\mbox{\hyperlink{classGroup_aa13c78c8ed10990c4e7472989cb7db2c}{Group}} (const \mbox{\hyperlink{classGroup}{Group}} \&other)
+\item 
+\mbox{\hyperlink{classGroup}{Group}} \& \mbox{\hyperlink{classGroup_a58010b8686ec510c2dc75c0ef39d0416}{operator=}} (const \mbox{\hyperlink{classGroup}{Group}} \&other)
+\item 
+\mbox{\hyperlink{classGroup_a81d8fed7c0da45f6c943138149e495df}{S\+I\+G\+N\+A\+L\+\_\+\+I\+M\+PL}} (\mbox{\hyperlink{classGroup}{Group}}, Sig\+Name\+Changed, const Q\+String \&)
+\item 
+\mbox{\hyperlink{classGroup_a5577d767a15ca077e05e1b85246192c8}{S\+I\+G\+N\+A\+L\+\_\+\+I\+M\+PL}} (\mbox{\hyperlink{classGroup}{Group}}, Sig\+Pix\+Changed, const Q\+Pixmap \&)
+\item 
+\mbox{\hyperlink{classChatId}{Chat\+Id}} \& \mbox{\hyperlink{classGroup_aab97741d852dbf5750c88a8c782865bd}{get\+Id}} () override
+\item 
+void \mbox{\hyperlink{classGroup_aba5d3f4b59bd91edc417b64275805077}{set\+Name}} (const Q\+String \&\mbox{\hyperlink{classGroup_a0a08f8ecd967cb66b780f3a801370be9}{name}}) override
+\item 
+Q\+String \& \mbox{\hyperlink{classGroup_a4034a8d5f490e9782d9107a9847e4cda}{get\+Name}} () override
+\item 
+void \mbox{\hyperlink{classGroup_a9433fe0bc43e31e8d3c5536cdfa21ee0}{set\+Pix}} (const Q\+Pixmap \&\mbox{\hyperlink{classGroup_a104b2ba317d02cef0a99fae1c4e6726f}{pix}}) override
+\item 
+Q\+Pixmap \& \mbox{\hyperlink{classGroup_a3513b250c8bb2fb4c240c204eb4cde86}{get\+Pix}} () override
+\item 
+void \mbox{\hyperlink{classGroup_ac0f84c832fe094edd3d9e5c2e5993f0a}{set\+History}} (const Q\+List$<$ \mbox{\hyperlink{structns_1_1History}{ns\+::\+History}} $>$ \&history) override
+\item 
+Q\+List$<$ \mbox{\hyperlink{structns_1_1History}{ns\+::\+History}} $>$ \& \mbox{\hyperlink{classGroup_aa3f3b51ce2bea23070d47e2aa7c1f719}{get\+History}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{属性}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \mbox{\hyperlink{classGroup_a0a08f8ecd967cb66b780f3a801370be9}{name}}
+\item 
+Q\+Pixmap \mbox{\hyperlink{classGroup_a104b2ba317d02cef0a99fae1c4e6726f}{pix}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classGroup_ab25c739dd2db90d35b1b77f78a069364}\label{classGroup_ab25c739dd2db90d35b1b77f78a069364}} 
+\index{Group@{Group}!Group@{Group}}
+\index{Group@{Group}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{Group()}{Group()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Group\+::\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classGroup_adf1c5ee18dbfc490374497fccbcc14e2}\label{classGroup_adf1c5ee18dbfc490374497fccbcc14e2}} 
+\index{Group@{Group}!Group@{Group}}
+\index{Group@{Group}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{Group()}{Group()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Group\+::\+Group (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classChatId}{Chat\+Id}} \&}]{id,  }\item[{const Q\+String \&}]{pix\+\_\+base64,  }\item[{const Q\+String \&}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGroup_aa13c78c8ed10990c4e7472989cb7db2c}\label{classGroup_aa13c78c8ed10990c4e7472989cb7db2c}} 
+\index{Group@{Group}!Group@{Group}}
+\index{Group@{Group}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{Group()}{Group()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Group\+::\+Group (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGroup}{Group}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classGroup_aa3f3b51ce2bea23070d47e2aa7c1f719}\label{classGroup_aa3f3b51ce2bea23070d47e2aa7c1f719}} 
+\index{Group@{Group}!getHistory@{getHistory}}
+\index{getHistory@{getHistory}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{getHistory()}{getHistory()}}
+{\footnotesize\ttfamily Q\+List$<$ \mbox{\hyperlink{structns_1_1History}{ns\+::\+History}} $>$ \& Group\+::get\+History (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classChat_aa6b1ed514fc3f928f13062508ef63a0b}{Chat}}.
+
+\mbox{\Hypertarget{classGroup_aab97741d852dbf5750c88a8c782865bd}\label{classGroup_aab97741d852dbf5750c88a8c782865bd}} 
+\index{Group@{Group}!getId@{getId}}
+\index{getId@{getId}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChatId}{Chat\+Id}} \& Group\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classChat_a8d043c974ed242dc05e48e0348515c2d}{Chat}}.
+
+\mbox{\Hypertarget{classGroup_a4034a8d5f490e9782d9107a9847e4cda}\label{classGroup_a4034a8d5f490e9782d9107a9847e4cda}} 
+\index{Group@{Group}!getName@{getName}}
+\index{getName@{getName}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily Q\+String \& Group\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classChat_ae1a835bb81e14154ad3921f5e0e355ec}{Chat}}.
+
+\mbox{\Hypertarget{classGroup_a3513b250c8bb2fb4c240c204eb4cde86}\label{classGroup_a3513b250c8bb2fb4c240c204eb4cde86}} 
+\index{Group@{Group}!getPix@{getPix}}
+\index{getPix@{getPix}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{getPix()}{getPix()}}
+{\footnotesize\ttfamily Q\+Pixmap \& Group\+::get\+Pix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classChat_a6009f6e1d07375de587373a9f43a104d}{Chat}}.
+
+\mbox{\Hypertarget{classGroup_a58010b8686ec510c2dc75c0ef39d0416}\label{classGroup_a58010b8686ec510c2dc75c0ef39d0416}} 
+\index{Group@{Group}!operator=@{operator=}}
+\index{operator=@{operator=}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGroup}{Group}} \& Group\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGroup}{Group}} \&}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGroup_ac0f84c832fe094edd3d9e5c2e5993f0a}\label{classGroup_ac0f84c832fe094edd3d9e5c2e5993f0a}} 
+\index{Group@{Group}!setHistory@{setHistory}}
+\index{setHistory@{setHistory}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{setHistory()}{setHistory()}}
+{\footnotesize\ttfamily void Group\+::set\+History (\begin{DoxyParamCaption}\item[{const Q\+List$<$ \mbox{\hyperlink{structns_1_1History}{ns\+::\+History}} $>$ \&}]{history }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classChat_a5c6603df219260bd251328cd1bd7fccb}{Chat}}.
+
+\mbox{\Hypertarget{classGroup_aba5d3f4b59bd91edc417b64275805077}\label{classGroup_aba5d3f4b59bd91edc417b64275805077}} 
+\index{Group@{Group}!setName@{setName}}
+\index{setName@{setName}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Group\+::set\+Name (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classChat_a415aba96dc6d2065114ee528ca0e5bf8}{Chat}}.
+
+\mbox{\Hypertarget{classGroup_a9433fe0bc43e31e8d3c5536cdfa21ee0}\label{classGroup_a9433fe0bc43e31e8d3c5536cdfa21ee0}} 
+\index{Group@{Group}!setPix@{setPix}}
+\index{setPix@{setPix}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{setPix()}{setPix()}}
+{\footnotesize\ttfamily void Group\+::set\+Pix (\begin{DoxyParamCaption}\item[{const Q\+Pixmap \&}]{pix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classChat_abf74cf6e81791310b9fd42aa8bb9e8ff}{Chat}}.
+
+\mbox{\Hypertarget{classGroup_a81d8fed7c0da45f6c943138149e495df}\label{classGroup_a81d8fed7c0da45f6c943138149e495df}} 
+\index{Group@{Group}!SIGNAL\_IMPL@{SIGNAL\_IMPL}}
+\index{SIGNAL\_IMPL@{SIGNAL\_IMPL}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{SIGNAL\_IMPL()}{SIGNAL\_IMPL()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Group\+::\+S\+I\+G\+N\+A\+L\+\_\+\+I\+M\+PL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}}}]{,  }\item[{Sig\+Name\+Changed}]{,  }\item[{const Q\+String \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGroup_a5577d767a15ca077e05e1b85246192c8}\label{classGroup_a5577d767a15ca077e05e1b85246192c8}} 
+\index{Group@{Group}!SIGNAL\_IMPL@{SIGNAL\_IMPL}}
+\index{SIGNAL\_IMPL@{SIGNAL\_IMPL}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{SIGNAL\_IMPL()}{SIGNAL\_IMPL()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Group\+::\+S\+I\+G\+N\+A\+L\+\_\+\+I\+M\+PL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}}}]{,  }\item[{Sig\+Pix\+Changed}]{,  }\item[{const Q\+Pixmap \&}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{属性说明}
+\mbox{\Hypertarget{classGroup_a0a08f8ecd967cb66b780f3a801370be9}\label{classGroup_a0a08f8ecd967cb66b780f3a801370be9}} 
+\index{Group@{Group}!name@{name}}
+\index{name@{name}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily Q\+String Group\+::name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}}
+
+\mbox{\Hypertarget{classGroup_a104b2ba317d02cef0a99fae1c4e6726f}\label{classGroup_a104b2ba317d02cef0a99fae1c4e6726f}} 
+\index{Group@{Group}!pix@{pix}}
+\index{pix@{pix}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{pix}{pix}}
+{\footnotesize\ttfamily Q\+Pixmap Group\+::pix\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Chat/\mbox{\hyperlink{group_8h}{group.\+h}}\item 
+src/\+Chat/\mbox{\hyperlink{group_8cpp}{group.\+cpp}}\end{DoxyCompactItemize}

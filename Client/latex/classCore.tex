@@ -1,0 +1,442 @@
+\hypertarget{classCore}{}\doxysection{Core类 参考}
+\label{classCore}\index{Core@{Core}}
+
+
+界面要操作数据的所有接口所在  
+
+
+
+
+{\ttfamily \#include $<$core.\+h$>$}
+
+
+
+类 Core 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classCore__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Core 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCore__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCore_a117db2359c8c10fe0978c8cbd5aa4444}{Core}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classProtocol}{Protocol}} $>$protocol)
+\item 
+\mbox{\hyperlink{classCore_a5057b209797afa0e0df08fd2be864164}{$\sim$\+Core}} ()=default
+\item 
+bool \mbox{\hyperlink{classCore_a97fa91ff715532135ae5f1c2c711c9ae}{send\+Friend}} (\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ff}{Type\+Json\+::\+Send}} type\+\_\+send, std\+::array$<$ Q\+Variant, 4 $>$args) override
+\item 
+void \mbox{\hyperlink{classCore_a3e4aefb9208c85f52595a9ccca5741a7}{recv\+Friend}} (\mbox{\hyperlink{namespaceTypeJson_a20e89671a216d5c8cc31a485634ea4c0}{Type\+Json\+::\+Recv}} type\+\_\+recv, std\+::array$<$ Q\+Variant, 4 $>$args) override
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classFriend}{Friend}} $>$ \mbox{\hyperlink{classCore_a80525bc06bd19211b63c91a7fe1542dd}{get\+Friend}} (int idx) override
+\item 
+Q\+List$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classFriend}{Friend}} $>$ $>$ \& \mbox{\hyperlink{classCore_a79c39ebfbafd12d8b056453cc4110db2}{get\+Friend\+List}} () override
+\item 
+\mbox{\hyperlink{classChatId}{Chat\+Id}} \& \mbox{\hyperlink{classCore_a74bae1565ba9957dd62dfaadbbfe2727}{get\+Friend\+Id}} (int idx) override
+\item 
+Q\+String \& \mbox{\hyperlink{classCore_a891598c7403d70ef44d9e45602624c55}{get\+Friend\+Name}} (int idx) override
+\item 
+Q\+Pixmap \& \mbox{\hyperlink{classCore_a2514109739580cfbe294a5a9aecdea78}{get\+Friend\+Photo}} (int idx) override
+\item 
+bool \mbox{\hyperlink{classCore_a9fc1f51bdd8533a047fbd93e90a94fcd}{send\+Group}} (\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ff}{Type\+Json\+::\+Send}} type\+\_\+send, std\+::array$<$ Q\+Variant, 4 $>$args) override
+\item 
+void \mbox{\hyperlink{classCore_a165ee288ac97fe153c5f56c6bf9440a8}{recv\+Group}} (\mbox{\hyperlink{namespaceTypeJson_a20e89671a216d5c8cc31a485634ea4c0}{Type\+Json\+::\+Recv}} type\+\_\+recv, std\+::array$<$ Q\+Variant, 4 $>$args) override
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGroup}{Group}} $>$ \mbox{\hyperlink{classCore_a0a65dcaa97e4de69cfc9d14310dec2b5}{get\+Group}} (int idx) override
+\item 
+Q\+List$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGroup}{Group}} $>$ $>$ \& \mbox{\hyperlink{classCore_a656ab42a0803ca139fec073ab2455d2e}{get\+Group\+List}} () override
+\item 
+\mbox{\hyperlink{classChatId}{Chat\+Id}} \& \mbox{\hyperlink{classCore_a405a53a985899f998aee38802ccc3d6f}{get\+Group\+Id}} (int idx) override
+\item 
+Q\+String \& \mbox{\hyperlink{classCore_ae8f1e7117b02fff594ce8b7a8ee72e60}{get\+Group\+Name}} (int idx) override
+\item 
+Q\+Pixmap \& \mbox{\hyperlink{classCore_adb4dd8f32a42474825a6420b4c708157}{get\+Group\+Photo}} (int idx) override
+\item 
+bool \mbox{\hyperlink{classCore_adf1e6d00a6fc36606d5708d1cf9c14b0}{set\+Pass}} (const Q\+String \&pass) override
+\item 
+bool \mbox{\hyperlink{classCore_ac4f1b228d8710e3e562136d8ab763a2d}{set\+Name}} (const Q\+String \&name) override
+\item 
+bool \mbox{\hyperlink{classCore_ab6da5bdd564d3b37252a60ada9e50504}{set\+Status}} (const \mbox{\hyperlink{namespaceType_ae5b697cde223ac242545732b7e308243}{Type\+::\+Status}} \&status) override
+\item 
+\mbox{\hyperlink{classChatId}{Chat\+Id}} \& \mbox{\hyperlink{classCore_a027328895cfa18523959d3e7ceac750d}{get\+Id}} () override
+\item 
+Q\+String \& \mbox{\hyperlink{classCore_ab98a23b0bff0a4f1fd35d24a1f1722b1}{get\+Name}} () override
+\item 
+\mbox{\hyperlink{namespaceType_ae5b697cde223ac242545732b7e308243}{Type\+::\+Status}} \& \mbox{\hyperlink{classCore_ae78a092fd0a1b11365449f1279c3e664}{get\+Status}} () override
+\item 
+Q\+String \& \mbox{\hyperlink{classCore_af3698a332eef038016e25000ec8aff43}{get\+Public\+Key}} () override
+\item 
+void \mbox{\hyperlink{classCore_a41afc7802e48c636c0b6852c7582c6ca}{init\+Timeout}} () override
+\item 
+void \mbox{\hyperlink{classCore_a32bebbc2af715edb99ba4b006302d72a}{load\+Group\+History}} (int idx) override
+\item 
+void \mbox{\hyperlink{classCore_a737bd02c6bfef562da1256deab1f2a0d}{save\+Group\+History}} (int idx) override
+\item 
+void \mbox{\hyperlink{classCore_aa0467ff10a220e976a9619e007c08d45}{load\+Friend\+History}} (int idx) override
+\item 
+void \mbox{\hyperlink{classCore_a628b3ba27f9ce4d561932b0392ed5f24}{save\+Friend\+History}} (int idx) override
+\item 
+void \mbox{\hyperlink{classCore_a79fd696b501656502b2f5767725cc0e9}{auto\+Clear\+History}} () override
+\item 
+void \mbox{\hyperlink{classCore_af0db7e1831444080961c02b855392fb5}{up\+Load\+File}} (const Q\+String \&file\+\_\+name) override
+\item 
+void \mbox{\hyperlink{classCore_ad881b52dab095531d66bfbee3b73c9f9}{down\+Load\+File}} (const Q\+String \&file\+\_\+name) override
+\item 
+\mbox{\hyperlink{classCore_a1582fa3a690240d7352f193e00d20a1c}{S\+I\+G\+N\+A\+L\+\_\+\+I\+M\+PL}} (\mbox{\hyperlink{classCore}{Core}}, Sig\+Update\+List\+Fd)
+\item 
+\mbox{\hyperlink{classCore_af9783fd7098a96689cc0e713f6e9a5e3}{S\+I\+G\+N\+A\+L\+\_\+\+I\+M\+PL}} (\mbox{\hyperlink{classCore}{Core}}, Sig\+Update\+List\+Gp)
+\end{DoxyCompactItemize}
+\doxysubsection*{额外继承的成员函数}
+
+
+\doxysubsection{详细描述}
+界面要操作数据的所有接口所在 
+
+\begin{DoxyNote}{注解}
+所有的改变操作都不会有多个线程同时操作，因此不需要加锁 
+\end{DoxyNote}
+\begin{DoxyRefDesc}{待办事项}
+\item[\mbox{\hyperlink{todo__todo000002}{待办事项}}]完善并实现接口 \end{DoxyRefDesc}
+
+
+凡是涉及要发送的消息，都需要调用\+Protocol的enqueue\+Send()接口;存在信号，当信息改变后，会发送信号改变相应的 ui 类 \begin{DoxyAttention}{注意}
+根据\+Type\+Json\+::\+Send/\+Recv的枚举值，决定是否操作数据库 
+\end{DoxyAttention}
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classCore_a117db2359c8c10fe0978c8cbd5aa4444}\label{classCore_a117db2359c8c10fe0978c8cbd5aa4444}} 
+\index{Core@{Core}!Core@{Core}}
+\index{Core@{Core}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{Core()}{Core()}}
+{\footnotesize\ttfamily Core\+::\+Core (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classProtocol}{Protocol}} $>$}]{protocol }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCore_a5057b209797afa0e0df08fd2be864164}\label{classCore_a5057b209797afa0e0df08fd2be864164}} 
+\index{Core@{Core}!````~Core@{$\sim$Core}}
+\index{````~Core@{$\sim$Core}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{$\sim$Core()}{~Core()}}
+{\footnotesize\ttfamily Core\+::$\sim$\+Core (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classCore_a79fd696b501656502b2f5767725cc0e9}\label{classCore_a79fd696b501656502b2f5767725cc0e9}} 
+\index{Core@{Core}!autoClearHistory@{autoClearHistory}}
+\index{autoClearHistory@{autoClearHistory}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{autoClearHistory()}{autoClearHistory()}}
+{\footnotesize\ttfamily void Core\+::auto\+Clear\+History (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreHistory_a4da5dbb868080b17fb6128048087a0d8}{Core\+History}}.
+
+\mbox{\Hypertarget{classCore_ad881b52dab095531d66bfbee3b73c9f9}\label{classCore_ad881b52dab095531d66bfbee3b73c9f9}} 
+\index{Core@{Core}!downLoadFile@{downLoadFile}}
+\index{downLoadFile@{downLoadFile}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{downLoadFile()}{downLoadFile()}}
+{\footnotesize\ttfamily void Core\+::down\+Load\+File (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{file\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreFtp_ad4faf04b2662e26443264d9810e75666}{Core\+Ftp}}.
+
+\mbox{\Hypertarget{classCore_a80525bc06bd19211b63c91a7fe1542dd}\label{classCore_a80525bc06bd19211b63c91a7fe1542dd}} 
+\index{Core@{Core}!getFriend@{getFriend}}
+\index{getFriend@{getFriend}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getFriend()}{getFriend()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classFriend}{Friend}} $>$ Core\+::get\+Friend (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreFd_adfd2abf1c04ec676c43b51bcda112de5}{Core\+Fd}}.
+
+\mbox{\Hypertarget{classCore_a74bae1565ba9957dd62dfaadbbfe2727}\label{classCore_a74bae1565ba9957dd62dfaadbbfe2727}} 
+\index{Core@{Core}!getFriendId@{getFriendId}}
+\index{getFriendId@{getFriendId}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getFriendId()}{getFriendId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChatId}{Chat\+Id}} \& Core\+::get\+Friend\+Id (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreFd_a8e4a849ab2b02e687bf4a4842aeb35b8}{Core\+Fd}}.
+
+\mbox{\Hypertarget{classCore_a79c39ebfbafd12d8b056453cc4110db2}\label{classCore_a79c39ebfbafd12d8b056453cc4110db2}} 
+\index{Core@{Core}!getFriendList@{getFriendList}}
+\index{getFriendList@{getFriendList}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getFriendList()}{getFriendList()}}
+{\footnotesize\ttfamily Q\+List$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classFriend}{Friend}} $>$ $>$ \& Core\+::get\+Friend\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreFd_acf63fe09ac7bb199abef3ef736cb5e14}{Core\+Fd}}.
+
+\mbox{\Hypertarget{classCore_a891598c7403d70ef44d9e45602624c55}\label{classCore_a891598c7403d70ef44d9e45602624c55}} 
+\index{Core@{Core}!getFriendName@{getFriendName}}
+\index{getFriendName@{getFriendName}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getFriendName()}{getFriendName()}}
+{\footnotesize\ttfamily Q\+String \& Core\+::get\+Friend\+Name (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreFd_a2f7a73addfd4dd651f717fbde02bd10e}{Core\+Fd}}.
+
+\mbox{\Hypertarget{classCore_a2514109739580cfbe294a5a9aecdea78}\label{classCore_a2514109739580cfbe294a5a9aecdea78}} 
+\index{Core@{Core}!getFriendPhoto@{getFriendPhoto}}
+\index{getFriendPhoto@{getFriendPhoto}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getFriendPhoto()}{getFriendPhoto()}}
+{\footnotesize\ttfamily Q\+Pixmap \& Core\+::get\+Friend\+Photo (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreFd_ab288da985918a9b3cc0e1ac2987c5692}{Core\+Fd}}.
+
+\mbox{\Hypertarget{classCore_a0a65dcaa97e4de69cfc9d14310dec2b5}\label{classCore_a0a65dcaa97e4de69cfc9d14310dec2b5}} 
+\index{Core@{Core}!getGroup@{getGroup}}
+\index{getGroup@{getGroup}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getGroup()}{getGroup()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGroup}{Group}} $>$ Core\+::get\+Group (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreGp_afa813997da4da0a77cd9bc65c6866290}{Core\+Gp}}.
+
+\mbox{\Hypertarget{classCore_a405a53a985899f998aee38802ccc3d6f}\label{classCore_a405a53a985899f998aee38802ccc3d6f}} 
+\index{Core@{Core}!getGroupId@{getGroupId}}
+\index{getGroupId@{getGroupId}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getGroupId()}{getGroupId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChatId}{Chat\+Id}} \& Core\+::get\+Group\+Id (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreGp_aa239ec427795d2bfb33e10c74adc99f7}{Core\+Gp}}.
+
+\mbox{\Hypertarget{classCore_a656ab42a0803ca139fec073ab2455d2e}\label{classCore_a656ab42a0803ca139fec073ab2455d2e}} 
+\index{Core@{Core}!getGroupList@{getGroupList}}
+\index{getGroupList@{getGroupList}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getGroupList()}{getGroupList()}}
+{\footnotesize\ttfamily Q\+List$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGroup}{Group}} $>$ $>$ \& Core\+::get\+Group\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreGp_abd31a60c997025f906329d2f58e74dce}{Core\+Gp}}.
+
+\mbox{\Hypertarget{classCore_ae8f1e7117b02fff594ce8b7a8ee72e60}\label{classCore_ae8f1e7117b02fff594ce8b7a8ee72e60}} 
+\index{Core@{Core}!getGroupName@{getGroupName}}
+\index{getGroupName@{getGroupName}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getGroupName()}{getGroupName()}}
+{\footnotesize\ttfamily Q\+String \& Core\+::get\+Group\+Name (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreGp_af01e6bb36b65088fb84d36a4f2831a25}{Core\+Gp}}.
+
+\mbox{\Hypertarget{classCore_adb4dd8f32a42474825a6420b4c708157}\label{classCore_adb4dd8f32a42474825a6420b4c708157}} 
+\index{Core@{Core}!getGroupPhoto@{getGroupPhoto}}
+\index{getGroupPhoto@{getGroupPhoto}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getGroupPhoto()}{getGroupPhoto()}}
+{\footnotesize\ttfamily Q\+Pixmap \& Core\+::get\+Group\+Photo (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreGp_a08358d930ec7758f98bb2ad9ee4a5a1f}{Core\+Gp}}.
+
+\mbox{\Hypertarget{classCore_a027328895cfa18523959d3e7ceac750d}\label{classCore_a027328895cfa18523959d3e7ceac750d}} 
+\index{Core@{Core}!getId@{getId}}
+\index{getId@{getId}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChatId}{Chat\+Id}} \& Core\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreSelf_a25dd2ad2e8ef5a8d2364f9e4ab6793ef}{Core\+Self}}.
+
+\mbox{\Hypertarget{classCore_ab98a23b0bff0a4f1fd35d24a1f1722b1}\label{classCore_ab98a23b0bff0a4f1fd35d24a1f1722b1}} 
+\index{Core@{Core}!getName@{getName}}
+\index{getName@{getName}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily Q\+String \& Core\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreSelf_ad16cd121c5d35932883fea3b3874f066}{Core\+Self}}.
+
+\mbox{\Hypertarget{classCore_af3698a332eef038016e25000ec8aff43}\label{classCore_af3698a332eef038016e25000ec8aff43}} 
+\index{Core@{Core}!getPublicKey@{getPublicKey}}
+\index{getPublicKey@{getPublicKey}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getPublicKey()}{getPublicKey()}}
+{\footnotesize\ttfamily Q\+String \& Core\+::get\+Public\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreSelf_a18f5404facd6a90ad5d3e2186558455a}{Core\+Self}}.
+
+\mbox{\Hypertarget{classCore_ae78a092fd0a1b11365449f1279c3e664}\label{classCore_ae78a092fd0a1b11365449f1279c3e664}} 
+\index{Core@{Core}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceType_ae5b697cde223ac242545732b7e308243}{Type\+::\+Status}} \& Core\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreSelf_aaf904be9a8a1437215413a8716a91e9e}{Core\+Self}}.
+
+\mbox{\Hypertarget{classCore_a41afc7802e48c636c0b6852c7582c6ca}\label{classCore_a41afc7802e48c636c0b6852c7582c6ca}} 
+\index{Core@{Core}!initTimeout@{initTimeout}}
+\index{initTimeout@{initTimeout}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{initTimeout()}{initTimeout()}}
+{\footnotesize\ttfamily void Core\+::init\+Timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreHistory_adf07095f287fc1eebdd37e632469a5da}{Core\+History}}.
+
+\mbox{\Hypertarget{classCore_aa0467ff10a220e976a9619e007c08d45}\label{classCore_aa0467ff10a220e976a9619e007c08d45}} 
+\index{Core@{Core}!loadFriendHistory@{loadFriendHistory}}
+\index{loadFriendHistory@{loadFriendHistory}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{loadFriendHistory()}{loadFriendHistory()}}
+{\footnotesize\ttfamily void Core\+::load\+Friend\+History (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreHistory_ab245d99a6dc9b8cca50a83183097818d}{Core\+History}}.
+
+\mbox{\Hypertarget{classCore_a32bebbc2af715edb99ba4b006302d72a}\label{classCore_a32bebbc2af715edb99ba4b006302d72a}} 
+\index{Core@{Core}!loadGroupHistory@{loadGroupHistory}}
+\index{loadGroupHistory@{loadGroupHistory}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{loadGroupHistory()}{loadGroupHistory()}}
+{\footnotesize\ttfamily void Core\+::load\+Group\+History (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreHistory_aab4ecb043cdce26e6a67613cd6f007df}{Core\+History}}.
+
+\mbox{\Hypertarget{classCore_a3e4aefb9208c85f52595a9ccca5741a7}\label{classCore_a3e4aefb9208c85f52595a9ccca5741a7}} 
+\index{Core@{Core}!recvFriend@{recvFriend}}
+\index{recvFriend@{recvFriend}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{recvFriend()}{recvFriend()}}
+{\footnotesize\ttfamily void Core\+::recv\+Friend (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceTypeJson_a20e89671a216d5c8cc31a485634ea4c0}{Type\+Json\+::\+Recv}}}]{type\+\_\+recv,  }\item[{std\+::array$<$ Q\+Variant, 4 $>$}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreFd_ab4bb9331b98f624fd7f85896f5f25664}{Core\+Fd}}.
+
+\mbox{\Hypertarget{classCore_a165ee288ac97fe153c5f56c6bf9440a8}\label{classCore_a165ee288ac97fe153c5f56c6bf9440a8}} 
+\index{Core@{Core}!recvGroup@{recvGroup}}
+\index{recvGroup@{recvGroup}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{recvGroup()}{recvGroup()}}
+{\footnotesize\ttfamily void Core\+::recv\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceTypeJson_a20e89671a216d5c8cc31a485634ea4c0}{Type\+Json\+::\+Recv}}}]{type\+\_\+recv,  }\item[{std\+::array$<$ Q\+Variant, 4 $>$}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreGp_a742d4edca3b68439ab1c7c0ee0302095}{Core\+Gp}}.
+
+\mbox{\Hypertarget{classCore_a628b3ba27f9ce4d561932b0392ed5f24}\label{classCore_a628b3ba27f9ce4d561932b0392ed5f24}} 
+\index{Core@{Core}!saveFriendHistory@{saveFriendHistory}}
+\index{saveFriendHistory@{saveFriendHistory}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{saveFriendHistory()}{saveFriendHistory()}}
+{\footnotesize\ttfamily void Core\+::save\+Friend\+History (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreHistory_abc8cc49b6e073572849b88d67f418650}{Core\+History}}.
+
+\mbox{\Hypertarget{classCore_a737bd02c6bfef562da1256deab1f2a0d}\label{classCore_a737bd02c6bfef562da1256deab1f2a0d}} 
+\index{Core@{Core}!saveGroupHistory@{saveGroupHistory}}
+\index{saveGroupHistory@{saveGroupHistory}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{saveGroupHistory()}{saveGroupHistory()}}
+{\footnotesize\ttfamily void Core\+::save\+Group\+History (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreHistory_a647603ed3fe8d17e355d9006dedaf86e}{Core\+History}}.
+
+\mbox{\Hypertarget{classCore_a97fa91ff715532135ae5f1c2c711c9ae}\label{classCore_a97fa91ff715532135ae5f1c2c711c9ae}} 
+\index{Core@{Core}!sendFriend@{sendFriend}}
+\index{sendFriend@{sendFriend}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{sendFriend()}{sendFriend()}}
+{\footnotesize\ttfamily bool Core\+::send\+Friend (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ff}{Type\+Json\+::\+Send}}}]{type\+\_\+send,  }\item[{std\+::array$<$ Q\+Variant, 4 $>$}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreFd_aeaf1a66870bd0f4871c974ca6ffd0bbb}{Core\+Fd}}.
+
+\mbox{\Hypertarget{classCore_a9fc1f51bdd8533a047fbd93e90a94fcd}\label{classCore_a9fc1f51bdd8533a047fbd93e90a94fcd}} 
+\index{Core@{Core}!sendGroup@{sendGroup}}
+\index{sendGroup@{sendGroup}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{sendGroup()}{sendGroup()}}
+{\footnotesize\ttfamily bool Core\+::send\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ff}{Type\+Json\+::\+Send}}}]{type\+\_\+send,  }\item[{std\+::array$<$ Q\+Variant, 4 $>$}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreGp_a34d2329ce3313b5361cd7b4bc79dafde}{Core\+Gp}}.
+
+\mbox{\Hypertarget{classCore_ac4f1b228d8710e3e562136d8ab763a2d}\label{classCore_ac4f1b228d8710e3e562136d8ab763a2d}} 
+\index{Core@{Core}!setName@{setName}}
+\index{setName@{setName}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily bool Core\+::set\+Name (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreSelf_a96ecdc0bfe8cc8abfd227f0d7272911e}{Core\+Self}}.
+
+\mbox{\Hypertarget{classCore_adf1e6d00a6fc36606d5708d1cf9c14b0}\label{classCore_adf1e6d00a6fc36606d5708d1cf9c14b0}} 
+\index{Core@{Core}!setPass@{setPass}}
+\index{setPass@{setPass}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{setPass()}{setPass()}}
+{\footnotesize\ttfamily bool Core\+::set\+Pass (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreSelf_a8df5c2ac1591d3fc03f38661a727b78e}{Core\+Self}}.
+
+\mbox{\Hypertarget{classCore_ab6da5bdd564d3b37252a60ada9e50504}\label{classCore_ab6da5bdd564d3b37252a60ada9e50504}} 
+\index{Core@{Core}!setStatus@{setStatus}}
+\index{setStatus@{setStatus}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{setStatus()}{setStatus()}}
+{\footnotesize\ttfamily bool Core\+::set\+Status (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceType_ae5b697cde223ac242545732b7e308243}{Type\+::\+Status}} \&}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreSelf_a426417400be3a1332a1b088d7818e44e}{Core\+Self}}.
+
+\mbox{\Hypertarget{classCore_a1582fa3a690240d7352f193e00d20a1c}\label{classCore_a1582fa3a690240d7352f193e00d20a1c}} 
+\index{Core@{Core}!SIGNAL\_IMPL@{SIGNAL\_IMPL}}
+\index{SIGNAL\_IMPL@{SIGNAL\_IMPL}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{SIGNAL\_IMPL()}{SIGNAL\_IMPL()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Core\+::\+S\+I\+G\+N\+A\+L\+\_\+\+I\+M\+PL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCore}{Core}}}]{,  }\item[{Sig\+Update\+List\+Fd}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCore_af9783fd7098a96689cc0e713f6e9a5e3}\label{classCore_af9783fd7098a96689cc0e713f6e9a5e3}} 
+\index{Core@{Core}!SIGNAL\_IMPL@{SIGNAL\_IMPL}}
+\index{SIGNAL\_IMPL@{SIGNAL\_IMPL}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{SIGNAL\_IMPL()}{SIGNAL\_IMPL()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Core\+::\+S\+I\+G\+N\+A\+L\+\_\+\+I\+M\+PL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCore}{Core}}}]{,  }\item[{Sig\+Update\+List\+Gp}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCore_af0db7e1831444080961c02b855392fb5}\label{classCore_af0db7e1831444080961c02b855392fb5}} 
+\index{Core@{Core}!upLoadFile@{upLoadFile}}
+\index{upLoadFile@{upLoadFile}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{upLoadFile()}{upLoadFile()}}
+{\footnotesize\ttfamily void Core\+::up\+Load\+File (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{file\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classCoreFtp_ab238e71b597a959a7ef5d8f0d64dbd49}{Core\+Ftp}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Core/\mbox{\hyperlink{core_8h}{core.\+h}}\item 
+src/\+Core/\mbox{\hyperlink{core_8cpp}{core.\+cpp}}\end{DoxyCompactItemize}

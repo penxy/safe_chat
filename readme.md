@@ -4,3 +4,5 @@
 [GUI](https://github.com/penxy/GUI.git)
 
 ```这个项目并未完成，完整功能不止通信```
+
+[项目文档](Client/html/index.html)

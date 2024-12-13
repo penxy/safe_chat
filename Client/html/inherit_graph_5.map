@@ -1,0 +1,19 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node1" href="$classCoreFd.html" title=" " alt="" coords="65,56,133,83"/>
+<area shape="rect" id="node2" href="$classCore.html" title="界面要操作数据的所有接口所在" alt="" coords="271,107,323,133"/>
+<area shape="rect" id="node3" href="$classCoreFtp.html" title=" " alt="" coords="62,107,135,133"/>
+<area shape="rect" id="node4" href="$classCoreGp.html" title=" " alt="" coords="63,157,134,184"/>
+<area shape="rect" id="node5" href="$classCoreHistory.html" title="加载和保存数据" alt="" coords="49,208,148,235"/>
+<area shape="rect" id="node6" href="$classCoreSelf.html" title="个人信息保存与修改" alt="" coords="60,5,137,32"/>
+<area shape="rect" id="node7" title=" " alt="" coords="5,259,192,285"/>
+<area shape="rect" id="node8" href="$classCoreSql.html" title="数据库操作类" alt="" coords="261,157,333,184"/>
+<area shape="rect" id="node9" href="$classFriend.html" title=" " alt="" coords="401,247,464,273"/>
+<area shape="rect" id="node10" href="$classGroup.html" title=" " alt="" coords="402,335,463,361"/>
+<area shape="rect" id="node11" href="$classProtocol.html" title="生成json并发送，接收json并解析" alt="" coords="259,309,334,336"/>
+<area shape="rect" id="node12" href="$classSetting.html" title="parse json setting file and have time out to save setting file" alt="" coords="263,360,331,387"/>
+<area shape="rect" id="node13" href="$classISystemSetting.html" title="系统设置" alt="" coords="38,360,159,387"/>
+<area shape="rect" id="node14" title=" " alt="" coords="61,411,136,437"/>
+<area shape="rect" id="node15" href="$classChat.html" title="Friend和Group的基类, 定义了一些基本的接口和信号" alt="" coords="271,411,323,437"/>
+<area shape="rect" id="node16" href="$classHttpClient.html" title="这个是测试用的" alt="" coords="253,461,341,488"/>
+<area shape="rect" id="node17" href="$classHTTPManager.html" title=" " alt="" coords="240,512,353,539"/>
+</map>

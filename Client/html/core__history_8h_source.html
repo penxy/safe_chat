@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>qt_test: src/Core/core_history.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">qt_test
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a2f0e5642e47e7ed59fe0f0829eafb5f.html">Core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">core_history.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="core__history_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="config_8h.html">config.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;queue&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">class </span><a class="code" href="classFriend.html">Friend</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="classGroup.html">Group</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classCoreHistory.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCoreHistory.html">CoreHistory</a>{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classCoreHistory.html#a8826303b58602d0d3ea38ce9afa2ddf0">CoreHistory</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classCoreHistory.html#a419c8563ad8f1f4a65cde9670bfa1deb">~CoreHistory</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classCoreHistory.html#a8826303b58602d0d3ea38ce9afa2ddf0">CoreHistory</a>(<span class="keyword">const</span> <a class="code" href="classCoreHistory.html">CoreHistory</a>&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classCoreHistory.html">CoreHistory</a>&amp; <a class="code" href="classCoreHistory.html#ac2bcee7700025554b912fd190a965f0e">operator=</a>(<span class="keyword">const</span> <a class="code" href="classCoreHistory.html">CoreHistory</a>&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classCoreHistory.html#a8826303b58602d0d3ea38ce9afa2ddf0">CoreHistory</a>(<a class="code" href="classCoreHistory.html">CoreHistory</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classCoreHistory.html">CoreHistory</a>&amp; <a class="code" href="classCoreHistory.html#ac2bcee7700025554b912fd190a965f0e">operator=</a>(<a class="code" href="classCoreHistory.html">CoreHistory</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCoreHistory.html#adf07095f287fc1eebdd37e632469a5da">initTimeout</a>() = 0;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCoreHistory.html#aab4ecb043cdce26e6a67613cd6f007df">loadGroupHistory</a>(<span class="keywordtype">int</span> idx) = 0;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCoreHistory.html#a647603ed3fe8d17e355d9006dedaf86e">saveGroupHistory</a>(<span class="keywordtype">int</span> idx) = 0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCoreHistory.html#ab245d99a6dc9b8cca50a83183097818d">loadFriendHistory</a>(<span class="keywordtype">int</span> idx) = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCoreHistory.html#abc8cc49b6e073572849b88d67f418650">saveFriendHistory</a>(<span class="keywordtype">int</span> idx) = 0;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCoreHistory.html#a4da5dbb868080b17fb6128048087a0d8">autoClearHistory</a>() = 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classCoreHistory.html#aec06db9cbe854328820f0fbd1cbc90f8">   33</a></span>&#160;    QTimer <a class="code" href="classCoreHistory.html#aec06db9cbe854328820f0fbd1cbc90f8">m_timer_save_history</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classCoreHistory.html#abf177c8957a0319afe4d6113581e79d3">   34</a></span>&#160;    QTimer <a class="code" href="classCoreHistory.html#abf177c8957a0319afe4d6113581e79d3">m_timer_clear_history</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classCoreHistory.html#ad37861f5176b6bc4858446eabc06cf10">   35</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classCoreHistory.html#ad37861f5176b6bc4858446eabc06cf10">TIMEOUT_SAVE_HISTORY</a> = 10000;<span class="comment">//10s</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classCoreHistory.html#a52f20d0a4b859c45c3ff3cf4e87fb4ea">   36</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classCoreHistory.html#a52f20d0a4b859c45c3ff3cf4e87fb4ea">TIMEOUT_CLEAR_HISTORY</a> = 1000 * 60 * 60 * 24;<span class="comment">//24h</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classCoreHistory.html#a240a51622f5b8f4fe4b00b27b68d012a">   37</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classCoreHistory.html#a240a51622f5b8f4fe4b00b27b68d012a">LONGEST_CLEAR_HISTORY</a> = 30;<span class="comment">//30天</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classCoreHistory.html#a8f55126fe7e61e03958ed657e619fc98">   39</a></span>&#160;    std::queue&lt;std::pair&lt;std::weak_ptr&lt;Friend&gt;, <a class="code" href="structns_1_1History.html">ns::History</a>&gt;&gt;               <a class="code" href="classCoreHistory.html#a8f55126fe7e61e03958ed657e619fc98">m_fd_msg_queue</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classCoreHistory.html#a4064ab596b3d93c3a9cfa885bef75fb5">   40</a></span>&#160;    std::queue&lt;std::pair&lt;std::weak_ptr&lt;Group&gt;, <a class="code" href="structns_1_1History.html">ns::History</a>&gt;&gt;                <a class="code" href="classCoreHistory.html#a4064ab596b3d93c3a9cfa885bef75fb5">m_gp_msg_queue</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astructns_1_1History_html"><div class="ttname"><a href="structns_1_1History.html">ns::History</a></div><div class="ttdef"><b>Definition:</b> config.h:140</div></div>
+<div class="ttc" id="aclassCoreHistory_html_ac2bcee7700025554b912fd190a965f0e"><div class="ttname"><a href="classCoreHistory.html#ac2bcee7700025554b912fd190a965f0e">CoreHistory::operator=</a></div><div class="ttdeci">CoreHistory &amp; operator=(const CoreHistory &amp;)=default</div></div>
+<div class="ttc" id="aclassCoreHistory_html_a419c8563ad8f1f4a65cde9670bfa1deb"><div class="ttname"><a href="classCoreHistory.html#a419c8563ad8f1f4a65cde9670bfa1deb">CoreHistory::~CoreHistory</a></div><div class="ttdeci">virtual ~CoreHistory()=default</div></div>
+<div class="ttc" id="aclassCoreHistory_html_a4064ab596b3d93c3a9cfa885bef75fb5"><div class="ttname"><a href="classCoreHistory.html#a4064ab596b3d93c3a9cfa885bef75fb5">CoreHistory::m_gp_msg_queue</a></div><div class="ttdeci">std::queue&lt; std::pair&lt; std::weak_ptr&lt; Group &gt;, ns::History &gt; &gt; m_gp_msg_queue</div><div class="ttdef"><b>Definition:</b> core_history.h:40</div></div>
+<div class="ttc" id="aclassCoreHistory_html_a4da5dbb868080b17fb6128048087a0d8"><div class="ttname"><a href="classCoreHistory.html#a4da5dbb868080b17fb6128048087a0d8">CoreHistory::autoClearHistory</a></div><div class="ttdeci">virtual void autoClearHistory()=0</div></div>
+<div class="ttc" id="aclassCoreHistory_html_abc8cc49b6e073572849b88d67f418650"><div class="ttname"><a href="classCoreHistory.html#abc8cc49b6e073572849b88d67f418650">CoreHistory::saveFriendHistory</a></div><div class="ttdeci">virtual void saveFriendHistory(int idx)=0</div></div>
+<div class="ttc" id="aclassCoreHistory_html"><div class="ttname"><a href="classCoreHistory.html">CoreHistory</a></div><div class="ttdoc">加载和保存数据</div><div class="ttdef"><b>Definition:</b> core_history.h:14</div></div>
+<div class="ttc" id="aclassFriend_html"><div class="ttname"><a href="classFriend.html">Friend</a></div><div class="ttdef"><b>Definition:</b> friend.h:11</div></div>
+<div class="ttc" id="aclassCoreHistory_html_aab4ecb043cdce26e6a67613cd6f007df"><div class="ttname"><a href="classCoreHistory.html#aab4ecb043cdce26e6a67613cd6f007df">CoreHistory::loadGroupHistory</a></div><div class="ttdeci">virtual void loadGroupHistory(int idx)=0</div></div>
+<div class="ttc" id="aclassCoreHistory_html_abf177c8957a0319afe4d6113581e79d3"><div class="ttname"><a href="classCoreHistory.html#abf177c8957a0319afe4d6113581e79d3">CoreHistory::m_timer_clear_history</a></div><div class="ttdeci">QTimer m_timer_clear_history</div><div class="ttdef"><b>Definition:</b> core_history.h:34</div></div>
+<div class="ttc" id="aclassCoreHistory_html_ad37861f5176b6bc4858446eabc06cf10"><div class="ttname"><a href="classCoreHistory.html#ad37861f5176b6bc4858446eabc06cf10">CoreHistory::TIMEOUT_SAVE_HISTORY</a></div><div class="ttdeci">static const int TIMEOUT_SAVE_HISTORY</div><div class="ttdef"><b>Definition:</b> core_history.h:35</div></div>
+<div class="ttc" id="aclassCoreHistory_html_aec06db9cbe854328820f0fbd1cbc90f8"><div class="ttname"><a href="classCoreHistory.html#aec06db9cbe854328820f0fbd1cbc90f8">CoreHistory::m_timer_save_history</a></div><div class="ttdeci">QTimer m_timer_save_history</div><div class="ttdef"><b>Definition:</b> core_history.h:33</div></div>
+<div class="ttc" id="aclassGroup_html"><div class="ttname"><a href="classGroup.html">Group</a></div><div class="ttdef"><b>Definition:</b> group.h:15</div></div>
+<div class="ttc" id="aclassCoreHistory_html_a647603ed3fe8d17e355d9006dedaf86e"><div class="ttname"><a href="classCoreHistory.html#a647603ed3fe8d17e355d9006dedaf86e">CoreHistory::saveGroupHistory</a></div><div class="ttdeci">virtual void saveGroupHistory(int idx)=0</div></div>
+<div class="ttc" id="aclassCoreHistory_html_a240a51622f5b8f4fe4b00b27b68d012a"><div class="ttname"><a href="classCoreHistory.html#a240a51622f5b8f4fe4b00b27b68d012a">CoreHistory::LONGEST_CLEAR_HISTORY</a></div><div class="ttdeci">static const int LONGEST_CLEAR_HISTORY</div><div class="ttdef"><b>Definition:</b> core_history.h:37</div></div>
+<div class="ttc" id="aclassCoreHistory_html_a8826303b58602d0d3ea38ce9afa2ddf0"><div class="ttname"><a href="classCoreHistory.html#a8826303b58602d0d3ea38ce9afa2ddf0">CoreHistory::CoreHistory</a></div><div class="ttdeci">CoreHistory()=default</div></div>
+<div class="ttc" id="aclassCoreHistory_html_adf07095f287fc1eebdd37e632469a5da"><div class="ttname"><a href="classCoreHistory.html#adf07095f287fc1eebdd37e632469a5da">CoreHistory::initTimeout</a></div><div class="ttdeci">virtual void initTimeout()=0</div></div>
+<div class="ttc" id="aconfig_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div></div>
+<div class="ttc" id="aclassCoreHistory_html_ab245d99a6dc9b8cca50a83183097818d"><div class="ttname"><a href="classCoreHistory.html#ab245d99a6dc9b8cca50a83183097818d">CoreHistory::loadFriendHistory</a></div><div class="ttdeci">virtual void loadFriendHistory(int idx)=0</div></div>
+<div class="ttc" id="aclassCoreHistory_html_a52f20d0a4b859c45c3ff3cf4e87fb4ea"><div class="ttname"><a href="classCoreHistory.html#a52f20d0a4b859c45c3ff3cf4e87fb4ea">CoreHistory::TIMEOUT_CLEAR_HISTORY</a></div><div class="ttdeci">static const int TIMEOUT_CLEAR_HISTORY</div><div class="ttdef"><b>Definition:</b> core_history.h:36</div></div>
+<div class="ttc" id="aclassCoreHistory_html_a8f55126fe7e61e03958ed657e619fc98"><div class="ttname"><a href="classCoreHistory.html#a8f55126fe7e61e03958ed657e619fc98">CoreHistory::m_fd_msg_queue</a></div><div class="ttdeci">std::queue&lt; std::pair&lt; std::weak_ptr&lt; Friend &gt;, ns::History &gt; &gt; m_fd_msg_queue</div><div class="ttdef"><b>Definition:</b> core_history.h:39</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

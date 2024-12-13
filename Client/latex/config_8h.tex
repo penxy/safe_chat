@@ -1,0 +1,148 @@
+\hypertarget{config_8h}{}\doxysection{src/config.h 文件参考}
+\label{config_8h}\index{src/config.h@{src/config.h}}
+{\ttfamily \#include $<$Q\+Size$>$}\newline
+{\ttfamily \#include $<$Q\+Debug$>$}\newline
+{\ttfamily \#include $<$Q\+Pixmap$>$}\newline
+{\ttfamily \#include $<$Q\+Timer$>$}\newline
+{\ttfamily \#include $<$Q\+Date\+Time$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include \char`\"{}Chat/chatid.\+h\char`\"{}}\newline
+config.\+h 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{config_8h__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{config_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structns_1_1History}{ns\+::\+History}}
+\item 
+struct \mbox{\hyperlink{structns_1_1Member}{ns\+::\+Member}}
+\begin{DoxyCompactList}\small\item\em 群成员 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceType}{Type}}
+\begin{DoxyCompactList}\small\item\em 对外暴露的枚举类型 \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacesz}{sz}}
+\item 
+ \mbox{\hyperlink{namespacens}{ns}}
+\begin{DoxyCompactList}\small\item\em the set of struct \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{config_8h_adf675be6335a71947f5a35e85fff1293}{\+\_\+\+\_\+\+D\+E\+L\+A\+Y\+\_\+\+\_\+}}~Q\+Timer\+::single\+Shot(200, this, \mbox{[}\&\mbox{]}()\{\});
+\item 
+\#define \mbox{\hyperlink{config_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}}~static constexpr const
+\item 
+\#define \mbox{\hyperlink{config_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}}~\+::Q\+Size
+\end{DoxyCompactItemize}
+\doxysubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceType_a195197d9ab4ce34387f1f9c511ea2ba9}{Type\+::\+Role}} \{ \mbox{\hyperlink{namespaceType_a195197d9ab4ce34387f1f9c511ea2ba9ab6f4a2ec6356bbd56d49f2096bf9d3d3}{Type\+::\+Role\+::\+Owner}} = 0, 
+\mbox{\hyperlink{namespaceType_a195197d9ab4ce34387f1f9c511ea2ba9ae3afed0047b08059d0fada10f400c1e5}{Type\+::\+Role\+::\+Admin}} = 1, 
+\mbox{\hyperlink{namespaceType_a195197d9ab4ce34387f1f9c511ea2ba9a858ba4765e53c712ef672a9570474b1d}{Type\+::\+Role\+::\+Member}} = 2
+ \}
+\begin{DoxyCompactList}\small\item\em 群成员角色 \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespaceType_ae5b697cde223ac242545732b7e308243}{Type\+::\+Status}} \{ \mbox{\hyperlink{namespaceType_ae5b697cde223ac242545732b7e308243a54f664c70c22054ea0d8d26fc3997ce7}{Type\+::\+Status\+::\+Online}}, 
+\mbox{\hyperlink{namespaceType_ae5b697cde223ac242545732b7e308243a8d9da4bc0e49a50e09ac9f7e56789d39}{Type\+::\+Status\+::\+Offline}}, 
+\mbox{\hyperlink{namespaceType_ae5b697cde223ac242545732b7e308243ad8a942ef2b04672adfafef0ad817a407}{Type\+::\+Status\+::\+Busy}}, 
+\mbox{\hyperlink{namespaceType_ae5b697cde223ac242545732b7e308243a312dc56ea9c386a6bc913f988a233791}{Type\+::\+Status\+::\+Away}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespaceType_a9faf80af89bbcb86b6838c2be790d760}{Type\+::\+Identity}} \{ \mbox{\hyperlink{namespaceType_a9faf80af89bbcb86b6838c2be790d760a930a91848917f92cf7e2f8d744fa4177}{Type\+::\+Identity\+::\+Friend}}, 
+\mbox{\hyperlink{namespaceType_a9faf80af89bbcb86b6838c2be790d760a03937134cedab9078be39a77ee3a48a0}{Type\+::\+Identity\+::\+Group}}
+ \}
+\begin{DoxyCompactList}\small\item\em 聊天对象 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{namespacesz_a5013d6058656e6c7873f0c0ed581d060}{sz\+::dialog\+\_\+wid}} = \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}}(400, 300)
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{namespacesz_afb3a0b7661d5e4e2317cc92640509e09}{sz\+::main\+\_\+window\+\_\+wid}} = \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}}(1200, 800)
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{namespacesz_a07466ef998a831f2b8b98b6d71d58e8a}{sz\+::tool\+\_\+btn}} = \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}}(50, 50)
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} int \mbox{\hyperlink{namespacesz_a5db922a161906895872793928c2cf8a8}{sz\+::tool\+\_\+wid}} = 60
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{namespacesz_aa0061117f973360a6a8bb92d0f86608a}{sz\+::fd\+\_\+list\+\_\+name}} = \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}}(120, 30)
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{namespacesz_aba0807f73fc963ff5f06e0d966b35091}{sz\+::fd\+\_\+list\+\_\+photo}} = \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}}(57, 57)
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{namespacesz_aa94a8e184d3150540cbf498d820fa94d}{sz\+::fd\+\_\+list\+\_\+wid}} = \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}}(200, 70)
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} int \mbox{\hyperlink{namespacesz_a5c4e0632e3e0bc6fccd79d7d5eda7b43}{sz\+::list\+\_\+bar\+\_\+w}} = 300
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{namespacesz_a1b90d6468b48bbf40897ced7a1eeb4fc}{sz\+::role}} = \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}}(30, 20)
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} int \mbox{\hyperlink{namespacesz_a9302b1bbbba3f6da05f23d127583f856}{sz\+::member\+\_\+h}} = 50
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{namespacesz_ad4b66744dfa04f44dcf950ca6dc1d9f6}{sz\+::member\+\_\+lab}} = \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}}(60, 30)
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{namespacesz_a87bf825f84bbebf0757c1fe548ce126d}{sz\+::member\+\_\+photo}} = \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}}(45, 45)
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} int \mbox{\hyperlink{namespacesz_adecb955b23c3bc37ea9faeee8fa3f0bf}{sz\+::title\+\_\+bar\+\_\+h}} = 30
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{namespacesz_aa1326afda782673d1de06fc618e8aeca}{sz\+::chat\+\_\+top\+\_\+lab}} = \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}}(150, 30)
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{namespacesz_a3def4fb0276a73c59034e65226ce7dae}{sz\+::chat\+\_\+top\+\_\+photo}} = \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}}(45, 45)
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{namespacesz_a9cc9ccb788f28c3ec1644796fd360e87}{sz\+::chat\+\_\+top\+\_\+wid}} = \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}}(250, 70)
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{namespacesz_a12780c8695a0ee70ca2c1c4d52657177}{sz\+::chat\+\_\+mid\+\_\+wid\+\_\+base}} = \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}}(450, 600)
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{namespacesz_ae2677ddd75a655f6fd856837213cd495}{sz\+::chat\+\_\+btm\+\_\+btn}} = \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}}(70, 30)
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} int \mbox{\hyperlink{namespacesz_a8c896b6fa416022af2afa849a894c799}{sz\+::chat\+\_\+btm\+\_\+wid\+\_\+max\+\_\+h}} = 120
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{namespacesz_a1100358d3b611cf2da09e3423ea70c84}{sz\+::chat\+\_\+wid\+\_\+min}} = \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}}(400, 600)
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{namespacesz_af0eac327286f833033d09e556561a558}{sz\+::chat\+\_\+wid\+\_\+base}} = \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}}(500, 600)
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{namespacesz_a9b6470ad8946acc7f7e473c3c9ddffe3}{sz\+::card\+\_\+id}} = \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}}(100, 30)
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{namespacesz_a607b1d0a5ccb6a3e6f89fc0787f4c5a8}{sz\+::card\+\_\+name}} = \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}}(100, 30)
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{namespacesz_a1397ff35730cbf7cefa6b44586076726}{sz\+::card\+\_\+photo}} = \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}}(120, 120)
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{namespacesz_a9c7b2ff53c2dce52dd34dfb370b998a3}{sz\+::card\+\_\+btn}} = \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}}(70, 30)
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{namespacesz_ab1aff7c5258673941e9cd9820366a107}{sz\+::find\+\_\+gif}} = \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}}(40, 40)
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{namespacesz_a2aa0255948ebb9fad75a6fd274f25bc2}{sz\+::find\+\_\+btn}} = \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}}(60, 40)
+\item 
+\mbox{\hyperlink{config__ui_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}{sc}} \mbox{\hyperlink{config__ui_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}{Q\+Size}} \mbox{\hyperlink{namespacesz_a59229d3f3f570a0ffe9cbf0c17977cb3}{sz\+::main\+\_\+wid\+\_\+base}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{config_8h_adf675be6335a71947f5a35e85fff1293}\label{config_8h_adf675be6335a71947f5a35e85fff1293}} 
+\index{config.h@{config.h}!\_\_DELAY\_\_@{\_\_DELAY\_\_}}
+\index{\_\_DELAY\_\_@{\_\_DELAY\_\_}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{\_\_DELAY\_\_}{\_\_DELAY\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+D\+E\+L\+A\+Y\+\_\+\+\_\+~Q\+Timer\+::single\+Shot(200, this, \mbox{[}\&\mbox{]}()\{\});}
+
+\mbox{\Hypertarget{config_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}\label{config_8h_aa0cf8bad6fa392ec7cb9fdb843dbb90b}} 
+\index{config.h@{config.h}!QSize@{QSize}}
+\index{QSize@{QSize}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{QSize}{QSize}}
+{\footnotesize\ttfamily \#define Q\+Size~\+::Q\+Size}
+
+\mbox{\Hypertarget{config_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}\label{config_8h_a03ede5fb0d1eb2158dbb5f2aeb7a5066}} 
+\index{config.h@{config.h}!sc@{sc}}
+\index{sc@{sc}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{sc}{sc}}
+{\footnotesize\ttfamily \#define sc~static constexpr const}
+

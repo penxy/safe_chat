@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>qt_test: src/Core/core_fd.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">qt_test
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a2f0e5642e47e7ed59fe0f0829eafb5f.html">Core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">core_fd.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="core__fd_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="config_8h.html">config.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;QList&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QVariant&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="const__json_8h.html">Service/const_json.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="friend_8h.html">Chat/friend.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="interface_8h.html">utils/interface.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classCoreFd.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCoreFd.html">CoreFd</a>{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classCoreFd.html#a847a945d9d5cea7cc5429068ffccf4fe">CoreFd</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classCoreFd.html#ae7666bb894c562943a535e65091cafca">~CoreFd</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classCoreFd.html#a847a945d9d5cea7cc5429068ffccf4fe">CoreFd</a>(<span class="keyword">const</span> <a class="code" href="classCoreFd.html">CoreFd</a>&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classCoreFd.html">CoreFd</a>&amp; <a class="code" href="classCoreFd.html#ab096ed8e31f03ae0100d8457c9e970b4">operator=</a>(<span class="keyword">const</span> <a class="code" href="classCoreFd.html">CoreFd</a>&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classCoreFd.html#a847a945d9d5cea7cc5429068ffccf4fe">CoreFd</a>(<a class="code" href="classCoreFd.html">CoreFd</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classCoreFd.html">CoreFd</a>&amp; <a class="code" href="classCoreFd.html#ab096ed8e31f03ae0100d8457c9e970b4">operator=</a>(<a class="code" href="classCoreFd.html">CoreFd</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classCoreFd.html#aeaf1a66870bd0f4871c974ca6ffd0bbb">sendFriend</a>(<a class="code" href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ff">TypeJson::Send</a> type_send, std::array&lt;QVariant, 4&gt;args) = 0;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCoreFd.html#ab4bb9331b98f624fd7f85896f5f25664">recvFriend</a>(<a class="code" href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0">TypeJson::Recv</a> type_recv, std::array&lt;QVariant, 4&gt;args) = 0;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">virtual</span> std::shared_ptr&lt;Friend&gt; <a class="code" href="classCoreFd.html#adfd2abf1c04ec676c43b51bcda112de5">getFriend</a>(<span class="keywordtype">int</span> idx) = 0;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> QList&lt;std::shared_ptr&lt;Friend&gt;&gt;&amp; <a class="code" href="classCoreFd.html#acf63fe09ac7bb199abef3ef736cb5e14">getFriendList</a>() = 0;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classChatId.html">ChatId</a>&amp; <a class="code" href="classCoreFd.html#a8e4a849ab2b02e687bf4a4842aeb35b8">getFriendId</a>(<span class="keywordtype">int</span> idx) = 0;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">virtual</span> QString&amp; <a class="code" href="classCoreFd.html#a2f7a73addfd4dd651f717fbde02bd10e">getFriendName</a>(<span class="keywordtype">int</span> idx) = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">virtual</span> QPixmap&amp; <a class="code" href="classCoreFd.html#ab288da985918a9b3cc0e1ac2987c5692">getFriendPhoto</a>(<span class="keywordtype">int</span> idx) = 0;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classCoreFd.html#a81f28a44841ec033344b5d2f210bcbb1">DECLARE_SIGNAL</a>(SigUpdateListFd);<span class="comment">//更新好友列表</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classCoreFd.html#ac56d6f8745c5497ebaef88c9b9d9fd23">   33</a></span>&#160;    QList&lt;std::shared_ptr&lt;Friend&gt;&gt; <a class="code" href="classCoreFd.html#ac56d6f8745c5497ebaef88c9b9d9fd23">m_fd_list</a>;<span class="comment">//好友列表</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="afriend_8h_html"><div class="ttname"><a href="friend_8h.html">friend.h</a></div></div>
+<div class="ttc" id="aclassCoreFd_html_ab4bb9331b98f624fd7f85896f5f25664"><div class="ttname"><a href="classCoreFd.html#ab4bb9331b98f624fd7f85896f5f25664">CoreFd::recvFriend</a></div><div class="ttdeci">virtual void recvFriend(TypeJson::Recv type_recv, std::array&lt; QVariant, 4 &gt;args)=0</div></div>
+<div class="ttc" id="aconst__json_8h_html"><div class="ttname"><a href="const__json_8h.html">const_json.h</a></div></div>
+<div class="ttc" id="aclassCoreFd_html"><div class="ttname"><a href="classCoreFd.html">CoreFd</a></div><div class="ttdef"><b>Definition:</b> core_fd.h:12</div></div>
+<div class="ttc" id="aclassCoreFd_html_a81f28a44841ec033344b5d2f210bcbb1"><div class="ttname"><a href="classCoreFd.html#a81f28a44841ec033344b5d2f210bcbb1">CoreFd::DECLARE_SIGNAL</a></div><div class="ttdeci">DECLARE_SIGNAL(SigUpdateListFd)</div></div>
+<div class="ttc" id="aclassCoreFd_html_a8e4a849ab2b02e687bf4a4842aeb35b8"><div class="ttname"><a href="classCoreFd.html#a8e4a849ab2b02e687bf4a4842aeb35b8">CoreFd::getFriendId</a></div><div class="ttdeci">virtual ChatId &amp; getFriendId(int idx)=0</div></div>
+<div class="ttc" id="aclassChatId_html"><div class="ttname"><a href="classChatId.html">ChatId</a></div><div class="ttdoc">id of Friend and Group</div><div class="ttdef"><b>Definition:</b> chatid.h:13</div></div>
+<div class="ttc" id="aclassCoreFd_html_ac56d6f8745c5497ebaef88c9b9d9fd23"><div class="ttname"><a href="classCoreFd.html#ac56d6f8745c5497ebaef88c9b9d9fd23">CoreFd::m_fd_list</a></div><div class="ttdeci">QList&lt; std::shared_ptr&lt; Friend &gt; &gt; m_fd_list</div><div class="ttdef"><b>Definition:</b> core_fd.h:33</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a95fffe9c64e44de38c79f880c408f4ff"><div class="ttname"><a href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ff">TypeJson::Send</a></div><div class="ttdeci">Send</div><div class="ttdoc">发送的类型</div><div class="ttdef"><b>Definition:</b> const_json.h:23</div></div>
+<div class="ttc" id="aclassCoreFd_html_aeaf1a66870bd0f4871c974ca6ffd0bbb"><div class="ttname"><a href="classCoreFd.html#aeaf1a66870bd0f4871c974ca6ffd0bbb">CoreFd::sendFriend</a></div><div class="ttdeci">virtual bool sendFriend(TypeJson::Send type_send, std::array&lt; QVariant, 4 &gt;args)=0</div></div>
+<div class="ttc" id="ainterface_8h_html"><div class="ttname"><a href="interface_8h.html">interface.h</a></div></div>
+<div class="ttc" id="aclassCoreFd_html_ab096ed8e31f03ae0100d8457c9e970b4"><div class="ttname"><a href="classCoreFd.html#ab096ed8e31f03ae0100d8457c9e970b4">CoreFd::operator=</a></div><div class="ttdeci">CoreFd &amp; operator=(const CoreFd &amp;)=default</div></div>
+<div class="ttc" id="aclassCoreFd_html_a847a945d9d5cea7cc5429068ffccf4fe"><div class="ttname"><a href="classCoreFd.html#a847a945d9d5cea7cc5429068ffccf4fe">CoreFd::CoreFd</a></div><div class="ttdeci">CoreFd()=default</div></div>
+<div class="ttc" id="aclassCoreFd_html_ae7666bb894c562943a535e65091cafca"><div class="ttname"><a href="classCoreFd.html#ae7666bb894c562943a535e65091cafca">CoreFd::~CoreFd</a></div><div class="ttdeci">~CoreFd()=default</div></div>
+<div class="ttc" id="aconfig_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div></div>
+<div class="ttc" id="aclassCoreFd_html_acf63fe09ac7bb199abef3ef736cb5e14"><div class="ttname"><a href="classCoreFd.html#acf63fe09ac7bb199abef3ef736cb5e14">CoreFd::getFriendList</a></div><div class="ttdeci">virtual QList&lt; std::shared_ptr&lt; Friend &gt; &gt; &amp; getFriendList()=0</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a20e89671a216d5c8cc31a485634ea4c0"><div class="ttname"><a href="namespaceTypeJson.html#a20e89671a216d5c8cc31a485634ea4c0">TypeJson::Recv</a></div><div class="ttdeci">Recv</div><div class="ttdoc">接收的类型</div><div class="ttdef"><b>Definition:</b> const_json.h:49</div></div>
+<div class="ttc" id="aclassCoreFd_html_ab288da985918a9b3cc0e1ac2987c5692"><div class="ttname"><a href="classCoreFd.html#ab288da985918a9b3cc0e1ac2987c5692">CoreFd::getFriendPhoto</a></div><div class="ttdeci">virtual QPixmap &amp; getFriendPhoto(int idx)=0</div></div>
+<div class="ttc" id="aclassCoreFd_html_a2f7a73addfd4dd651f717fbde02bd10e"><div class="ttname"><a href="classCoreFd.html#a2f7a73addfd4dd651f717fbde02bd10e">CoreFd::getFriendName</a></div><div class="ttdeci">virtual QString &amp; getFriendName(int idx)=0</div></div>
+<div class="ttc" id="aclassCoreFd_html_adfd2abf1c04ec676c43b51bcda112de5"><div class="ttname"><a href="classCoreFd.html#adfd2abf1c04ec676c43b51bcda112de5">CoreFd::getFriend</a></div><div class="ttdeci">virtual std::shared_ptr&lt; Friend &gt; getFriend(int idx)=0</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

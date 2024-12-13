@@ -1,0 +1,4 @@
+<map id="ChatPage" name="ChatPage">
+<area shape="rect" id="node1" title="总的聊天页面，对外接口" alt="" coords="5,80,88,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="7,5,86,32"/>
+</map>

@@ -1,0 +1,24 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node1" title=" " alt="" coords="5,385,84,412"/>
+<area shape="rect" id="node2" href="$classAddFdPage.html" title="AddFdPage is a page for adding friends" alt="" coords="137,5,232,32"/>
+<area shape="rect" id="node3" href="$classBubbleMsg.html" title="气泡消息类" alt="" coords="137,56,232,83"/>
+<area shape="rect" id="node4" href="$classChatBtm.html" title="聊天窗口底部, 包括文本框和发送按钮" alt="" coords="145,107,224,133"/>
+<area shape="rect" id="node5" href="$classChatDefault.html" title="右侧聊天栏默认界面" alt="" coords="135,157,235,184"/>
+<area shape="rect" id="node6" href="$classChatMid.html" title="对话框" alt="" coords="147,208,223,235"/>
+<area shape="rect" id="node7" href="$classChatPage.html" title="总的聊天页面，对外接口" alt="" coords="143,259,226,285"/>
+<area shape="rect" id="node8" href="$classCoreList.html" title="base class for FdList and GpList" alt="" coords="147,309,222,336"/>
+<area shape="rect" id="node11" href="$classCoreListItem.html" title="item of friend list or group list" alt="" coords="132,360,237,387"/>
+<area shape="rect" id="node14" href="$classFtpPage.html" title="上传、下载文件界面" alt="" coords="147,411,222,437"/>
+<area shape="rect" id="node15" href="$classGpMember.html" title=" " alt="" coords="137,461,232,488"/>
+<area shape="rect" id="node16" href="$classListPage.html" title="中间的好友、群列表页" alt="" coords="147,512,223,539"/>
+<area shape="rect" id="node17" href="$classTitleBar.html" title=" " alt="" coords="148,563,221,589"/>
+<area shape="rect" id="node18" href="$classToolPage.html" title=" " alt="" coords="145,613,224,640"/>
+<area shape="rect" id="node19" href="$classWidget.html" title="主窗口类" alt="" coords="151,664,219,691"/>
+<area shape="rect" id="node20" href="$classWidgetBlank.html" title="空的QWidget" alt="" coords="132,715,237,741"/>
+<area shape="rect" id="node22" href="$classWidTest.html" title=" " alt="" coords="148,765,221,792"/>
+<area shape="rect" id="node9" href="$classFdList.html" title="好友列表" alt="" coords="301,259,363,285"/>
+<area shape="rect" id="node10" href="$classGpList.html" title="群组列表" alt="" coords="301,309,363,336"/>
+<area shape="rect" id="node12" href="$classFdListItem.html" title="好友列表中的一项" alt="" coords="287,360,377,387"/>
+<area shape="rect" id="node13" href="$classGpListItem.html" title="好友列表中的一项" alt="" coords="285,411,379,437"/>
+<area shape="rect" id="node21" href="$classChatTop.html" title="聊天顶部栏" alt="" coords="295,715,369,741"/>
+</map>

@@ -1,0 +1,44 @@
+\hypertarget{_2home_2pxy_2qt_test_2src_2utils_2interface_8h-example}{}\doxysection{/home/pxy/qt\+\_\+test/src/utils/interface.\+h}
+class I\+Example \{ public\+: // Like signal\+: void value\+Changed(int value) const; // Declare {\ttfamily connect\+To\+\_\+value\+Changed} method. \mbox{\hyperlink{interface_8h_a4e6b4d425d74bdf54f5fb4bc595e88a6}{D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+I\+G\+N\+A\+L(value\+Changed, int value)}}; \};
+
+class Example \+: public Q\+Object, public I\+Example \{ public\+: // Declare real signal and implement {\ttfamily connect\+To\+\_\+value\+Changed} \mbox{\hyperlink{interface_8h_aeb885ebbef446844faa408ce5ed67ca1}{S\+I\+G\+N\+A\+L\+\_\+\+I\+M\+P\+L(\+Example, value\+Changed, int value)}}; \};
+
+
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{\textcolor{comment}{/*}}
+\DoxyCodeLine{\textcolor{comment}{    Copyright © 2019 by The qTox Project Contributors}}
+\DoxyCodeLine{\textcolor{comment}{}}
+\DoxyCodeLine{\textcolor{comment}{    This file is part of qTox, a Qt-\/based graphical interface for Tox.}}
+\DoxyCodeLine{\textcolor{comment}{}}
+\DoxyCodeLine{\textcolor{comment}{    qTox is libre software: you can redistribute it and/or modify}}
+\DoxyCodeLine{\textcolor{comment}{    it under the terms of the GNU General Public License as published by}}
+\DoxyCodeLine{\textcolor{comment}{    the Free Software Foundation, either version 3 of the License, or}}
+\DoxyCodeLine{\textcolor{comment}{    (at your option) any later version.}}
+\DoxyCodeLine{\textcolor{comment}{}}
+\DoxyCodeLine{\textcolor{comment}{    qTox is distributed in the hope that it will be useful,}}
+\DoxyCodeLine{\textcolor{comment}{    but WITHOUT ANY WARRANTY; without even the implied warranty of}}
+\DoxyCodeLine{\textcolor{comment}{    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}}
+\DoxyCodeLine{\textcolor{comment}{    GNU General Public License for more details.}}
+\DoxyCodeLine{\textcolor{comment}{}}
+\DoxyCodeLine{\textcolor{comment}{    You should have received a copy of the GNU General Public License}}
+\DoxyCodeLine{\textcolor{comment}{    along with qTox.  If not, see <http://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{\textcolor{comment}{*/}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <QMetaObject>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <functional>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define DECLARE\_SIGNAL(name, ...) \(\backslash\)}}
+\DoxyCodeLine{\textcolor{preprocessor}{    using Slot\_\#\#name = std::function<void (\_\_VA\_ARGS\_\_)>; \(\backslash\)}}
+\DoxyCodeLine{\textcolor{preprocessor}{    virtual QMetaObject::Connection connectTo\_\#\#name(QObject *receiver, Slot\_\#\#name slot) const = 0}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define SIGNAL\_IMPL(classname, name, ...) \(\backslash\)}}
+\DoxyCodeLine{\textcolor{preprocessor}{    using Slot\_\#\#name = std::function<void (\_\_VA\_ARGS\_\_)>; \(\backslash\)}}
+\DoxyCodeLine{\textcolor{preprocessor}{    Q\_SIGNAL void name(\_\_VA\_ARGS\_\_); \(\backslash\)}}
+\DoxyCodeLine{\textcolor{preprocessor}{    QMetaObject::Connection connectTo\_\#\#name(QObject *receiver, Slot\_\#\#name slot) const override \{ \(\backslash\)}}
+\DoxyCodeLine{\textcolor{preprocessor}{        return connect(this, \&classname::name, receiver, slot); \(\backslash\)}}
+\DoxyCodeLine{\textcolor{preprocessor}{    \}}}
+\end{DoxyCodeInclude}
+ 

@@ -1,0 +1,6 @@
+<map id="Chat" name="Chat">
+<area shape="rect" id="node1" title="Friend和Group的基类, 定义了一些基本的接口和信号" alt="" coords="53,80,105,107"/>
+<area shape="rect" id="node3" href="$classFriend.html" title=" " alt="" coords="5,155,68,181"/>
+<area shape="rect" id="node4" href="$classGroup.html" title=" " alt="" coords="93,155,154,181"/>
+<area shape="rect" id="node2" title=" " alt="" coords="42,5,117,32"/>
+</map>

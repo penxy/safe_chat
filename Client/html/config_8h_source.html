@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>qt_test: src/config.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">qt_test
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">config.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="config_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __CONFIG_H__</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __CONFIG_H__</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QSize&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QPixmap&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// #include &quot;nlohmann/json.hpp&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// using json = nlohmann::json;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//==================================enum===================================//</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceType.html">Type</a>{</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="namespaceType.html#a195197d9ab4ce34387f1f9c511ea2ba9">   21</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="namespaceType.html#a195197d9ab4ce34387f1f9c511ea2ba9">Role</a>{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="namespaceType.html#a195197d9ab4ce34387f1f9c511ea2ba9ab6f4a2ec6356bbd56d49f2096bf9d3d3">Owner</a> = 0,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="namespaceType.html#a195197d9ab4ce34387f1f9c511ea2ba9ae3afed0047b08059d0fada10f400c1e5">Admin</a> = 1,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="classMember.html">Member</a> = 2</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    };</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="namespaceType.html#ae5b697cde223ac242545732b7e308243">   29</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="namespaceType.html#ae5b697cde223ac242545732b7e308243">Status</a>{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="namespaceType.html#ae5b697cde223ac242545732b7e308243a54f664c70c22054ea0d8d26fc3997ce7">Online</a>,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="namespaceType.html#ae5b697cde223ac242545732b7e308243a8d9da4bc0e49a50e09ac9f7e56789d39">Offline</a>,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="namespaceType.html#ae5b697cde223ac242545732b7e308243ad8a942ef2b04672adfafef0ad817a407">Busy</a>,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="namespaceType.html#ae5b697cde223ac242545732b7e308243a312dc56ea9c386a6bc913f988a233791">Away</a></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    };</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="namespaceType.html#a9faf80af89bbcb86b6838c2be790d760">   39</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="namespaceType.html#a9faf80af89bbcb86b6838c2be790d760">Identity</a>{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="namespaceType.html#a9faf80af89bbcb86b6838c2be790d760a930a91848917f92cf7e2f8d744fa4177">Friend</a>,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classGroup.html">Group</a></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    };</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">//=======================================define=======================================</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">//防止按钮多次点击</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="config_8h.html#adf675be6335a71947f5a35e85fff1293">   50</a></span>&#160;<span class="preprocessor">#define __DELAY__ QTimer::singleShot(200, this, [&amp;](){});</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">//=======================================Size=========================================</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="namespacesz.html">   54</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacesz.html">sz</a>{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#ifndef sc</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">   56</a></span>&#160;<span class="preprocessor">    #define sc static constexpr const</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#ifndef QSize</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">   59</a></span>&#160;<span class="preprocessor">    #define QSize ::QSize</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">/* dialog-size */</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="namespacesz.html#a5013d6058656e6c7873f0c0ed581d060">   62</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a> <a class="code" href="namespacesz.html#a5013d6058656e6c7873f0c0ed581d060">dialog_wid</a>                                                  = <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a>(400, 300);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="namespacesz.html#afb3a0b7661d5e4e2317cc92640509e09">   64</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a> <a class="code" href="namespacesz.html#afb3a0b7661d5e4e2317cc92640509e09">main_window_wid</a>                                             = <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a>(1200, 800);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">/* size-widget-tool */</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="namespacesz.html#a07466ef998a831f2b8b98b6d71d58e8a">   66</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a> <a class="code" href="namespacesz.html#a07466ef998a831f2b8b98b6d71d58e8a">tool_btn</a>                                                    = <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a>(50, 50);</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="namespacesz.html#a5db922a161906895872793928c2cf8a8">   67</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <span class="keywordtype">int</span> <a class="code" href="namespacesz.html#a5db922a161906895872793928c2cf8a8">tool_wid</a>                                                      = 60;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">/* size-friend-list */</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="namespacesz.html#aa0061117f973360a6a8bb92d0f86608a">   70</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a> <a class="code" href="namespacesz.html#aa0061117f973360a6a8bb92d0f86608a">fd_list_name</a>                                                = <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a>(120, 30);</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="namespacesz.html#aba0807f73fc963ff5f06e0d966b35091">   71</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a> <a class="code" href="namespacesz.html#aba0807f73fc963ff5f06e0d966b35091">fd_list_photo</a>                                               = <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a>(57, 57);</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="namespacesz.html#aa94a8e184d3150540cbf498d820fa94d">   72</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a> <a class="code" href="namespacesz.html#aa94a8e184d3150540cbf498d820fa94d">fd_list_wid</a>                                                 = <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a>(200, 70);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="namespacesz.html#a5c4e0632e3e0bc6fccd79d7d5eda7b43">   74</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <span class="keywordtype">int</span> <a class="code" href="namespacesz.html#a5c4e0632e3e0bc6fccd79d7d5eda7b43">list_bar_w</a>                                                    = 300;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">/* size-role */</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="namespacesz.html#a1b90d6468b48bbf40897ced7a1eeb4fc">   76</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a> <a class="code" href="namespacesz.html#a1b90d6468b48bbf40897ced7a1eeb4fc">role</a>                                                        = <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a>(30, 20);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">/* size-member */</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="namespacesz.html#a9302b1bbbba3f6da05f23d127583f856">   79</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <span class="keywordtype">int</span> <a class="code" href="namespacesz.html#a9302b1bbbba3f6da05f23d127583f856">member_h</a>                                                 = 50;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="namespacesz.html#ad4b66744dfa04f44dcf950ca6dc1d9f6">   80</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a> <a class="code" href="namespacesz.html#ad4b66744dfa04f44dcf950ca6dc1d9f6">member_lab</a>                                             = <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a>(60, 30);</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="namespacesz.html#a87bf825f84bbebf0757c1fe548ce126d">   81</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a> <a class="code" href="namespacesz.html#a87bf825f84bbebf0757c1fe548ce126d">member_photo</a>                                           = <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a>(45, 45);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">/* size-title */</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="namespacesz.html#adecb955b23c3bc37ea9faeee8fa3f0bf">   84</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <span class="keywordtype">int</span> <a class="code" href="namespacesz.html#adecb955b23c3bc37ea9faeee8fa3f0bf">title_bar_h</a>                                                   = 30;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">//============================================Talk============================================</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">/* size-talk-top */</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="namespacesz.html#aa1326afda782673d1de06fc618e8aeca">   88</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a> <a class="code" href="namespacesz.html#aa1326afda782673d1de06fc618e8aeca">chat_top_lab</a>                                                = <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a>(150, 30);</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="namespacesz.html#a3def4fb0276a73c59034e65226ce7dae">   89</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a> <a class="code" href="namespacesz.html#a3def4fb0276a73c59034e65226ce7dae">chat_top_photo</a>                                              = <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a>(45, 45);</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="namespacesz.html#a9cc9ccb788f28c3ec1644796fd360e87">   90</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a> <a class="code" href="namespacesz.html#a9cc9ccb788f28c3ec1644796fd360e87">chat_top_wid</a>                                                = <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a>(250, 70);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">/* size-talk-mid */</span>                                     </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="namespacesz.html#a12780c8695a0ee70ca2c1c4d52657177">   93</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a> <a class="code" href="namespacesz.html#a12780c8695a0ee70ca2c1c4d52657177">chat_mid_wid_base</a>                                           = <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a>(450, 600);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">/* size-talk-buttom */</span>                                      </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="namespacesz.html#ae2677ddd75a655f6fd856837213cd495">   96</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a> <a class="code" href="namespacesz.html#ae2677ddd75a655f6fd856837213cd495">chat_btm_btn</a>                                                = <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a>(70, 30);</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="namespacesz.html#a8c896b6fa416022af2afa849a894c799">   97</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <span class="keywordtype">int</span> <a class="code" href="namespacesz.html#a8c896b6fa416022af2afa849a894c799">chat_btm_wid_max_h</a>                                            = 120;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">/* size-talk-window */</span>                                      </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="namespacesz.html#a1100358d3b611cf2da09e3423ea70c84">  100</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a> <a class="code" href="namespacesz.html#a1100358d3b611cf2da09e3423ea70c84">chat_wid_min</a>                                                = <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a>(400, 600);</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="namespacesz.html#af0eac327286f833033d09e556561a558">  101</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a> <a class="code" href="namespacesz.html#af0eac327286f833033d09e556561a558">chat_wid_base</a>                                               = <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a>(500, 600);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">//============================================Talk============================================</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">//============================================Card============================================</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="namespacesz.html#a9b6470ad8946acc7f7e473c3c9ddffe3">  105</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a> <a class="code" href="namespacesz.html#a9b6470ad8946acc7f7e473c3c9ddffe3">card_id</a>                                                     = <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a>(100, 30);</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="namespacesz.html#a607b1d0a5ccb6a3e6f89fc0787f4c5a8">  106</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a> <a class="code" href="namespacesz.html#a607b1d0a5ccb6a3e6f89fc0787f4c5a8">card_name</a>                                                   = <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a>(100, 30);</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="namespacesz.html#a1397ff35730cbf7cefa6b44586076726">  107</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a> <a class="code" href="namespacesz.html#a1397ff35730cbf7cefa6b44586076726">card_photo</a>                                                  = <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a>(120, 120);</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="namespacesz.html#a9c7b2ff53c2dce52dd34dfb370b998a3">  108</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a> <a class="code" href="namespacesz.html#a9c7b2ff53c2dce52dd34dfb370b998a3">card_btn</a>                                                    = <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a>(70, 30);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">//============================================Card============================================</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">//============================================Search============================================</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="namespacesz.html#ab1aff7c5258673941e9cd9820366a107">  112</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a> <a class="code" href="namespacesz.html#ab1aff7c5258673941e9cd9820366a107">find_gif</a>                                                    = <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a>(40, 40);</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="namespacesz.html#a2aa0255948ebb9fad75a6fd274f25bc2">  113</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a> <a class="code" href="namespacesz.html#a2aa0255948ebb9fad75a6fd274f25bc2">find_btn</a>                                                    = <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a>(60, 40);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">//============================================Search============================================</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">/* size-widget-main */</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="namespacesz.html#a59229d3f3f570a0ffe9cbf0c17977cb3">  117</a></span>&#160;    <a class="code" href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a> <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a> <a class="code" href="namespacesz.html#a59229d3f3f570a0ffe9cbf0c17977cb3">main_wid_base</a>                           = <a class="code" href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a>(<a class="code" href="namespacesz.html#aa94a8e184d3150540cbf498d820fa94d">fd_list_wid</a>.width() + <a class="code" href="namespacesz.html#a5db922a161906895872793928c2cf8a8">tool_wid</a> + <a class="code" href="namespacesz.html#a1100358d3b611cf2da09e3423ea70c84">chat_wid_min</a>.width() + 30, </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                                                                                <a class="code" href="namespacesz.html#af0eac327286f833033d09e556561a558">chat_wid_base</a>.height() + <a class="code" href="namespacesz.html#adecb955b23c3bc37ea9faeee8fa3f0bf">title_bar_h</a> + 15);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#ifdef QSize</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">    #undef QSize</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#ifdef sc</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">    #undef sc</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif // sc</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#include &lt;QDateTime&gt;</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="chatid_8h.html">Chat/chatid.h</a>&quot;</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacens.html">ns</a>{</div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="structns_1_1History.html">  140</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structns_1_1History.html">History</a>{</div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="structns_1_1History.html#a72fe272076a625cd50be7f4a596d949f">  141</a></span>&#160;        QDateTime <a class="code" href="structns_1_1History.html#a72fe272076a625cd50be7f4a596d949f">date</a>;</div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="structns_1_1History.html#a1e938cfb0b50838e0df1f82748771437">  142</a></span>&#160;        QString <a class="code" href="structns_1_1History.html#a1e938cfb0b50838e0df1f82748771437">content</a>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="structns_1_1History.html#a22b28f4137537f5830c8ee0bc1e434d5">  143</a></span>&#160;        <a class="code" href="classChatId.html">ChatId</a> <a class="code" href="structns_1_1History.html#a22b28f4137537f5830c8ee0bc1e434d5">id</a>;<span class="comment">//对方的id</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="structns_1_1History.html#a382cac98a93313e5414e0319d91c6559">  144</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="structns_1_1History.html#a382cac98a93313e5414e0319d91c6559">isSelf</a>;<span class="comment">//是否是自己发送的</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="structns_1_1History.html#a0d4a2d290b1cd293b9d2990d14035881">  145</a></span>&#160;        <a class="code" href="structns_1_1History.html#a0d4a2d290b1cd293b9d2990d14035881">History</a>(){}</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="structns_1_1History.html#a6824c9edb6ad968ec7d5b94ba75f7e79">  146</a></span>&#160;        <a class="code" href="structns_1_1History.html#a6824c9edb6ad968ec7d5b94ba75f7e79">History</a>(QDateTime&amp; t, QString&amp; c, <a class="code" href="classChatId.html">ChatId</a>&amp; <span class="keywordtype">id</span>, <span class="keywordtype">bool</span> <a class="code" href="structns_1_1History.html#a382cac98a93313e5414e0319d91c6559">isSelf</a>) : <a class="code" href="structns_1_1History.html#a72fe272076a625cd50be7f4a596d949f">date</a>(t), <a class="code" href="structns_1_1History.html#a1e938cfb0b50838e0df1f82748771437">content</a>(c), <a class="code" href="structns_1_1History.html#a22b28f4137537f5830c8ee0bc1e434d5">id</a>(<a class="code" href="structns_1_1History.html#a22b28f4137537f5830c8ee0bc1e434d5">id</a>), <a class="code" href="structns_1_1History.html#a382cac98a93313e5414e0319d91c6559">isSelf</a>(<a class="code" href="structns_1_1History.html#a382cac98a93313e5414e0319d91c6559">isSelf</a>) {}</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    };</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="structns_1_1Member.html">  152</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structns_1_1Member.html">Member</a>{</div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="structns_1_1Member.html#a89dfde419026bc031976c1b23e692ac3">  153</a></span>&#160;        <a class="code" href="classChatId.html">ChatId</a> <a class="code" href="structns_1_1Member.html#a89dfde419026bc031976c1b23e692ac3">id</a>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="structns_1_1Member.html#a1e2bc55a2ed62bf636e327b42e312651">  154</a></span>&#160;        QString <a class="code" href="structns_1_1Member.html#a1e2bc55a2ed62bf636e327b42e312651">name</a>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="structns_1_1Member.html#a7d17efc0f0061e038364b55b2b6e68b4">  155</a></span>&#160;        QPixmap <a class="code" href="structns_1_1Member.html#a7d17efc0f0061e038364b55b2b6e68b4">pix</a>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="structns_1_1Member.html#acf1b1649cc501fc4128fbeac9cfb7316">  156</a></span>&#160;        <a class="code" href="namespaceType.html#a195197d9ab4ce34387f1f9c511ea2ba9">Type::Role</a> <a class="code" href="structns_1_1Member.html#acf1b1649cc501fc4128fbeac9cfb7316">role</a>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="structns_1_1Member.html#a4ed4417bf9b3deb6f08d4f1404959659">  157</a></span>&#160;        <a class="code" href="structns_1_1Member.html#a4ed4417bf9b3deb6f08d4f1404959659">Member</a>(){}</div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="structns_1_1Member.html#af77f867caf428326148aa3f1ef41f0eb">  158</a></span>&#160;        <a class="code" href="structns_1_1Member.html#af77f867caf428326148aa3f1ef41f0eb">Member</a>(<a class="code" href="classChatId.html">ChatId</a>&amp; <span class="keywordtype">id</span>, QString&amp; <a class="code" href="structns_1_1Member.html#a1e2bc55a2ed62bf636e327b42e312651">name</a>, QPixmap&amp; <a class="code" href="structns_1_1Member.html#a7d17efc0f0061e038364b55b2b6e68b4">pix</a>, <a class="code" href="namespaceType.html#a195197d9ab4ce34387f1f9c511ea2ba9">Type::Role</a> <a class="code" href="structns_1_1Member.html#acf1b1649cc501fc4128fbeac9cfb7316">role</a>) : <a class="code" href="structns_1_1Member.html#a89dfde419026bc031976c1b23e692ac3">id</a>(<a class="code" href="structns_1_1Member.html#a89dfde419026bc031976c1b23e692ac3">id</a>), <a class="code" href="structns_1_1Member.html#a1e2bc55a2ed62bf636e327b42e312651">name</a>(<a class="code" href="structns_1_1Member.html#a1e2bc55a2ed62bf636e327b42e312651">name</a>), <a class="code" href="structns_1_1Member.html#a7d17efc0f0061e038364b55b2b6e68b4">pix</a>(<a class="code" href="structns_1_1Member.html#a7d17efc0f0061e038364b55b2b6e68b4">pix</a>), <a class="code" href="structns_1_1Member.html#acf1b1649cc501fc4128fbeac9cfb7316">role</a>(<a class="code" href="structns_1_1Member.html#acf1b1649cc501fc4128fbeac9cfb7316">role</a>) {}</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    };</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">#endif // __CONFIG_H__</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="anamespacesz_html_aa0061117f973360a6a8bb92d0f86608a"><div class="ttname"><a href="namespacesz.html#aa0061117f973360a6a8bb92d0f86608a">sz::fd_list_name</a></div><div class="ttdeci">sc QSize fd_list_name</div><div class="ttdef"><b>Definition:</b> config.h:70</div></div>
+<div class="ttc" id="anamespacesz_html_ad4b66744dfa04f44dcf950ca6dc1d9f6"><div class="ttname"><a href="namespacesz.html#ad4b66744dfa04f44dcf950ca6dc1d9f6">sz::member_lab</a></div><div class="ttdeci">sc QSize member_lab</div><div class="ttdef"><b>Definition:</b> config.h:80</div></div>
+<div class="ttc" id="anamespacesz_html_aa94a8e184d3150540cbf498d820fa94d"><div class="ttname"><a href="namespacesz.html#aa94a8e184d3150540cbf498d820fa94d">sz::fd_list_wid</a></div><div class="ttdeci">sc QSize fd_list_wid</div><div class="ttdef"><b>Definition:</b> config.h:72</div></div>
+<div class="ttc" id="anamespacesz_html_a5013d6058656e6c7873f0c0ed581d060"><div class="ttname"><a href="namespacesz.html#a5013d6058656e6c7873f0c0ed581d060">sz::dialog_wid</a></div><div class="ttdeci">sc QSize dialog_wid</div><div class="ttdef"><b>Definition:</b> config.h:62</div></div>
+<div class="ttc" id="anamespacesz_html_a12780c8695a0ee70ca2c1c4d52657177"><div class="ttname"><a href="namespacesz.html#a12780c8695a0ee70ca2c1c4d52657177">sz::chat_mid_wid_base</a></div><div class="ttdeci">sc QSize chat_mid_wid_base</div><div class="ttdef"><b>Definition:</b> config.h:93</div></div>
+<div class="ttc" id="astructns_1_1History_html_a1e938cfb0b50838e0df1f82748771437"><div class="ttname"><a href="structns_1_1History.html#a1e938cfb0b50838e0df1f82748771437">ns::History::content</a></div><div class="ttdeci">QString content</div><div class="ttdef"><b>Definition:</b> config.h:142</div></div>
+<div class="ttc" id="astructns_1_1History_html"><div class="ttname"><a href="structns_1_1History.html">ns::History</a></div><div class="ttdef"><b>Definition:</b> config.h:140</div></div>
+<div class="ttc" id="anamespacens_html"><div class="ttname"><a href="namespacens.html">ns</a></div><div class="ttdoc">the set of struct</div></div>
+<div class="ttc" id="anamespacesz_html_a9cc9ccb788f28c3ec1644796fd360e87"><div class="ttname"><a href="namespacesz.html#a9cc9ccb788f28c3ec1644796fd360e87">sz::chat_top_wid</a></div><div class="ttdeci">sc QSize chat_top_wid</div><div class="ttdef"><b>Definition:</b> config.h:90</div></div>
+<div class="ttc" id="aclassMember_html"><div class="ttname"><a href="classMember.html">Member</a></div><div class="ttdoc">群成员列表项</div><div class="ttdef"><b>Definition:</b> gp_member.h:7</div></div>
+<div class="ttc" id="astructns_1_1Member_html_a89dfde419026bc031976c1b23e692ac3"><div class="ttname"><a href="structns_1_1Member.html#a89dfde419026bc031976c1b23e692ac3">ns::Member::id</a></div><div class="ttdeci">ChatId id</div><div class="ttdef"><b>Definition:</b> config.h:153</div></div>
+<div class="ttc" id="astructns_1_1History_html_a0d4a2d290b1cd293b9d2990d14035881"><div class="ttname"><a href="structns_1_1History.html#a0d4a2d290b1cd293b9d2990d14035881">ns::History::History</a></div><div class="ttdeci">History()</div><div class="ttdef"><b>Definition:</b> config.h:145</div></div>
+<div class="ttc" id="aconfig_8h_html_aa0cf8bad6fa392ec7cb9fdb843dbb90b"><div class="ttname"><a href="config_8h.html#aa0cf8bad6fa392ec7cb9fdb843dbb90b">QSize</a></div><div class="ttdeci">#define QSize</div><div class="ttdef"><b>Definition:</b> config.h:59</div></div>
+<div class="ttc" id="anamespacesz_html_a607b1d0a5ccb6a3e6f89fc0787f4c5a8"><div class="ttname"><a href="namespacesz.html#a607b1d0a5ccb6a3e6f89fc0787f4c5a8">sz::card_name</a></div><div class="ttdeci">sc QSize card_name</div><div class="ttdef"><b>Definition:</b> config.h:106</div></div>
+<div class="ttc" id="anamespacesz_html_a5db922a161906895872793928c2cf8a8"><div class="ttname"><a href="namespacesz.html#a5db922a161906895872793928c2cf8a8">sz::tool_wid</a></div><div class="ttdeci">sc int tool_wid</div><div class="ttdef"><b>Definition:</b> config.h:67</div></div>
+<div class="ttc" id="anamespacesz_html_a5c4e0632e3e0bc6fccd79d7d5eda7b43"><div class="ttname"><a href="namespacesz.html#a5c4e0632e3e0bc6fccd79d7d5eda7b43">sz::list_bar_w</a></div><div class="ttdeci">sc int list_bar_w</div><div class="ttdef"><b>Definition:</b> config.h:74</div></div>
+<div class="ttc" id="anamespacesz_html_ab1aff7c5258673941e9cd9820366a107"><div class="ttname"><a href="namespacesz.html#ab1aff7c5258673941e9cd9820366a107">sz::find_gif</a></div><div class="ttdeci">sc QSize find_gif</div><div class="ttdef"><b>Definition:</b> config.h:112</div></div>
+<div class="ttc" id="astructns_1_1Member_html_a7d17efc0f0061e038364b55b2b6e68b4"><div class="ttname"><a href="structns_1_1Member.html#a7d17efc0f0061e038364b55b2b6e68b4">ns::Member::pix</a></div><div class="ttdeci">QPixmap pix</div><div class="ttdef"><b>Definition:</b> config.h:155</div></div>
+<div class="ttc" id="anamespacesz_html_a8c896b6fa416022af2afa849a894c799"><div class="ttname"><a href="namespacesz.html#a8c896b6fa416022af2afa849a894c799">sz::chat_btm_wid_max_h</a></div><div class="ttdeci">sc int chat_btm_wid_max_h</div><div class="ttdef"><b>Definition:</b> config.h:97</div></div>
+<div class="ttc" id="astructns_1_1History_html_a382cac98a93313e5414e0319d91c6559"><div class="ttname"><a href="structns_1_1History.html#a382cac98a93313e5414e0319d91c6559">ns::History::isSelf</a></div><div class="ttdeci">bool isSelf</div><div class="ttdef"><b>Definition:</b> config.h:144</div></div>
+<div class="ttc" id="anamespacesz_html_afb3a0b7661d5e4e2317cc92640509e09"><div class="ttname"><a href="namespacesz.html#afb3a0b7661d5e4e2317cc92640509e09">sz::main_window_wid</a></div><div class="ttdeci">sc QSize main_window_wid</div><div class="ttdef"><b>Definition:</b> config.h:64</div></div>
+<div class="ttc" id="anamespacesz_html_a1397ff35730cbf7cefa6b44586076726"><div class="ttname"><a href="namespacesz.html#a1397ff35730cbf7cefa6b44586076726">sz::card_photo</a></div><div class="ttdeci">sc QSize card_photo</div><div class="ttdef"><b>Definition:</b> config.h:107</div></div>
+<div class="ttc" id="anamespacesz_html_a1100358d3b611cf2da09e3423ea70c84"><div class="ttname"><a href="namespacesz.html#a1100358d3b611cf2da09e3423ea70c84">sz::chat_wid_min</a></div><div class="ttdeci">sc QSize chat_wid_min</div><div class="ttdef"><b>Definition:</b> config.h:100</div></div>
+<div class="ttc" id="anamespacesz_html_aba0807f73fc963ff5f06e0d966b35091"><div class="ttname"><a href="namespacesz.html#aba0807f73fc963ff5f06e0d966b35091">sz::fd_list_photo</a></div><div class="ttdeci">sc QSize fd_list_photo</div><div class="ttdef"><b>Definition:</b> config.h:71</div></div>
+<div class="ttc" id="anamespaceType_html_ae5b697cde223ac242545732b7e308243a54f664c70c22054ea0d8d26fc3997ce7"><div class="ttname"><a href="namespaceType.html#ae5b697cde223ac242545732b7e308243a54f664c70c22054ea0d8d26fc3997ce7">Type::Status::Online</a></div><div class="ttdeci">@ Online</div></div>
+<div class="ttc" id="aclassChatId_html"><div class="ttname"><a href="classChatId.html">ChatId</a></div><div class="ttdoc">id of Friend and Group</div><div class="ttdef"><b>Definition:</b> chatid.h:13</div></div>
+<div class="ttc" id="anamespaceType_html_ae5b697cde223ac242545732b7e308243a8d9da4bc0e49a50e09ac9f7e56789d39"><div class="ttname"><a href="namespaceType.html#ae5b697cde223ac242545732b7e308243a8d9da4bc0e49a50e09ac9f7e56789d39">Type::Status::Offline</a></div><div class="ttdeci">@ Offline</div></div>
+<div class="ttc" id="anamespaceType_html_ae5b697cde223ac242545732b7e308243"><div class="ttname"><a href="namespaceType.html#ae5b697cde223ac242545732b7e308243">Type::Status</a></div><div class="ttdeci">Status</div><div class="ttdef"><b>Definition:</b> config.h:29</div></div>
+<div class="ttc" id="anamespacesz_html_adecb955b23c3bc37ea9faeee8fa3f0bf"><div class="ttname"><a href="namespacesz.html#adecb955b23c3bc37ea9faeee8fa3f0bf">sz::title_bar_h</a></div><div class="ttdeci">sc int title_bar_h</div><div class="ttdef"><b>Definition:</b> config.h:84</div></div>
+<div class="ttc" id="astructns_1_1Member_html_a4ed4417bf9b3deb6f08d4f1404959659"><div class="ttname"><a href="structns_1_1Member.html#a4ed4417bf9b3deb6f08d4f1404959659">ns::Member::Member</a></div><div class="ttdeci">Member()</div><div class="ttdef"><b>Definition:</b> config.h:157</div></div>
+<div class="ttc" id="anamespacesz_html_ae2677ddd75a655f6fd856837213cd495"><div class="ttname"><a href="namespacesz.html#ae2677ddd75a655f6fd856837213cd495">sz::chat_btm_btn</a></div><div class="ttdeci">sc QSize chat_btm_btn</div><div class="ttdef"><b>Definition:</b> config.h:96</div></div>
+<div class="ttc" id="astructns_1_1History_html_a6824c9edb6ad968ec7d5b94ba75f7e79"><div class="ttname"><a href="structns_1_1History.html#a6824c9edb6ad968ec7d5b94ba75f7e79">ns::History::History</a></div><div class="ttdeci">History(QDateTime &amp;t, QString &amp;c, ChatId &amp;id, bool isSelf)</div><div class="ttdef"><b>Definition:</b> config.h:146</div></div>
+<div class="ttc" id="astructns_1_1Member_html"><div class="ttname"><a href="structns_1_1Member.html">ns::Member</a></div><div class="ttdoc">群成员</div><div class="ttdef"><b>Definition:</b> config.h:152</div></div>
+<div class="ttc" id="astructns_1_1Member_html_acf1b1649cc501fc4128fbeac9cfb7316"><div class="ttname"><a href="structns_1_1Member.html#acf1b1649cc501fc4128fbeac9cfb7316">ns::Member::role</a></div><div class="ttdeci">Type::Role role</div><div class="ttdef"><b>Definition:</b> config.h:156</div></div>
+<div class="ttc" id="astructns_1_1History_html_a22b28f4137537f5830c8ee0bc1e434d5"><div class="ttname"><a href="structns_1_1History.html#a22b28f4137537f5830c8ee0bc1e434d5">ns::History::id</a></div><div class="ttdeci">ChatId id</div><div class="ttdef"><b>Definition:</b> config.h:143</div></div>
+<div class="ttc" id="anamespacesz_html_af0eac327286f833033d09e556561a558"><div class="ttname"><a href="namespacesz.html#af0eac327286f833033d09e556561a558">sz::chat_wid_base</a></div><div class="ttdeci">sc QSize chat_wid_base</div><div class="ttdef"><b>Definition:</b> config.h:101</div></div>
+<div class="ttc" id="achatid_8h_html"><div class="ttname"><a href="chatid_8h.html">chatid.h</a></div></div>
+<div class="ttc" id="anamespacesz_html_a9302b1bbbba3f6da05f23d127583f856"><div class="ttname"><a href="namespacesz.html#a9302b1bbbba3f6da05f23d127583f856">sz::member_h</a></div><div class="ttdeci">sc int member_h</div><div class="ttdef"><b>Definition:</b> config.h:79</div></div>
+<div class="ttc" id="anamespacesz_html_aa1326afda782673d1de06fc618e8aeca"><div class="ttname"><a href="namespacesz.html#aa1326afda782673d1de06fc618e8aeca">sz::chat_top_lab</a></div><div class="ttdeci">sc QSize chat_top_lab</div><div class="ttdef"><b>Definition:</b> config.h:88</div></div>
+<div class="ttc" id="anamespacesz_html_a07466ef998a831f2b8b98b6d71d58e8a"><div class="ttname"><a href="namespacesz.html#a07466ef998a831f2b8b98b6d71d58e8a">sz::tool_btn</a></div><div class="ttdeci">sc QSize tool_btn</div><div class="ttdef"><b>Definition:</b> config.h:66</div></div>
+<div class="ttc" id="anamespaceType_html_a9faf80af89bbcb86b6838c2be790d760a930a91848917f92cf7e2f8d744fa4177"><div class="ttname"><a href="namespaceType.html#a9faf80af89bbcb86b6838c2be790d760a930a91848917f92cf7e2f8d744fa4177">Type::Identity::Friend</a></div><div class="ttdeci">@ Friend</div></div>
+<div class="ttc" id="anamespacesz_html_a59229d3f3f570a0ffe9cbf0c17977cb3"><div class="ttname"><a href="namespacesz.html#a59229d3f3f570a0ffe9cbf0c17977cb3">sz::main_wid_base</a></div><div class="ttdeci">sc QSize main_wid_base</div><div class="ttdef"><b>Definition:</b> config.h:117</div></div>
+<div class="ttc" id="aclassGroup_html"><div class="ttname"><a href="classGroup.html">Group</a></div><div class="ttdef"><b>Definition:</b> group.h:15</div></div>
+<div class="ttc" id="anamespacesz_html_a2aa0255948ebb9fad75a6fd274f25bc2"><div class="ttname"><a href="namespacesz.html#a2aa0255948ebb9fad75a6fd274f25bc2">sz::find_btn</a></div><div class="ttdeci">sc QSize find_btn</div><div class="ttdef"><b>Definition:</b> config.h:113</div></div>
+<div class="ttc" id="anamespacesz_html"><div class="ttname"><a href="namespacesz.html">sz</a></div><div class="ttdef"><b>Definition:</b> config.h:54</div></div>
+<div class="ttc" id="anamespacesz_html_a3def4fb0276a73c59034e65226ce7dae"><div class="ttname"><a href="namespacesz.html#a3def4fb0276a73c59034e65226ce7dae">sz::chat_top_photo</a></div><div class="ttdeci">sc QSize chat_top_photo</div><div class="ttdef"><b>Definition:</b> config.h:89</div></div>
+<div class="ttc" id="anamespaceType_html_a195197d9ab4ce34387f1f9c511ea2ba9ab6f4a2ec6356bbd56d49f2096bf9d3d3"><div class="ttname"><a href="namespaceType.html#a195197d9ab4ce34387f1f9c511ea2ba9ab6f4a2ec6356bbd56d49f2096bf9d3d3">Type::Role::Owner</a></div><div class="ttdeci">@ Owner</div></div>
+<div class="ttc" id="astructns_1_1Member_html_a1e2bc55a2ed62bf636e327b42e312651"><div class="ttname"><a href="structns_1_1Member.html#a1e2bc55a2ed62bf636e327b42e312651">ns::Member::name</a></div><div class="ttdeci">QString name</div><div class="ttdef"><b>Definition:</b> config.h:154</div></div>
+<div class="ttc" id="astructns_1_1History_html_a72fe272076a625cd50be7f4a596d949f"><div class="ttname"><a href="structns_1_1History.html#a72fe272076a625cd50be7f4a596d949f">ns::History::date</a></div><div class="ttdeci">QDateTime date</div><div class="ttdef"><b>Definition:</b> config.h:141</div></div>
+<div class="ttc" id="anamespaceType_html_a195197d9ab4ce34387f1f9c511ea2ba9ae3afed0047b08059d0fada10f400c1e5"><div class="ttname"><a href="namespaceType.html#a195197d9ab4ce34387f1f9c511ea2ba9ae3afed0047b08059d0fada10f400c1e5">Type::Role::Admin</a></div><div class="ttdeci">@ Admin</div></div>
+<div class="ttc" id="anamespaceType_html_ae5b697cde223ac242545732b7e308243a312dc56ea9c386a6bc913f988a233791"><div class="ttname"><a href="namespaceType.html#ae5b697cde223ac242545732b7e308243a312dc56ea9c386a6bc913f988a233791">Type::Status::Away</a></div><div class="ttdeci">@ Away</div></div>
+<div class="ttc" id="anamespaceType_html_a195197d9ab4ce34387f1f9c511ea2ba9"><div class="ttname"><a href="namespaceType.html#a195197d9ab4ce34387f1f9c511ea2ba9">Type::Role</a></div><div class="ttdeci">Role</div><div class="ttdoc">群成员角色</div><div class="ttdef"><b>Definition:</b> config.h:21</div></div>
+<div class="ttc" id="anamespacesz_html_a87bf825f84bbebf0757c1fe548ce126d"><div class="ttname"><a href="namespacesz.html#a87bf825f84bbebf0757c1fe548ce126d">sz::member_photo</a></div><div class="ttdeci">sc QSize member_photo</div><div class="ttdef"><b>Definition:</b> config.h:81</div></div>
+<div class="ttc" id="anamespacesz_html_a9b6470ad8946acc7f7e473c3c9ddffe3"><div class="ttname"><a href="namespacesz.html#a9b6470ad8946acc7f7e473c3c9ddffe3">sz::card_id</a></div><div class="ttdeci">sc QSize card_id</div><div class="ttdef"><b>Definition:</b> config.h:105</div></div>
+<div class="ttc" id="anamespacesz_html_a9c7b2ff53c2dce52dd34dfb370b998a3"><div class="ttname"><a href="namespacesz.html#a9c7b2ff53c2dce52dd34dfb370b998a3">sz::card_btn</a></div><div class="ttdeci">sc QSize card_btn</div><div class="ttdef"><b>Definition:</b> config.h:108</div></div>
+<div class="ttc" id="anamespaceType_html_a9faf80af89bbcb86b6838c2be790d760"><div class="ttname"><a href="namespaceType.html#a9faf80af89bbcb86b6838c2be790d760">Type::Identity</a></div><div class="ttdeci">Identity</div><div class="ttdoc">聊天对象</div><div class="ttdef"><b>Definition:</b> config.h:39</div></div>
+<div class="ttc" id="anamespaceType_html_ae5b697cde223ac242545732b7e308243ad8a942ef2b04672adfafef0ad817a407"><div class="ttname"><a href="namespaceType.html#ae5b697cde223ac242545732b7e308243ad8a942ef2b04672adfafef0ad817a407">Type::Status::Busy</a></div><div class="ttdeci">@ Busy</div></div>
+<div class="ttc" id="anamespacesz_html_a1b90d6468b48bbf40897ced7a1eeb4fc"><div class="ttname"><a href="namespacesz.html#a1b90d6468b48bbf40897ced7a1eeb4fc">sz::role</a></div><div class="ttdeci">sc QSize role</div><div class="ttdef"><b>Definition:</b> config.h:76</div></div>
+<div class="ttc" id="astructns_1_1Member_html_af77f867caf428326148aa3f1ef41f0eb"><div class="ttname"><a href="structns_1_1Member.html#af77f867caf428326148aa3f1ef41f0eb">ns::Member::Member</a></div><div class="ttdeci">Member(ChatId &amp;id, QString &amp;name, QPixmap &amp;pix, Type::Role role)</div><div class="ttdef"><b>Definition:</b> config.h:158</div></div>
+<div class="ttc" id="aconfig_8h_html_a03ede5fb0d1eb2158dbb5f2aeb7a5066"><div class="ttname"><a href="config_8h.html#a03ede5fb0d1eb2158dbb5f2aeb7a5066">sc</a></div><div class="ttdeci">#define sc</div><div class="ttdef"><b>Definition:</b> config.h:56</div></div>
+<div class="ttc" id="anamespaceType_html"><div class="ttname"><a href="namespaceType.html">Type</a></div><div class="ttdoc">对外暴露的枚举类型</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

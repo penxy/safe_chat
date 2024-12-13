@@ -1,0 +1,6 @@
+<map id="FdCard" name="FdCard">
+<area shape="rect" id="node1" title="好友卡片" alt="" coords="30,171,98,197"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,81,80,108"/>
+<area shape="rect" id="node3" href="$classLabelPhoto.html" title="用于显示图片的标签类" alt="" coords="105,81,199,108"/>
+<area shape="rect" id="node4" title=" " alt="" coords="119,5,185,32"/>
+</map>

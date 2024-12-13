@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>qt_test: src/widget/form/addfrienddialog.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">qt_test
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c570470bf3e4213fb57699dd2e921b84.html">widget</a></li><li class="navelem"><a class="el" href="dir_d4c6c5d3ecc64a2ff5e568fa1abd3a57.html">form</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">addfrienddialog.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="addfrienddialog_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;ui_addfrienddialog.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QDialog&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="interface_8h.html">utils/interface.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classAddFriend.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="classChatId.html">ChatId</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classAddFriendDialog.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classAddFriendDialog.html">AddFriendDialog</a> : <span class="keyword">public</span> QDialog{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classAddFriendDialog.html#a1dc4ac613891163fe68ba56abeb23d57">AddFriendDialog</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;signals:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classAddFriendDialog.html#ab920bfe3a1b3a7291b864302473b1279">SigAddFriend</a>(<span class="keyword">const</span> <a class="code" href="classChatId.html">ChatId</a>&amp; chatId);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classAddFriendDialog.html#ac8d24bd2c64271781e5828a1e558d86c">   19</a></span>&#160;    Ui_AddFriendDialog <a class="code" href="classAddFriendDialog.html#ac8d24bd2c64271781e5828a1e558d86c">ui</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassAddFriendDialog_html_ab920bfe3a1b3a7291b864302473b1279"><div class="ttname"><a href="classAddFriendDialog.html#ab920bfe3a1b3a7291b864302473b1279">AddFriendDialog::SigAddFriend</a></div><div class="ttdeci">void SigAddFriend(const ChatId &amp;chatId)</div></div>
+<div class="ttc" id="aclassAddFriendDialog_html_ac8d24bd2c64271781e5828a1e558d86c"><div class="ttname"><a href="classAddFriendDialog.html#ac8d24bd2c64271781e5828a1e558d86c">AddFriendDialog::ui</a></div><div class="ttdeci">Ui_AddFriendDialog ui</div><div class="ttdef"><b>Definition:</b> addfrienddialog.h:19</div></div>
+<div class="ttc" id="aclassAddFriendDialog_html_a1dc4ac613891163fe68ba56abeb23d57"><div class="ttname"><a href="classAddFriendDialog.html#a1dc4ac613891163fe68ba56abeb23d57">AddFriendDialog::AddFriendDialog</a></div><div class="ttdeci">AddFriendDialog(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> addfrienddialog.cpp:9</div></div>
+<div class="ttc" id="aclassChatId_html"><div class="ttname"><a href="classChatId.html">ChatId</a></div><div class="ttdoc">id of Friend and Group</div><div class="ttdef"><b>Definition:</b> chatid.h:13</div></div>
+<div class="ttc" id="ainterface_8h_html"><div class="ttname"><a href="interface_8h.html">interface.h</a></div></div>
+<div class="ttc" id="aclassAddFriendDialog_html"><div class="ttname"><a href="classAddFriendDialog.html">AddFriendDialog</a></div><div class="ttdef"><b>Definition:</b> addfrienddialog.h:12</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

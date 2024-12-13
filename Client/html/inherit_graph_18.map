@@ -1,0 +1,5 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,121,32"/>
+<area shape="rect" id="node2" href="$classWidBase.html" title="主要窗口的基类" alt="" coords="169,5,248,32"/>
+<area shape="rect" id="node3" href="$classMainWid.html" title="展示的主窗口，用于显示Widget" alt="" coords="296,5,375,32"/>
+</map>

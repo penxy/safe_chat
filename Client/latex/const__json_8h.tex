@@ -1,0 +1,77 @@
+\hypertarget{const__json_8h}{}\doxysection{src/\+Service/const\+\_\+json.h 文件参考}
+\label{const__json_8h}\index{src/Service/const\_json.h@{src/Service/const\_json.h}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+const\+\_\+json.\+h 的引用(Include)关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{const__json_8h__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{const__json_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceTypeJson}{Type\+Json}}
+\begin{DoxyCompactList}\small\item\em 包含json的一切属性 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceTypeJson_aea866b90cb88c13503e5ea931f8300c7}{Type\+Json\+::\+Leval}} \+: uint8\+\_\+t \{ \mbox{\hyperlink{namespaceTypeJson_aea866b90cb88c13503e5ea931f8300c7a28d0edd045e05cf5af64e35ae0c4c6ef}{Type\+Json\+::\+Leval\+::\+Low}} = 0, 
+\mbox{\hyperlink{namespaceTypeJson_aea866b90cb88c13503e5ea931f8300c7a960b44c579bc2f6818d2daaf9e4c16f0}{Type\+Json\+::\+Leval\+::\+Normal}}, 
+\mbox{\hyperlink{namespaceTypeJson_aea866b90cb88c13503e5ea931f8300c7a655d20c1ca69519ca647684edbb2db35}{Type\+Json\+::\+Leval\+::\+High}}
+ \}
+\begin{DoxyCompactList}\small\item\em 优先级 \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ff}{Type\+Json\+::\+Send}} \+: uint8\+\_\+t \{ \newline
+\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ffaa6c746e7099f033e90910abea735d3a7}{Type\+Json\+::\+Send\+::\+Regiest}}, 
+\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ffadb27061d418632341d465f9dcb240a2b}{Type\+Json\+::\+Send\+::\+Create\+Group}}, 
+\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ffac1baeb9281c49f8d72bf5ccd25f19ca3}{Type\+Json\+::\+Send\+::\+Fd\+Add}}, 
+\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ffabc5dbc57acdf0924eda35d2be7d7735b}{Type\+Json\+::\+Send\+::\+Fd\+Del}}, 
+\newline
+\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ffad7abf2a5551a5bad5e384167fb10466f}{Type\+Json\+::\+Send\+::\+Fd\+Accept}}, 
+\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ffa7a1900483d62cbded0b26e10ce290a00}{Type\+Json\+::\+Send\+::\+Fd\+Reject}}, 
+\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ffa2ea924962a0e5084c149ab6c5c22ab07}{Type\+Json\+::\+Send\+::\+Fd\+Text}}, 
+\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ffa31fda220c6113cf9a62daa33a1377104}{Type\+Json\+::\+Send\+::\+Gp\+Create}}, 
+\newline
+\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ffae3afef96a122e2f07f681a9f165c61fd}{Type\+Json\+::\+Send\+::\+Gp\+Invite}}, 
+\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ffa78091218b72ff217115494cad4e8efce}{Type\+Json\+::\+Send\+::\+Gp\+Quit}}, 
+\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ffa239c4b55eb082c462b37ed6ca2389b9d}{Type\+Json\+::\+Send\+::\+Gp\+Text}}, 
+\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ffaa67d57318aec541c0b63f129d1e2db13}{Type\+Json\+::\+Send\+::\+Gp\+Name}}, 
+\newline
+\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ffaeef46fef98381f59945a0972cc5601c8}{Type\+Json\+::\+Send\+::\+Gp\+Pix}}, 
+\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ffa20240056fe9b49e39114341ba853fcd4}{Type\+Json\+::\+Send\+::\+Change\+Name}}, 
+\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ffa75d81a571983b38334291d21d92f7924}{Type\+Json\+::\+Send\+::\+Change\+Pix}}, 
+\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ffad002fe1b3da657db7bd0b050cf0f128a}{Type\+Json\+::\+Send\+::\+Change\+Status}}, 
+\newline
+\mbox{\hyperlink{namespaceTypeJson_a95fffe9c64e44de38c79f880c408f4ffa60649892fd750d03cde0444e477479aa}{Type\+Json\+::\+Send\+::\+Change\+Pass}}
+ \}
+\begin{DoxyCompactList}\small\item\em 发送的类型 \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespaceTypeJson_a20e89671a216d5c8cc31a485634ea4c0}{Type\+Json\+::\+Recv}} \+: uint8\+\_\+t \{ \newline
+\mbox{\hyperlink{namespaceTypeJson_a20e89671a216d5c8cc31a485634ea4c0ae278ef309c7b9a98e764fbed3cb8fabb}{Type\+Json\+::\+Recv\+::\+Fd\+Find}}, 
+\mbox{\hyperlink{namespaceTypeJson_a20e89671a216d5c8cc31a485634ea4c0ac1baeb9281c49f8d72bf5ccd25f19ca3}{Type\+Json\+::\+Recv\+::\+Fd\+Add}}, 
+\mbox{\hyperlink{namespaceTypeJson_a20e89671a216d5c8cc31a485634ea4c0abc5dbc57acdf0924eda35d2be7d7735b}{Type\+Json\+::\+Recv\+::\+Fd\+Del}}, 
+\mbox{\hyperlink{namespaceTypeJson_a20e89671a216d5c8cc31a485634ea4c0ad7abf2a5551a5bad5e384167fb10466f}{Type\+Json\+::\+Recv\+::\+Fd\+Accept}}, 
+\newline
+\mbox{\hyperlink{namespaceTypeJson_a20e89671a216d5c8cc31a485634ea4c0a7a1900483d62cbded0b26e10ce290a00}{Type\+Json\+::\+Recv\+::\+Fd\+Reject}}, 
+\mbox{\hyperlink{namespaceTypeJson_a20e89671a216d5c8cc31a485634ea4c0a3967c125ad1c07240b135130a2c3c640}{Type\+Json\+::\+Recv\+::\+Fd\+Status}}, 
+\mbox{\hyperlink{namespaceTypeJson_a20e89671a216d5c8cc31a485634ea4c0ac15eb0bf020c6a18b368200c63bc7f98}{Type\+Json\+::\+Recv\+::\+Fd\+Name}}, 
+\mbox{\hyperlink{namespaceTypeJson_a20e89671a216d5c8cc31a485634ea4c0a3468612281c8ba745d4f32eab6175a4d}{Type\+Json\+::\+Recv\+::\+Fd\+Pix}}, 
+\newline
+\mbox{\hyperlink{namespaceTypeJson_a20e89671a216d5c8cc31a485634ea4c0a01285d02c8def09a796494b8b0dd2627}{Type\+Json\+::\+Recv\+::\+Gp\+Find}}, 
+\mbox{\hyperlink{namespaceTypeJson_a20e89671a216d5c8cc31a485634ea4c0ae22a7f70cad743a6f56b492114d499cc}{Type\+Json\+::\+Recv\+::\+Gp\+Add}}, 
+\mbox{\hyperlink{namespaceTypeJson_a20e89671a216d5c8cc31a485634ea4c0a0716ec9531ea5f284d653255d702b66d}{Type\+Json\+::\+Recv\+::\+Gp\+Del}}, 
+\mbox{\hyperlink{namespaceTypeJson_a20e89671a216d5c8cc31a485634ea4c0a55d2166f9b88988e406d0e9857a71a40}{Type\+Json\+::\+Recv\+::\+Gp\+Accept}}, 
+\newline
+\mbox{\hyperlink{namespaceTypeJson_a20e89671a216d5c8cc31a485634ea4c0a3f4007bb0ad8b9f0de8996877a6d39bf}{Type\+Json\+::\+Recv\+::\+Gp\+Reject}}, 
+\mbox{\hyperlink{namespaceTypeJson_a20e89671a216d5c8cc31a485634ea4c0aa67d57318aec541c0b63f129d1e2db13}{Type\+Json\+::\+Recv\+::\+Gp\+Name}}, 
+\mbox{\hyperlink{namespaceTypeJson_a20e89671a216d5c8cc31a485634ea4c0aeef46fef98381f59945a0972cc5601c8}{Type\+Json\+::\+Recv\+::\+Gp\+Pix}}
+ \}
+\begin{DoxyCompactList}\small\item\em 接收的类型 \end{DoxyCompactList}\end{DoxyCompactItemize}

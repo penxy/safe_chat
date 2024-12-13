@@ -1,0 +1,82 @@
+\hypertarget{classSingleton}{}\doxysection{Singleton$<$ T $>$ 模板类 参考}
+\label{classSingleton}\index{Singleton$<$ T $>$@{Singleton$<$ T $>$}}
+
+
+single model  
+
+
+
+
+{\ttfamily \#include $<$single\+\_\+model.\+h$>$}
+
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classSingleton_a9349b42bad14a8e86c56229175acfba4}{$\sim$\+Singleton}} ()=default
+\item 
+\mbox{\hyperlink{classSingleton_a23b2407170cc04f6746874704b928044}{Singleton}} (const \mbox{\hyperlink{classSingleton}{Singleton}} \&)=delete
+\item 
+\mbox{\hyperlink{classSingleton}{Singleton}} \& \mbox{\hyperlink{classSingleton_a0765f17c275d65bacc1aae955e9bfc95}{operator=}} (const \mbox{\hyperlink{classSingleton}{Singleton}} \&)=delete
+\end{DoxyCompactItemize}
+\doxysubsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static T \& \mbox{\hyperlink{classSingleton_abf5e9bae3a09bb344c8b25f647386f3d}{get\+\_\+inst}} () noexcept(std\+::is\+\_\+nothrow\+\_\+constructible$<$ T $>$\+::value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSingleton_adb1b554fec7ae6065fe0e09111f3581f}{Singleton}} ()=default
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$typename T$>$\newline
+class Singleton$<$ T $>$}
+
+single model 
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classSingleton_a9349b42bad14a8e86c56229175acfba4}\label{classSingleton_a9349b42bad14a8e86c56229175acfba4}} 
+\index{Singleton$<$ T $>$@{Singleton$<$ T $>$}!````~Singleton@{$\sim$Singleton}}
+\index{````~Singleton@{$\sim$Singleton}!Singleton$<$ T $>$@{Singleton$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Singleton()}{~Singleton()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual \mbox{\hyperlink{classSingleton}{Singleton}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classSingleton}{Singleton}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{classSingleton_a23b2407170cc04f6746874704b928044}\label{classSingleton_a23b2407170cc04f6746874704b928044}} 
+\index{Singleton$<$ T $>$@{Singleton$<$ T $>$}!Singleton@{Singleton}}
+\index{Singleton@{Singleton}!Singleton$<$ T $>$@{Singleton$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Singleton()}{Singleton()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classSingleton}{Singleton}}$<$ T $>$\+::\mbox{\hyperlink{classSingleton}{Singleton}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSingleton}{Singleton}}$<$ T $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classSingleton_adb1b554fec7ae6065fe0e09111f3581f}\label{classSingleton_adb1b554fec7ae6065fe0e09111f3581f}} 
+\index{Singleton$<$ T $>$@{Singleton$<$ T $>$}!Singleton@{Singleton}}
+\index{Singleton@{Singleton}!Singleton$<$ T $>$@{Singleton$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Singleton()}{Singleton()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classSingleton}{Singleton}}$<$ T $>$\+::\mbox{\hyperlink{classSingleton}{Singleton}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classSingleton_abf5e9bae3a09bb344c8b25f647386f3d}\label{classSingleton_abf5e9bae3a09bb344c8b25f647386f3d}} 
+\index{Singleton$<$ T $>$@{Singleton$<$ T $>$}!get\_inst@{get\_inst}}
+\index{get\_inst@{get\_inst}!Singleton$<$ T $>$@{Singleton$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get\_inst()}{get\_inst()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static T\& \mbox{\hyperlink{classSingleton}{Singleton}}$<$ T $>$\+::get\+\_\+inst (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classSingleton_a0765f17c275d65bacc1aae955e9bfc95}\label{classSingleton_a0765f17c275d65bacc1aae955e9bfc95}} 
+\index{Singleton$<$ T $>$@{Singleton$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Singleton$<$ T $>$@{Singleton$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classSingleton}{Singleton}}\& \mbox{\hyperlink{classSingleton}{Singleton}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSingleton}{Singleton}}$<$ T $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\mbox{\hyperlink{single__model_8h}{single\+\_\+model.\+h}}\end{DoxyCompactItemize}

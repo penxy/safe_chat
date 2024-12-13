@@ -1,0 +1,5 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,72,57"/>
+<area shape="rect" id="node2" href="$classLabelPhoto.html" title="用于显示图片的标签类" alt="" coords="120,5,215,32"/>
+<area shape="rect" id="node3" href="$classLabelRole.html" title="用于展示群成员列表中的角色" alt="" coords="124,56,211,83"/>
+</map>

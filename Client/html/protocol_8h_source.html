@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>qt_test: src/Service/protocol.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">qt_test
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_6ffc343ef0b33b8e0e31ec7afba90a0a.html">Service</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">protocol.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="protocol_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QJsonObject&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QTcpSocket&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="const__json_8h.html">const_json.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span><a class="code" href="classCore.html">Core</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span>NetCore;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classProtocol.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classProtocol.html">Protocol</a> : <span class="keyword">public</span> QObject, <span class="keyword">public</span> std::enable_shared_from_this&lt;Protocol&gt;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classProtocol.html#a30ac6771054b527f22f060de47347080">Protocol</a>(QObject *parent);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classProtocol.html#ae78a2bc284f521aa47f3fd7718e23ead">~Protocol</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classProtocol.html#a9a9f0eb4a5dc4a57d3222cd6a6512364">init</a>(std::shared_ptr&lt;Core&gt;core, <span class="keyword">const</span> <span class="keywordtype">char</span> *host, <span class="keywordtype">int</span> port);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classProtocol.html#a3a26dfce0b31f4044e372df746199349">create_and_send</a>(<a class="code" href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ff">TypeJson::Send</a> <a class="code" href="namespaceJsonHand.html#a8a0ea3b51169594c6ddbe2cdab361e65">type</a>, <span class="keywordtype">void</span> *data);                                    <span class="comment">//由core调用</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">bool</span> send();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> createHead();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> onReadyRead();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span>: </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    std::shared_ptr&lt;Core&gt; m_core;                                   <span class="comment">//解析json后，调用Core的接口</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">struct </span>Hand{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="namespaceJsonHand.html#a1cdee257b67905cf26ff7d05ba8a8b79">index</a> = 0;                                              <span class="comment">//协议序号</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        QString <a class="code" href="namespaceJsonHand.html#afe5cb3c1f2c22beeb1b650cadd31426d">account_id</a>;                                         <span class="comment">//发送者id</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ff">TypeJson::Send</a> <a class="code" href="namespaceJsonHand.html#a8a0ea3b51169594c6ddbe2cdab361e65">type</a>;                                        <span class="comment">//协议类型</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        QString <a class="code" href="namespaceJsonHand.html#ae9a9055632b3ba405d5683ad49c71e2e">recv_id</a>;                                            <span class="comment">//接收者id</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="comment">//时间</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        QString <a class="code" href="namespaceJsonHand.html#a0a5d55a6d14deb3e8b16aecd6ba168f4">public_key</a>;                                         <span class="comment">//公钥</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }m_hand;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    QTcpSocket m_socket;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    QString recv_text;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    QJsonObject m_json;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aconst__json_8h_html"><div class="ttname"><a href="const__json_8h.html">const_json.h</a></div></div>
+<div class="ttc" id="aclassProtocol_html_a30ac6771054b527f22f060de47347080"><div class="ttname"><a href="classProtocol.html#a30ac6771054b527f22f060de47347080">Protocol::Protocol</a></div><div class="ttdeci">Protocol(QObject *parent)</div><div class="ttdef"><b>Definition:</b> protocol.cpp:24</div></div>
+<div class="ttc" id="anamespaceJsonHand_html_afe5cb3c1f2c22beeb1b650cadd31426d"><div class="ttname"><a href="namespaceJsonHand.html#afe5cb3c1f2c22beeb1b650cadd31426d">JsonHand::account_id</a></div><div class="ttdeci">const QString account_id</div><div class="ttdef"><b>Definition:</b> protocol.cpp:16</div></div>
+<div class="ttc" id="aclassProtocol_html"><div class="ttname"><a href="classProtocol.html">Protocol</a></div><div class="ttdoc">生成json并发送，接收json并解析</div><div class="ttdef"><b>Definition:</b> protocol.h:16</div></div>
+<div class="ttc" id="aclassProtocol_html_ae78a2bc284f521aa47f3fd7718e23ead"><div class="ttname"><a href="classProtocol.html#ae78a2bc284f521aa47f3fd7718e23ead">Protocol::~Protocol</a></div><div class="ttdeci">~Protocol()</div><div class="ttdef"><b>Definition:</b> protocol.cpp:25</div></div>
+<div class="ttc" id="anamespaceJsonHand_html_a0a5d55a6d14deb3e8b16aecd6ba168f4"><div class="ttname"><a href="namespaceJsonHand.html#a0a5d55a6d14deb3e8b16aecd6ba168f4">JsonHand::public_key</a></div><div class="ttdeci">const QString public_key</div><div class="ttdef"><b>Definition:</b> protocol.cpp:21</div></div>
+<div class="ttc" id="anamespaceJsonHand_html_a8a0ea3b51169594c6ddbe2cdab361e65"><div class="ttname"><a href="namespaceJsonHand.html#a8a0ea3b51169594c6ddbe2cdab361e65">JsonHand::type</a></div><div class="ttdeci">const QString type</div><div class="ttdef"><b>Definition:</b> protocol.cpp:18</div></div>
+<div class="ttc" id="anamespaceJsonHand_html_ae9a9055632b3ba405d5683ad49c71e2e"><div class="ttname"><a href="namespaceJsonHand.html#ae9a9055632b3ba405d5683ad49c71e2e">JsonHand::recv_id</a></div><div class="ttdeci">const QString recv_id</div><div class="ttdef"><b>Definition:</b> protocol.cpp:19</div></div>
+<div class="ttc" id="anamespaceTypeJson_html_a95fffe9c64e44de38c79f880c408f4ff"><div class="ttname"><a href="namespaceTypeJson.html#a95fffe9c64e44de38c79f880c408f4ff">TypeJson::Send</a></div><div class="ttdeci">Send</div><div class="ttdoc">发送的类型</div><div class="ttdef"><b>Definition:</b> const_json.h:23</div></div>
+<div class="ttc" id="aclassProtocol_html_a9a9f0eb4a5dc4a57d3222cd6a6512364"><div class="ttname"><a href="classProtocol.html#a9a9f0eb4a5dc4a57d3222cd6a6512364">Protocol::init</a></div><div class="ttdeci">void init(std::shared_ptr&lt; Core &gt;core, const char *host, int port)</div><div class="ttdef"><b>Definition:</b> protocol.cpp:34</div></div>
+<div class="ttc" id="anamespaceJsonHand_html_a1cdee257b67905cf26ff7d05ba8a8b79"><div class="ttname"><a href="namespaceJsonHand.html#a1cdee257b67905cf26ff7d05ba8a8b79">JsonHand::index</a></div><div class="ttdeci">const QString index</div><div class="ttdef"><b>Definition:</b> protocol.cpp:15</div></div>
+<div class="ttc" id="aclassCore_html"><div class="ttname"><a href="classCore.html">Core</a></div><div class="ttdoc">界面要操作数据的所有接口所在</div><div class="ttdef"><b>Definition:</b> core.h:29</div></div>
+<div class="ttc" id="aclassProtocol_html_a3a26dfce0b31f4044e372df746199349"><div class="ttname"><a href="classProtocol.html#a3a26dfce0b31f4044e372df746199349">Protocol::create_and_send</a></div><div class="ttdeci">void create_and_send(TypeJson::Send type, void *data)</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

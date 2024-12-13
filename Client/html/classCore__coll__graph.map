@@ -1,0 +1,11 @@
+<map id="Core" name="Core">
+<area shape="rect" id="node1" title="界面要操作数据的所有接口所在" alt="" coords="355,157,407,184"/>
+<area shape="rect" id="node2" title=" " alt="" coords="193,5,267,32"/>
+<area shape="rect" id="node3" href="$classCoreFd.html" title=" " alt="" coords="196,56,264,83"/>
+<area shape="rect" id="node4" href="$classCoreGp.html" title=" " alt="" coords="195,107,265,133"/>
+<area shape="rect" id="node5" href="$classCoreSelf.html" title="个人信息保存与修改" alt="" coords="191,157,269,184"/>
+<area shape="rect" id="node6" href="$classChatId.html" title="id of Friend and Group" alt="" coords="5,157,69,184"/>
+<area shape="rect" id="node7" href="$classCoreHistory.html" title="加载和保存数据" alt="" coords="181,208,279,235"/>
+<area shape="rect" id="node8" href="$classCoreFtp.html" title=" " alt="" coords="193,259,267,285"/>
+<area shape="rect" id="node9" title=" " alt="" coords="155,310,305,351"/>
+</map>

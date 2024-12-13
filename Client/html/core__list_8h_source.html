@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>qt_test: src/Model/ListBar/core_list.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">qt_test
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_32e188284d239da8bb14ec1dabb0c35f.html">Model</a></li><li class="navelem"><a class="el" href="dir_de61c8a591248a737c6ec518ce74ea93.html">ListBar</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">core_list.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="core__list_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="config_8h.html">config.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QListWidget&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QWidget&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="classCore.html">Core</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classCoreList.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCoreList.html">CoreList</a> : <span class="keyword">public</span> QWidget{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classCoreList.html#a350426fee28bfd3534fb61fd5262f978">CoreList</a>(<a class="code" href="namespaceType.html#a9faf80af89bbcb86b6838c2be790d760">Type::Identity</a> identity, std::shared_ptr&lt;Core&gt; core, QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classCoreList.html#aac579c3bf5f4f5ce572bf1dc913b9b81">~CoreList</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">//对外接口</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCoreList.html#a882a8489c66b577437b975375c59a5f7">UpdateList</a>() = 0;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;signals:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCoreList.html#acbc71a5668aba7162963bbf5e1fd0ffe">SigListChangeIdx</a>(<a class="code" href="namespaceType.html#a9faf80af89bbcb86b6838c2be790d760">Type::Identity</a> identity, <span class="keywordtype">int</span> idx);<span class="comment">//这个信号会经过ListPage中转，最终到达ChatMid</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classCoreList.html#a9aa321c8afd5ee5ed08bd0d26e96cd0d">   26</a></span>&#160;    QListWidget <a class="code" href="classCoreList.html#a9aa321c8afd5ee5ed08bd0d26e96cd0d">m_wid_list</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classCoreList.html#aee0eda1d7a7d071d5417f7e210791a68">   27</a></span>&#160;    std::shared_ptr&lt;Core&gt; <a class="code" href="classCoreList.html#aee0eda1d7a7d071d5417f7e210791a68">m_core</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">int</span> m_cur_idx = -1;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="namespaceType.html#a9faf80af89bbcb86b6838c2be790d760">Type::Identity</a> m_identity;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassCoreList_html_aac579c3bf5f4f5ce572bf1dc913b9b81"><div class="ttname"><a href="classCoreList.html#aac579c3bf5f4f5ce572bf1dc913b9b81">CoreList::~CoreList</a></div><div class="ttdeci">~CoreList()=default</div></div>
+<div class="ttc" id="aclassCoreList_html"><div class="ttname"><a href="classCoreList.html">CoreList</a></div><div class="ttdoc">base class for FdList and GpList</div><div class="ttdef"><b>Definition:</b> core_list.h:15</div></div>
+<div class="ttc" id="aclassCoreList_html_a882a8489c66b577437b975375c59a5f7"><div class="ttname"><a href="classCoreList.html#a882a8489c66b577437b975375c59a5f7">CoreList::UpdateList</a></div><div class="ttdeci">virtual void UpdateList()=0</div></div>
+<div class="ttc" id="aclassCoreList_html_aee0eda1d7a7d071d5417f7e210791a68"><div class="ttname"><a href="classCoreList.html#aee0eda1d7a7d071d5417f7e210791a68">CoreList::m_core</a></div><div class="ttdeci">std::shared_ptr&lt; Core &gt; m_core</div><div class="ttdef"><b>Definition:</b> core_list.h:27</div></div>
+<div class="ttc" id="aconfig_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div></div>
+<div class="ttc" id="aclassCoreList_html_a350426fee28bfd3534fb61fd5262f978"><div class="ttname"><a href="classCoreList.html#a350426fee28bfd3534fb61fd5262f978">CoreList::CoreList</a></div><div class="ttdeci">CoreList(Type::Identity identity, std::shared_ptr&lt; Core &gt; core, QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> core_list.cpp:5</div></div>
+<div class="ttc" id="aclassCoreList_html_a9aa321c8afd5ee5ed08bd0d26e96cd0d"><div class="ttname"><a href="classCoreList.html#a9aa321c8afd5ee5ed08bd0d26e96cd0d">CoreList::m_wid_list</a></div><div class="ttdeci">QListWidget m_wid_list</div><div class="ttdef"><b>Definition:</b> core_list.h:26</div></div>
+<div class="ttc" id="aclassCoreList_html_acbc71a5668aba7162963bbf5e1fd0ffe"><div class="ttname"><a href="classCoreList.html#acbc71a5668aba7162963bbf5e1fd0ffe">CoreList::SigListChangeIdx</a></div><div class="ttdeci">void SigListChangeIdx(Type::Identity identity, int idx)</div></div>
+<div class="ttc" id="anamespaceType_html_a9faf80af89bbcb86b6838c2be790d760"><div class="ttname"><a href="namespaceType.html#a9faf80af89bbcb86b6838c2be790d760">Type::Identity</a></div><div class="ttdeci">Identity</div><div class="ttdoc">聊天对象</div><div class="ttdef"><b>Definition:</b> config.h:39</div></div>
+<div class="ttc" id="aclassCore_html"><div class="ttname"><a href="classCore.html">Core</a></div><div class="ttdoc">界面要操作数据的所有接口所在</div><div class="ttdef"><b>Definition:</b> core.h:29</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

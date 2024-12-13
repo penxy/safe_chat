@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>qt_test: src/Model/Card/fd_card.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">qt_test
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_32e188284d239da8bb14ec1dabb0c35f.html">Model</a></li><li class="navelem"><a class="el" href="dir_f704f18d6355a17b788292c111afda30.html">Card</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">fd_card.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="fd__card_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="config_8h.html">config.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QDialog&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QPushButton&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QPixmap&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="label__photo_8h.html">Base/label_photo.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span><a class="code" href="classFriend.html">Friend</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="classChatId.html">ChatId</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classFdCard.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classFdCard.html">FdCard</a> : <span class="keyword">public</span> QDialog {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classFdCard.html#a31be52262b9d9aa23facdd024646309e">FdCard</a>(std::shared_ptr&lt;Friend&gt;info, QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;signals:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFdCard.html#a1860a5e198c2e25bc93115eded184641">SigAdd</a>(<a class="code" href="classChatId.html">ChatId</a> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classFdCard.html#a61dbe7e641611fdcc65d956314bc5631">   24</a></span>&#160;    QPixmap <a class="code" href="classFdCard.html#a61dbe7e641611fdcc65d956314bc5631">m_photo</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classFdCard.html#ab9cf9702cc72ad9160bd41d73c9f438b">   26</a></span>&#160;    QLabel <a class="code" href="classFdCard.html#ab9cf9702cc72ad9160bd41d73c9f438b">m_lab_id</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classFdCard.html#ab1b239ddbcb79769e50d04d5c6777654">   27</a></span>&#160;    QLabel <a class="code" href="classFdCard.html#ab1b239ddbcb79769e50d04d5c6777654">m_lab_name</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classFdCard.html#a1d39148e7f1e2566fd47449bce728278">   28</a></span>&#160;    QPushButton <a class="code" href="classFdCard.html#a1d39148e7f1e2566fd47449bce728278">m_btn_add</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classFdCard.html#a1579feebd1a71f6df63e9da145ca766c">   29</a></span>&#160;    <a class="code" href="classLabelPhoto.html">LabelPhoto</a> <a class="code" href="classFdCard.html#a1579feebd1a71f6df63e9da145ca766c">m_lab_photo</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="alabel__photo_8h_html"><div class="ttname"><a href="label__photo_8h.html">label_photo.h</a></div></div>
+<div class="ttc" id="aclassFdCard_html_a61dbe7e641611fdcc65d956314bc5631"><div class="ttname"><a href="classFdCard.html#a61dbe7e641611fdcc65d956314bc5631">FdCard::m_photo</a></div><div class="ttdeci">QPixmap m_photo</div><div class="ttdef"><b>Definition:</b> fd_card.h:24</div></div>
+<div class="ttc" id="aclassFdCard_html_ab1b239ddbcb79769e50d04d5c6777654"><div class="ttname"><a href="classFdCard.html#ab1b239ddbcb79769e50d04d5c6777654">FdCard::m_lab_name</a></div><div class="ttdeci">QLabel m_lab_name</div><div class="ttdef"><b>Definition:</b> fd_card.h:27</div></div>
+<div class="ttc" id="aclassFdCard_html"><div class="ttname"><a href="classFdCard.html">FdCard</a></div><div class="ttdoc">好友卡片</div><div class="ttdef"><b>Definition:</b> fd_card.h:17</div></div>
+<div class="ttc" id="aclassFdCard_html_a31be52262b9d9aa23facdd024646309e"><div class="ttname"><a href="classFdCard.html#a31be52262b9d9aa23facdd024646309e">FdCard::FdCard</a></div><div class="ttdeci">FdCard(std::shared_ptr&lt; Friend &gt;info, QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> fd_card.cpp:7</div></div>
+<div class="ttc" id="aclassChatId_html"><div class="ttname"><a href="classChatId.html">ChatId</a></div><div class="ttdoc">id of Friend and Group</div><div class="ttdef"><b>Definition:</b> chatid.h:13</div></div>
+<div class="ttc" id="aclassFdCard_html_ab9cf9702cc72ad9160bd41d73c9f438b"><div class="ttname"><a href="classFdCard.html#ab9cf9702cc72ad9160bd41d73c9f438b">FdCard::m_lab_id</a></div><div class="ttdeci">QLabel m_lab_id</div><div class="ttdef"><b>Definition:</b> fd_card.h:26</div></div>
+<div class="ttc" id="aclassFriend_html"><div class="ttname"><a href="classFriend.html">Friend</a></div><div class="ttdef"><b>Definition:</b> friend.h:11</div></div>
+<div class="ttc" id="aclassLabelPhoto_html"><div class="ttname"><a href="classLabelPhoto.html">LabelPhoto</a></div><div class="ttdoc">用于显示图片的标签类</div><div class="ttdef"><b>Definition:</b> label_photo.h:8</div></div>
+<div class="ttc" id="aclassFdCard_html_a1579feebd1a71f6df63e9da145ca766c"><div class="ttname"><a href="classFdCard.html#a1579feebd1a71f6df63e9da145ca766c">FdCard::m_lab_photo</a></div><div class="ttdeci">LabelPhoto m_lab_photo</div><div class="ttdef"><b>Definition:</b> fd_card.h:29</div></div>
+<div class="ttc" id="aconfig_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div></div>
+<div class="ttc" id="aclassFdCard_html_a1860a5e198c2e25bc93115eded184641"><div class="ttname"><a href="classFdCard.html#a1860a5e198c2e25bc93115eded184641">FdCard::SigAdd</a></div><div class="ttdeci">void SigAdd(ChatId id)</div></div>
+<div class="ttc" id="aclassFdCard_html_a1d39148e7f1e2566fd47449bce728278"><div class="ttname"><a href="classFdCard.html#a1d39148e7f1e2566fd47449bce728278">FdCard::m_btn_add</a></div><div class="ttdeci">QPushButton m_btn_add</div><div class="ttdef"><b>Definition:</b> fd_card.h:28</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

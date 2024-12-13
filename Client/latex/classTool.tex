@@ -1,0 +1,136 @@
+\hypertarget{classTool}{}\doxysection{Tool类 参考}
+\label{classTool}\index{Tool@{Tool}}
+
+
+{\ttfamily \#include $<$tool.\+h$>$}
+
+
+
+类 Tool 继承关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classTool__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Tool 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classTool__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classTool_ade51f1337bfd0c9e83bfb9af4a812935}{Type\+Qss}} \{ \mbox{\hyperlink{classTool_ade51f1337bfd0c9e83bfb9af4a812935a5d261e00f7f23c46c5760ceae575b785}{Com\+Box}}, 
+\mbox{\hyperlink{classTool_ade51f1337bfd0c9e83bfb9af4a812935ad34b78c083043d9f6b7735d4d85352be}{Label}}, 
+\mbox{\hyperlink{classTool_ade51f1337bfd0c9e83bfb9af4a812935a32a760d80a7ecfeffc0c81ebfba0c425}{Text\+Edit}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTool_aebdcccea6aa8639735d8949d386b288f}{Tool}} (const \mbox{\hyperlink{classTool}{Tool}} \&)=delete
+\item 
+\mbox{\hyperlink{classTool}{Tool}} \& \mbox{\hyperlink{classTool_a75cdebbefd9ae7415364fe0acb2d018a}{operator=}} (const \mbox{\hyperlink{classTool}{Tool}} \&)=delete
+\item 
+Q\+String \mbox{\hyperlink{classTool_a77606898fb48c456d61d5fe1958cdb33}{pix2\+Base64}} (const Q\+Pixmap \&pixmap)
+\item 
+Q\+Pixmap \mbox{\hyperlink{classTool_ae19f5d770547683316e6399d174af3cc}{base642\+Pix}} (const Q\+String \&base64)
+\item 
+Q\+String \mbox{\hyperlink{classTool_a3fa896955dbeb60fccd27f5c29fab86e}{get\+Qss}} (\mbox{\hyperlink{classTool_ade51f1337bfd0c9e83bfb9af4a812935}{Type\+Qss}} type)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTool_a8baf6126c87dda88049a97312881ff94}{Tool}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classTool_a64e7d0c4e32ba4559089ee4f538eb64f}{Singleton$<$ Tool $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{额外继承的成员函数}
+
+
+\doxysubsection{成员枚举类型说明}
+\mbox{\Hypertarget{classTool_ade51f1337bfd0c9e83bfb9af4a812935}\label{classTool_ade51f1337bfd0c9e83bfb9af4a812935}} 
+\index{Tool@{Tool}!TypeQss@{TypeQss}}
+\index{TypeQss@{TypeQss}!Tool@{Tool}}
+\doxysubsubsection{\texorpdfstring{TypeQss}{TypeQss}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classTool_ade51f1337bfd0c9e83bfb9af4a812935}{Tool\+::\+Type\+Qss}}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ComBox@{ComBox}!Tool@{Tool}}\index{Tool@{Tool}!ComBox@{ComBox}}}\mbox{\Hypertarget{classTool_ade51f1337bfd0c9e83bfb9af4a812935a5d261e00f7f23c46c5760ceae575b785}\label{classTool_ade51f1337bfd0c9e83bfb9af4a812935a5d261e00f7f23c46c5760ceae575b785}} 
+Com\+Box&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Label@{Label}!Tool@{Tool}}\index{Tool@{Tool}!Label@{Label}}}\mbox{\Hypertarget{classTool_ade51f1337bfd0c9e83bfb9af4a812935ad34b78c083043d9f6b7735d4d85352be}\label{classTool_ade51f1337bfd0c9e83bfb9af4a812935ad34b78c083043d9f6b7735d4d85352be}} 
+Label&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TextEdit@{TextEdit}!Tool@{Tool}}\index{Tool@{Tool}!TextEdit@{TextEdit}}}\mbox{\Hypertarget{classTool_ade51f1337bfd0c9e83bfb9af4a812935a32a760d80a7ecfeffc0c81ebfba0c425}\label{classTool_ade51f1337bfd0c9e83bfb9af4a812935a32a760d80a7ecfeffc0c81ebfba0c425}} 
+Text\+Edit&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classTool_aebdcccea6aa8639735d8949d386b288f}\label{classTool_aebdcccea6aa8639735d8949d386b288f}} 
+\index{Tool@{Tool}!Tool@{Tool}}
+\index{Tool@{Tool}!Tool@{Tool}}
+\doxysubsubsection{\texorpdfstring{Tool()}{Tool()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tool\+::\+Tool (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTool}{Tool}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classTool_a8baf6126c87dda88049a97312881ff94}\label{classTool_a8baf6126c87dda88049a97312881ff94}} 
+\index{Tool@{Tool}!Tool@{Tool}}
+\index{Tool@{Tool}!Tool@{Tool}}
+\doxysubsubsection{\texorpdfstring{Tool()}{Tool()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tool\+::\+Tool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classTool_ae19f5d770547683316e6399d174af3cc}\label{classTool_ae19f5d770547683316e6399d174af3cc}} 
+\index{Tool@{Tool}!base642Pix@{base642Pix}}
+\index{base642Pix@{base642Pix}!Tool@{Tool}}
+\doxysubsubsection{\texorpdfstring{base642Pix()}{base642Pix()}}
+{\footnotesize\ttfamily Q\+Pixmap Tool\+::base642\+Pix (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{base64 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTool_a3fa896955dbeb60fccd27f5c29fab86e}\label{classTool_a3fa896955dbeb60fccd27f5c29fab86e}} 
+\index{Tool@{Tool}!getQss@{getQss}}
+\index{getQss@{getQss}!Tool@{Tool}}
+\doxysubsubsection{\texorpdfstring{getQss()}{getQss()}}
+{\footnotesize\ttfamily Q\+String Tool\+::get\+Qss (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTool_ade51f1337bfd0c9e83bfb9af4a812935}{Type\+Qss}}}]{type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTool_a75cdebbefd9ae7415364fe0acb2d018a}\label{classTool_a75cdebbefd9ae7415364fe0acb2d018a}} 
+\index{Tool@{Tool}!operator=@{operator=}}
+\index{operator=@{operator=}!Tool@{Tool}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTool}{Tool}}\& Tool\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTool}{Tool}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classTool_a77606898fb48c456d61d5fe1958cdb33}\label{classTool_a77606898fb48c456d61d5fe1958cdb33}} 
+\index{Tool@{Tool}!pix2Base64@{pix2Base64}}
+\index{pix2Base64@{pix2Base64}!Tool@{Tool}}
+\doxysubsubsection{\texorpdfstring{pix2Base64()}{pix2Base64()}}
+{\footnotesize\ttfamily Q\+String Tool\+::pix2\+Base64 (\begin{DoxyParamCaption}\item[{const Q\+Pixmap \&}]{pixmap }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{友元及相关函数文档}
+\mbox{\Hypertarget{classTool_a64e7d0c4e32ba4559089ee4f538eb64f}\label{classTool_a64e7d0c4e32ba4559089ee4f538eb64f}} 
+\index{Tool@{Tool}!Singleton$<$ Tool $>$@{Singleton$<$ Tool $>$}}
+\index{Singleton$<$ Tool $>$@{Singleton$<$ Tool $>$}!Tool@{Tool}}
+\doxysubsubsection{\texorpdfstring{Singleton$<$ Tool $>$}{Singleton< Tool >}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classSingleton}{Singleton}}$<$ \mbox{\hyperlink{classTool}{Tool}} $>$\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\mbox{\hyperlink{tool_8h}{tool.\+h}}\item 
+src/utils/\mbox{\hyperlink{tool_8cpp}{tool.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,224 @@
+\hypertarget{classCoreSelf}{}\doxysection{Core\+Self类 参考}
+\label{classCoreSelf}\index{CoreSelf@{CoreSelf}}
+
+
+个人信息保存与修改  
+
+
+
+
+{\ttfamily \#include $<$core\+\_\+self.\+h$>$}
+
+
+
+类 Core\+Self 继承关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{classCoreSelf__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Core\+Self 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{classCoreSelf__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCoreSelf_a35bb34efa961049c184ec8adde477c91}{Core\+Self}} ()=default
+\item 
+virtual \mbox{\hyperlink{classCoreSelf_a3f2100f96a02c23d821253da0ba2ed4e}{$\sim$\+Core\+Self}} ()=default
+\item 
+\mbox{\hyperlink{classCoreSelf_a67f211499730df8514383594b42bd564}{Core\+Self}} (const \mbox{\hyperlink{classCoreSelf}{Core\+Self}} \&)=default
+\item 
+\mbox{\hyperlink{classCoreSelf}{Core\+Self}} \& \mbox{\hyperlink{classCoreSelf_a5aa508045f4317c1d687004e36b6cd89}{operator=}} (const \mbox{\hyperlink{classCoreSelf}{Core\+Self}} \&)=default
+\item 
+\mbox{\hyperlink{classCoreSelf_a0078f1b8cfb31334ccc2d4a3d3a26468}{Core\+Self}} (\mbox{\hyperlink{classCoreSelf}{Core\+Self}} \&\&)=default
+\item 
+\mbox{\hyperlink{classCoreSelf}{Core\+Self}} \& \mbox{\hyperlink{classCoreSelf_ad0867ed7c45e40d00f2619e20a44f0d0}{operator=}} (\mbox{\hyperlink{classCoreSelf}{Core\+Self}} \&\&)=default
+\item 
+virtual bool \mbox{\hyperlink{classCoreSelf_a8df5c2ac1591d3fc03f38661a727b78e}{set\+Pass}} (const Q\+String \&pass)=0
+\item 
+virtual bool \mbox{\hyperlink{classCoreSelf_a96ecdc0bfe8cc8abfd227f0d7272911e}{set\+Name}} (const Q\+String \&name)=0
+\item 
+virtual bool \mbox{\hyperlink{classCoreSelf_a426417400be3a1332a1b088d7818e44e}{set\+Status}} (const \mbox{\hyperlink{namespaceType_ae5b697cde223ac242545732b7e308243}{Type\+::\+Status}} \&status)=0
+\item 
+virtual \mbox{\hyperlink{classChatId}{Chat\+Id}} \& \mbox{\hyperlink{classCoreSelf_a25dd2ad2e8ef5a8d2364f9e4ab6793ef}{get\+Id}} ()=0
+\item 
+virtual Q\+String \& \mbox{\hyperlink{classCoreSelf_ad16cd121c5d35932883fea3b3874f066}{get\+Name}} ()=0
+\item 
+virtual \mbox{\hyperlink{namespaceType_ae5b697cde223ac242545732b7e308243}{Type\+::\+Status}} \& \mbox{\hyperlink{classCoreSelf_aaf904be9a8a1437215413a8716a91e9e}{get\+Status}} ()=0
+\item 
+virtual Q\+String \& \mbox{\hyperlink{classCoreSelf_a18f5404facd6a90ad5d3e2186558455a}{get\+Public\+Key}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classChatId}{Chat\+Id}} \mbox{\hyperlink{classCoreSelf_a6ef3e059abffa53f31d342e95e2f3743}{m\+\_\+id}}
+\item 
+Q\+String \mbox{\hyperlink{classCoreSelf_a37af0baa8d5adcb1fcd310b99f0d3c20}{m\+\_\+name}}
+\item 
+Q\+String \mbox{\hyperlink{classCoreSelf_a400ebf9dda5b61b8dc1d12083a87f11f}{m\+\_\+pass}}
+\item 
+\mbox{\hyperlink{namespaceType_ae5b697cde223ac242545732b7e308243}{Type\+::\+Status}} \mbox{\hyperlink{classCoreSelf_ab88f56fc99aaf944c7cffd023770fc5c}{m\+\_\+status}}
+\item 
+Q\+String \mbox{\hyperlink{classCoreSelf_a891822bb25b9017fc293d3659ac48065}{m\+\_\+public\+Key}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+个人信息保存与修改 
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classCoreSelf_a35bb34efa961049c184ec8adde477c91}\label{classCoreSelf_a35bb34efa961049c184ec8adde477c91}} 
+\index{CoreSelf@{CoreSelf}!CoreSelf@{CoreSelf}}
+\index{CoreSelf@{CoreSelf}!CoreSelf@{CoreSelf}}
+\doxysubsubsection{\texorpdfstring{CoreSelf()}{CoreSelf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Core\+Self\+::\+Core\+Self (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classCoreSelf_a3f2100f96a02c23d821253da0ba2ed4e}\label{classCoreSelf_a3f2100f96a02c23d821253da0ba2ed4e}} 
+\index{CoreSelf@{CoreSelf}!````~CoreSelf@{$\sim$CoreSelf}}
+\index{````~CoreSelf@{$\sim$CoreSelf}!CoreSelf@{CoreSelf}}
+\doxysubsubsection{\texorpdfstring{$\sim$CoreSelf()}{~CoreSelf()}}
+{\footnotesize\ttfamily virtual Core\+Self\+::$\sim$\+Core\+Self (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{classCoreSelf_a67f211499730df8514383594b42bd564}\label{classCoreSelf_a67f211499730df8514383594b42bd564}} 
+\index{CoreSelf@{CoreSelf}!CoreSelf@{CoreSelf}}
+\index{CoreSelf@{CoreSelf}!CoreSelf@{CoreSelf}}
+\doxysubsubsection{\texorpdfstring{CoreSelf()}{CoreSelf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Core\+Self\+::\+Core\+Self (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCoreSelf}{Core\+Self}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classCoreSelf_a0078f1b8cfb31334ccc2d4a3d3a26468}\label{classCoreSelf_a0078f1b8cfb31334ccc2d4a3d3a26468}} 
+\index{CoreSelf@{CoreSelf}!CoreSelf@{CoreSelf}}
+\index{CoreSelf@{CoreSelf}!CoreSelf@{CoreSelf}}
+\doxysubsubsection{\texorpdfstring{CoreSelf()}{CoreSelf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Core\+Self\+::\+Core\+Self (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCoreSelf}{Core\+Self}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classCoreSelf_a25dd2ad2e8ef5a8d2364f9e4ab6793ef}\label{classCoreSelf_a25dd2ad2e8ef5a8d2364f9e4ab6793ef}} 
+\index{CoreSelf@{CoreSelf}!getId@{getId}}
+\index{getId@{getId}!CoreSelf@{CoreSelf}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classChatId}{Chat\+Id}}\& Core\+Self\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classCore_a027328895cfa18523959d3e7ceac750d}{Core}} 内被实现.
+
+\mbox{\Hypertarget{classCoreSelf_ad16cd121c5d35932883fea3b3874f066}\label{classCoreSelf_ad16cd121c5d35932883fea3b3874f066}} 
+\index{CoreSelf@{CoreSelf}!getName@{getName}}
+\index{getName@{getName}!CoreSelf@{CoreSelf}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily virtual Q\+String\& Core\+Self\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classCore_ab98a23b0bff0a4f1fd35d24a1f1722b1}{Core}} 内被实现.
+
+\mbox{\Hypertarget{classCoreSelf_a18f5404facd6a90ad5d3e2186558455a}\label{classCoreSelf_a18f5404facd6a90ad5d3e2186558455a}} 
+\index{CoreSelf@{CoreSelf}!getPublicKey@{getPublicKey}}
+\index{getPublicKey@{getPublicKey}!CoreSelf@{CoreSelf}}
+\doxysubsubsection{\texorpdfstring{getPublicKey()}{getPublicKey()}}
+{\footnotesize\ttfamily virtual Q\+String\& Core\+Self\+::get\+Public\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classCore_af3698a332eef038016e25000ec8aff43}{Core}} 内被实现.
+
+\mbox{\Hypertarget{classCoreSelf_aaf904be9a8a1437215413a8716a91e9e}\label{classCoreSelf_aaf904be9a8a1437215413a8716a91e9e}} 
+\index{CoreSelf@{CoreSelf}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!CoreSelf@{CoreSelf}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespaceType_ae5b697cde223ac242545732b7e308243}{Type\+::\+Status}}\& Core\+Self\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classCore_ae78a092fd0a1b11365449f1279c3e664}{Core}} 内被实现.
+
+\mbox{\Hypertarget{classCoreSelf_a5aa508045f4317c1d687004e36b6cd89}\label{classCoreSelf_a5aa508045f4317c1d687004e36b6cd89}} 
+\index{CoreSelf@{CoreSelf}!operator=@{operator=}}
+\index{operator=@{operator=}!CoreSelf@{CoreSelf}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCoreSelf}{Core\+Self}}\& Core\+Self\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCoreSelf}{Core\+Self}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classCoreSelf_ad0867ed7c45e40d00f2619e20a44f0d0}\label{classCoreSelf_ad0867ed7c45e40d00f2619e20a44f0d0}} 
+\index{CoreSelf@{CoreSelf}!operator=@{operator=}}
+\index{operator=@{operator=}!CoreSelf@{CoreSelf}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCoreSelf}{Core\+Self}}\& Core\+Self\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCoreSelf}{Core\+Self}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classCoreSelf_a96ecdc0bfe8cc8abfd227f0d7272911e}\label{classCoreSelf_a96ecdc0bfe8cc8abfd227f0d7272911e}} 
+\index{CoreSelf@{CoreSelf}!setName@{setName}}
+\index{setName@{setName}!CoreSelf@{CoreSelf}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily virtual bool Core\+Self\+::set\+Name (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classCore_ac4f1b228d8710e3e562136d8ab763a2d}{Core}} 内被实现.
+
+\mbox{\Hypertarget{classCoreSelf_a8df5c2ac1591d3fc03f38661a727b78e}\label{classCoreSelf_a8df5c2ac1591d3fc03f38661a727b78e}} 
+\index{CoreSelf@{CoreSelf}!setPass@{setPass}}
+\index{setPass@{setPass}!CoreSelf@{CoreSelf}}
+\doxysubsubsection{\texorpdfstring{setPass()}{setPass()}}
+{\footnotesize\ttfamily virtual bool Core\+Self\+::set\+Pass (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classCore_adf1e6d00a6fc36606d5708d1cf9c14b0}{Core}} 内被实现.
+
+\mbox{\Hypertarget{classCoreSelf_a426417400be3a1332a1b088d7818e44e}\label{classCoreSelf_a426417400be3a1332a1b088d7818e44e}} 
+\index{CoreSelf@{CoreSelf}!setStatus@{setStatus}}
+\index{setStatus@{setStatus}!CoreSelf@{CoreSelf}}
+\doxysubsubsection{\texorpdfstring{setStatus()}{setStatus()}}
+{\footnotesize\ttfamily virtual bool Core\+Self\+::set\+Status (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceType_ae5b697cde223ac242545732b7e308243}{Type\+::\+Status}} \&}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classCore_ab6da5bdd564d3b37252a60ada9e50504}{Core}} 内被实现.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{classCoreSelf_a6ef3e059abffa53f31d342e95e2f3743}\label{classCoreSelf_a6ef3e059abffa53f31d342e95e2f3743}} 
+\index{CoreSelf@{CoreSelf}!m\_id@{m\_id}}
+\index{m\_id@{m\_id}!CoreSelf@{CoreSelf}}
+\doxysubsubsection{\texorpdfstring{m\_id}{m\_id}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChatId}{Chat\+Id}} Core\+Self\+::m\+\_\+id\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCoreSelf_a37af0baa8d5adcb1fcd310b99f0d3c20}\label{classCoreSelf_a37af0baa8d5adcb1fcd310b99f0d3c20}} 
+\index{CoreSelf@{CoreSelf}!m\_name@{m\_name}}
+\index{m\_name@{m\_name}!CoreSelf@{CoreSelf}}
+\doxysubsubsection{\texorpdfstring{m\_name}{m\_name}}
+{\footnotesize\ttfamily Q\+String Core\+Self\+::m\+\_\+name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCoreSelf_a400ebf9dda5b61b8dc1d12083a87f11f}\label{classCoreSelf_a400ebf9dda5b61b8dc1d12083a87f11f}} 
+\index{CoreSelf@{CoreSelf}!m\_pass@{m\_pass}}
+\index{m\_pass@{m\_pass}!CoreSelf@{CoreSelf}}
+\doxysubsubsection{\texorpdfstring{m\_pass}{m\_pass}}
+{\footnotesize\ttfamily Q\+String Core\+Self\+::m\+\_\+pass\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCoreSelf_a891822bb25b9017fc293d3659ac48065}\label{classCoreSelf_a891822bb25b9017fc293d3659ac48065}} 
+\index{CoreSelf@{CoreSelf}!m\_publicKey@{m\_publicKey}}
+\index{m\_publicKey@{m\_publicKey}!CoreSelf@{CoreSelf}}
+\doxysubsubsection{\texorpdfstring{m\_publicKey}{m\_publicKey}}
+{\footnotesize\ttfamily Q\+String Core\+Self\+::m\+\_\+public\+Key\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCoreSelf_ab88f56fc99aaf944c7cffd023770fc5c}\label{classCoreSelf_ab88f56fc99aaf944c7cffd023770fc5c}} 
+\index{CoreSelf@{CoreSelf}!m\_status@{m\_status}}
+\index{m\_status@{m\_status}!CoreSelf@{CoreSelf}}
+\doxysubsubsection{\texorpdfstring{m\_status}{m\_status}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceType_ae5b697cde223ac242545732b7e308243}{Type\+::\+Status}} Core\+Self\+::m\+\_\+status\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Core/\mbox{\hyperlink{core__self_8h}{core\+\_\+self.\+h}}\end{DoxyCompactItemize}

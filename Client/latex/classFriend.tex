@@ -1,0 +1,193 @@
+\hypertarget{classFriend}{}\doxysection{Friend类 参考}
+\label{classFriend}\index{Friend@{Friend}}
+
+
+{\ttfamily \#include $<$friend.\+h$>$}
+
+
+
+类 Friend 继承关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{classFriend__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Friend 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{classFriend__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFriend_a56f92976b2ca59b1b8071352c64990d9}{Friend}} ()
+\item 
+\mbox{\hyperlink{classFriend_add3da73840bd57d0a2ccc9a036b2400f}{Friend}} (const \mbox{\hyperlink{classChatId}{Chat\+Id}} \&id, const Q\+String \&pix\+\_\+base64, const Q\+String \&\mbox{\hyperlink{classFriend_a4a88a661321558aa9d16fd39fa844a76}{name}})
+\item 
+\mbox{\hyperlink{classFriend_a79d082952e8ffcb5c44a7a1d12145c40}{Friend}} (const \mbox{\hyperlink{classFriend}{Friend}} \&other)
+\item 
+\mbox{\hyperlink{classFriend}{Friend}} \& \mbox{\hyperlink{classFriend_a575df3d2e99a831417d27408b4a4eb0e}{operator=}} (const \mbox{\hyperlink{classFriend}{Friend}} \&other)
+\item 
+\mbox{\hyperlink{classFriend_a413ea3906604db3a307b79f73db9b478}{S\+I\+G\+N\+A\+L\+\_\+\+I\+M\+PL}} (\mbox{\hyperlink{classFriend}{Friend}}, Sig\+Name\+Changed, const Q\+String \&)
+\item 
+\mbox{\hyperlink{classFriend_a72bb9f82127dcd00759c47ab9572ca6c}{S\+I\+G\+N\+A\+L\+\_\+\+I\+M\+PL}} (\mbox{\hyperlink{classFriend}{Friend}}, Sig\+Pix\+Changed, const Q\+Pixmap \&)
+\item 
+\mbox{\hyperlink{classChatId}{Chat\+Id}} \& \mbox{\hyperlink{classFriend_a7ac54e043a73a221d7db88ba4afdbbd2}{get\+Id}} () override
+\item 
+void \mbox{\hyperlink{classFriend_a84973b6ace9c1da66d0b45acce843daa}{set\+Name}} (const Q\+String \&\mbox{\hyperlink{classFriend_a4a88a661321558aa9d16fd39fa844a76}{name}}) override
+\item 
+Q\+String \& \mbox{\hyperlink{classFriend_a81b5dd2a8f50c385bac1a03d35f4976d}{get\+Name}} () override
+\item 
+void \mbox{\hyperlink{classFriend_a1473b777cd1ff1c4d83e5450b2f78cbe}{set\+Pix}} (const Q\+Pixmap \&\mbox{\hyperlink{classFriend_a1a1be5824df6556b68f6ec77de83dca0}{pix}}) override
+\item 
+Q\+Pixmap \& \mbox{\hyperlink{classFriend_a4cae7ed98215fee6fd72c337c835cb37}{get\+Pix}} () override
+\item 
+void \mbox{\hyperlink{classFriend_a0fd5043eee9458c38cb7b6b49c4897d2}{set\+History}} (const Q\+List$<$ \mbox{\hyperlink{structns_1_1History}{ns\+::\+History}} $>$ \&history) override
+\item 
+Q\+List$<$ \mbox{\hyperlink{structns_1_1History}{ns\+::\+History}} $>$ \& \mbox{\hyperlink{classFriend_ae410d0608e0b7909a9231335b356a392}{get\+History}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{属性}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \mbox{\hyperlink{classFriend_a4a88a661321558aa9d16fd39fa844a76}{name}}
+\item 
+Q\+Pixmap \mbox{\hyperlink{classFriend_a1a1be5824df6556b68f6ec77de83dca0}{pix}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classFriend_a56f92976b2ca59b1b8071352c64990d9}\label{classFriend_a56f92976b2ca59b1b8071352c64990d9}} 
+\index{Friend@{Friend}!Friend@{Friend}}
+\index{Friend@{Friend}!Friend@{Friend}}
+\doxysubsubsection{\texorpdfstring{Friend()}{Friend()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Friend\+::\+Friend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFriend_add3da73840bd57d0a2ccc9a036b2400f}\label{classFriend_add3da73840bd57d0a2ccc9a036b2400f}} 
+\index{Friend@{Friend}!Friend@{Friend}}
+\index{Friend@{Friend}!Friend@{Friend}}
+\doxysubsubsection{\texorpdfstring{Friend()}{Friend()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Friend\+::\+Friend (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classChatId}{Chat\+Id}} \&}]{id,  }\item[{const Q\+String \&}]{pix\+\_\+base64,  }\item[{const Q\+String \&}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFriend_a79d082952e8ffcb5c44a7a1d12145c40}\label{classFriend_a79d082952e8ffcb5c44a7a1d12145c40}} 
+\index{Friend@{Friend}!Friend@{Friend}}
+\index{Friend@{Friend}!Friend@{Friend}}
+\doxysubsubsection{\texorpdfstring{Friend()}{Friend()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Friend\+::\+Friend (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFriend}{Friend}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classFriend_ae410d0608e0b7909a9231335b356a392}\label{classFriend_ae410d0608e0b7909a9231335b356a392}} 
+\index{Friend@{Friend}!getHistory@{getHistory}}
+\index{getHistory@{getHistory}!Friend@{Friend}}
+\doxysubsubsection{\texorpdfstring{getHistory()}{getHistory()}}
+{\footnotesize\ttfamily Q\+List$<$ \mbox{\hyperlink{structns_1_1History}{ns\+::\+History}} $>$ \& Friend\+::get\+History (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classChat_aa6b1ed514fc3f928f13062508ef63a0b}{Chat}}.
+
+\mbox{\Hypertarget{classFriend_a7ac54e043a73a221d7db88ba4afdbbd2}\label{classFriend_a7ac54e043a73a221d7db88ba4afdbbd2}} 
+\index{Friend@{Friend}!getId@{getId}}
+\index{getId@{getId}!Friend@{Friend}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChatId}{Chat\+Id}} \& Friend\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classChat_a8d043c974ed242dc05e48e0348515c2d}{Chat}}.
+
+\mbox{\Hypertarget{classFriend_a81b5dd2a8f50c385bac1a03d35f4976d}\label{classFriend_a81b5dd2a8f50c385bac1a03d35f4976d}} 
+\index{Friend@{Friend}!getName@{getName}}
+\index{getName@{getName}!Friend@{Friend}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily Q\+String \& Friend\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classChat_ae1a835bb81e14154ad3921f5e0e355ec}{Chat}}.
+
+\mbox{\Hypertarget{classFriend_a4cae7ed98215fee6fd72c337c835cb37}\label{classFriend_a4cae7ed98215fee6fd72c337c835cb37}} 
+\index{Friend@{Friend}!getPix@{getPix}}
+\index{getPix@{getPix}!Friend@{Friend}}
+\doxysubsubsection{\texorpdfstring{getPix()}{getPix()}}
+{\footnotesize\ttfamily Q\+Pixmap \& Friend\+::get\+Pix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classChat_a6009f6e1d07375de587373a9f43a104d}{Chat}}.
+
+\mbox{\Hypertarget{classFriend_a575df3d2e99a831417d27408b4a4eb0e}\label{classFriend_a575df3d2e99a831417d27408b4a4eb0e}} 
+\index{Friend@{Friend}!operator=@{operator=}}
+\index{operator=@{operator=}!Friend@{Friend}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFriend}{Friend}} \& Friend\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFriend}{Friend}} \&}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFriend_a0fd5043eee9458c38cb7b6b49c4897d2}\label{classFriend_a0fd5043eee9458c38cb7b6b49c4897d2}} 
+\index{Friend@{Friend}!setHistory@{setHistory}}
+\index{setHistory@{setHistory}!Friend@{Friend}}
+\doxysubsubsection{\texorpdfstring{setHistory()}{setHistory()}}
+{\footnotesize\ttfamily void Friend\+::set\+History (\begin{DoxyParamCaption}\item[{const Q\+List$<$ \mbox{\hyperlink{structns_1_1History}{ns\+::\+History}} $>$ \&}]{history }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classChat_a5c6603df219260bd251328cd1bd7fccb}{Chat}}.
+
+\mbox{\Hypertarget{classFriend_a84973b6ace9c1da66d0b45acce843daa}\label{classFriend_a84973b6ace9c1da66d0b45acce843daa}} 
+\index{Friend@{Friend}!setName@{setName}}
+\index{setName@{setName}!Friend@{Friend}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Friend\+::set\+Name (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classChat_a415aba96dc6d2065114ee528ca0e5bf8}{Chat}}.
+
+\mbox{\Hypertarget{classFriend_a1473b777cd1ff1c4d83e5450b2f78cbe}\label{classFriend_a1473b777cd1ff1c4d83e5450b2f78cbe}} 
+\index{Friend@{Friend}!setPix@{setPix}}
+\index{setPix@{setPix}!Friend@{Friend}}
+\doxysubsubsection{\texorpdfstring{setPix()}{setPix()}}
+{\footnotesize\ttfamily void Friend\+::set\+Pix (\begin{DoxyParamCaption}\item[{const Q\+Pixmap \&}]{pix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classChat_abf74cf6e81791310b9fd42aa8bb9e8ff}{Chat}}.
+
+\mbox{\Hypertarget{classFriend_a413ea3906604db3a307b79f73db9b478}\label{classFriend_a413ea3906604db3a307b79f73db9b478}} 
+\index{Friend@{Friend}!SIGNAL\_IMPL@{SIGNAL\_IMPL}}
+\index{SIGNAL\_IMPL@{SIGNAL\_IMPL}!Friend@{Friend}}
+\doxysubsubsection{\texorpdfstring{SIGNAL\_IMPL()}{SIGNAL\_IMPL()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Friend\+::\+S\+I\+G\+N\+A\+L\+\_\+\+I\+M\+PL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFriend}{Friend}}}]{,  }\item[{Sig\+Name\+Changed}]{,  }\item[{const Q\+String \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFriend_a72bb9f82127dcd00759c47ab9572ca6c}\label{classFriend_a72bb9f82127dcd00759c47ab9572ca6c}} 
+\index{Friend@{Friend}!SIGNAL\_IMPL@{SIGNAL\_IMPL}}
+\index{SIGNAL\_IMPL@{SIGNAL\_IMPL}!Friend@{Friend}}
+\doxysubsubsection{\texorpdfstring{SIGNAL\_IMPL()}{SIGNAL\_IMPL()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Friend\+::\+S\+I\+G\+N\+A\+L\+\_\+\+I\+M\+PL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFriend}{Friend}}}]{,  }\item[{Sig\+Pix\+Changed}]{,  }\item[{const Q\+Pixmap \&}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{属性说明}
+\mbox{\Hypertarget{classFriend_a4a88a661321558aa9d16fd39fa844a76}\label{classFriend_a4a88a661321558aa9d16fd39fa844a76}} 
+\index{Friend@{Friend}!name@{name}}
+\index{name@{name}!Friend@{Friend}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily Q\+String Friend\+::name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}}
+
+\mbox{\Hypertarget{classFriend_a1a1be5824df6556b68f6ec77de83dca0}\label{classFriend_a1a1be5824df6556b68f6ec77de83dca0}} 
+\index{Friend@{Friend}!pix@{pix}}
+\index{pix@{pix}!Friend@{Friend}}
+\doxysubsubsection{\texorpdfstring{pix}{pix}}
+{\footnotesize\ttfamily Q\+Pixmap Friend\+::pix\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Chat/\mbox{\hyperlink{friend_8h}{friend.\+h}}\item 
+src/\+Chat/\mbox{\hyperlink{friend_8cpp}{friend.\+cpp}}\end{DoxyCompactItemize}
