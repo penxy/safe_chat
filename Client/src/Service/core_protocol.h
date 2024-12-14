@@ -10,14 +10,15 @@ class Core;
 class NetCore;
 
 /**
- * @class Protocol
+ * @class CoreProtocol
  * @brief 生成json并发送，接收json并解析
+ * @todo [未完成]它不应该引用Core, 也许应该被Core所继承
  */
-class Protocol : public QObject, public std::enable_shared_from_this<Protocol>{
+class CoreProtocol : public QObject, public std::enable_shared_from_this<CoreProtocol>{
     Q_OBJECT
 public:
-    Protocol(QObject *parent);
-    ~Protocol();
+    CoreProtocol(QObject *parent);
+    ~CoreProtocol();
 public:
     void init(std::shared_ptr<Core>core, const char *host, int port);
     void create_and_send(TypeJson::Send type, void *data);                                    //由core调用

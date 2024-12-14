@@ -21,15 +21,15 @@ QPixmap Tool::base642Pix(const QString &base64){
 QString Tool::getQss(TypeQss type){
     std::string file;
     switch (type) {
-        case ComBox:{
+        case TypeQss::ComBox:{
             file = FLAGS_base + "/etc/Qss/ComBox.qss";
             break;
         }
-        case Label:{
+        case TypeQss::Label:{
             file = FLAGS_base + "/etc/Qss/QLabel.qss";
             break;
         }
-        case TextEdit:{
+        case TypeQss::TextEdit:{
             file = FLAGS_base + "/etc/Qss/QTextEdit.qss";
             break;
         }

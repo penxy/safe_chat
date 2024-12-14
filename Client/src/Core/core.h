@@ -5,24 +5,24 @@
 #include "core_self.h"
 #include "core_history.h"
 #include "core_ftp.h"
-#include "Service/protocol.h"
+#include "Service/core_protocol.h"
 #include "utils/interface.h"
 
 #include <semaphore.h>
 #include <QPixmap>
 #include <QObject>
 
-class Protocol;
+class CoreProtocol;
 class GpList;
 class FdList;
 class CoreSql;
-class Setting;
+class CoreSetting;
 
 /**
  * @class Core
  * @brief 界面要操作数据的所有接口所在
  * @note 所有的改变操作都不会有多个线程同时操作，因此不需要加锁
- * @todo 完善并实现接口
+ * @todo 完善并实现接口, Core是对外的一切，一切的Core*是对Core
  * @details 凡是涉及要发送的消息，都需要调用Protocol的enqueueSend()接口;存在信号，当信息改变后，会发送信号改变相应的 ui 类
  * @attention 根据TypeJson::Send/Recv的枚举值，决定是否操作数据库
  */
@@ -35,7 +35,7 @@ class Core final : public QObject,
                    public std::enable_shared_from_this<Core> {
     Q_OBJECT
 public:
-    Core(std::shared_ptr<Protocol>protocol);
+    Core(std::shared_ptr<CoreProtocol>core_protocol, std::shared_ptr<CoreSql>core_sql, std::shared_ptr<CoreSetting>core_setting);
     ~Core() = default;
 public:
     //fd
@@ -85,9 +85,9 @@ public:
     SIGNAL_IMPL(Core, SigUpdateListFd);//调用sendFriend后，看情况决定是否发送该信号[比如，好友申请被同意]
     SIGNAL_IMPL(Core, SigUpdateListGp);//调用sendGroup后，看情况决定是否发送该信号
 private:
-    std::shared_ptr<Protocol> m_protocol;
-    std::shared_ptr<CoreSql> m_sql;
-    std::shared_ptr<Setting> m_setting;
+    std::shared_ptr<CoreProtocol> m_core_protocol;
+    std::shared_ptr<CoreSql> m_core_sql;
+    std::shared_ptr<CoreSetting> m_core_setting;
 };
 
 

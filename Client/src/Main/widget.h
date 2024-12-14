@@ -5,6 +5,8 @@
 #include <QStackedWidget>
 
 class Core;
+class CoreSql;
+class CoreSetting;
 class TitleBar;
 class ListPage;
 class ChatPage;
@@ -47,4 +49,6 @@ private:
     FtpPage *m_ftp_page;
 
     std::shared_ptr<Core> m_core;
+    std::shared_ptr<CoreSql> m_core_sql;
+    std::shared_ptr<CoreSetting> m_core_setting;
 };

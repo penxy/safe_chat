@@ -6,17 +6,17 @@
 #include <QVariant>
 
 /**
- * @class Setting
+ * @class CoreSetting
  * @brief parse json setting file and have time out to save setting file
  * @note 也许存在信号？
  */
-class Setting : public QObject,
+class CoreSetting : public QObject,
                 public ISystemSetting,
-                public std::enable_shared_from_this<Setting> {
+                public std::enable_shared_from_this<CoreSetting> {
     Q_OBJECT
 public:
-    Setting();
-    ~Setting();
+    CoreSetting();
+    ~CoreSetting();
 
     //ISystemSetting interface
     QString& getUser() override;
@@ -24,5 +24,6 @@ public:
     QString& getIpFtp() override;
     QString& getKey() override;
     QString& getIv() override;
-    QString& getDb() override;
+    QString& getDbName() override;
+    QString& getDbScript() override;
 };

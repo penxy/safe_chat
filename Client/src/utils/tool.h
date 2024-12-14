@@ -10,7 +10,7 @@ public:
 protected:
     Tool() = default;
 public: 
-    enum TypeQss{
+    enum class TypeQss{
         ComBox,
         Label,
         TextEdit,

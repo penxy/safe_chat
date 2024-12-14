@@ -8,11 +8,16 @@
 #include "Model/Ftp/ftp_page.h"
 
 #include "Core/core.h"
+#include "Data/core_sql.h"
+#include "Setting/core_setting.h"
+
 #include "Base/widget_blank.h"
 #include "utils/tool.h"
 
 Widget::Widget(QWidget *parent) : QWidget(parent){
-    m_core = std::make_shared<Core>(nullptr);
+    m_core_setting = std::make_shared<CoreSetting>();
+    m_core_sql = std::make_shared<CoreSql>(m_core_setting->shared_from_this());
+    m_core = std::make_shared<Core>(nullptr, m_core_sql, m_core_setting);
     m_tool_page = new ToolPage(this);
 
     //m_stack_widget

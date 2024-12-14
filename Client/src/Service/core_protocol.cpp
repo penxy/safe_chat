@@ -1,4 +1,4 @@
-#include "protocol.h"
+#include "core_protocol.h"
 #include "Core/core.h"
 #include "const_json.h"
 
@@ -21,8 +21,8 @@ namespace JsonHand{
     const QString public_key{"public_key"};                                    //公钥
 }
 
-Protocol::Protocol(QObject *parent) : QObject(parent){}
-Protocol::~Protocol(){}
+CoreProtocol::CoreProtocol(QObject *parent) : QObject(parent){}
+CoreProtocol::~CoreProtocol(){}
 /**
  * @def init
  * @param[in] core 核心
@@ -31,13 +31,13 @@ Protocol::~Protocol(){}
  * @param[in] port 服务器端口
  * @brief 初始化网络
  */
-void Protocol::init(std::shared_ptr<Core>core, const char *host, int port){
+void CoreProtocol::init(std::shared_ptr<Core>core, const char *host, int port){
     m_core = core;
     m_hand.account_id = m_core->getId().toString();
     m_hand.public_key = m_core->getPublicKey();
 
     m_socket.connectToHost(QString::fromStdString(host), port);
-    connect(&m_socket, &QTcpSocket::readyRead, this, &Protocol::onReadyRead);
+    connect(&m_socket, &QTcpSocket::readyRead, this, &CoreProtocol::onReadyRead);
 }
 
 
@@ -47,7 +47,7 @@ void Protocol::init(std::shared_ptr<Core>core, const char *host, int port){
  * @def createHead
  * @brief 创建消息头, 由create_and_send调用
  */
-void Protocol::createHead(){
+void CoreProtocol::createHead(){
     m_json = QJsonObject();
     m_json.insert(JsonHand::index, m_hand.index);
     m_json.insert(JsonHand::account_id, m_hand.account_id);
@@ -62,7 +62,7 @@ void Protocol::createHead(){
  * @param[in] msg 发送的消息
  * @brief 发送消息, 由create_and_send函数调用
  */
-bool Protocol::send(){
+bool CoreProtocol::send(){
     if(!m_socket.isValid())return false;
     
     //QJson -> QString -> QByteArray
@@ -77,7 +77,7 @@ bool Protocol::send(){
  * @def onReadyRead
  * @brief 收到数据了，处理m_core
  */
-void Protocol::onReadyRead(){
+void CoreProtocol::onReadyRead(){
     if(m_socket.bytesAvailable() <= 0) return;
     QString recv_text = QString::fromUtf8(m_socket.readAll());
     //处理json,判断类型，解析分配参数，调用Core::recvGroup/Core::recvFriend

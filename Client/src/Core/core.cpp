@@ -5,14 +5,19 @@
 
 #include "curl/curl.h"
 #include "Data/core_sql.h"
-#include "Setting/setting.h"
+#include "Setting/core_setting.h"
 #include "Chat/friend.h"
 
 /**
  * @def Core
  * @todo 随机生成公钥和id, 以及注册各种信号传递的类型[such as qRegisterMetaType<Type::Json>("Type::Json");]
  */
-Core::Core(std::shared_ptr<Protocol>protocol) : QObject(), CoreFd(), CoreGp(), CoreSelf(), CoreHistory(), m_protocol(protocol){
+Core::Core( std::shared_ptr<CoreProtocol>core_protocol, 
+            std::shared_ptr<CoreSql>core_sql, 
+            std::shared_ptr<CoreSetting>core_setting) : 
+            QObject(), CoreFd(), CoreGp(), CoreSelf(), CoreHistory(), 
+            m_core_protocol(core_protocol), m_core_sql(core_sql), m_core_setting(core_setting){
+
 }
 
 //fd
