@@ -46,7 +46,7 @@ ChatPage::ChatPage(std::shared_ptr<Core> core, QWidget *parent) : QWidget(parent
  * @todo 还需要聊天记录之类的
  */
 void ChatPage::SlotListChangeIdx(Type::Identity identity, int idx){
-    if(m_type == Type::Identity::Friend){
+    if(identity == Type::Identity::Friend){
         chat_top->SetInfo(m_core->getFriendName(idx), m_core->getFriendPhoto(idx));
     }else{
         chat_top->SetInfo(m_core->getGroupName(idx), m_core->getGroupPhoto(idx));
