@@ -8,7 +8,6 @@
 #include "Service/core_protocol.h"
 #include "utils/interface.h"
 
-#include <semaphore.h>
 #include <QPixmap>
 #include <QObject>
 #include <array>

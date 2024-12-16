@@ -1,13 +1,11 @@
 #include "core.h"
 #include <qmetatype.h>//qRegisterMetaType
 #include "config.h"
-#include <unistd.h>
 
 #include "curl/curl.h"
 #include "Data/core_sql.h"
 #include "Setting/core_setting.h"
 #include "Chat/friend.h"
-
 /**
  * @def Core
  * @todo 随机生成公钥和id, 以及注册各种信号传递的类型[such as qRegisterMetaType<Type::Json>("Type::Json");]
@@ -114,6 +112,7 @@ void Core::autoClearHistory(){
 void Core::upLoadFile(const QString& file_name){
     CURL *curl = curl_easy_init();
     FILE *file = fopen(file_name.toStdString().c_str(), "r");
+    assert(file != nullptr);
     // FILE* curl_log = fopen("debug.log", "wb");
     curl_easy_setopt(curl, CURLOPT_USERPWD, "pxy:16759");
 
@@ -123,12 +122,9 @@ void Core::upLoadFile(const QString& file_name){
     curl_easy_setopt(curl, CURLOPT_UPLOAD, 1L);
     curl_easy_setopt(curl, CURLOPT_READDATA, (void*)file);
     CURLcode ret = curl_easy_perform(curl);
-    // if (ret == CURLE_OK) {
-    //     std::cout << "OK\n";
-    // }
-    // else {
-    //     std::cout << "error\n";
-    // }
+    
+    qDebug() << (ret == CURLcode::CURLE_OK ? "Upload success" : "Upload failed");
+    
     //C:\Users\srcty\Desktop\music.txt
     curl_easy_cleanup(curl);
     fclose(file);
