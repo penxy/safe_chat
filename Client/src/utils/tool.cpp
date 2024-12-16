@@ -2,6 +2,7 @@
 #include <QPixmap>
 #include <QFile>
 #include <QDebug>
+#include <algorithm>
 #include "tool.h"
 #include "args.h"
 
@@ -20,22 +21,26 @@ QPixmap Tool::base642Pix(const QString &base64){
 
 QString Tool::getQss(TypeQss type){
     std::string file;
+    std::string path_qss;
     switch (type) {
         case TypeQss::ComBox:{
-            file = FLAGS_base + "/etc/Qss/ComBox.qss";
+            path_qss = "/etc/Qss/ComBox.qss";
             break;
         }
         case TypeQss::Label:{
-            file = FLAGS_base + "/etc/Qss/QLabel.qss";
+            path_qss = "/etc/Qss/QLabel.qss";
             break;
         }
         case TypeQss::TextEdit:{
-            file = FLAGS_base + "/etc/Qss/QTextEdit.qss";
+            path_qss = "/etc/Qss/QTextEdit.qss";
             break;
         }
         default:
             break;
     }
+
+    Tool::ConvertPath(path_qss);
+    file = FLAGS_base + path_qss;
     QFile fileQss(file.c_str());
     if(fileQss.open(QIODevice::ReadOnly)){
         return QString::fromStdString(fileQss.readAll().toStdString());
@@ -45,3 +50,28 @@ QString Tool::getQss(TypeQss type){
     return QString();
 }
 
+bool Tool::replace(std::string& str, const std::string& from, const std::string& to) {
+    size_t start_pos = str.find(from);
+    if(start_pos == std::string::npos)
+        return false;
+    str.replace(start_pos, from.length(), to);
+    return Tool::replace(str, from, to);
+}
+
+/**
+ * @def ConvertPath
+ * @brief 将Linux路径转为Windows路径
+ */
+void Tool::ConvertPath(std::string& str){
+#ifdef _WIN32
+    Tool::replace(str, "/", "\\");
+#endif
+}
+
+void Tool::ConvertPath(QString& str){
+#ifdef _WIN32
+    std::string temp = str.toStdString();
+    Tool::ConvertPath(temp);
+    str = QString::fromStdString(temp);
+#endif
+}

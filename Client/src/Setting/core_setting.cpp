@@ -4,6 +4,7 @@
 #include <QFile>
 #include <QDebug>
 #include "args.h"
+#include "utils/tool.h"
 /*
 {
     "user": "pxy",
@@ -38,6 +39,9 @@ CoreSetting::CoreSetting() : ISystemSetting(), QObject(){
         m_iv = root_json["iv"].toString();
         m_db_name = root_json["db_name"].toString();
         m_db_script = root_json["db_script"].toString();
+
+        TOOL.ConvertPath(m_db_name);
+        TOOL.ConvertPath(m_db_script);
     }else{
         qDebug() << "client.js open Error";
     }
