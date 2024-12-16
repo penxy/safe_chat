@@ -47,4 +47,4 @@ if __name__ == "__main__":
         if len(sys.argv) == 2 and sys.argv[1] == "test":
             F.Run("test")
         else:
-            F.Run("Client.exe", f"-b{os.getcwd()}")
+            F.Run("Client.exe", f"-b{os.getcwd()}/Client")
