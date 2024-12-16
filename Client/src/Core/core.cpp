@@ -89,14 +89,9 @@ QString& Core::getPublicKey() {return m_publicKey;}
 
 //Recore
 void Core::initTimeout(){
-    QTimer::connect(&m_timer_save_history, &QTimer::timeout, [this](){
-        QMetaObject::invokeMethod(this, "saveFriendHistory", Qt::QueuedConnection);
-        QMetaObject::invokeMethod(this, "saveGroupHistory", Qt::QueuedConnection);
-    });
     QTimer::connect(&m_timer_clear_history, &QTimer::timeout, [this](){
         QMetaObject::invokeMethod(this, "autoClearHistory", Qt::QueuedConnection);
     });
-    m_timer_save_history.start(TIMEOUT_SAVE_HISTORY);
     m_timer_clear_history.start(TIMEOUT_CLEAR_HISTORY);
 }
 void Core::loadGroupHistory(int idx){

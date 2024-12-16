@@ -29,6 +29,4 @@ public:
     virtual QPixmap& getFriendPhoto(int idx) = 0;
 
     DECLARE_SIGNAL(SigUpdateListFd);//更新好友列表
-protected:
-    QList<std::shared_ptr<Friend>> m_fd_list;//好友列表
 };

@@ -25,6 +25,4 @@ public:
     virtual QPixmap& getGroupPhoto(int idx) = 0; 
 
     DECLARE_SIGNAL(SigUpdateListGp);//更新群列表
-protected:
-    QList<std::shared_ptr<Group>> m_gp_list;
 };

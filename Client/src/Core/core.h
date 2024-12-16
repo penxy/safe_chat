@@ -73,9 +73,7 @@ public:
     //History
     void initTimeout() override;
     void loadGroupHistory(int idx) override;
-    void saveGroupHistory(int idx) override;
     void loadFriendHistory(int idx) override;
-    void saveFriendHistory(int idx) override;
     void autoClearHistory() override;
     
     //Ftp
@@ -84,10 +82,16 @@ public:
 
     SIGNAL_IMPL(Core, SigUpdateListFd);//调用sendFriend后，看情况决定是否发送该信号[比如，好友申请被同意]
     SIGNAL_IMPL(Core, SigUpdateListGp);//调用sendGroup后，看情况决定是否发送该信号
+
+public slots:
+    void saveGroupHistory(int idx) override;
+    void saveFriendHistory(int idx) override;
 private:
-    std::shared_ptr<CoreProtocol> m_core_protocol;
-    std::shared_ptr<CoreSql> m_core_sql;
-    std::shared_ptr<CoreSetting> m_core_setting;
+    QList<std::shared_ptr<Friend>>          m_fd_list;//好友列表
+    QList<std::shared_ptr<Group>>           m_gp_list;
+    std::shared_ptr<CoreProtocol>           m_core_protocol;
+    std::shared_ptr<CoreSql>                m_core_sql;
+    std::shared_ptr<CoreSetting>            m_core_setting;
 };
 
 
