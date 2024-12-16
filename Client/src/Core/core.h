@@ -11,6 +11,7 @@
 #include <semaphore.h>
 #include <QPixmap>
 #include <QObject>
+#include <array>
 
 class CoreProtocol;
 class GpList;

@@ -12,7 +12,6 @@ CoreSql::CoreSql(std::shared_ptr<CoreSetting> setting) : m_setting(setting){
         m_database = QSqlDatabase::addDatabase("QSQLITE");
         // 设置数据库文件的名字
         std::string db_path = FLAGS_base + m_setting->getDbName().toStdString();
-        qDebug() << QString("db path %1").arg(db_path.c_str());
         m_database.setDatabaseName(db_path.c_str());
     }
     if (m_database.open()) {

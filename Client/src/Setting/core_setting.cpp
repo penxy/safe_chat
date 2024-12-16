@@ -6,13 +6,13 @@
 #include "args.h"
 /*
 {
-    user="pxy",
-    password="16759",
-    ip_ftp="192.168.64.132",
-    key="adsfadsfasmfasfsafhcasmfkasjfasf",
-    iv="adsfasmfasfsadsfasmfasfsafhcafhc",
-    db_name="release/Linux/etc/main.db",
-    db_script="release/Linux/etc/sql_script.sql"
+    "user": "pxy",
+    "password": "16759",
+    "ip_ftp": "192.168.64.132",
+    "key": "adsfadsfasmfasfsafhcasmfkasjfasf",
+    "iv": "adsfasmfasfsadsfasmfasfsafhcafhc",
+    "db_name": "/etc/main.db",
+    "db_script": "/etc/sql_script.sql"
 }
 */
 

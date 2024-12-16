@@ -13,4 +13,4 @@ func_check "cmake"
 make -C ./build -j6
 func_check "make"
 # ./release/$__OS__/bin/test
-./release/$__OS__/bin/Client --base $PWD/release/$__OS__
+./release/$__OS__/bin/Client -b$PWD

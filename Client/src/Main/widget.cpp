@@ -13,6 +13,7 @@
 
 #include "Base/widget_blank.h"
 #include "utils/tool.h"
+#include "args.h"
 
 Widget::Widget(QWidget *parent) : QWidget(parent){
     m_core_setting = std::make_shared<CoreSetting>();

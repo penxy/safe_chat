@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.30)
+cmake_minimum_required(VERSION 3.29)
 project("GUI")
 set(App "Client")
 set(App_Test "test")# 测试用的
@@ -19,28 +19,43 @@ set(DEBUG_VERSION "DebugMode")
 set(COMPILE_MODE ${RELEASE_VERSION})
 string(TIMESTAMP COMPILE_TIME %Y-%m-%d_%H:%M)
 
+set(LIB_PATH ${CMAKE_SOURCE_DIR}/release/${CMAKE_SYSTEM_NAME}/lib)
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/release/${CMAKE_SYSTEM_NAME}/bin)
+message(STATUS "CMAKE_SYSTEM_NAME = ${CMAKE_SYSTEM_NAME}")
 IF(CMAKE_SYSTEM_NAME MATCHES "Linux")
     set(CMAKE_C_COMPILER "/usr/bin/gcc")
     set(CMAKE_CXX_COMPILER "/usr/bin/g++")
-    SET(LIBS_SYS "-lpthread -ldl")        # -lpthread -ldl
+
+    FILE(GLOB LIBS
+        ${LIB_PATH}/libcurl${CMAKE_SHARED_LIBRARY_SUFFIX}
+    )
+ELSEIF(CMAKE_SYSTEM_NAME MATCHES "Windows")
+    set(CMAKE_C_COMPILER "D:/DownLoad/MinGW/MinGW/bin/gcc.exe")
+    set(CMAKE_CXX_COMPILER "D:/DownLoad/MinGW/MinGW/bin/g++.exe")
+    set(Qt5_DIR D:\\QtCreator2\\5.12.9\\mingw73_64)
+    
+    FILE(GLOB LIBS
+        ${LIB_PATH}/libcurl.lib
+    )
 ENDIF()
-message(STATUS "CMAKE_SYSTEM_NAME = ${CMAKE_SYSTEM_NAME}")
+# -lpthread
+find_package(Threads REQUIRED)
+SET(LIBS_SYS ${LIBS_SYS} Threads::Threads)
+message(STATUS "LIBS: ${LIBS}")
 
-set(LIB_PATH "${CMAKE_SOURCE_DIR}/release/${CMAKE_SYSTEM_NAME}/lib")
-set(EXECUTABLE_OUTPUT_PATH "${CMAKE_SOURCE_DIR}/release/${CMAKE_SYSTEM_NAME}/bin")
 # Qt
-find_package(Qt5Core REQUIRED)
-find_package(Qt5Widgets REQUIRED)
-find_package(Qt5 COMPONENTS Svg REQUIRED)
-find_package(Qt5 COMPONENTS Sql REQUIRED)
-find_package(Qt5 COMPONENTS Network REQUIRED)
-find_package(Qt5 COMPONENTS Xml REQUIRED)
-
+find_package(Qt5Core REQUIRED PATHS ${Qt5_DIR})
+find_package(Qt5Widgets REQUIRED PATHS ${Qt5_DIR})
+find_package(Qt5 COMPONENTS Svg REQUIRED PATHS ${Qt5_DIR})
+find_package(Qt5 COMPONENTS Sql REQUIRED PATHS ${Qt5_DIR})
+find_package(Qt5 COMPONENTS Network REQUIRED PATHS ${Qt5_DIR})
+find_package(Qt5 COMPONENTS Xml REQUIRED PATHS ${Qt5_DIR})
+set(INCLUDE_Qt5 ${Qt5Core_INCLUDE_DIRS} ${Qt5Widgets_INCLUDE_DIRS} ${Qt5Svg_INCLUDE_DIRS} ${Qt5Sql_INCLUDE_DIRS} ${Qt5Network_INCLUDE_DIRS} ${Qt5Xml_INCLUDE_DIRS})
+set(LIBS_Qt5 ${Qt5Core_LIBRARIES} ${Qt5Widgets_LIBRARIES} ${Qt5Svg_LIBRARIES} ${Qt5Sql_LIBRARIES} ${Qt5Network_LIBRARIES} ${Qt5Xml_LIBRARIES})
+# .ui
 list(APPEND CMAKE_AUTOMOC_SEARCH_PATHS "./src/widget/form/rmchatdialog.ui")
 list(APPEND CMAKE_AUTOMOC_SEARCH_PATHS "./src/widget/form/addfrienddialog.ui")
 
-set(INCLUDE_Qt5 ${Qt5Core_INCLUDE_DIRS} ${Qt5Widgets_INCLUDE_DIRS} ${Qt5Svg_INCLUDE_DIRS} ${Qt5Sql_INCLUDE_DIRS} ${Qt5Network_INCLUDE_DIRS} ${Qt5Xml_INCLUDE_DIRS})
-set(LIBS_Qt5 ${Qt5Core_LIBRARIESY} ${Qt5Widgets_LIBRARIES} ${Qt5Svg_LIBRARIES} ${Qt5Sql_LIBRARIES} ${Qt5Network_LIBRARIES} ${Qt5Xml_LIBRARIES})
 message(STATUS "INCLUDE_Qt5: ${INCLUDE_Qt5}")
 message(STATUS "LIBS_Qt5 : ${LIBS_Qt5}")
 
@@ -73,7 +88,6 @@ FILE(GLOB SOURCE
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Chat/*.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Data/*.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Setting/*.cpp
-    
 
     ${CMAKE_CURRENT_SOURCE_DIR}/src/widget/form/*.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/utils/*.cpp
@@ -82,11 +96,8 @@ FILE(GLOB SOURCE
     ${CMAKE_CURRENT_SOURCE_DIR}/src/args.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/icons.qrc
 )
-FILE(GLOB LIBS
-    ${LIB_PATH}/libcurl${CMAKE_SHARED_LIBRARY_SUFFIX}
-    ${LIB_PATH}/libgflags${CMAKE_STATIC_LIBRARY_SUFFIX}
-)
 
+message(STATUS "LIBS: ${LIBS}")
 add_executable(
     ${App}
     ${SOURCE}

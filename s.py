@@ -1,34 +1,50 @@
-#!/usr/bin/python3
+# use it in Windows or Linux
 import os
 import sys
 import shutil
 from colorama import Fore
+import subprocess
+import platform
 
-__OS__='Linux'
-def func_check(str_op):
-        ret = os.popen("echo $?").read()
-        ret = ret.strip("\n")
-        if ret == "0":
-            print(Fore.GREEN + f"{str_op} OK")
-        else:
-            print(Fore.RED + f"{str_op} error")
-            sys,exit(1)
-class Main:
-    def clean():
-        if os.path.exists("./build") == True:
-            shutil.rmtree("./build")
+def func_check(msg, ret):
+    if ret == 0:
+        print(f"{Fore.GREEN} {msg} OK {Fore.RESET}")
+    else:
+        print(f"{Fore.RED} {msg} Error {Fore.RESET}")
+        sys.exit(1)
+def clean():
+    if os.path.exists("./build") == True:
+        shutil.rmtree("./build")
+class Main_Windows:
+    cmake="D:\\cmake\\cmake-3.31.0-rc2-windows-x86_64\\bin\\cmake.exe"
     def Compile(self):
-        os.system("cmake -S . -B ./build")
-        func_check("cmake")
-        os.system("make -C ./build -j6")
-        func_check("make")
-    def Run(self, app_name, conf_str, is_back = False):
-        print(Fore.WHITE)                       # set white color for print 10.25
-        if is_back == False:
-            os.system(f"./release/{__OS__}/bin/{app_name} {conf_str}")
-        else:
-            os.system(f"./release/{__OS__}/bin/{app_name} {conf_str} &")
+        ret = os.system(f'{self.cmake} -S . -B ./build -G "MinGW Makefiles"')
+        func_check("cmake", ret)
+        ret = os.system("make -C ./build -j6")
+        func_check("make", ret)
+    def Run(self, app_name, conf_str = "", is_back = False):
+        subprocess.run([f"release/{platform.system()}/bin/{app_name}", f"{conf_str}"])
+class Main_Linux:
+    cmake="cmake"
+    def Compile(self):
+        ret = os.system(f'{self.cmake} -S . -B ./build')
+        func_check("cmake", ret)
+        ret = os.system("make -C ./build -j6")
+        func_check("make", ret)
+    def Run(self, app_name, conf_str = "", is_back = False):
+        subprocess.run([f"release/{platform.system()}/bin/{app_name}", f"{conf_str}"])
 if __name__ == "__main__":
-    F = Main()
-    F.Compile()
-    F.Run("Client", f"--base {os.getcwd()}/release/{__OS__}")
+    if platform.system() == "Linux":
+        F = Main_Linux()
+        F.Compile()
+        if len(sys.argv) == 2 and sys.argv[1] == "test":
+            F.Run("test")
+        else:
+            F.Run("Client", f"-b{os.getcwd()}/Client")
+    else:
+        F = Main_Windows()
+        F.Compile()
+        if len(sys.argv) == 2 and sys.argv[1] == "test":
+            F.Run("test")
+        else:
+            F.Run("Client.exe", f"-b{os.getcwd()}")

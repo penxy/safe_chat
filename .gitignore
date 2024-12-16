@@ -10,5 +10,7 @@ debug.log
 
 # 可执行文件
 release/Linux/bin/*
-release/Windows/bin/*
-release/Linux/etc/main.db
+release/Windows/bin/*.exe
+
+# 数据库文件
+Client/etc/main.db
